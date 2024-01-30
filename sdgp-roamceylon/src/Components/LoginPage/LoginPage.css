@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+  .main-container {
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+
+  .main-container {
+    position: relative;
+    width: 1920px;
+    height: 927px;
+    background: #04364a;
+    overflow: hidden;
+  }
+  .heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 25px;
+    left: 37px;
+    color: #dafffb;
+    font-family: var(--font-family);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+  }
+  .box {
+    position: absolute;
+    width: 1825px;
+    height: 787px;
+    top: 100px;
+    left: 47px;
+    background: #176b87;
+    border-radius: 40px;
+  }
+
+  .box-2 {
+    position: relative;
+    width: 29%;
+    margin: 785px 0 0 661.5px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .create-new-account {
+    position: relative;
+    color: #dafffb;
+    font-family: var(--font-family);
+    font-size: 16px;
+    top: 40px;
+    left: 15px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .subheading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 681px;
+    height: 90px;
+    top: 135px;
+    left: 19em;
+    color: #dafffb;
+    font-family: var(--font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    z-index: 3;
+  }
+  
+  .login-box {
+    position: absolute;
+    width: 562px;
+    height: 537px;
+    top: 220px;
+    left: 35%;
+    font-size: 0px;
+    background: rgba(218, 255, 251, 0.87);
+    border-radius: 50px;
+  }
+
+  .login {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 323px;
+    height: 86px;
+    margin: 66px 0 0 119px;
+    color: #176b87;
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    z-index: 14;
+  }
+
+  .username {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 171px;
+    height: 34px;
+    margin: 10px 0 0 11px;
+    color: #176b87;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.5px;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .input-box {
+    position: relative;
+    width: 83%;
+    height: 39px;
+    margin: -4px 0 0 45px;
+    background: #ffffff;
+    z-index: 11;
+    font-family: var(--font-family);
+    padding: 0 10px; 
+    font-size: 15px;
+    border-radius: 50px;
+  }
+
+  .input-box:hover, .input-box:focus {
+    outline: none;
+    border-color: #176b87; /* Change the border color when focused */
+    box-shadow: 0 0 5px rgba(23, 107, 135, 0.7); /* Add a box shadow when focused */
+  }
+  
+  .password {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 171px;
+    height: 34px;
+    margin: 14px 0 0 11px;
+    color: #176b87;
+    font-family: Lexend Deca, var(--font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.5px;
+    text-align: center;
+    z-index: 12;
+  }
+
+  button {
+    position: absolute;
+    width: 149px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    height: 51px;
+    top: 427px;
+    left: 206px;
+    font-size: 16px;
+    color: #dafffb;
+    background: #176b87;
+    z-index: 6;
+    border-radius: 70px;
+    cursor: pointer;
+    border: none;
+  }
+
+  button:hover{
+    outline: none;
+    background-color: #1a5569; /* Change the background color when focused */
+    color: #fff; /* Change the text color when focused */
+    box-shadow: 0 0 5px rgba(9, 75, 97, 0.7); /* Add a box shadow when focused */
+  }
+
+  .forget-password {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 468px;
+    height: 50px;
+    top: 550px;
+    left: 45%;
+    color: #00465d;
+    font-family: Lexend Deca, var(--font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 9;
+  }
+
+  input{
+    border: none;
+  }
+  
