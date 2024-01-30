@@ -1,0 +1,62 @@
+body{
+    background-color:#04364A ;
+    font-family: "Lexend", sans-serif;
+}
+#subFrame{
+    background-color: #176B87;
+    height: 800px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+h1,h3,h4, h6{
+    color: white;
+}
+#moveBottom{
+    padding-top: 20px;
+    color: white;
+}
+
+img{
+    height:250px ;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.imageSection{
+    display: flex;
+    justify-content: space-between;
+    margin-right:20px;
+}
+
+.bottomContainer{
+    background-color: black;
+    height: 150px;
+    position: relative;
+}
+
+.middleBottom{
+    width: 500px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.leftBottom{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.rightBottom{
+    margin-top: 65px;
+    position: absolute;
+    margin-left: 1300px;
+    display: flex;
+
+}
+
+.applogos{
+    height: 30px;
+    width: 30px;
+}
