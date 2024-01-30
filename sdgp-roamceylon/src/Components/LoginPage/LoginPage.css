@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
   .main-container {
-    overflow: hidden;
     box-sizing: border-box;
   }
 
 
   .main-container {
-    position: relative;
-    width: 1920px;
+    width: 100%;
     height: 927px;
     background: #04364a;
     overflow: hidden;
@@ -29,10 +27,11 @@
   }
   .box {
     position: absolute;
-    width: 1825px;
+    width: 100%;
     height: 787px;
     top: 100px;
-    left: 47px;
+    justify-content: center;
+    align-items: center;
     background: #176b87;
     border-radius: 40px;
   }
@@ -43,6 +42,8 @@
     margin: 785px 0 0 661.5px;
     font-family: var(--font-family);
     font-size: 16px;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
     text-align: center;
   }
@@ -62,26 +63,27 @@
     align-items: flex-start;
     justify-content: center;
     position: absolute;
-    width: 681px;
+    width: 100%;
     height: 90px;
     top: 135px;
-    left: 19em;
     color: #dafffb;
     font-family: var(--font-family);
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
     text-align: center;
+    justify-content: center;
     z-index: 3;
   }
   
   .login-box {
-    position: absolute;
-    width: 562px;
+    position:absolute;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
     height: 537px;
-    top: 220px;
     left: 35%;
-    font-size: 0px;
+    top: 220px;
     background: rgba(218, 255, 251, 0.87);
     border-radius: 50px;
   }
@@ -124,9 +126,10 @@
     position: relative;
     width: 83%;
     height: 39px;
-    margin: -4px 0 0 45px;
+    justify-content: center;
+    align-items: center;
+    margin: -45px 2px 2px 45px;
     background: #ffffff;
-    z-index: 11;
     font-family: var(--font-family);
     padding: 0 10px; 
     font-size: 15px;

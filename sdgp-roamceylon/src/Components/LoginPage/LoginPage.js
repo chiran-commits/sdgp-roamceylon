@@ -6,8 +6,6 @@ const LoginPage = () => {
     <div className='main-container'>
       <span className='heading'>ROAMCEYLON</span>
       <div className='box' />
-      <div className='pic'>
-        <div className='pic-2'>
           <div className='box-2'>
             <span className='create-new-account'>Dont have an account? Click here to </span>
             <a href="#" className='create-new-account'>create account</a>
@@ -26,8 +24,6 @@ const LoginPage = () => {
           </div>
           <a href="#" className='forget-password'>Forgot password?</a>
         </div>
-      </div>
-    </div>
   );
 }
 
