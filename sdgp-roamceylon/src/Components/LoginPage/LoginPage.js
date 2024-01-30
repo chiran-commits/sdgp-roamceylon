@@ -1,7 +1,5 @@
 import React from 'react'
 import './LoginPage.css';
-import { FaUser } from "react-icons/fa";
-import { FaLock } from "react-icons/fa";
 
 const LoginPage = () => {
   return (
