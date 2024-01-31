@@ -1,10 +1,12 @@
 import { useState } from "react";
 
 function UserProfile(){
+    const [img,setImg] = useState("https://placehold.jp/150.png");
     const [name,setName] = useState("Guest");
     const [age,setAge] = useState(19);
     const [email, setEmail] = useState("guest123@gmail.com");
     const [country,setCountry] = useState("USA");
+    const [edit,setEdit] = useState(true);
 
 
     function handleEdit(){
