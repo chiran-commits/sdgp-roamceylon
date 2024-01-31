@@ -14,14 +14,19 @@ export const RegistrationPage = () => {
                 <h2 className="sub-heading">Be a part of the community.</h2>
                 <form action="" className="loginbox"> 
                     <h1>register</h1>
-                    <div className="input-box">
-                        <input type="text" placeholder="First Name" required/>
-                        <i className='bx bxs-user'></i>
+                    <div>
+                        <div className="input-box">
+                            <input type="text" placeholder="First Name" required/>
+                            <i className='bx bxs-user'></i>
+                        </div>
+                        <div className="input-box">
+                            <input type="text" placeholder="Last Name" required/>
+                            <i className='bx bxs-user'></i>
+                        </div>
+
                     </div>
-                    <div className="input-box">
-                        <input type="text" placeholder="Last Name" required/>
-                        <i className='bx bxs-user'></i>
-                    </div>
+                
+                    
                     <div className="input-box">
                         <input type="text" placeholder="Email" required/>
                         <i className='bx bxs-user'></i>
