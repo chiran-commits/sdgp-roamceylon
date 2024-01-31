@@ -8,6 +8,8 @@ function UserProfile(){
 
     return(
         <>
+        <div className="outer-container">
+        <div className="container">
         <div className="profile">
             <img src={img}></img><br></br>
             <button>Edit</button>
@@ -15,6 +17,9 @@ function UserProfile(){
             <p>{age} years</p>
             <p>From {country}</p>
         </div>
+        </div>
+
+        <div className="container">
         <div className="info">
             <p>Details</p>
             <button onClick={handleEdit}>Edit</button>
@@ -29,7 +34,9 @@ function UserProfile(){
             <input value={email} disabled={edit} size="30" onChange={handleEmail}></input><br></br>
             <label>Country</label><br></br>
             <input value={country} disabled={edit}  onChange={handleCountry}></input><br></br>
-    </div>
+        </div>
+        </div>
+        </div>
         </>
     );
 }
