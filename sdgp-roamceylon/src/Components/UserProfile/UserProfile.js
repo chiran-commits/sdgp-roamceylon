@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './UserProfile.css';
 
 function UserProfile(){
     const [img,setImg] = useState("https://placehold.jp/150.png");
