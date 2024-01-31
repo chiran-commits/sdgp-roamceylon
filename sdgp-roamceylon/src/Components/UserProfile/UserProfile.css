@@ -1,0 +1,38 @@
+body{
+    background-color:#04364A ;
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    
+}
+
+.container{
+    margin-top: 150px;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.profile{
+    border: 5px solid black;
+    background-color: #176B87;
+    height: 490px;
+    padding: 25px 25px;
+    border-radius: 30px;
+    font-size: 2em;
+    text-align: center;
+    margin-right: 5px;
+    color: #dafffb;
+    width: 450px;
+}
+.info{
+    margin-left: 5px;
+    border: 5px solid black;
+    background-color: #176B87;
+    padding: 25px 25px;
+    height: 490px;
+    border-radius: 30px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #dafffb;
+    width: 450px;
+}
+
