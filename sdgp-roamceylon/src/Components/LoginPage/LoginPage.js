@@ -1,6 +1,6 @@
 import React from 'react'
 import './LoginPage.css';
-
+import 'node_modules/boxicons/css/boxicons.css';
 
 
 const LoginPage = () => {
