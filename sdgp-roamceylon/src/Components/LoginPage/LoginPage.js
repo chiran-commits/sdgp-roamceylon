@@ -1,11 +1,13 @@
 import React from 'react'
 import './LoginPage.css';
+import 'boxicons/css/boxicons.css';  /* Import for the user icon and the lock icon */
+
 
 const LoginPage = () => {
   return (
         <div className="login-box">
             <h2 className="sub-heading">Be a part of the community.</h2>
-            <form action="" className="loginbox">
+            <form action="" className="loginbox"> 
                 <h1>Login</h1>
                 <div className="input-box">
                     <input type="text" placeholder="Username" required/>
