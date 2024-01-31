@@ -35,7 +35,7 @@ function UserProfile(){
         <>
         <div className="outer-container">
         <div className="container">
-        <div className="profile">
+        <div className="profile-container">
             <img src={img}></img><br></br>
             <button>Edit</button>
             <p>{name}</p>
@@ -45,7 +45,7 @@ function UserProfile(){
         </div>
 
         <div className="container">
-        <div className="info">
+        <div className="info-container">
             <p>Details</p>
             <button onClick={handleEdit}>Edit</button>
             <button onClick={handleSave} disabled={edit}>Save</button><br></br>

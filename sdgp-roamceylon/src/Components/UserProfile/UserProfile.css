@@ -11,7 +11,7 @@ body{
     vertical-align: middle; 
 }
 
-.profile{
+.profile-container{
     border: 5px solid black;
     background-color: #176B87;
     height: 490px;
@@ -23,7 +23,7 @@ body{
     color: #dafffb;
     width: 450px;
 }
-.info{
+.info-container{
     margin-left: 5px;
     border: 5px solid black;
     background-color: #176B87;
@@ -36,16 +36,16 @@ body{
     width: 450px;
 }
 
-.info p{
+.info-container p{
     margin-top: 10px;
     font-weight: bold;
     
 }
-.info label{
+.info-container label{
    
    font-weight: bold;
 }
-.info input{
+.info-container input{
     background-color: rgb(8, 111, 202);
     border: none;
     border-radius: 30px;
@@ -57,10 +57,10 @@ body{
     font-size: 0.8em;
 }
 
-.profile p{
+.profile-container p{
     font-weight: bold;
 }
-.profile img{
+.profile-container img{
     border-radius: 100px;
 }
 
