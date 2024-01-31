@@ -1,15 +1,15 @@
-import './App.css';
 import LoginPage from './Components/LoginPage/LoginPage.js';
-import Logoheader from './Components/LoginPage/LogoHeader.js';
+// import UserProfile from './Components/UserProfile/UserProfile.js';
+// import AboutUs from './Components/AboutUsPage/AboutUsPage.js'
 
 
 function App() {
   return (
     <div>
-      <Logoheader/>
       <LoginPage/>
     </div>  
   );
 }
 
 export default App;
+
