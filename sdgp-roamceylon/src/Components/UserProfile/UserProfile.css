@@ -1,0 +1,85 @@
+body{
+    background-color:#04364A ;
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    
+}
+
+.container{
+    margin-top: 150px;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.profile-container{
+    border: 5px solid  #dafffb;
+    background-color: #176B87;
+    height: 490px;
+    padding: 25px 25px;
+    border-radius: 30px;
+    font-size: 2em;
+    text-align: center;
+    margin-right: 5px;
+    color: #dafffb;
+    width: 450px;
+}
+.info-container{
+    margin-left: 5px;
+    border: 5px solid #dafffb;
+    background-color: #176B87;
+    padding: 25px 25px;
+    height: 490px;
+    border-radius: 30px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #dafffb;
+    width: 450px;
+}
+
+.info-container p{
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+.info-container label{
+   
+   font-weight: bold;
+}
+.info-container input{
+    background-color: rgb(8, 111, 202);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgba(218, 255, 251, 0.87);
+    font-size: 0.8em;
+}
+
+.profile-container p{
+    font-weight: bold;
+}
+.profile-container img{
+    border-radius: 100px;
+}
+
+button{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    position: relative;
+    padding: 5px 22px;
+    border: none;
+    border-radius: 10px;
+    color: #dafffb;
+    cursor: pointer;
+    background-color:#04364A ;
+    transition: all 0.2s ease;
+    font-size: 0.8em;
+}
+button:hover{
+    background-color:#064159 ;
+}
+
+
