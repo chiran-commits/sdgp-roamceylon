@@ -13,7 +13,7 @@ export const RegistrationPage = () => {
             <div className="login-box">
                 <h2 className="sub-heading">Be a part of the community.</h2>
                 <form action="" className="loginbox"> 
-                    <h1>Login</h1>
+                    <h1>register</h1>
                     <div className="input-box">
                         <input type="text" placeholder="First Name" required/>
                         <i className='bx bxs-user'></i>
@@ -38,9 +38,7 @@ export const RegistrationPage = () => {
 
                     <button type="submit" className="login-btn">Create account</button>
                 </form>
-                    <div className="register-account">
-                        <p>Don't have an account, Click here to <a href="#">create a new account</a></p>
-                    </div>
+                    
             </div>
         </> 
   )
