@@ -36,3 +36,50 @@ body{
     width: 450px;
 }
 
+.info p{
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+.info label{
+   
+   font-weight: bold;
+}
+.info input{
+    background-color: rgb(8, 111, 202);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgba(218, 255, 251, 0.87);
+    font-size: 0.8em;
+}
+
+.profile p{
+    font-weight: bold;
+}
+.profile img{
+    border-radius: 100px;
+}
+
+button{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    position: relative;
+    padding: 5px 22px;
+    border: none;
+    border-radius: 10px;
+    color: #dafffb;
+    cursor: pointer;
+    background-color:#04364A ;
+    transition: all 0.2s ease;
+    font-size: 0.8em;
+}
+button:hover{
+    background-color:#064159 ;
+}
+
+
