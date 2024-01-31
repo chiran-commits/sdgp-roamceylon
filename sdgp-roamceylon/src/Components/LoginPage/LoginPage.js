@@ -1,6 +1,5 @@
 import React from 'react'
 import './LoginPage.css';
-import 'boxicons/css/boxicons.css';  /* Import for the user icon and the lock icon */
 
 
 const LoginPage = () => {
