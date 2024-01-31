@@ -1,205 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700;800&display=swap');
 
-  .main-container {
-    overflow: hidden;
+*{
+    font-family: 'Lexend',sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
+}
 
+body{
+    background-color: #04364A;
+}
 
-  .main-container {
-    position: relative;
-    width: 1920px;
-    height: 927px;
-    background: #04364a;
-    overflow: hidden;
-  }
-  .heading {
+.login-box{
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    top: 25px;
-    left: 37px;
-    color: #dafffb;
-    font-family: var(--font-family);
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 50px;
-    text-align: left;
-  }
-  .box {
-    position: absolute;
-    width: 1825px;
-    height: 787px;
-    top: 100px;
-    left: 47px;
-    background: #176b87;
-    border-radius: 40px;
-  }
-
-  .box-2 {
-    position: relative;
-    width: 29%;
-    margin: 785px 0 0 661.5px;
-    font-family: var(--font-family);
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-  }
-  .create-new-account {
-    position: relative;
-    color: #dafffb;
-    font-family: var(--font-family);
-    font-size: 16px;
-    top: 40px;
-    left: 15px;
-    font-weight: 700;
-    text-align: center;
-  }
-
-  .subheading {
-    display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    position: absolute;
-    width: 681px;
-    height: 90px;
-    top: 135px;
-    left: 19em;
-    color: #dafffb;
-    font-family: var(--font-family);
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
-    text-align: center;
-    z-index: 3;
-  }
-  
-  .login-box {
-    position: absolute;
-    width: 562px;
-    height: 537px;
-    top: 220px;
-    left: 35%;
-    font-size: 0px;
-    background: rgba(218, 255, 251, 0.87);
+    min-height: 80vh;
+    flex-direction: column;
+    background-color: #176B87;
+    min-height: 85vh;
+    margin: 40px 50px 0px 50px;
     border-radius: 50px;
-  }
+}
 
-  .login {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    width: 323px;
-    height: 86px;
-    margin: 66px 0 0 119px;
-    color: #176b87;
-    font-family: var(--font-family);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
+.loginbox h1{
+    font-size: 36px;
     text-align: center;
-    z-index: 14;
-  }
+    color: #176B87;
+}
 
-  .username {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+.loginbox{
+    width: 500px;
+}
+
+.loginbox .input-box{
     position: relative;
-    width: 171px;
-    height: 34px;
-    margin: 10px 0 0 11px;
-    color: #176b87;
-    font-family: var(--font-family);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22.5px;
-    text-align: center;
-    z-index: 10;
-  }
-
-  .input-box {
-    position: relative;
-    width: 83%;
-    height: 39px;
-    margin: -4px 0 0 45px;
-    background: #ffffff;
-    z-index: 11;
-    font-family: var(--font-family);
-    padding: 0 10px; 
-    font-size: 15px;
-    border-radius: 50px;
-  }
-
-  .input-box:hover, .input-box:focus {
-    outline: none;
-    border-color: #176b87; /* Change the border color when focused */
-    box-shadow: 0 0 5px rgba(23, 107, 135, 0.7); /* Add a box shadow when focused */
-  }
-  
-  .password {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    width: 171px;
-    height: 34px;
-    margin: 14px 0 0 11px;
-    color: #176b87;
-    font-family: Lexend Deca, var(--font-family);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22.5px;
-    text-align: center;
-    z-index: 12;
-  }
-
-  button {
-    position: absolute;
-    width: 149px;
-    font-family: 'Lexend', sans-serif;
-    font-weight: 700;
-    height: 51px;
-    top: 427px;
-    left: 206px;
-    font-size: 16px;
-    color: #dafffb;
-    background: #176b87;
-    z-index: 6;
-    border-radius: 70px;
-    cursor: pointer;
-    border: none;
-  }
-
-  button:hover{
-    outline: none;
-    background-color: #1a5569; /* Change the background color when focused */
-    color: #fff; /* Change the text color when focused */
-    box-shadow: 0 0 5px rgba(9, 75, 97, 0.7); /* Add a box shadow when focused */
-  }
-
-  .forget-password {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    width: 468px;
+    width: 100%;
     height: 50px;
-    top: 550px;
-    left: 45%;
-    color: #00465d;
-    font-family: Lexend Deca, var(--font-family);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: center;
-    text-decoration: underline;
-    z-index: 9;
-  }
+    margin: 40px 0;
+}
 
-  input{
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    background: white;
     border: none;
-  }
-  
+    outline: none;
+    border: 2px solid rgba(7, 100, 187, 0.2);
+    border-radius: 30px;
+    padding: 20px 45px 20px 20px;
+    font-size: 15px;
+}
+
+.input-box input::placeholder{
+    color: #176B87;
+    font-weight: 600;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #176B87;
+}
+
+.loginbox{
+    background-color: #DAFFFB;
+    padding: 60px 40px;
+    border-radius: 30px;
+}
+
+.loginbox .remember-account{
+    display: flex;justify-content: space-between;
+    font-size: 14px;
+    margin: -20px 0 20px;
+}
+
+.remember-account label{
+    color: #176B87;
+}
+
+.remember-account label input{
+    accent-color: #176B87;
+    margin-right: 6px;
+}
+
+.remember-account a{
+    color: #176B87;
+    text-decoration: none;
+}
+
+.remember-account a:hover{
+    text-decoration: underline;
+}
+
+.loginbox .login-btn{
+  --font-color: #176B87;
+  --bg-color: #b0d8f0;
+  --main-color: #04364A;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+  width: 70%;
+  margin: 0px 20px 0 60px;
+}
+
+.loginbox .login-btn:hover{
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+}
+
+.login-box .register-account{
+    font-size: 15px;
+    text-align: center;
+    margin: 30px 0px 15px;
+    color: white;
+}
+
+.login-box h2{
+    margin: 30px;
+    color: #DAFFFB;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.register-account p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-account p a:hover{
+    text-decoration: underline;
+}

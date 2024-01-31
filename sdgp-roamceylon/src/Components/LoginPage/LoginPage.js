@@ -1,33 +1,34 @@
 import React from 'react'
 import './LoginPage.css';
+import 'boxicons/css/boxicons.css';  /* Import for the user icon and the lock icon */
+
 
 const LoginPage = () => {
   return (
-    <div className='main-container'>
-      <span className='heading'>ROAMCEYLON</span>
-      <div className='box' />
-      <div className='pic'>
-        <div className='pic-2'>
-          <div className='box-2'>
-            <span className='create-new-account'>Dont have an account? Click here to </span>
-            <a href="#" className='create-new-account'>create account</a>
-          </div>
-          <span className='subheading'>Be a part Of The Community</span>
-          <div className='login-box'>
-            <span className='login'>Log In</span>
-            <span className='username'>Username</span>
-            <input type="text" name="username" className='input-box'/>
-            <span className='password'>
-              Password
-              <br />
-            </span>
-            <input type="password" name="password" className='input-box'/>
-            <button type="submit" className='login-button'>Login</button>
-          </div>
-          <a href="#" className='forget-password'>Forgot password?</a>
+        <div className="login-box">
+            <h2 className="sub-heading">Be a part of the community.</h2>
+            <form action="" className="loginbox"> 
+                <h1>Login</h1>
+                <div className="input-box">
+                    <input type="text" placeholder="Username" required/>
+                    <i className='bx bxs-user'></i>
+                </div>
+                <div className="input-box">
+                    <input type="password" placeholder="Password" required/>
+                    <i className='bx bxs-lock-alt' ></i>
+                </div>
+
+                <div className="remember-account">
+                    <label><input type="checkbox"/>Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" className="login-btn">Login</button>
+            </form>
+                <div className="register-account">
+                    <p>Don't have an account, Click here to <a href="#">create a new account</a></p>
+                </div>
         </div>
-      </div>
-    </div>
   );
 }
 
