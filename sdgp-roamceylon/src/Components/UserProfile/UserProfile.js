@@ -6,6 +6,29 @@ function UserProfile(){
     const [email, setEmail] = useState("guest123@gmail.com");
     const [country,setCountry] = useState("USA");
 
+
+    function handleEdit(){
+        setEdit(false);
+    }
+
+    function handleSave(){
+        setEdit(true);
+    }
+
+    function handleName(event){
+        setName(event.target.value);
+    }
+    function handleAge(event){
+        setAge(event.target.value);
+    }
+    function handleEmail(event){
+        setEmail(event.target.value);
+    }
+    
+    function handleCountry(event){
+        setCountry(event.target.value);
+    }
+
     return(
         <>
         <div className="outer-container">
