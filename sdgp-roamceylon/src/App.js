@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 //type like http://localhost:3000/about to acess the about us page
 function App() {
   return (
-    <Router>
+  <Router>
     <div>
       <Switch>
         <Route exact path="/" component={LoginPage} />
