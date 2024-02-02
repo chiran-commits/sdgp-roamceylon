@@ -1,11 +1,23 @@
-import React from "react";
 
+
+import loader from "../Helper/loader";
 import "./RegistrationPage.css";
+import React, { useState, useEffect } from 'react';
 
 
 
 export const RegistrationPage = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+  
+        setTimeout(() => {
+          setLoading(false); 
+        }, 2000);
+      }, []);
+
   return (
+    
     <>
             <div className='header'>
                 <h2>ROAMCEYLON</h2>
