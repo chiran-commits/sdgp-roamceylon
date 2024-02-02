@@ -3,7 +3,7 @@ import './LoginPage.css';
 
 
 
-const LoginPage = () => {
+export const LoginPage = () => {
   return (
         <>
             <div className='header'>
@@ -34,7 +34,5 @@ const LoginPage = () => {
                     </div>
             </div>
         </>    
-  );
+  )
 }
-
-export default LoginPage;

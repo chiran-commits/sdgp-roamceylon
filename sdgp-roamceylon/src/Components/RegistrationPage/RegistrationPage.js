@@ -13,7 +13,7 @@ export const RegistrationPage = () => {
             <div className="login-box">
                 <h2 className="sub-heading">Be a part of the community.</h2>
                 <form action="" className="loginbox"> 
-                    <h1>register</h1>
+                    <h1>Register</h1>
                     <div>
                         <div className="input-box">
                             <input type="text" placeholder="First Name" required/>
@@ -32,7 +32,7 @@ export const RegistrationPage = () => {
                         <i className='bx bxs-user'></i>
                     </div>
                     <div className="input-box">
-                        <input type="text" placeholder="user name" required/>
+                        <input type="text" placeholder="Username" required/>
                         <i className='bx bxs-user'></i>
                     </div>
                     <div className="input-box">
@@ -43,6 +43,9 @@ export const RegistrationPage = () => {
 
                     <button type="submit" className="login-btn">Create account</button>
                 </form>
+                <div className="register-account">
+                        <p>If you already have a account, Click here to <a href="#">Login</a></p>
+                </div>
                     
             </div>
         </> 
