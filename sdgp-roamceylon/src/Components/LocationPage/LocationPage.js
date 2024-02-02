@@ -1,6 +1,6 @@
 import Navbar from "../AboutUsPage/Navbar";
 
-export default function ReviewsPage(){
+export default function LocationPage(){
     return(
         <>
         <div className = "outer-layer">
