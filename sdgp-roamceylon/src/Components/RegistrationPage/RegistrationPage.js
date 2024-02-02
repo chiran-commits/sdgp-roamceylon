@@ -20,16 +20,18 @@ export const RegistrationPage = () => {
         e.preventDefault()
         const {name,email,password}=data
         try{
+
+            console.log(data);
             
-            const res=await fetch('/register',{
-                method:"POST",
-                headers:{
-                    "Content-Type":"application/json"
-                },
-                body:JSON.stringify({
-                    name,email,password
-                })
-            })
+            // const res=await fetch('/register',{
+            //     method:"POST",
+            //     headers:{
+            //         "Content-Type":"application/json"
+            //     },
+            //     body:JSON.stringify({
+            //         name,email,password
+            //     })
+            // })
 
             
             
