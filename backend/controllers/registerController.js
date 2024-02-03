@@ -1,5 +1,5 @@
 const userModel= require('../database/userModel');
-const {encryptPassword} = require('../security/encrypt');
+const {encryptPassword, comparePassword} = require('../security/encrypt');
 
 
 
@@ -27,4 +27,31 @@ const registerUser=async(req,res)=>{
 
 
 }
-module.exports={registerUser}
+const loginUser = async(req, res) => {
+ try{
+    const {email, password} = req.body;
+    //checking if the user exists
+    const user = await User.findOne({email});
+    if (!user){
+        return res.json({
+            error: "User not found!"
+        })
+    }
+
+    //checking if the passwords match
+    const userPassword = await comparePassword(password, user.password) 
+    if (userPassword){
+        res.json("Password Matched")
+    }
+    if (!userPassword){
+        res.json({
+            error: "Password not matched"
+        })
+    }
+}
+ catch (error){
+    console.log(error)
+ }
+}
+
+module.exports={registerUser, loginUser}
