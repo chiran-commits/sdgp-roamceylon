@@ -3,6 +3,8 @@
 import loader from "../Helper/loader";
 import "./RegistrationPage.css";
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 
 
 
@@ -15,26 +17,27 @@ export const RegistrationPage = () => {
     const [data,setData]=useState({
         firstName:'',lastName:"",email:'',password:''
     })
+  
 
     const registerUser = (e) => {
         e.preventDefault()
-        const {name,email,password}=data
+        const {firstName,lastName,email,password}=data
+
+   
         try{
 
-            console.log(data);
+            axios.post('http://localhost:8010/register',{firstName,lastName,email,password}).then(
+                setData({ firstName:'',lastName:'',email:'',password:''})
+
+            )
             
-            // const res=await fetch('/register',{
-            //     method:"POST",
-            //     headers:{
-            //         "Content-Type":"application/json"
-            //     },
-            //     body:JSON.stringify({
-            //         name,email,password
-            //     })
-            // })
+                
+            
+            
 
             
             
+        
 
         }catch (err) {
             console.log(err);
