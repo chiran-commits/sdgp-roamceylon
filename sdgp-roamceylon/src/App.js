@@ -13,14 +13,17 @@ function App() {
 
 
   return (
+    // <div>
+    //   <RegistrationPage/>
+    // </div>
   
   <Router>
    
       <Routes>
-        <Route path="/" component={<LoginPage/>} />
-        <Route path="/profile" component={UserProfile} />
-        <Route path="/registration" component={RegistrationPage} />
-        <Route path="/about" component={AboutUs} />
+        <Route path="/" element={<LoginPage/>} />
+        <Route path="/profile" element={<UserProfile/>} />
+        <Route path="/registration" element={<RegistrationPage/>} />
+        <Route path="/about" element={<AboutUs/>} />
       </Routes>
   
   </Router> 
