@@ -11,6 +11,7 @@ body{
 }
 h1,h3,h4, h6{
     color: white;
+    padding: 8px;
 }
 #moveBottom{
     padding-top: 20px;
@@ -33,6 +34,7 @@ img{
     background-color: black;
     height: 150px;
     position: relative;
+    margin-top: 80px;
 }
 
 .middleBottom{
@@ -44,7 +46,7 @@ img{
 
 .leftBottom{
     position: absolute;
-    margin-top: 30px;
+    margin-top: 55px;
     margin-left: 10px;
 }
 
