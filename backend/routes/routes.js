@@ -1,6 +1,6 @@
 const express = require('express');
 const router =express.Router();
-const registerUser = require('../controllers/registerController');
+const {registerUser} = require('../controllers/registerController');
 const cors = require('cors');
 
 router.use(cors(
