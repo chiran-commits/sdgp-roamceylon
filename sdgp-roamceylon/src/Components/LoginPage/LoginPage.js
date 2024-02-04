@@ -1,36 +1,37 @@
 import React from 'react'
 import './LoginPage.css';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-//import {toast} from 'react-hot-toast'
 
 export default function Login(){
-    const navigate = useNavigate()
     const [data, setData] = useState({
         email: '',
         password: '',
     })
 
+    const [error,setError]=useState('');
+
+
     const loginUser = async(e) => {
         e.preventDefault()
         const {email, password} = data
         try{
-            const {data} = await axios.post('/login',{
+            const {data} = await axios.post('http://localhost:8010/login',{
                 email,
                 password
             });
+            console.log(data)
+            setError("")
             if (data.error){
-                //toast.error(data.error)
-                console.log(data.error)
+                setError(data.error)
             }
             else{
                 setData({});
-                navigate('/profile')
+                setError(data.error)
             }
         }
         catch (error){
-    
+            setError(data.error)
         }
     }    
 
@@ -56,7 +57,7 @@ export default function Login(){
                         <label><input type="checkbox"/>Remember me</label>
                         <a href="#">Forgot password?</a>
                     </div>
-
+                    {error && <p style={{ color: 'red' } }>{error}</p>}
                     <button type="submit" className="login-btn">Login</button>
                 </form>
                     <div className="register-account">

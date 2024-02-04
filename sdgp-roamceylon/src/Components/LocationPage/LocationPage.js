@@ -1,23 +1,20 @@
 import Navbar from "../AboutUsPage/Navbar";
+import "./LocationPage.css";
 
 export default function LocationPage(){
     return(
-        <>
-        <div className = "outer-layer">
-            <div className = "middle-layer">
-                <Navbar/>
-                <div className = "inner-layer">
-                    <div className = "Manual-search">
-                        <h1>Manual Search</h1>
-                        <input type = "text" placeholder = "Enter location name"/>
+        <div>
+            <Navbar/>
+            <div className="mainContainer">
+                <div className="container">
+                    <div className="leftContainer">
+
                     </div>
-                    <div className = "Recommendation">
-                        <h1>Receive Recommendations</h1>
-                        <input type = "text" placeholder = "Enter a description of your preferred locations"/>
+                    <div className="rightContainer">
+
                     </div>
                 </div>
             </div>
         </div>
-        </>
     );
 }

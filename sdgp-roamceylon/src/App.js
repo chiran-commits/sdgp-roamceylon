@@ -1,6 +1,7 @@
 import LoginPage from './Components/LoginPage/LoginPage.js';
 import UserProfile from './Components/UserProfile/UserProfile.js';
 import AboutUs from './Components/AboutUsPage/AboutUsPage.js'
+import LocationPage from './Components/LocationPage/LocationPage.js';
 import { RegistrationPage } from './Components/RegistrationPage/RegistrationPage.js';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/profile" element={<UserProfile/>} />
         <Route path="/register" element={<RegistrationPage/>} />
         <Route path="/about" element={<AboutUs/>} />
+        <Route path="/location" element={<LocationPage/>}/>
       </Routes>
   
   </Router> 

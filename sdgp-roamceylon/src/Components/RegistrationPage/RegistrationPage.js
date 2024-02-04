@@ -87,11 +87,6 @@ export const RegistrationPage = () => {
                         <i className='bx bxs-user'></i>
                     </div>
                     <div className="input-box">
-                        <input type="text" placeholder="Username" required/>
-                        <i className='bx bxs-user'></i>
-                    </div>
-                    <div className="input-box">
-                        <input type="password" placeholder="Password" required/>
                         <input type="password" placeholder="Password" required value={data.password} minLength={6} onChange={(e)=>setData({...data,password:e.target.value})}/>
                         <i className='bx bxs-lock-alt' ></i>
                     </div>

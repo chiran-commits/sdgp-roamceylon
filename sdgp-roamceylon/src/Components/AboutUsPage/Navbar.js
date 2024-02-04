@@ -8,8 +8,8 @@ function Navbar(){
         <div>
             <ul id="navbar">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="index.html">LOCATIONS</a></li>
-                <li><a className="active" href="index.html">ABOUT US</a></li>
+                <li><a href="#">LOCATIONS</a></li>
+                <li><a className="active" href="#">ABOUT US</a></li>
                 <li><a href="index.html"><img className="userimg" src={user}/></a></li>
             </ul>
         </div>
