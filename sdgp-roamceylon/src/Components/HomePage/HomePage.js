@@ -1,11 +1,13 @@
 import React from 'react'
+import './HomePage.css'
+import Navbar from './Components/AboutUsPage/Navbar'
 
-export const HomePage = () => {
-  return (
-    <>
-      <div>
-        
-      </div>
-    </>
-  )
+function App(){
+  <>
+    <div>
+      <Navbar/>
+    </div>
+  </>
 }
+
+export default App;
