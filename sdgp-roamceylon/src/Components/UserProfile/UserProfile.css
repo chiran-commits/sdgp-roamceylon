@@ -1,8 +1,9 @@
 body{
     background-color:#04364A ;
-    text-align: center;
     font-family: "Lexend", sans-serif;
-    
+}
+.outer-container{
+    text-align: center;
 }
 
 .container{
