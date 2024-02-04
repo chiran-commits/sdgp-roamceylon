@@ -7,16 +7,11 @@
     box-sizing: border-box;
 }
 
-body .login-page{
+.login-page{
     background-color: #04364A;
-    text-align: left;
+    height: 100vh;
 }
 
-body .login-page .header{
-    font-size: 15px;
-    color: #DAFFFB;
-    margin: 20px 0px 0px 20px;
-}
 
 .login-box{
     display: flex;

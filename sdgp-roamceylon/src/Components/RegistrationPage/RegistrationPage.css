@@ -10,7 +10,9 @@
 body .register-page{
     background-color: #04364A;
     text-align: left;
+    height: 120vh;
 }
+
 
 .register-box{
     display: flex;
@@ -51,7 +53,7 @@ body .register-page{
     border: 2px solid rgba(7, 100, 187, 0.2);
     border-radius: 30px;
     padding: 20px 45px 20px 20px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .input-box-register input::placeholder{
@@ -148,5 +150,5 @@ body .register-page{
 .header{
     font-size: 15px;
     color: #DAFFFB;
-    margin: 20px 0px 0px 20px;
+    margin-left: 20px;
 }

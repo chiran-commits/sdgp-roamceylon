@@ -17,7 +17,6 @@ function App() {
   
   
   <Router>
-   
       <Routes>
         <Route path="/" element={<LoginPage/>} />
         <Route path="/profile" element={<UserProfile/>} />
@@ -25,7 +24,6 @@ function App() {
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/location" element={<LocationPage/>}/>
       </Routes>
-  
   </Router> 
   );
 }
