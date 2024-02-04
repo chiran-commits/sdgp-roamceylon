@@ -71,11 +71,11 @@ export const RegistrationPage = () => {
                 <form  className="registerbox" onSubmit={registerUser}> 
                     <h1>Register</h1>
                     <div>
-                        <div className="input-box">
+                        <div className="input-box-register">
                             <input type="text" placeholder="First Name" required  value={data.firstName} onChange={(e)=>setData({...data,firstName:e.target.value})}/>
                             <i className='bx bxs-user'></i>
                         </div>
-                        <div className="input-box">
+                        <div className="input-box-register">
                             <input type="text" placeholder="Last Name" required  value={data.lastName} onChange={(e)=>setData({...data,lastName:e.target.value})}/>
                             <i className='bx bxs-user'></i>
                         </div>
@@ -83,11 +83,11 @@ export const RegistrationPage = () => {
                     </div>
                 
                     
-                    <div className="input-box">
+                    <div className="input-box-register">
                         <input type="text" placeholder="Email" required value={data.email} onChange={(e)=>setData({...data,email:e.target.value})}/>
                         <i className='bx bxs-user'></i>
                     </div>
-                    <div className="input-box">
+                    <div className="input-box-register">
                         <input type="text" placeholder="Username" required/>
                         <i className='bx bxs-user'></i>
                     </div>

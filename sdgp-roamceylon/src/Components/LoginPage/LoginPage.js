@@ -44,11 +44,11 @@ export default function Login(){
                     <h2 className="sub-heading">Be a part of the community.</h2>
                     <form action="" className="loginbox" onSubmit={loginUser}> 
                         <h1>Login</h1>
-                        <div className="input-box">
+                        <div className="input-box-login">
                             <input type="text" placeholder="Email" required value={data.email} onChange={(e) => setData({...data, email: e.target.value})}/>
                             <i className='bx bxs-user'></i>
                         </div>
-                        <div className="input-box">
+                        <div className="input-box-login">
                             <input type="password" placeholder="Password" required value={data.password} onChange={(e) => setData({...data, password: e.target.value})}/>
                             <i className='bx bxs-lock-alt' ></i>
                         </div>

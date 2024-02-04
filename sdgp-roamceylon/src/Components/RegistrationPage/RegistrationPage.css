@@ -34,14 +34,14 @@ body .register-page{
     width: 500px;
 }
 
-.registerbox .input-box{
+.registerbox .input-box-register{
     position: relative;
     width: 100%;
     height: 50px;
     margin: 40px 0;
 }
 
-.input-box input{
+.input-box-register input{
     width: 100%;
     height: 100%;
     background: transparent;
@@ -54,12 +54,12 @@ body .register-page{
     font-size: 15px;
 }
 
-.input-box input::placeholder{
+.input-box-register input::placeholder{
     color: #176B87;
     font-weight: 600;
 }
 
-.input-box i{
+.input-box-register i{
     position: absolute;
     right: 20px;
     top: 50%;
