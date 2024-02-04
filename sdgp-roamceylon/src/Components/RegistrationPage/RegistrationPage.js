@@ -1,5 +1,3 @@
-
-
 import loader from "../Helper/loader";
 import "./RegistrationPage.css";
 import React, { useState, useEffect } from 'react';

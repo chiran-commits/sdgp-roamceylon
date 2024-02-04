@@ -1,4 +1,5 @@
 
+import Navbar from '../AboutUsPage/Navbar';
 import './UserProfile.css';
 import React, { useState, useEffect } from 'react';
 
@@ -47,6 +48,7 @@ function UserProfile(){
 
     return(
         <>
+        <Navbar></Navbar>
 
         <div className="outer-container">
         <div className="container">
