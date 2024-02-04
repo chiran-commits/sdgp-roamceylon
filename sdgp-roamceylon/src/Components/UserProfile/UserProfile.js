@@ -1,5 +1,8 @@
-import { useState } from "react";
+
 import './UserProfile.css';
+import React, { useState, useEffect } from 'react';
+
+
 
 function UserProfile(){
     const [img,setImg] = useState("https://placehold.jp/150.png");
@@ -8,6 +11,10 @@ function UserProfile(){
     const [email, setEmail] = useState("guest123@gmail.com");
     const [country,setCountry] = useState("USA");
     const [edit,setEdit] = useState(true);
+    const [loading, setLoading] = useState(true);
+
+
+    
 
 
     function handleEdit(){
@@ -31,9 +38,16 @@ function UserProfile(){
     function handleCountry(event){
         setCountry(event.target.value);
     }
+    useEffect(() => {
+  
+        setTimeout(() => {
+          setLoading(false); 
+        }, 2000);
+      }, []);
 
     return(
         <>
+
         <div className="outer-container">
         <div className="container">
         <div className="profile-container">

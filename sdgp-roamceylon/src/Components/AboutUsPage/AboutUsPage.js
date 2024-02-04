@@ -48,7 +48,7 @@ function App(){
             <h6>Terms & Conditions</h6>
           </div>
           <div className="rightBottom">
-            <img className="applogos" src={facbook_img}/> <img className="applogos" src={whatsapp_img} /> <img className="applogos" src={instagram_img}/>
+            <a href="https://www.facebook.com/"><img className="applogos" src={facbook_img}/></a> <a href="https://www.whatsapp.com/"><img className="applogos" src={whatsapp_img} /></a> <a href="https://www.instagram.com/"><img className="applogos" src={instagram_img}/></a>
           </div>
         </div>
       </div>
