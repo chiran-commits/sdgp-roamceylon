@@ -1,6 +1,6 @@
 
 
-import loader from "../Helper/loader";
+// import loader from "../Helper/loader";
 import "./RegistrationPage.css";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -62,13 +62,14 @@ export const RegistrationPage = () => {
   return (
     
     <>
+        <div className="register-page">
             <div className='header'>
                 <h2>ROAMCEYLON</h2>
             </div>
-            <div className="login-box">
+            <div className="register-box">
                 <h2 className="sub-heading">Be a part of the community.</h2>
-                <form  className="loginbox" onSubmit={registerUser}> 
-                    <h1>register</h1>
+                <form  className="registerbox" onSubmit={registerUser}> 
+                    <h1>Register</h1>
                     <div>
                         <div className="input-box">
                             <input type="text" placeholder="First Name" required  value={data.firstName} onChange={(e)=>setData({...data,firstName:e.target.value})}/>
@@ -90,18 +91,14 @@ export const RegistrationPage = () => {
                         <input type="text" placeholder="Username" required/>
                         <i className='bx bxs-user'></i>
                     </div>
-                    <div className="input-box">
-                        <input type="password" placeholder="Password" required/>
-                        <input type="password" placeholder="Password" required value={data.password} minLength={6} onChange={(e)=>setData({...data,password:e.target.value})}/>
-                        <i className='bx bxs-lock-alt' ></i>
-                    </div>
                     {error && <p style={{ color: 'red' } }className="error">{error}</p>}
-                    <button type="submit" className="login-btn">Create account</button>
+                    <button type="submit" className="register-btn">Create account</button>
                 </form>
                 <div className="register-account">
                         <p>If you already have a account, Click here to <a href="#">Login</a></p>
                 </div> 
             </div>
-        </> 
+        </div>
+    </> 
   )
 }

@@ -7,8 +7,9 @@
     box-sizing: border-box;
 }
 
-body{
+body .login-page{
     background-color: #04364A;
+    text-align: left;
 }
 
 .login-box{
@@ -144,7 +145,7 @@ body{
     text-decoration: underline;
 }
 
-.header{
+.login-page .header{
     font-size: 15px;
     color: #DAFFFB;
     margin: 20px 0px 0px 20px;

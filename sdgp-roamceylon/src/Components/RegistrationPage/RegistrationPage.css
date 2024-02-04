@@ -7,11 +7,12 @@
     box-sizing: border-box;
 }
 
-body{
+body .register-page{
     background-color: #04364A;
+    text-align: left;
 }
 
-.login-box{
+.register-box{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,17 +24,17 @@ body{
     border-radius: 50px;
 }
 
-.loginbox h1{
-    font-size: 36px;
+.registerbox h1{
+    font-size: 25px;
     text-align: center;
     color: #176B87;
 }
 
-.loginbox{
+.registerbox{
     width: 500px;
 }
 
-.loginbox .input-box{
+.registerbox .input-box{
     position: relative;
     width: 100%;
     height: 50px;
@@ -67,13 +68,13 @@ body{
     color: #176B87;
 }
 
-.loginbox{
+.registerbox{
     background-color: #DAFFFB;
     padding: 60px 40px;
     border-radius: 30px;
 }
 
-.loginbox .remember-account{
+.registerbox .remember-account{
     display: flex;justify-content: space-between;
     font-size: 14px;
     margin: -20px 0 20px;
@@ -97,7 +98,7 @@ body{
     text-decoration: underline;
 }
 
-.loginbox .login-btn{
+.registerbox .register-btn{
   --font-color: #176B87;
   --bg-color: #b0d8f0;
   --main-color: #04364A;
@@ -115,23 +116,23 @@ body{
   margin: 0px 20px 0 60px;
 }
 
-.loginbox .login-btn:hover{
+.registerbox .register-btn:hover{
     box-shadow: 0px 0px var(--main-color);
     transform: translate(3px, 3px);
 }
 
-.login-box .register-account{
-    font-size: 15px;
+.register-box .register-account{
+    font-size: 13px;
     text-align: center;
     margin: 30px 0px 15px;
     color: white;
 }
 
-.login-box h2{
+.register-box h2{
     margin: 30px;
     color: #DAFFFB;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 19px;
 }
 
 .register-account p a {
@@ -145,7 +146,7 @@ body{
 }
 
 .header{
-    font-size: 20px;
+    font-size: 15px;
     color: #DAFFFB;
     margin: 20px 0px 0px 20px;
 }
