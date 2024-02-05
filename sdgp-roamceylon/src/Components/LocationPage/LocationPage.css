@@ -10,16 +10,8 @@
 
     border-radius: 20px;
 }
-
-.textbox{
-    position: relative;
-    width: 100%;
-    height: 60px;
-    margin: 40px 0;
-}
-
 .leftContainer{
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: #04364A;
     height: 550px;
     width: 550px;
@@ -27,7 +19,7 @@
 }
 
 .rightContainer{
-    border-radius: 10px;
+    border-radius: 30px;
     height: 550px;
     width: 550px;
     background-color: #04364A;
@@ -42,7 +34,7 @@
 }
 
 .container h2{
-    padding: 10px;
+    padding: 40px;
     color: white;
 }
 
