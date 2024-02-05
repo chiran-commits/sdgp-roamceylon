@@ -12,10 +12,33 @@ export default function Login(){
     const [error,setError]=useState('');
 
 
+<<<<<<< Updated upstream
+=======
+    
+
+>>>>>>> Stashed changes
     const loginUser = async(e) => {
         e.preventDefault()
         const {email, password} = data
+        // try{
+            // const {data} = await axios.post('http://localhost:8010/login',{
+            //     email,
+            //     password
+            // });
+        //     if (data.error){
+        //         //toast.error(data.error)
+        //         console.log(data.error)
+        //     }
+        //     else{
+        //         setData({});
+        //         navigate('/profile')
+        //     }
+        // }
+        // catch (error){
+    
+        // }
         try{
+<<<<<<< Updated upstream
             const {data} = await axios.post('http://localhost:8010/login',{
                 email,
                 password
@@ -34,6 +57,32 @@ export default function Login(){
             setError(data.error)
         }
     }    
+=======
+
+            
+
+            const {data} = await axios.post('http://localhost:8010/login',{
+                email,
+                password
+            }).then(setError('')
+            ).catch((err)=>{
+                console.log(err)
+                setError(err.response.data.error)
+            })
+
+            setData({email:'',password:''})
+
+            
+            
+
+            
+
+        }catch (err) {
+            setError("invalid email or password")
+        }
+    }
+        
+>>>>>>> Stashed changes
 
     return (
         <>
@@ -58,7 +107,12 @@ export default function Login(){
                             <label><input type="checkbox"/>Remember me</label>
                             <a href="#">Forgot password?</a>
                         </div>
+<<<<<<< Updated upstream
                         {error && <p style={{ color: 'red' } }>{error}</p>}
+=======
+                        {error && <p style={{ color: 'red' } }className="error2">{error}</p>}
+
+>>>>>>> Stashed changes
                         <button type="submit" className="login-btn">Login</button>
                     </form>
                         <div className="register-account">
