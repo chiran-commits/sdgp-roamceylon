@@ -15,10 +15,6 @@ const registerUser=async(req,res)=>{
         return res.status(400).json({error:'Email already exists'})
     }
 
-
-
-    
-
     const user=userModel.create({firstName,lastName,email,encyptedPassword})
     return res.json(user)
 
@@ -33,14 +29,8 @@ const loginUser = async(req, res) => {
     //checking if the user exists
     const user = await userModel.findOne({email});
     if (!user){
-<<<<<<< Updated upstream
         return res.status(500).json({error:'User not found!'})
 
-=======
-        return res.status(400).json({
-            error: "User not found!"
-        })
->>>>>>> Stashed changes
     }
     
 
@@ -49,20 +39,12 @@ const loginUser = async(req, res) => {
     console.log(userPassword)
      
     if (userPassword){
-<<<<<<< Updated upstream
-        return res.status(500).json({error:'Password matched!'})
+        return res.status(200).json({message:'Password matched!'})
     }
-    if (!userPassword){
+    else{
         return res.status(400).json({error:'Password not Matched!'})
-=======
-        return res.json({mesage:'Login successful'})
     }
-    if (!userPassword){
-        res.status(400).json({
-            error: "Password not matched"
-        })
->>>>>>> Stashed changes
-    }
+  
 }
  catch (error){
     return res.status(400).json(error)
