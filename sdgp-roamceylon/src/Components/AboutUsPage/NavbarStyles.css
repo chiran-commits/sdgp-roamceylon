@@ -38,12 +38,9 @@ nav{
 a{
     text-decoration: none;
 }
-h2{                 /*  Have a class name cause it effects login page h2  */
-    color: black;
-}
-
 #moveToRight{
     margin-left: 20px;
+    color: black;
 }
 .userimg{
     height: 45px;

@@ -8,14 +8,14 @@ export default function LocationPage(){
             <div className="mainContainer">
                 <div className="container">
                     <div className="leftContainer">
-                        <h2>Manual Search</h2>
+                        <h2><center>Manual Search</center></h2>
                         <div className = "textbox">
                             <input type = "text" placeholder = "Search the location"/>
                         </div>
                         <button type = "submit">Search Location</button>
                     </div>
                     <div className="rightContainer">
-                        <h2>Provide Recommandation</h2>
+                        <h2><center>Provide Recommandation</center></h2>
                         <div className = "textbox">
                             <input type = "text" placeholder = "Provide a description of your preferred place"/>
                         </div>
