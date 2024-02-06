@@ -39,3 +39,9 @@
 .locationpage-h2 h2{
     color: white;
 }
+
+.locationImages{
+    height: 390px;
+    margin-left: 50px;
+    width: 450px;
+}
