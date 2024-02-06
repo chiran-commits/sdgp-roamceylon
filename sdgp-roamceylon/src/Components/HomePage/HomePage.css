@@ -1,0 +1,88 @@
+.home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #176B87;
+    margin: 35px 30px 20px 30px;
+    border-radius: 20px;
+    padding-bottom: 200px;
+    padding-top: 28vh;
+}
+
+.welcome-text h2{
+    position: relative;
+    color: #DAFFFB;
+    flex-direction: column;
+    font-size: 19px;
+}
+
+.main-welcome-heading h3{
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    color: #DAFFFB;
+    font-weight: 800;
+}
+
+/* Button class */
+
+.welcome-btn {
+    background:#176B87;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+    border: 2px solid #DAFFFB;
+    top: 20px;
+  }
+  
+  .welcome-btn .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.0em;
+    width: 2.0em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #176B87;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .welcome-btn:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .welcome-btn .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color:#176B87;
+  }
+  
+  .welcome-btn:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .welcome-btn:active .icon {
+    transform: scale(0.95);
+  }
+  
+.welcome-button-area{
+  display: flex;
+  justify-content: center;
+}
