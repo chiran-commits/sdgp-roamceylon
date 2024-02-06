@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 import Navbar from "../AboutUsPage/Navbar";
+import BackGroundVideo from '../HomePage/Assets/backgroundVideo.mp4';
 
 export default function HomePage (){
     return(
@@ -8,6 +9,9 @@ export default function HomePage (){
             <div>
                 <Navbar/>
                 <div className='home-container'>
+                    <video className='video-bg' autoPlay muted loop playsInline>
+                        <source src={BackGroundVideo} type='video/mp4'/>
+                    </video>
                     <div className='welcome-text'>
                         <h2>Make Sri Lanka your remote work haven, <span className='explore-now'>Explore now!</span></h2>
                         <div className='main-welcome-heading'>
