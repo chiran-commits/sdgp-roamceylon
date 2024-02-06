@@ -7,7 +7,6 @@
     min-height: 90vh;
     width: 1475px;
     margin: 20px 40px 0px 20px;
-
     border-radius: 20px;
 }
 .leftContainer{
@@ -24,7 +23,6 @@
     width: 550px;
     background-color: #04364A;
     margin-left: 250px;
-
 }
 
 .container{
@@ -40,4 +38,10 @@
 
 .locationpage-h2 h2{
     color: white;
+}
+
+.locationImages{
+    height: 390px;
+    margin-left: 50px;
+    width: 450px;
 }
