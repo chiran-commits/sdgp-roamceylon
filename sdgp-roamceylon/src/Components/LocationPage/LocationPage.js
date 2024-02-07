@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from "../AboutUsPage/Navbar";
 import "./LocationPage.css";
-import leftimage from './leftimage.jpg';
-import rightimage from './rightimage.jpg';
+
+
 
 export default function LocationPage(){
     return(
@@ -11,13 +11,21 @@ export default function LocationPage(){
             <div className="mainContainer">
                 <div className="container">
                     <div className="leftContainer">
-                        <h2><center>Manual Search</center></h2>
-                        <img src={leftimage} className='locationImages'/>
+                        <h2>Manual Search</h2>
+                        <div className="input-box-search">
+                            <input type="text" placeholder="Search the location for you...."/>
+                            <i className='bx bxs-user'></i>
+                        </div>
+                        <button type="submit" className="search-btn">Search</button>
                     </div>
                     
                     <div className="rightContainer">
                         <h2><center>Provide Recommandation</center></h2>
-                        <img src={rightimage} className='locationImages'/>
+                        <div className='textarea-center'>
+                            <textarea placeholder='Enter the features of your ideal location...' className="input-box-recommendation"> 
+                            </textarea>
+                        </div>
+                        <button type="submit" className="recommendation-btn">Generate Locations</button>
                     </div> 
                 </div>
             </div>
