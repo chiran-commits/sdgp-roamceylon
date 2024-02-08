@@ -7,9 +7,9 @@ import "./LocationPage.css";
 export default function LocationPage(){
     return(
         <div>
-            <Navbar/>
+            <Navbar activeOption="locations"/>
             <div className="mainContainer">
-                <div className="container">
+                <div className="location-container">
                     <div className="leftContainer">
                         <h2>Manual Search</h2>
                         <div className="input-box-search">

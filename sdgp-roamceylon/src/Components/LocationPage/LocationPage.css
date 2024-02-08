@@ -14,10 +14,11 @@
     background-color: #b0d8f0;
     height: 550px;
     width: 550px;
-    margin-left: 10px;
+    margin-left: 0px;
     display:flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 90px;
 }
 
 .rightContainer{
@@ -26,10 +27,11 @@
     width: 550px;
     background-color: #b0d8f0;
     margin-left: 250px;
+    padding-top: 90px;
     
 }
 
-.container{
+.location-container{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -37,7 +39,7 @@
 
 .container h2{
     margin-top: 50px;
-    padding: 10px;
+    padding: 0px;
     color: #176B87;
     margin-bottom:70px;
 }

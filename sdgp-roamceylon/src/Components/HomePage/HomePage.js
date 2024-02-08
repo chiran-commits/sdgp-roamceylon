@@ -32,7 +32,7 @@ export default function HomePage (){
     return(
         <>
             <div>
-                <Navbar/>
+                <Navbar activeOption='home'/>
                 <div className='home-container'>
                     <video className='video-bg' autoPlay muted loop playsInline>
                         <source src={BackGroundVideo} type='video/mp4'/>
