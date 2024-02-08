@@ -12,33 +12,33 @@ body{
 }
 
 .profile-container{
-    border: 5px solid  #dafffb;
-    background-color: #176B87;
+    background-color:#dafffb;
     height: 490px;
     padding: 25px 25px;
     border-radius: 30px;
     font-size: 2em;
     text-align: center;
     margin-right: 5px;
-    color: #dafffb;
+    color:  #176B87;
     width: 450px;
 }
 .info-container{
     margin-left: 5px;
-    border: 5px solid #dafffb;
-    background-color: #176B87;
+    background-color:#dafffb;
     padding: 25px 25px;
     height: 490px;
     border-radius: 30px;
     font-size: 1.5em;
     text-align: center;
-    color: #dafffb;
+    color: #176B87;
     width: 450px;
 }
 
 .info-container p{
     margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: bold;
+    font-size: 1.5em;
     
 }
 .info-container label{
@@ -80,6 +80,9 @@ button{
 }
 button:hover{
     background-color:#064159 ;
+}
+input:disabled{
+    background: #176b87a2;
 }
 
 
