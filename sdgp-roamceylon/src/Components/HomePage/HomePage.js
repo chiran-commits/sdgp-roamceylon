@@ -38,6 +38,13 @@ export default function HomePage (){
                         </div>    
                     </div>
                 </div>
+                <div className='home-container-about'>
+                    <section className='hidden'>
+                        <div className='about-us-home'>
+                            
+                        </div>
+                    </section>
+                </div>
             </div>
         </>
     );
