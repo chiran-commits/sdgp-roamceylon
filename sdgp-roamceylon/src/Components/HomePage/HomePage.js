@@ -2,8 +2,33 @@ import React from 'react';
 import './HomePage.css';
 import Navbar from "../AboutUsPage/Navbar";
 import BackGroundVideo from '../HomePage/Assets/backgroundVideo.mp4';
+import { useEffect } from 'react';
 
 export default function HomePage (){
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                console.log(entry);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        });
+
+        const hiddenElement = document.querySelector('.home-container-about .hidden');
+        if (hiddenElement) {
+            observer.observe(hiddenElement);
+        }
+
+        // Cleanup function to disconnect the observer when the component unmounts
+        return () => {
+            observer.disconnect();
+        };
+    }, []); // Empty dependency array ensures this effect runs only once after initial render
+
+    
     return(
         <>
             <div>
@@ -40,8 +65,10 @@ export default function HomePage (){
                 </div>
                 <div className='home-container-about'>
                     <section className='hidden'>
-                        <div className='about-us-home'>
-                            
+                        <h2>About us</h2>
+
+                        <div className='about-content'>
+                            <p>Roamceylon is the website we created to help the people who wants to settle in Sri Lanka but doesnt know what and where to go,ThiRoamceylon is the website we created to help the people who wants to settle in Sri Lanka but doesnt know what and where to go,ThisRoamceylon is the website we created to help the people who wants to settle in Sri Lanka but doesnt know what and where to go,ThiRoamceylon is the website we created to help the people who wants to settle in Sri Lanka but doesnt know what and where to go,This</p>
                         </div>
                     </section>
                 </div>

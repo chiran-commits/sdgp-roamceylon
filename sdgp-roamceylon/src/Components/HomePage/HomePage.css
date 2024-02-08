@@ -14,17 +14,17 @@
 
 .home-container-about{
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #04364A;
+  background-color: #176B87;
   margin: 35px 30px 20px 30px;
   border-radius: 20px;
   padding-bottom: 200px;
-  padding-top: 28vh;
+  padding-top: 8vh;
   position: relative;
   overflow: hidden;
   min-height: 93vh;
   margin-top: 50px;
+  z-index: -1;
 }
 
 .video-bg{
@@ -109,4 +109,41 @@
 .welcome-button-area{
   display: flex;
   justify-content: center;
+}
+
+/* Animated about us */
+.hidden{
+  opacity: 0;
+  transition: all 1s ;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.show{
+  opacity: 1;
+  color: #DAFFFB;
+  filter: blur(0px);
+  transform: translateX(0);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/*About us content */
+
+.about-content h2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+
+.about-content p{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0px 60px 60px 60px;
 }
