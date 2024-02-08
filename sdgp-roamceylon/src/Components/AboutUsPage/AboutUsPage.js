@@ -10,7 +10,7 @@ import whatsapp_img from "./whatsapp_5968841.png"
 function App(){
   return(
     <div>
-      <Navbar/>
+      <Navbar activeOption='aboutus'/>
       <div id="subFrame">
         <h2 id="moveBottom"><center>THE CREATORS</center></h2><br></br><br></br>
         <div className="imageSection">
