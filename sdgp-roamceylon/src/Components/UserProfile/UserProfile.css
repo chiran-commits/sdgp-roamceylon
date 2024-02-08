@@ -1,3 +1,4 @@
+
 body{
     background-color:#04364A ;
     font-family: "Lexend", sans-serif;
@@ -13,20 +14,20 @@ body{
 
 .profile-container{
     background-color:#dafffb;
-    height: 490px;
+    height: 520px;
     padding: 25px 25px;
     border-radius: 30px;
     font-size: 2em;
     text-align: center;
-    margin-right: 5px;
+    margin-right: 10px;
     color:  #176B87;
     width: 450px;
 }
 .info-container{
-    margin-left: 5px;
+    margin-left:10px;
     background-color:#dafffb;
     padding: 25px 25px;
-    height: 490px;
+    height: 520px;
     border-radius: 30px;
     font-size: 1.5em;
     text-align: center;
@@ -35,33 +36,26 @@ body{
 }
 
 .info-container p{
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 1.5em;
     
 }
 .info-container label{
-   
    font-weight: bold;
-}
-.info-container input{
-    background-color: rgb(8, 111, 202);
-    border: none;
-    border-radius: 30px;
-    text-align: center;
-    padding: 10px 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: rgba(218, 255, 251, 0.87);
-    font-size: 0.8em;
 }
 
 .profile-container p{
     font-weight: bold;
 }
 .profile-container img{
+    height: 150px;
+    width: 150px;
     border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button{
@@ -81,8 +75,19 @@ button{
 button:hover{
     background-color:#064159 ;
 }
+
+.info-container input{
+    color:   #dafffb;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #176b87;
+    font-size: 0.8em;
+}
 input:disabled{
     background: #176b87a2;
 }
-
 
