@@ -114,16 +114,16 @@
 /* Animated about us */
 .hidden{
   opacity: 0;
-  transition: all 1s ;
+  transition: all 2s ;
   filter: blur(5px);
-  transform: translateX(-100%);
+  transform: translateY(100%);
 }
 
 .show{
   opacity: 1;
   color: #DAFFFB;
   filter: blur(0px);
-  transform: translateX(0);
+  transform: translateY(0);
   justify-content: center;
   align-items: center;
   display: flex;

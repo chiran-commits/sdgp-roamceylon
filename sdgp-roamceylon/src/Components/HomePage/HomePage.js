@@ -68,7 +68,7 @@ export default function HomePage (){
                         <h2>About us</h2>
 
                         <div className='about-content'>
-                            <p>Roamceylon is the website we created to help the people who wants to settle in Sri Lanka but doesnt know what and where to go,ThiRoamceylon is the website we created to help the people who wants to settle in Sri Lanka but doesnt know what and where to go,ThisRoamceylon is the website we created to help the people who wants to settle in Sri Lanka but doesnt know what and where to go,ThiRoamceylon is the website we created to help the people who wants to settle in Sri Lanka but doesnt know what and where to go,This</p>
+                            <p>At Roamceylon, we're passionate about empowering digital nomads to embrace the freedom of remote work while immersing themselves in the vibrant culture and breathtaking landscapes of Sri Lanka. Our platform serves as a gateway to personalized recommendations, expert guidance, and a supportive community, ensuring that every aspect of your relocation journey is smooth and fulfilling. Whether you're seeking the perfect work environment, cultural experiences, or simply a new adventure, Roamceylon is your trusted partner in making your digital nomad dreams a reality. Join us and embark on an unforgettable journey of discovery, connection, and growth in the tropical paradise of Sri Lanka.</p>
                         </div>
                     </section>
                 </div>
