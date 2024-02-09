@@ -33,7 +33,7 @@ nav{
 }
 #navbar li a:hover,
 #navbar li a.active{
-    color:darkorange;
+    color:#176B87;
 }
 a{
     text-decoration: none;

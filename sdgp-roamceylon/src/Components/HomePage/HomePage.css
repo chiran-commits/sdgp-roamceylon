@@ -37,7 +37,7 @@
     position: relative;
     color: #DAFFFB;
     flex-direction: column;
-    font-size: 19px;
+    font-size: 25px;
 }
 
 .main-welcome-heading h3{
@@ -46,6 +46,7 @@
     margin-top: 40px;
     color: #DAFFFB;
     font-weight: 800;
+    font-size: 24px;
 }
 
 /* Button class */
