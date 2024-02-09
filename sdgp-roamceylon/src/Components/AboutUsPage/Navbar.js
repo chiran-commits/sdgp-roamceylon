@@ -1,10 +1,6 @@
 import "./NavbarStyles.css";
 import user from "./images.png"
 import  React from 'react';
-import homePage from '../HomePage/HomePage.js';
-import '../LocationPage/LocationPage.js';
-import aboutusPage from '../AboutUsPage/AboutUsPage.js';
-import userProfile from '../UserProfile/UserProfile.js';
 
 
 const Navbar = ({activeOption}) =>{
