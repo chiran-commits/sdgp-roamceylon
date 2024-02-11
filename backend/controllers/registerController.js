@@ -39,6 +39,8 @@ const loginUser = async(req, res) => {
     console.log(userPassword)
      
     if (userPassword){
+        const token = jwt.sign({ email: email }, process.env.ACCESS_TOKEN);
+        res.cookie('token', token, { httpOnly: true });
         return res.status(200).json({message:'Password matched!'})
     }
     else{
