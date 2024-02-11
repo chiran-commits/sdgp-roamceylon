@@ -7,7 +7,8 @@ const userSchema = new Schema({
     email:{
         type:String
     },
-    encyptedPassword: String
+    encyptedPassword: String,
+    refreshToken: String
     
 })
 
