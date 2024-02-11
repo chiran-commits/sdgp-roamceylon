@@ -36,15 +36,21 @@ const loginUser = async(req, res) => {
 
     //checking if the passwords match
     const userPassword = await comparePassword(password, user.encyptedPassword)
-    console.log(userPassword)
-     
-    if (userPassword){
-        const token = jwt.sign({ email: email }, process.env.ACCESS_TOKEN);
-        res.cookie('token', token, { httpOnly: true });
-        return res.status(200).json({message:'Password matched!'})
-    }
-    else{
-        return res.status(400).json({error:'Password not Matched!'})
+    console.log(userPassword);
+
+    if (userPassword) {
+        const accessToken = jwt.sign({ email: email }, process.env.ACCESS_TOKEN, { expiresIn: '30s' });
+        const refreshToken = jwt.sign({ email: email }, process.env.ACCESS_TOKEN,{ expiresIn: '1d' });
+        res.cookie('token', refreshToken, { httpOnly: true,sameSite:'None',secure:true,maxAge: 1000*60*60*24 });
+        user.refreshToken = refreshToken;
+        const result = await foundUser.save();
+        console.log(result);
+        
+        res.json({accessToken});
+
+        
+    } else {
+        return res.status(400).json({ error: 'Password not Matched!' });
     }
   
 }
