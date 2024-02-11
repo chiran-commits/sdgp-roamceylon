@@ -14,23 +14,23 @@ function App(){
       <div id="subFrame">
         <h2 id="moveBottom"><center>THE CREATORS</center></h2><br></br><br></br>
         <div className="imageSection">
-          <div>
+          <div className="developer-container">
             <img src={D1}></img>
             <Creator name="Chiran Gamage" email="abc" contact={123}/>
           </div>
-          <div>
+          <div className="developer-container">
             <img src={D1}></img>
             <Creator name="Thinal Karunarathna" email="abc" contact={123}/>
           </div>
-          <div>
+          <div className="developer-container">
             <img src={D1}></img>
             <Creator name="Neelesh Gamage" email="abc" contact={123}/>
           </div>
-          <div>
+          <div className="developer-container">
             <img src={D1}></img>
             <Creator name="Puleesha Vilhan" email="abc" contact={123}/>
           </div>
-          <div>
+          <div className="developer-container">
             <img src={D1}></img>
             <Creator name="Tharuka Bandara" email="abc" contact={123}/>
           </div>
