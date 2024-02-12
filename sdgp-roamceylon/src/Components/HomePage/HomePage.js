@@ -1,7 +1,6 @@
 import React from 'react';
 import './HomePage.css';
 import Navbar from "../AboutUsPage/Navbar";
-import BackGroundVideo from '../HomePage/Assets/backgroundVideo.mp4';
 import sdgpVideo from '../HomePage/Assets/sdgpVideo.mp4';
 import { useEffect } from 'react';
 
