@@ -5,9 +5,20 @@ import sdgpVideo from '../HomePage/Assets/sdgpVideo.mp4';
 import { useEffect } from 'react';
 
 export default function HomePage (){
-    function anchorTag(){
+    function anchorTagAbout(){
         const target = document.getElementById("target-about-us");
-        const position = target.getBoundingClientRect().top + window.scrollY;
+        const position = target.getBoundingClientRect().top + window.scrollY -33;
+
+        // Scroll smoothly to the target position
+        window.scrollTo({
+            top: position,
+            behavior: "smooth" // Smooth scrolling
+        });
+    }
+
+    function anchorTagCountry(){
+        const target = document.getElementById("target-country");
+        const position = target.getBoundingClientRect().top + window.scrollY -33;
 
         // Scroll smoothly to the target position
         window.scrollTo({
@@ -53,29 +64,59 @@ export default function HomePage (){
                         <div className='main-welcome-heading'>
                             <h3>WELCOME TO ROAMCEYLON</h3>
                         </div>  
-                        <div className='welcome-button-area'> 
-                            <button class="welcome-btn" onClick={anchorTag}>
-                                Get started
-                                <div class="icon">
-                                    <svg
-                                        height="24"
-                                        width="24"
-                                        viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                        <path
-                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                        fill="currentColor"
-                                        ></path>
-                                    </svg>
-                                </div>
-                            </button>
+                        <div className='button-area'>  
+                            <div className='welcome-button-area'> 
+                                <button class="welcome-btn" onClick={anchorTagCountry}>
+                                    Get started
+                                    <div class="icon">
+                                        <svg
+                                            height="24"
+                                            width="24"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                            fill="currentColor"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div> 
+                            <div className='welcome-button-area'> 
+                                <button class="welcome-btn" onClick={anchorTagAbout}>
+                                    About us
+                                    <div class="icon">
+                                        <svg
+                                            height="24"
+                                            width="24"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                            fill="currentColor"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>   
                         </div>    
                     </div>
                 </div>
-                <div className='home-container-about'>
-                    <section className='hidden' id='target-about-us'>
+                <div className='home-container-about' id='target-about-us'>
+                    <section className='hidden'>
+                        <h2>About us</h2>
+
+                        <div className='about-content'>
+                            <p>At Roamceylon, we're passionate about empowering digital nomads to embrace the freedom of remote work while immersing themselves in the vibrant culture and breathtaking landscapes of Sri Lanka. Our platform serves as a gateway to personalized recommendations, expert guidance, and a supportive community, ensuring that every aspect of your relocation journey is smooth and fulfilling. Whether you're seeking the perfect work environment, cultural experiences, or simply a new adventure, Roamceylon is your trusted partner in making your digital nomad dreams a reality. Join us and embark on an unforgettable journey of discovery, connection, and growth in the tropical paradise of Sri Lanka.</p>
+                        </div>
+                    </section>
+                </div>
+                <div className='home-container-country' id='target-country'>
+                    <section className='hidden'>
                         <h2>About us</h2>
 
                         <div className='about-content'>
