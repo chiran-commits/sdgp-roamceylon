@@ -5,6 +5,17 @@ import BackGroundVideo from '../HomePage/Assets/backgroundVideo.mp4';
 import { useEffect } from 'react';
 
 export default function HomePage (){
+    function anchorTag(){
+        const target = document.getElementById("target-about-us");
+        const position = target.getBoundingClientRect().top + window.scrollY;
+
+        // Scroll smoothly to the target position
+        window.scrollTo({
+            top: position,
+            behavior: "smooth" // Smooth scrolling
+        });
+    }
+
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -43,7 +54,7 @@ export default function HomePage (){
                             <h3>WELCOME TO ROAMCEYLON</h3>
                         </div>  
                         <div className='welcome-button-area'> 
-                            <button class="welcome-btn">
+                            <button class="welcome-btn" onClick={anchorTag}>
                                 Get started
                                 <div class="icon">
                                     <svg
@@ -64,7 +75,7 @@ export default function HomePage (){
                     </div>
                 </div>
                 <div className='home-container-about'>
-                    <section className='hidden'>
+                    <section className='hidden' id='target-about-us'>
                         <h2>About us</h2>
 
                         <div className='about-content'>
