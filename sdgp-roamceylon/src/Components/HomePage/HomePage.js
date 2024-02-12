@@ -2,6 +2,7 @@ import React from 'react';
 import './HomePage.css';
 import Navbar from "../AboutUsPage/Navbar";
 import BackGroundVideo from '../HomePage/Assets/backgroundVideo.mp4';
+import sdgpVideo from '../HomePage/Assets/sdgpVideo.mp4';
 import { useEffect } from 'react';
 
 export default function HomePage (){
@@ -46,7 +47,7 @@ export default function HomePage (){
                 <Navbar activeOption='home'/>
                 <div className='home-container'>
                     <video className='video-bg' autoPlay muted loop playsInline>
-                        <source src={BackGroundVideo} type='video/mp4'/>
+                        <source src={sdgpVideo} type='video/mp4'/>
                     </video>
                     <div className='welcome-text'>
                         <h2>Make Sri Lanka your remote work haven, <span className='explore-now'>Explore now!</span></h2>
