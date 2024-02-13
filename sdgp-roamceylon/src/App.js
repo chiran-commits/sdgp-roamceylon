@@ -4,6 +4,7 @@ import AboutUs from './Components/AboutUsPage/AboutUsPage.js'
 import HomePage from './Components/HomePage/HomePage.js';
 import LocationPage from './Components/LocationPage/LocationPage.js';
 import { RegistrationPage } from './Components/RegistrationPage/RegistrationPage.js';
+import ErrorPage from './Components/ErrorPage/ErrorPage.js';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/register" element={<RegistrationPage/>} />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/location" element={<LocationPage/>}/>
+        <Route element = {<ErrorPage/>}/>
       </Routes>
   </Router> 
   );
