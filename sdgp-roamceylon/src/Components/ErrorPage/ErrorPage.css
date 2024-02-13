@@ -1,0 +1,19 @@
+body{
+    background-color:#04364A ;
+    font-family: "Lexend", sans-serif;
+    text-align: center;
+}
+#subFrame{
+    background-color: #176B87;
+    height: 800px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.button{
+    font-size: large;
+    color: white;
+    background-color: #176B87;
+    padding: 4px;
+    border-radius: 7px;
+}
