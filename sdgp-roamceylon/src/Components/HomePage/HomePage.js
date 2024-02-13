@@ -116,13 +116,37 @@ export default function HomePage (){
                     </section>
                 </div>
                 <div className='home-container-country' id='target-country'>
-                    <section className='hidden'>
-                        <h2>About us</h2>
-
-                        <div className='about-content'>
-                            <p>At Roamceylon, we're passionate about empowering digital nomads to embrace the freedom of remote work while immersing themselves in the vibrant culture and breathtaking landscapes of Sri Lanka. Our platform serves as a gateway to personalized recommendations, expert guidance, and a supportive community, ensuring that every aspect of your relocation journey is smooth and fulfilling. Whether you're seeking the perfect work environment, cultural experiences, or simply a new adventure, Roamceylon is your trusted partner in making your digital nomad dreams a reality. Join us and embark on an unforgettable journey of discovery, connection, and growth in the tropical paradise of Sri Lanka.</p>
+                    <div className='country-box-container'>
+                        <div className='coutnry-box'>
+                            <h3>Colombo</h3>
+                            <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
+                            <a href='#1'className='country-btn'>Learn More</a>
                         </div>
-                    </section>
+
+                        <div className='coutnry-box'>
+                            <h3>Panadura</h3>
+                            <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
+                            <a href='#1'className='country-btn'>Learn More</a>
+                        </div>
+
+                        <div className='coutnry-box'>
+                            <h3>Nuwara Eliya</h3>
+                            <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
+                            <a href='#1'className='country-btn'>Learn More</a>
+                        </div>
+
+                        <div className='coutnry-box'>
+                            <h3>Galle</h3>
+                            <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
+                            <a href='#1'className='country-btn'>Learn More</a>
+                        </div>
+
+                        <div className='coutnry-box'>
+                            <h3>Trincomalee</h3>
+                            <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
+                            <a href='#1'className='country-btn'>Learn More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
