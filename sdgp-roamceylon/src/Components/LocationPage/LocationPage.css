@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     background-color: #176B87;
     min-height: 90vh;
     width: 1475px;
@@ -107,7 +106,7 @@
     color: var(--font-color);
     cursor: pointer;
     width: 40%;
-    margin: 0px 60px 0 160px;
+    margin: 0px 150px 0 160px;
 
 }
 
@@ -136,4 +135,39 @@
 .input-box-recommendation::placeholder{
     color: #176B87;
     font-weight: 600;
+}
+
+@media screen and (max-width: 850px) {
+    .mainContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #176B87;
+        min-height: 90vh;
+        width: 600px;
+        margin: 20px 40px 0px 20px;
+        border-radius: 20px;
+        margin: 4rem 2rem;
+        height: 1300px;
+
+    }
+    .location-container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 4.5rem;
+    }
+    .rightContainer{
+        border-radius: 30px;
+        height: 550px;
+        width: 550px;
+        background-color: #b0d8f0;
+        margin-left: 5px;
+        padding-top: 90px;
+        margin-top: 50px;
+        
+    }
+
+
+
 }
