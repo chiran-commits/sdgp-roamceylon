@@ -11,7 +11,7 @@ function App(){
   return(
     <div>
       <Navbar activeOption='aboutus'/>
-      <div id="subFrame">
+      <div id="subframe">
         <h2 id="moveBottom"><center>THE CREATORS</center></h2><br></br><br></br>
         <div className="imageSection">
           <div className="developer-container">
@@ -40,8 +40,9 @@ function App(){
         <h3><center> <a href="roamceylon.sdgp@gmail.com " style={{color:"white"}}>roamceylon.sdgp@gmail.com </a></center></h3>
         <div className="bottomContainer">
           <div className="middleBottom">
-            <br></br>
-            <h6><center>Nunc sit amet condimentum metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus viverra efficitur diam eget fringilla. Donec euismod eleifend massa non volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis quis dolor a rhoncus. Sed eros magna, venenatis et urna vitae, vehicula porttitor nulla. Proin iaculis vel leo nec volutpat. Mauris malesuada vulputate libero at tincidunt. Nulla hendrerit risus non nisi laoreet dictum. Etiam erat lectus, mattis non interdum eget, laoreet eu odio. Suspendisse vehicula fermentum purus tristique pellentesque.</center></h6>
+            <h4><center>We are a group of 2nd Year students at Informatics Institute of Technology (IIT), following a bachelors degree in Software Engineering.</center></h4>
+            <h4><center>This project was created as a part of the SDGP module in our 2nd Year. </center></h4>
+            <h4>WELCOME TO ROAMCEYLON!</h4>
           </div>
           <div className="leftBottom">
             <h6>Privacy Policy</h6>
