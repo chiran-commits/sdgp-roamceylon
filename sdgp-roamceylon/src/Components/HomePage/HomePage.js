@@ -3,6 +3,7 @@ import './HomePage.css';
 import Navbar from "../AboutUsPage/Navbar";
 import sdgpVideo from '../HomePage/Assets/sdgpVideo.mp4';
 import { useEffect } from 'react';
+import colomboImage from '../HomePage/Assets/colombo.jpg';
 
 export default function HomePage (){
     function anchorTagAbout(){
@@ -119,6 +120,7 @@ export default function HomePage (){
                     <div className='country-box-container'>
                         <div className='coutnry-box'>
                             <h3>Colombo</h3>
+                            <img className='colombo-img' src={colomboImage}></img>
                             <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
                             <a href='#1'className='country-btn'>Learn More</a>
                         </div>

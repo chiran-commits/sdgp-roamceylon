@@ -190,16 +190,24 @@
   background: #fff;
   text-align: center;
   padding: 20px 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .home-container-country .country-box-container .coutnry-box h3{
-  color: #444;
+  color: #000000;
   padding: 10px 0;
+  z-index: 1;
 }
 
 .home-container-country .country-box-container .coutnry-box p{
-  color: #777;
+  color: #000000;
   padding: 10px 0;
+  z-index: 1;
 }
 
 .home-container-country .country-box-container .coutnry-box .country-btn{
@@ -210,9 +218,17 @@
   font-size: 17px;
   border-radius: 5px;
   padding: 8px 25px;
+  z-index: 1;
 }
 
 .home-container-country .country-box-container .coutnry-box .country-btn:hover{
   background-color: #1f1f1f;
 }
 
+.colombo-img{
+  position: absolute;
+  border: none;
+  overflow: hidden;
+  transform: scale(1.5);
+  opacity: 0.62;
+}
