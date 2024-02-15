@@ -4,11 +4,14 @@ const connectDB = require('./database/database');
 const verifyJWT = require('./middleware/verifyJWT');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
+const path = require('path')
+
+app.use(express.static(path.join(__dirname, '../sdgp-roamceylon/build')));
 
 
 
 
-const PORT=8010;
+const PORT=5000;
 connectDB();
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
