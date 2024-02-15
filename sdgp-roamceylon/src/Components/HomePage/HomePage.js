@@ -124,25 +124,19 @@ export default function HomePage (){
                         </div>
 
                         <div className='coutnry-box'>
-                            <h3>Panadura</h3>
+                            <h3>Kandy</h3>
                             <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
                             <a href='#1'className='country-btn'>Learn More</a>
                         </div>
 
                         <div className='coutnry-box'>
-                            <h3>Nuwara Eliya</h3>
+                            <h3>Matara</h3>
                             <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
                             <a href='#1'className='country-btn'>Learn More</a>
                         </div>
 
                         <div className='coutnry-box'>
                             <h3>Galle</h3>
-                            <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
-                            <a href='#1'className='country-btn'>Learn More</a>
-                        </div>
-
-                        <div className='coutnry-box'>
-                            <h3>Trincomalee</h3>
                             <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
                             <a href='#1'className='country-btn'>Learn More</a>
                         </div>
