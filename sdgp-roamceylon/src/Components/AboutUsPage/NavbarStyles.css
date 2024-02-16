@@ -100,6 +100,7 @@ nav ul#navbar.open{
         margin-top: 10px;
         align-items: stretch;
         padding: 40px;
+        z-index: 3;
     }
 
     nav ul li{
