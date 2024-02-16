@@ -10,6 +10,7 @@
     position: relative;
     overflow: hidden;
     min-height: 50vh;
+    z-index: -1;
 }
 
 .home-container-country{
