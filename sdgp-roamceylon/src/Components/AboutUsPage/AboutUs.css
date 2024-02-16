@@ -71,7 +71,7 @@ img{
 .developer-container{
     height:400px;
     width: 250px;
-    margin-left: 20px;
+    margin-left: 25px;
     box-shadow: 0 5px 10px 2px rgb(0,0,0);
     border-radius: 5px;
     transition: 0.2s ease-in-out;

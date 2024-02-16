@@ -10,8 +10,8 @@ nav{
     background-color: white;
     margin-left: 10px;
     margin-bottom: 10px;
-
 }
+
 #navbar{
     display: flex;
     align-items: center;
@@ -93,13 +93,11 @@ nav ul#navbar.open{
         background-color: white;
         flex-direction: column;
         margin-bottom: 0.25rem;
-        background-color: white;
-        width: 95%;
-        margin-left: 10px;
+        width: 92%;
+        margin-left:20px;
         border-radius: 10px;
         position:absolute;
         margin-top: 5px;
-        align-items: stretch;
         padding: 200px;
         z-index: 3;
         padding-top: 40px;
