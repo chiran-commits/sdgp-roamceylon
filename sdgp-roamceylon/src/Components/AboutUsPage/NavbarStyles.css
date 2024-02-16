@@ -94,21 +94,22 @@ nav ul#navbar.open{
         flex-direction: column;
         margin-bottom: 0.25rem;
         background-color: white;
-        width: 99%;
+        width: 95%;
+        margin-left: 10px;
         border-radius: 10px;
         position:absolute;
-        margin-top: 10px;
+        margin-top: 5px;
         align-items: stretch;
-        padding: 40px;
+        padding: 200px;
         z-index: 3;
+        padding-top: 40px;
     }
 
     nav ul li{
-        margin-top: 10px;
         margin-left:auto;
         width: 100%;
-        font-size: 1.2rem;
-        padding: 2rem 0;
+        font-size: 20px;
+        margin:30px;
     }
 
 }
