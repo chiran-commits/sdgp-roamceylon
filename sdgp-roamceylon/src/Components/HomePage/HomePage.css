@@ -236,7 +236,7 @@
 
 .img:hover{
   opacity: 12;
-  transition: 1s ease-out;
+  transition: 1s all;
 }
 
 .home-container-country h2{
