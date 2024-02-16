@@ -13,7 +13,6 @@
 }
 
 .home-container-country{
-  display: flex;
   align-items: center;
   justify-content: center;
   background-color: #176B87;
@@ -198,6 +197,7 @@
   overflow: hidden;
 }
 
+
 .home-container-country .country-box-container .coutnry-box h3{
   color: #000000;
   padding: 10px 0;
@@ -223,12 +223,24 @@
 
 .home-container-country .country-box-container .coutnry-box .country-btn:hover{
   background-color: #1f1f1f;
+  transition: 0.2s ease-in;
 }
 
-.colombo-img{
+.img{
   position: absolute;
   border: none;
   overflow: hidden;
-  transform: scale(1.5);
+  transform: scale(3);
   opacity: 0.62;
+}
+
+.img:hover{
+  opacity: 12;
+  transition: 1s ease-out;
+}
+
+.home-container-country h2{
+  color: #DAFFFB;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
