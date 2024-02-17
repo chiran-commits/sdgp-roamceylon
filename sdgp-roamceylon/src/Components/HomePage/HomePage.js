@@ -7,6 +7,7 @@ import colomboImage from '../HomePage/Assets/colombo.jpg';
 import kandyImage from '../HomePage/Assets/kandy.jpg';
 import mataraImage from '../HomePage/Assets/matara.jpg';
 import galleImage from '../HomePage/Assets/galle.jpg';
+import { Link } from 'react-router-dom';
 
 export default function HomePage (){
     function anchorTagAbout(){
@@ -19,6 +20,7 @@ export default function HomePage (){
             behavior: "smooth" // Smooth scrolling
         });
     }
+  
 
     function anchorTagCountry(){
         const target = document.getElementById("target-country");
@@ -122,12 +124,15 @@ export default function HomePage (){
                 <div className='home-container-country' id='target-country'>
                     <h2>Popular Locations</h2>
                     <div className='country-box-container'>
-                        <div className='coutnry-box'>
-                            <h3>Colombo</h3>
-                            <img className='img' src={colomboImage}></img>
-                            <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
-                            <a href='#1'className='country-btn'>Learn More</a>
-                        </div>
+                        <Link to='/colombo'>
+                            <div className='coutnry-box'>
+                                <h3>Colombo</h3>
+                                <img className='img' src={colomboImage}></img>
+                                <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
+                                <a href='#1'className='country-btn'>Learn More</a>
+                            </div>
+                        </Link>
+                        
 
                         <div className='coutnry-box'>
                             <h3>Kandy</h3>

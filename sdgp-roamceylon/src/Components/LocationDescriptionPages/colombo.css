@@ -1,0 +1,72 @@
+.colombopage {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('../HomePage/Assets/colombo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+
+.colombopagehero {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colombopagetext-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.colombopagehero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.colombopagehero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.colombopageindicators {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.colombopageindicators p {
+
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.colombopagereviews {
+    padding: 40px;
+}
+
+.colombopagereviews h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.colombopagereviews p {
+    color: #ddd;
+}
+
+    .colombopagereview {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    .colombopagereview h2 {
+        margin-bottom: 10px;
+    }
