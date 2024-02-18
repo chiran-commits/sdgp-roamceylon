@@ -132,7 +132,6 @@ export default function HomePage (){
                                 <a href='#1'className='country-btn'>Learn More</a>
                             </div>
                         </Link>
-                        
 
                         <div className='coutnry-box'>
                             <h3>Kandy</h3>

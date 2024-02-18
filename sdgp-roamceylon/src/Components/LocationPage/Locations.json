@@ -1,0 +1,22 @@
+[
+    {
+        "location":"Colombo",
+        "link":"http://localhost:8000/colombo"
+    },
+    {
+        "location":"Kandy",
+        "link":"http://localhost:8000/kandy"
+    },
+    {
+        "location":"Matara",
+        "link":"http://localhost:8000/matara"
+    },
+    {
+        "location":"Galle",
+        "link":"http://localhost:8000/galle"
+    },
+    {
+        "location":"Panadura",
+        "link":"http://localhost:8000/panadura"
+    }
+]

@@ -83,7 +83,7 @@
   color: var(--font-color);
   cursor: pointer;
   width: 40%;
-  margin: 20px 60px 0 60px;
+  margin: 150px 60px 0 60px;
 }
 
 .leftContainer .search-btn:hover{
@@ -106,7 +106,7 @@
     color: var(--font-color);
     cursor: pointer;
     width: 40%;
-    margin: 0px 150px 0 160px;
+    margin-top: 120px
 
 }
 
@@ -135,6 +135,22 @@
 .input-box-recommendation::placeholder{
     color: #176B87;
     font-weight: 600;
+}
+
+.drop-down{
+    display: block;
+    background: white;
+    border-radius: 10px;
+    min-width: 200px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.drop-down:hover{
+    border: none;
+    transition: 1s all;
+    background-color: rgb(206, 206, 206);
+    border: 1px solid rgb(152, 152, 152);
 }
 
 @media screen and (max-width: 1000px) {
