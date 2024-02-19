@@ -131,7 +131,7 @@
 /* Animated about us */
 .hidden{
   opacity: 0;
-  transition: all 1s ;
+  transition: all 0.5s ;
   filter: blur(5px);
   transform: translateY(100%);
 }
@@ -243,4 +243,34 @@
   color: #DAFFFB;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+.home-footer{
+  background-color:#DAFFFB;
+  padding: 50px 0px 30px 20px;
+}
+
+.home-footer h3{
+  color: black;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.home-footer hr{
+  color: black;
+  border: 1px solid black;
+}
+
+.footer-bot{
+  display: flex;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.social-panel{
+  justify-content: space-between;
+  text-align: right;
+  margin-top: -48px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }

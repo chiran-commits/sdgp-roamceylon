@@ -51,8 +51,11 @@ export default function LocationPage(){
                             {value && (
                             <div className='drop-down'>
                                 {filteredData.map(item => (
-                                    <div key={item.location} onClick={() => redirectToLocation(item.link)}>
-                                        {item.location}
+                                    <div className='location-item' key={item.location} onClick={() => redirectToLocation(item.link)}>
+                                        <h4>{item.location}</h4>
+                                        <div className='show-desc'>
+                                            {item.description}
+                                        </div>
                                     </div>
                                 ))}
                              </div>

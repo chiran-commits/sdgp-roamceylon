@@ -159,6 +159,16 @@ export default function HomePage (){
                         </div>
                     </div>
                 </div>
+                <footer className='home-footer'>
+                    <h3>ROAMCEYLON</h3>
+                    <div className='social-panel'>
+                        Hi
+                    </div>
+                    <hr></hr>
+                    <div className='footer-bot'>
+                        <p>Copyright 2024 - Roamceylon</p>
+                    </div>
+                </footer>
             </div>
         </>
     );
