@@ -1,10 +1,43 @@
 import React from 'react';
 import Navbar from "../AboutUsPage/Navbar";
 import "./LocationPage.css";
+import {useState, useEffect} from 'react';
+import Locations from '../LocationPage/Locations.json';
 
 
 
 export default function LocationPage(){
+
+    const [value, setValue] = useState("");
+    const [filteredData, setFilteredData] = useState([]);
+    const [searchData, setSearchData] = useState([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                // Here we set the filtered data to the original data when the component mounts
+                setFilteredData(Locations);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+        fetchData();
+    }, []);
+
+    const onChange = (e) => {
+        const searchValue = e.target.value.toLowerCase();
+        const filtered = Locations.filter(item =>
+            item.location.toLowerCase().startsWith(searchValue)
+        );
+        setFilteredData(filtered);
+        setValue(searchValue);
+    };
+
+    const redirectToLocation = (link) => {
+        window.location.href = link;
+    };
+
+
     return(
         <div>
             <Navbar activeOption="locations"/>
@@ -13,10 +46,18 @@ export default function LocationPage(){
                     <div className="leftContainer">
                         <h2>Manual Search</h2>
                         <div className="input-box-search">
-                            <input type="text" placeholder="Search the location for you...."/>
+                            <input type="text" placeholder="Search the location for you...." onChange={onChange} value={value}/>
                             <i className='bx bxs-user'></i>
+                            {value && (
+                            <div className='drop-down'>
+                                {filteredData.map(item => (
+                                    <div key={item.location} onClick={() => redirectToLocation(item.link)}>
+                                        {item.location}
+                                    </div>
+                                ))}
+                             </div>
+                        )}
                         </div>
-                        <button type="submit" className="search-btn">Search</button>
                     </div>
                     
                     <div className="rightContainer">
