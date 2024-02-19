@@ -2,12 +2,13 @@ import React from 'react';
 import './HomePage.css';
 import Navbar from "../AboutUsPage/Navbar";
 import sdgpVideo from '../HomePage/Assets/sdgpVideo.mp4';
-import { useEffect } from 'react';
+import { useEffect} from 'react';
 import colomboImage from '../HomePage/Assets/colombo.jpg';
 import kandyImage from '../HomePage/Assets/kandy.jpg';
 import mataraImage from '../HomePage/Assets/matara.jpg';
 import galleImage from '../HomePage/Assets/galle.jpg';
 import { Link } from 'react-router-dom';
+import FetchWeather from './GetWeather';
 
 export default function HomePage (){
     function anchorTagAbout(){
@@ -56,7 +57,6 @@ export default function HomePage (){
         };
     }, []); // Empty dependency array ensures this effect runs only once after initial render
 
-    
     return(
         <>
             <div>
@@ -127,6 +127,7 @@ export default function HomePage (){
                         <Link to='/colombo'>
                             <div className='coutnry-box'>
                                 <h3>Colombo</h3>
+                                <h3><FetchWeather city="colombo"/></h3>
                                 <img className='img' src={colomboImage}></img>
                                 <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
                                 <a href='#1'className='country-btn'>Learn More</a>
@@ -136,6 +137,7 @@ export default function HomePage (){
 
                         <div className='coutnry-box'>
                             <h3>Kandy</h3>
+                            <h3><FetchWeather city="kandy"/></h3>
                             <img class='img' src={kandyImage}></img>
                             <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
                             <a href='#1'className='country-btn'>Learn More</a>
@@ -143,6 +145,7 @@ export default function HomePage (){
 
                         <div className='coutnry-box'>
                             <h3>Jaffna</h3>
+                            <h3><FetchWeather city="jaffna"/></h3>
                             <img class='img' src={mataraImage}></img>
                             <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
                             <a href='#1'className='country-btn'>Learn More</a>
@@ -150,6 +153,7 @@ export default function HomePage (){
 
                         <div className='coutnry-box'>
                             <h3>Galle</h3>
+                            <h3><FetchWeather city="galle"/></h3>
                             <img class='img' src={galleImage}></img>
                             <p>Colombo, Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.</p>
                             <a href='#1'className='country-btn'>Learn More</a>
