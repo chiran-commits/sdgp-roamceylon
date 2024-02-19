@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 
 const FetchWeather = ({city}) => {
     const [weatherData, setWeatherData] = useState(null);
-    const apiKey ='214a953a6ace9d788017a21425f50ce9';
+    const apiKey ='942f0c4d2d7591e7608191b7881d4eb0';
     const url =`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=${apiKey}`;
 
     useEffect(()=>{
