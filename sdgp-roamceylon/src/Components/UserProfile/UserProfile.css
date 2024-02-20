@@ -1,6 +1,6 @@
 
 body{
-    background-color:#04364A ;
+    background-color:#fff ;
     font-family: "Lexend", sans-serif;
 }
 .outer-container{
@@ -20,7 +20,6 @@ body{
     font-size: 2em;
     text-align: center;
     margin-right: 5px;
-
     color: #dafffb;
     width: 450px;
 }
