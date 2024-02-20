@@ -10,7 +10,7 @@ export default function LocationPage(){
 
     const [value, setValue] = useState("");
     const [filteredData, setFilteredData] = useState([]);
-    const [searchData, setSearchData] = useState([])
+    const [searchData, setSearchData] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
