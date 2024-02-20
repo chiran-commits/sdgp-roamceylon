@@ -6,10 +6,10 @@ const Colombo = () => {
   return (
     <div className='colombopage'>
         <Navbar></Navbar>
-          
         <section className="colombopagehero">
             <div className="colombopagetext-container">
-                <h2>Colombo</h2>
+                {/* <div class="top-part"></div> */}
+                <h1>Colombo</h1>
                 <p>Nestled along the western coast of Sri Lanka, Colombo stands as a vibrant metropolis that seamlessly blends rich history with modernity. This bustling capital city is not just a destination; it's an experience for digital nomads seeking adventure, culture, and inspiration.</p>
                 <div className="colombopageindicators">
                     <p>WEATHER: TROPICAL</p>

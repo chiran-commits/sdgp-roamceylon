@@ -8,6 +8,13 @@
     height: 100vh;
 }
 
+.top-part{
+    background-image: url('../HomePage/Assets/colombo.jpg');
+    background-size: cover;
+    border-radius: 0;
+    height: 100vh;
+    position: relative;
+}
 
 
 .colombopagehero {
