@@ -35,6 +35,7 @@
 }
 
 .colombopageindicators {
+    padding-top: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -50,6 +51,8 @@
 
 .colombopagereviews {
     padding: 40px;
+    background-color: white;
+    opacity: 80%;
 }
 
 .colombopagereviews h3 {
@@ -58,7 +61,7 @@
 }
 
 .colombopagereviews p {
-    color: #ddd;
+    color: black;
 }
 
     .colombopagereview {
