@@ -37,9 +37,6 @@ function UserProfile(){
         setEmail(event.target.value);
     }
     
-    function handlePassword(event){
-        setPassword(event.target.value);
-    }
         
 
     return(<>
@@ -51,6 +48,7 @@ function UserProfile(){
         <button>Edit</button>
         <p>{fname}</p>
         <p>{lname}</p>
+        <p>{age}</p>
     </div>
     </div>
     
@@ -67,9 +65,9 @@ function UserProfile(){
         <input type="text" value={lname} disabled={edit}  onChange={handleLName}></input>
         <br></br>
         <label>Email</label><br></br>
-        <input value={email} disabled={edit} size="30" onChange={handleEmail}></input><br></br>
-        <label>Password</label><br></br>
-        <input value={password} disabled={edit}  onChange={handlePassword}></input><br></br>
+        <input value={email} disabled='true' size="30" onChange={handleEmail}></input><br></br>
+        <label>Age</label><br></br>
+        <input value={age} disabled={edit}  onChange={handleAge}></input><br></br>
     </div>
     </div>
     </div>
