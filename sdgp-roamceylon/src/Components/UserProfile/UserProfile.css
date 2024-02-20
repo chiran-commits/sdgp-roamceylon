@@ -1,6 +1,6 @@
 
 body{
-    background-color:#04364A ;
+    background-color: #ffffff;
     font-family: "Lexend", sans-serif;
 }
 .outer-container{
@@ -13,25 +13,26 @@ body{
 }
 
 .profile-container{
-    background-color:#dafffb;
-    height: 520px;
+    background-color: #176B87 ;
+    height: 490px;
     padding: 25px 25px;
     border-radius: 30px;
     font-size: 2em;
     text-align: center;
-    margin-right: 10px;
-    color:  #176B87;
+    margin-right: 5px;
+
+    color: #dafffb;
     width: 450px;
 }
 .info-container{
-    margin-left:10px;
-    background-color:#dafffb;
+    margin-left: 10px;
+    background-color: #176B87 ;
     padding: 25px 25px;
-    height: 520px;
+    height: 490px;
     border-radius: 30px;
     font-size: 1.5em;
     text-align: center;
-    color: #176B87;
+    color: #dafffb;
     width: 450px;
 }
 
@@ -59,35 +60,40 @@ body{
 }
 
 button{
-    margin-bottom: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
-    position: relative;
-    padding: 5px 22px;
-    border: none;
-    border-radius: 10px;
-    color: #dafffb;
+    --font-color: #176B87;
+    --bg-color: #b0d8f0;
+    --main-color: #04364A;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
     cursor: pointer;
-    background-color:#04364A ;
-    transition: all 0.2s ease;
-    font-size: 0.8em;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 button:hover{
-    background-color:#064159 ;
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
 }
 
 .info-container input{
-    color:   #dafffb;
+    color:   #176B87;
     border: none;
     border-radius: 30px;
     text-align: center;
     padding: 10px 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background: #176b87;
+    background:#dafffb;
     font-size: 0.8em;
 }
 input:disabled{
-    background: #176b87a2;
+    background:#cad4d3;
 }
 
