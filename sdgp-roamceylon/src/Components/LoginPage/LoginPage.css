@@ -8,7 +8,7 @@
 }
 
 .login-page{
-    background-color: #04364A;
+    background-color: #fff;
 }
 
 
@@ -113,7 +113,7 @@
   color: var(--font-color);
   cursor: pointer;
   width: 70%;
-  margin: 0px 20px 0 60px;
+  margin: 0px 55px 0 60px;
 }
 
 .loginbox .login-btn:hover{
@@ -143,4 +143,8 @@
 
 .register-account p a:hover{
     text-decoration: underline;
+}
+.header h2{
+    color: black;
+    text-align: center;
 }
