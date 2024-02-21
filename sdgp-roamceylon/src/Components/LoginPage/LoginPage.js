@@ -70,7 +70,7 @@ export default function Login() {
         <>
             <div className='login-page'>
                 <div className='header'>
-                    <h2>ROAMCEYLON</h2>
+                    <a href='/'><h2>ROAMCEYLON</h2></a>
                 </div>
                 <div className="login-box">
                     <h2 className="sub-heading">Be a part of the community.</h2>
