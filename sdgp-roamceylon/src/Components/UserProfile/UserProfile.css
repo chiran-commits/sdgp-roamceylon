@@ -14,7 +14,7 @@ body{
 
 .profile-container{
     background-color: #176B87 ;
-    height: 490px;
+    height: 520px;
     padding: 25px 25px;
     border-radius: 30px;
     font-size: 2em;
@@ -27,7 +27,7 @@ body{
     margin-left: 10px;
     background-color: #176B87 ;
     padding: 25px 25px;
-    height: 490px;
+    height: 520px;
     border-radius: 30px;
     font-size: 1.5em;
     text-align: center;
@@ -48,6 +48,7 @@ body{
 
 .profile-container p{
     font-weight: bold;
+    margin-bottom: 20px;
 }
 .profile-container img{
     height: 150px;

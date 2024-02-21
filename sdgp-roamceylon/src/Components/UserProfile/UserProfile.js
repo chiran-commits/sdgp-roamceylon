@@ -2,11 +2,10 @@
 import Navbar from '../AboutUsPage/Navbar';
 import './UserProfile.css';
 import React, { useState, useEffect } from 'react';
-
-
+import ProfileImg from '../AboutUsPage/images.png'
 
 function UserProfile(){
-    const [img,setImg] = useState("https://via.placeholder.com/150");
+    const [img,setImg] = useState(ProfileImg);
     const [fname,setFName] = useState("Guest");
     const [lname,setLName] = useState("Guest");
     const [age,setAge] = useState(19);
@@ -45,7 +44,6 @@ function UserProfile(){
     <div className="container">
     <div className="profile-container">
         <img src={img}></img><br></br>
-        <button>Edit</button>
         <p>{fname}</p>
         <p>{lname}</p>
         <p>{age}</p>
