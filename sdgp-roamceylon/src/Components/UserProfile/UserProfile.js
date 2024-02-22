@@ -2,7 +2,7 @@
 import Navbar from '../AboutUsPage/Navbar';
 import './UserProfile.css';
 import React, { useState, useEffect } from 'react';
-import ProfileImg from '../AboutUsPage/images.png'
+import ProfileImg from '../AboutUsPage/Asset 1.png'
 
 function UserProfile(){
     const [img,setImg] = useState(ProfileImg);
