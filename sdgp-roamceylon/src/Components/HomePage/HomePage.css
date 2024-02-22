@@ -87,7 +87,7 @@
     padding-right: 6.5em;
     cursor: pointer;
     border: 2px solid #DAFFFB;
-    top: 20px;
+    top: 40px;
   }
   
   .welcome-btn .icon {
@@ -256,7 +256,7 @@
   margin-bottom: 20px;
 }
 
-.home-footer hr{
+.footer-sep{
   color: black;
   border: 1px solid black;
 }
@@ -270,7 +270,6 @@
 .social-panel{
   justify-content: space-between;
   text-align: right;
-  margin-top: -48px;
   margin-bottom: 20px;
   margin-right: 20px;
 }
