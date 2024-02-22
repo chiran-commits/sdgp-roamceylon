@@ -145,9 +145,7 @@ export default function HomePage() {
               <Link to="/colombo">
                 <div className="coutnry-box">
                   <h3>Colombo</h3>
-                  <h3>
-                    <FetchWeather city="colombo" />
-                  </h3>
+                  <h3><FetchWeather city="colombo"/></h3>
                   <img className="img" src={colomboImage}></img>
                   <p>
                     Colombo, Sri Lanka's capital, boasts a dynamic mix of
@@ -163,9 +161,7 @@ export default function HomePage() {
 
               <div className="coutnry-box">
                 <h3>Kandy</h3>
-                <h3>
-                  <FetchWeather city="kandy" />
-                </h3>
+                <h3><FetchWeather city="kandy"/></h3>
                 <img class="img" src={kandyImage}></img>
                 <p>
                   Colombo, Sri Lanka's capital, boasts a dynamic mix of history
@@ -179,9 +175,7 @@ export default function HomePage() {
 
               <div className="coutnry-box">
                 <h3>Jaffna</h3>
-                <h3>
-                  <FetchWeather city="jaffna" />
-                </h3>
+                <h3><FetchWeather city="jaffna"/></h3>
                 <img class="img" src={mataraImage}></img>
                 <p>
                   Colombo, Sri Lanka's capital, boasts a dynamic mix of history
@@ -195,9 +189,7 @@ export default function HomePage() {
 
               <div className="coutnry-box">
                 <h3>Galle</h3>
-                <h3>
-                  <FetchWeather city="galle" />
-                </h3>
+                <h3><FetchWeather city="galle"/></h3>
                 <img class="img" src={galleImage}></img>
                 <p>
                   Colombo, Sri Lanka's capital, boasts a dynamic mix of history
