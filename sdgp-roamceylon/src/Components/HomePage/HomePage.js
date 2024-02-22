@@ -68,8 +68,9 @@ export default function HomePage() {
             </video>
             <div className="welcome-text">
               <h2>
-                Make Sri Lanka your remote work haven,{" "}
-                <span className="explore-now">Explore now!</span>
+                {/* Make Sri Lanka your remote work haven,{" "}
+                <span className="explore-now">Explore now!</span> */}
+                Find your digital nomad haven in Sri Lanka's vibrant landscapes
               </h2>
               <div className="main-welcome-heading">
                 <h3>WELCOME TO ROAMCEYLON</h3>
