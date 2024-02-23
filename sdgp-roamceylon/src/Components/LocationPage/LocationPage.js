@@ -89,7 +89,7 @@ export default function LocationPage() {
                     </div>
 
                     <div className="rightContainer">
-                        <h2><center>Provide Recommandation</center></h2>
+                        <h2><center>Provide Recommendation</center></h2>
                         <div className='textarea-center'>
                             <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>
                             </textarea>
