@@ -18,6 +18,12 @@ router.get('/',(req,res)=>{
 router.post('/register',registerUser)
 router.post('/login', loginUser)
 
+router.post('/keywords',(req,res)=>{
+    
+    res.send('keywords')
+})
+
+
 
 
 module.exports=router

@@ -8,6 +8,8 @@ import axios from 'axios';
 
 
 export default function LocationPage() {
+    
+    const [loading, setLoading] = useState(true);
 
     const [value, setValue] = useState("");
     const [filteredData, setFilteredData] = useState([]);
@@ -23,7 +25,7 @@ export default function LocationPage() {
         try {
             
 
-            const response = await axios.post('http://localhost:8010/keyords', { descriptionData: descriptionData }).then(setDescriptionData(''));
+            const keyword = await axios.post('http://localhost:8010/keywords', { descriptionData: descriptionData }).then(setDescriptionData('')).catch((err) => setDescriptionData(''));
             
         }
         catch(error)
