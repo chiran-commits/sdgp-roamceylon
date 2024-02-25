@@ -124,4 +124,8 @@ nav ul#navbar.open{
         flex-direction: row;
     }
 
+    #navbar li a{
+        color: black;
+    }
+
 }
