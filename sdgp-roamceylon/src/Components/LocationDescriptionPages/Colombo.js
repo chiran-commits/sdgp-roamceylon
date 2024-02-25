@@ -16,8 +16,8 @@ const Colombo = () => {
     };
   
     const handleRatingChange = (e) => {
-      setRating(parseInt(e.target.value));
-    };
+        setRating(parseInt(e.target.value));
+      };
   
     const handleSubmit =async (e) => {
         e.preventDefault();
@@ -65,15 +65,22 @@ const Colombo = () => {
                         <div>
                         <label>
                             Rating:
-                            <input
-                            type="number"
-                            value={rating}
-                            onChange={handleRatingChange}
-                            min="1"
-                            max="5"
-                            required
-                            />
+                            
+                            
                         </label>
+                        <div class="rating">
+                            <input value="5" name="rating" id="star5" type="radio" checked={rating === 5} onChange={handleRatingChange}/>
+                            <label for="star5"></label>
+                            <input value="4" name="rating" id="star4" type="radio" checked={rating === 4} onChange={handleRatingChange}/>
+                            <label for="star4"></label>
+                            <input value="3" name="rating" id="star3" type="radio" checked={rating === 3} onChange={handleRatingChange}/>
+                            <label for="star3"></label>
+                            <input value="2" name="rating" id="star2" type="radio" checked={rating=== 2} onChange={handleRatingChange}/>
+                            <label for="star2"></label>
+                            <input value="1" name="rating" id="star1" type="radio" checked={rating === 1} onChange={handleRatingChange}/>
+                            <label for="star1"></label>
+                        </div>
+
                         </div>
                         <button type="submit">Submit</button>
                     </form>
