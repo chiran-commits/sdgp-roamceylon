@@ -1,16 +1,45 @@
 import React from 'react';
 import Navbar from "../AboutUsPage/Navbar";
 import "./LocationPage.css";
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import Locations from '../LocationPage/Locations.json';
+import axios from 'axios';
 
 
 
-export default function LocationPage(){
+export default function LocationPage() {
+    
+    const [loading, setLoading] = useState(true);
 
     const [value, setValue] = useState("");
     const [filteredData, setFilteredData] = useState([]);
     const [searchData, setSearchData] = useState([]);
+    const [descriptionData, setDescriptionData] = useState('');
+    const [message, setMessage] = useState('');
+    const [descriptionPlaceholder, setDescriptionPlaceholder] = useState('Enter the features of your ideal location...');
+
+    const handleDescriptionChange = (event) => {
+        setDescriptionData(event.target.value);
+    };
+
+    const handleSubmitDescription = async () => {
+        try {
+            
+
+            const keyword = await axios.post('http://localhost:5000/keywords', { descriptionData: descriptionData });
+            console.log(keyword);   
+            setMessage(keyword.data.message); 
+            setDescriptionData(''); 
+        }
+        catch(error)
+        {
+            console.log("Error fetching data:", error);
+            setDescriptionData('')
+            setDescriptionPlaceholder("please enter a valid description")
+            setMessage('Error processing description')
+        }
+
+    }
 
     useEffect(() => {
         const fetchData = async () => {
@@ -38,39 +67,40 @@ export default function LocationPage(){
     };
 
 
-    return(
+    return (
         <div>
-            <Navbar activeOption="locations"/>
+            <Navbar activeOption="locations" />
             <div className="mainContainer">
                 <div className="location-container">
                     <div className="leftContainer">
                         <h2>Manual Search</h2>
                         <div className="input-box-search">
-                            <input type="text" placeholder="Search the location for you...." onChange={onChange} value={value}/>
+                            <input type="text" placeholder="Search the location for you...." onChange={onChange} value={value} />
                             <i className='bx bxs-user'></i>
                             {value && (
-                            <div className='drop-down'>
-                                {filteredData.map(item => (
-                                    <div className='location-item' key={item.location} onClick={() => redirectToLocation(item.link)}>
-                                        <h4>{item.location}</h4>
-                                        <div className='show-desc'>
-                                            {item.description}
+                                <div className='drop-down'>
+                                    {filteredData.map(item => (
+                                        <div className='location-item' key={item.location} onClick={() => redirectToLocation(item.link)}>
+                                            <h4>{item.location}</h4>
+                                            <div className='show-desc'>
+                                                {item.description}
+                                            </div>
                                         </div>
-                                    </div>
-                                ))}
-                             </div>
-                        )}
+                                    ))}
+                                </div>
+                            )}
                         </div>
                     </div>
-                    
+
                     <div className="rightContainer">
-                        <h2><center>Provide Recommandation</center></h2>
+                        <h2><center>Provide Recommendation</center></h2>
                         <div className='textarea-center'>
-                            <textarea placeholder='Enter the features of your ideal location...' className="input-box-recommendation"> 
+                            <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>
                             </textarea>
                         </div>
-                        <button type="submit" className="recommendation-btn">Generate Locations</button>
-                    </div> 
+                        <button type="submit" className="recommendation-btn" onClick={handleSubmitDescription}>Generate Locations</button>
+                        {message && <p>{message}</p>}
+                    </div>
                 </div>
             </div>
         </div>

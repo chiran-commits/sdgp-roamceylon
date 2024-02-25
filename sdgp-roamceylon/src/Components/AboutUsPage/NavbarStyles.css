@@ -7,7 +7,7 @@ nav{
     width: 99%;
     height: 55px;
     border-radius: 13px;
-    background-color:lightblue;
+    background-color:#176B87;
     margin-left: 10px;
     margin-bottom: 10px;
 }
@@ -26,7 +26,7 @@ nav{
 
 #navbar li a{
     text-decoration: none;
-    color: black;
+    color: white;
     transition: 0.3s ease-in-out;
     font-size: 1.1rem;
     font-weight: 600;
@@ -41,12 +41,21 @@ a{
 #moveToRight{
     margin-left: 20px;
     color: black;
+    display: flex;
+    align-items: center;
 }
 .userimg{
-    height: 45px;
-    width: 50px; 
+    height: 43px;
+    width: 48px; 
     margin-right: 10px;
     margin-left: 2px;
+}
+
+.logoImg{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-bottom: 10px;
 }
 
 nav .navMenu{
@@ -108,6 +117,15 @@ nav ul#navbar.open{
         width: 100%;
         font-size: 20px;
         margin:30px;
+    }
+
+    #moveToRight{
+        margin-top: 0px;
+        flex-direction: row;
+    }
+
+    #navbar li a{
+        color: black;
     }
 
 }

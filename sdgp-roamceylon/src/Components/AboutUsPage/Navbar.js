@@ -1,5 +1,6 @@
 import "./NavbarStyles.css";
-import user from "./images.png"
+import user from "./Asset 1.png"
+import logo from "./Logo-roamceylon.png"
 import  React, {useState} from 'react';
 
 
@@ -9,7 +10,7 @@ const Navbar = ({activeOption}) =>{
 
    return(
     <nav>
-        <a id="moveToRight" href="/"><h2>ROAMCEYLON</h2></a>
+        <a id="moveToRight" href="/"><h2>ROAMCEYLON</h2><img className="logoImg" src={logo}/></a>
         <div className="navMenu" onClick={() => {
             setMenuOpen(!menuOpen);
         }}>
