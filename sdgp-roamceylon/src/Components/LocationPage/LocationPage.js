@@ -15,6 +15,7 @@ export default function LocationPage() {
     const [filteredData, setFilteredData] = useState([]);
     const [searchData, setSearchData] = useState([]);
     const [descriptionData, setDescriptionData] = useState('');
+    const [message, setMessage] = useState('');
     const [descriptionPlaceholder, setDescriptionPlaceholder] = useState('Enter the features of your ideal location...');
 
     const handleDescriptionChange = (event) => {
@@ -25,14 +26,17 @@ export default function LocationPage() {
         try {
             
 
-            const keyword = await axios.post('http://localhost:8010/keywords', { descriptionData: descriptionData }).then(setDescriptionData('')).catch((err) => setDescriptionData(''));
-            
+            const keyword = await axios.post('http://localhost:5000/keywords', { descriptionData: descriptionData });
+            console.log(keyword);   
+            setMessage(keyword.data.message); 
+            setDescriptionData(''); 
         }
         catch(error)
         {
             console.log("Error fetching data:", error);
             setDescriptionData('')
             setDescriptionPlaceholder("please enter a valid description")
+            setMessage('Error processing description')
         }
 
     }
@@ -95,6 +99,7 @@ export default function LocationPage() {
                             </textarea>
                         </div>
                         <button type="submit" className="recommendation-btn" onClick={handleSubmitDescription}>Generate Locations</button>
+                        {message && <p>{message}</p>}
                     </div>
                 </div>
             </div>
