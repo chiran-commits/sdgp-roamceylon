@@ -3,6 +3,7 @@ import Navbar from '../AboutUsPage/Navbar';
 import './colombo.css';
 import { useState, useEffect } from 'react'
 import axios from 'axios';
+import LocationData from './locations.json'
 
 const Colombo = () => {
 
@@ -67,12 +68,20 @@ const Colombo = () => {
             <section className="colombopagehero">
                 <div className="colombopagetext-container">
                     <h2>Colombo</h2>
-                    <div className="colombopageindicators">
-                        <p>WEATHER: TROPICAL</p>
-                        <p>WIFI: AVERAGE</p>
-                        <p>COST OF LIVING: LOW-COST</p>
-                        <p>URBAN/RURAL: URBAN</p>
-                    </div>
+                    {
+                    LocationData.map(data=>{
+                        if(data.location=="Colombo"){
+                            return(
+                                <div className="colombopageindicators">
+                                    <p>WEATHER: TROPICAL</p>
+                                    <p>WIFI: {data.wifi}</p>
+                                    <p>COST OF LIVING: {data.col}</p>
+                                    <p>URBAN/RURAL: {data.type}</p>
+                                 </div>
+                            );
+                        }
+                    })
+                }
                 </div>
                 <div>
 
