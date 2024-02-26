@@ -21,15 +21,20 @@ const Colombo = () => {
 
     useEffect(() => {
         const getReviwes = async () => {
-            let publisedReviews = await axios.get(`http://localhost:5009/review?location=${location}`,{location}).catch(
+            try{
+                let publisedReviews = await axios.get(`http://localhost:5009/review?location=${location}`,{location}).catch(
                 console.log("error fetching data")
             )
             console.log(publisedReviews.data)
             let publishedReviewsArray = Object.values(publisedReviews.data);
-            
-
-
             setPublisedReviews(publishedReviewsArray);
+
+            }
+            catch(err){
+                console.log(err)
+            }
+            
+            
 
     
     
