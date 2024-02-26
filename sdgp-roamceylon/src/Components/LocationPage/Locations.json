@@ -20,5 +20,25 @@
     {
         "location":"Panadura",
         "link":"http://localhost:8000/panadura"
+    },
+    {
+        "location":"Nuwara-Eliya",
+        "link": "http://localhost:8000/nuwaraeliya"
+    },
+    {
+        "location":"Jaffna",
+        "link": "http://localhost:8000/jaffna"
+    },
+    {
+        "location":"Ella",
+        "link": "http://localhost:8000/ella"
+    },
+    {
+        "location":"Anuradhapura",
+        "link": "http://localhost:8000/anuradhapura"
+    },
+    {
+        "location":"Arugam Bay",
+        "link": "http://localhost:8000/arugambay"
     }
 ]
