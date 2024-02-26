@@ -143,6 +143,18 @@ const Colombo = () => {
                             <li key={comment._id} className="comment-item">
                                 <h3>{comment.name}</h3>
                                 <p>{comment.review}</p>
+                                <div class="rating">
+                                    <input  name={`rating${comment._id}`} id={`${comment._id}5`} type="radio" checked={comment.rating== 5}  />
+                                    <label for={`${comment._id}5`}></label>
+                                    <input  name={`rating${comment._id}`} id={`${comment._id}4`} type="radio" checked={comment.rating== 4} />
+                                    <label for={`${comment._id}4`}></label>
+                                    <input  name={`rating${comment._id}`} id={`${comment._id}3`} type="radio" checked={comment.rating== 3}  />
+                                    <label for={`${comment._id}3`}></label>
+                                    <input  name={`rating${comment._id}`} id={`${comment._id}2`} type="radio" checked={comment.rating==2} />
+                                    <label for={`${comment._id}2`}></label>
+                                    <input name={`rating${comment._id}`} id={`${comment._id}1`} type="radio" checked={comment.rating==1} />
+                                    <label for={`${comment._id}1`}></label>
+                                </div>
                                 <p>{comment.rating}</p>
 
                             </li>
