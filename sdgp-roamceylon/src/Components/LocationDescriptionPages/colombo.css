@@ -8,13 +8,6 @@
     height: 100vh;
 }
 
-.top-part{
-    background-image: url('../HomePage/Assets/colombo.jpg');
-    background-size: cover;
-    border-radius: 0;
-    height: 100vh;
-    position: relative;
-}
 
 
 .colombopagehero {
@@ -42,7 +35,6 @@
 }
 
 .colombopageindicators {
-    padding-top: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -58,8 +50,6 @@
 
 .colombopagereviews {
     padding: 40px;
-    background-color: white;
-    opacity: 80%;
 }
 
 .colombopagereviews h3 {
@@ -68,7 +58,7 @@
 }
 
 .colombopagereviews p {
-    color: black;
+    color: #ddd;
 }
 
     .colombopagereview {
@@ -80,3 +70,85 @@
     .colombopagereview h2 {
         margin-bottom: 10px;
     }
+
+    
+
+/* styles.css */
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-container textarea,
+  .form-container input[type="number"],
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .form-container textarea {
+    height: 100px;
+  }
+  
+  .form-container button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #45a049;
+  }
+  .rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 30px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color:rgb(225, 225, 14);
+    transition: color 0.3s;
+  }
+
+
+/* from here start the css for the commnet box */
+.comment-item h3{
+  color: black;
+}
+
+.comment-item p{
+  color: black;
+}
+  
+  
