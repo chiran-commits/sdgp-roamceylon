@@ -10,12 +10,18 @@
     {
         "location":"Kandy",
         "link":"http://localhost:8000/kandy",
-        "description":"Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers."
+        "description":"Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.",
+        "wifi":"AVERAGE",
+        "col":"HIGH COST",
+        "type":"URBAN"
     },
     {
         "location":"Matara",
         "link":"http://localhost:8000/matara",
-        "description":""
+        "description":"",
+        "wifi":"AVERAGE",
+        "col":"LOW COST",
+        "type":"URBAN"
     },
     {
         "location":"Galle",
@@ -28,26 +34,44 @@
     {
         "location":"Panadura",
         "link":"http://localhost:8000/panadura",
-        "description":""
+        "description":"",
+        "wifi":"AVERAGE",
+        "col":"LOW COST",
+        "type":"URBAN"
     },
     {
         "location":"Nuwara-Eliya",
-        "link": "http://localhost:8000/nuwaraeliya"
+        "link": "http://localhost:8000/nuwaraeliya",
+        "wifi":"AVERAGE",
+        "col":"LOW COST",
+        "type":"URBAN"
     },
     {
         "location":"Jaffna",
-        "link": "http://localhost:8000/jaffna"
+        "link": "http://localhost:8000/jaffna",
+        "wifi":"AVERAGE",
+        "col":"LOW COST",
+        "type":"RURAL"
     },
     {
         "location":"Ella",
-        "link": "http://localhost:8000/ella"
+        "link": "http://localhost:8000/ella",
+        "wifi":"AVERAGE",
+        "col":"HIGH COST",
+        "type":"RURAL"
     },
     {
         "location":"Anuradhapura",
-        "link": "http://localhost:8000/anuradhapura"
+        "link": "http://localhost:8000/anuradhapura",
+        "wifi":"AVERAGE",
+        "col":"LOW COST",
+        "type":"RURAL"
     },
     {
         "location":"Arugam Bay",
-        "link": "http://localhost:8000/arugambay"
+        "link": "http://localhost:8000/arugambay",
+        "wifi":"AVERAGE",
+        "col":"HIGH COST",
+        "type":"RURAL"
     }
 ]
