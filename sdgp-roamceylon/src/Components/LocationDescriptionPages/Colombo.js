@@ -13,36 +13,39 @@ const Colombo = () => {
     const name = "tharuka"
     const [publisedReviews, setPublisedReviews] = useState([]);
 
+    const [pressedSubmit, setPressedSubmit] = useState(false);
+
+
 
     const handleReviewChange = (e) => {
         setReview(e.target.value);
     };
-  
+
 
     useEffect(() => {
         const getReviwes = async () => {
-            try{
-                let publisedReviews = await axios.get(`http://localhost:5009/review?location=${location}`,{location}).catch(
-                console.log("error fetching data")
-            )
-            console.log(publisedReviews.data)
-            let publishedReviewsArray = Object.values(publisedReviews.data);
-            setPublisedReviews(publishedReviewsArray);
+            try {
+                let publisedReviews = await axios.get(`http://localhost:5009/review?location=${location}`, { location }).catch(
+                    console.log("error fetching data")
+                )
+                console.log(publisedReviews.data)
+                let publishedReviewsArray = Object.values(publisedReviews.data);
+                setPublisedReviews(publishedReviewsArray);
 
             }
-            catch(err){
+            catch (err) {
                 console.log(err)
             }
-            
-            
 
-    
-    
+
+
+
+
         }
         getReviwes()
 
-    },[])
-  
+    }, [pressedSubmit])
+
 
 
 
@@ -53,12 +56,14 @@ const Colombo = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        
 
         await axios.post('http://localhost:5009/review', { name, location, review, rating }).catch((err) => {
             console.log(err)
             setReview('');
             setRating(0);
         })
+        setPressedSubmit(!pressedSubmit);
         setReview('');
         setRating(0);
     };
@@ -74,19 +79,19 @@ const Colombo = () => {
                 <div className="colombopagetext-container">
                     <h2>Colombo</h2>
                     {
-                    LocationData.map(data=>{
-                        if(data.location=="Colombo"){
-                            return(
-                                <div className="colombopageindicators">
-                                    <p>WEATHER: TROPICAL</p>
-                                    <p>WIFI: {data.wifi}</p>
-                                    <p>COST OF LIVING: {data.col}</p>
-                                    <p>URBAN/RURAL: {data.type}</p>
-                                 </div>
-                            );
-                        }
-                    })
-                }
+                        LocationData.map(data => {
+                            if (data.location == "Colombo") {
+                                return (
+                                    <div className="colombopageindicators">
+                                        <p>WEATHER: TROPICAL</p>
+                                        <p>WIFI: {data.wifi}</p>
+                                        <p>COST OF LIVING: {data.col}</p>
+                                        <p>URBAN/RURAL: {data.type}</p>
+                                    </div>
+                                );
+                            }
+                        })
+                    }
                 </div>
                 <div>
 
@@ -125,7 +130,7 @@ const Colombo = () => {
                             </div>
                             <button type="submit">Submit</button>
                         </form>
-                      
+
                     </div>
                 </div>
             </section>
@@ -133,17 +138,17 @@ const Colombo = () => {
                 <h3>REVIEWS</h3>
                 <div className="colombopagereview">
                     <h2>Jake</h2>
-                    <ul>
-                            {publisedReviews.map((comment) => (
-                                <li key={comment._id}>
-                                    <h3>{comment.name}</h3>
-                                    <p>{comment.review}</p>
-                                    <p>{comment.rating}</p>
-                                    
-                                </li>
-                            ))}
+                    <ul className="comments-list">
+                        {publisedReviews.map((comment) => (
+                            <li key={comment._id} className="comment-item">
+                                <h3>{comment.name}</h3>
+                                <p>{comment.review}</p>
+                                <p>{comment.rating}</p>
+
+                            </li>
+                        ))}
                     </ul>
-                 
+
 
                 </div>
             </section>
