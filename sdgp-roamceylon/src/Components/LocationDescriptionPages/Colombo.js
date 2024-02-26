@@ -162,6 +162,3 @@ const Colombo = () => {
 export default Colombo
 
 
-
-
-

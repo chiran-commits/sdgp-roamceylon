@@ -1,0 +1,33 @@
+.galle-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #176B87;
+    margin: 35px 0px 20px 0px;
+    border-radius: 20px;
+    padding-bottom: 200px;
+    padding-top: 28vh;
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh;
+}
+
+.galle-image{
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transform: scale(2.50);
+    width: 200px;
+}
+
+.galle-text{
+    position: relative;
+    color: #DAFFFB;
+    flex-direction: column;
+    font-size: 35px;
+    padding-top: 30px;
+}
+
