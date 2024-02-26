@@ -2,7 +2,10 @@
     {
         "location":"Colombo",
         "link":"http://localhost:8000/colombo",
-        "description":"Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers."
+        "description":"Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.",
+        "wifi":"AVERAGE",
+        "col":"LOW COST",
+        "type":"URBAN"
     },
     {
         "location":"Kandy",
@@ -11,15 +14,21 @@
     },
     {
         "location":"Matara",
-        "link":"http://localhost:8000/matara"
+        "link":"http://localhost:8000/matara",
+        "description":""
     },
     {
         "location":"Galle",
-        "link":"http://localhost:8000/galle"
+        "link":"http://localhost:8000/galle",
+        "description":"",
+        "wifi":"AVERAGE",
+        "col":"HIGH COST",
+        "type":"RURAL"
     },
     {
         "location":"Panadura",
-        "link":"http://localhost:8000/panadura"
+        "link":"http://localhost:8000/panadura",
+        "description":""
     },
     {
         "location":"Nuwara-Eliya",
