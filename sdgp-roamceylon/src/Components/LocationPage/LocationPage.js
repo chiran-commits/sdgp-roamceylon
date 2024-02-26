@@ -26,7 +26,7 @@ export default function LocationPage() {
         try {
             
 
-            const keyword = await axios.post('http://localhost:5000/keywords', { descriptionData: descriptionData });
+            const keyword = await axios.post('http://localhost:5009/keywords', { descriptionData: descriptionData });
             console.log(keyword);   
             setMessage(keyword.data.message); 
             setDescriptionData(''); 
