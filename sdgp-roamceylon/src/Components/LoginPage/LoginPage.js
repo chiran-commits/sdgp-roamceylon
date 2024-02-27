@@ -3,6 +3,7 @@ import './LoginPage.css';
 import axios from 'axios';
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
     const [data, setData] = useState({
@@ -94,7 +95,7 @@ export default function Login() {
                         <button type="submit" className="login-btn" >Login</button>
                     </form>
                     <div className="register-account">
-                        <p>Don't have an account, Click here to <a href="#">create a new account</a></p>
+                        <p>Don't have an account, Click here to <Link to='/register'><a>create a new account</a></Link></p>
                     </div>
                 </div>
             </div>

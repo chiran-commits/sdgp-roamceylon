@@ -2,6 +2,7 @@ import loader from "../Helper/loader";
 import "./RegistrationPage.css";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 
@@ -90,7 +91,8 @@ export const RegistrationPage = () => {
                     <button type="submit" className="register-btn">Create account</button>
                 </form>
                 <div className="register-account">
-                        <p>If you already have a account, Click here to <a href="#">Login</a></p>
+                        <p>If you already have a account, Click here to <Link to='/login'><a>Login</a></Link></p>
+                        
                 </div> 
             </div>
         </div>    

@@ -2,10 +2,13 @@ import "./NavbarStyles.css";
 import user from "./Asset 1.png"
 import logo from "./Logo-roamceylon.png"
 import  React, {useState} from 'react';
+import { useSelector } from "react-redux";
+
 
 
 
 const Navbar = ({activeOption}) =>{
+    const isLoggedIn = useSelector((state) => state.isLoggedIn);
    const [menuOpen, setMenuOpen] = useState(false)
 
    return(
@@ -24,7 +27,8 @@ const Navbar = ({activeOption}) =>{
                 <li><a href="/" className={activeOption == 'home' ? 'active' : ''}>HOME</a></li>
                 <li><a href="/location" className={activeOption == 'locations' ? 'active' : ''}>LOCATIONS</a></li>
                 <li><a href="/about" className={activeOption == 'aboutus' ? 'active' : ''}>ABOUT US</a></li>
-                <li><a href="profile"><img className="userimg" src={user}/></a></li>
+                {isLoggedIn ? (<li><a href="profile"><img className="userimg" src={user}/></a></li>) : (
+                <li><button>Sign In</button></li>)}
             </ul>
         </div>
     </nav>
