@@ -5,7 +5,8 @@
         "description":"Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.",
         "wifi":"AVERAGE",
         "col":"LOW COST",
-        "type":"URBAN"
+        "type":"URBAN",
+        "weather":"HOT"
     },
     {
         "location":"Kandy",
@@ -13,7 +14,8 @@
         "description":"Kandy is a large city located in central Sri Lanka. The city is surrounded by mountains, which are home to tea plantations and rainforests.",
         "wifi":"AVERAGE",
         "col":"HIGH COST",
-        "type":"URBAN"
+        "type":"URBAN",
+        "weather":"HOT"
     },
     {
         "location":"Matara",
@@ -21,7 +23,8 @@
         "description":"Matara is a major city located on the southern province of Sri Lanka. It is popular for the dutch architecture, a well-preserved fort, its street life and wildlife sanctuaries.",
         "wifi":"AVERAGE",
         "col":"LOW COST",
-        "type":"URBAN"
+        "type":"URBAN",
+        "weather":"HOT"
     },
     {
         "location":"Galle",
@@ -29,7 +32,8 @@
         "description":"Galle is a city on the southwest coastline of Sri Lanka. The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings, stylish cafes, quirky boutiques and impeccably restored beautiful hotels.",
         "wifi":"AVERAGE",
         "col":"HIGH COST",
-        "type":"RURAL"
+        "type":"RURAL",
+        "weather":"TROPICAL"
     },
     {
         "location":"Trincomalee",
@@ -37,7 +41,8 @@
         "description":"Trincomalee is a port city on the northeast coast of Sri Lanka. It has one of the world's finest natural harbors, historical sites and beautiful beaches.",
         "wifi":"AVERAGE",
         "col":"AVERAGE",
-        "type":"RURAL"
+        "type":"RURAL",
+        "weather":"TROPICAL"
     },
     {
         "location":"Nuwara-Eliya",
@@ -45,7 +50,8 @@
         "description":"Nuwara-Eliya is a city in the tea country hills of central Sri Lanka. The city is surrounded by colonial-era bungalows, Tudor-style hotels, pretty gardens and beautiful estates.",
         "wifi":"AVERAGE",
         "col":"LOW COST",
-        "type":"URBAN"
+        "type":"URBAN",
+        "weather":"COLD"
     },
     {
         "location":"Jaffna",
@@ -53,7 +59,8 @@
         "description":"Jaffna is a city on the nothern tip of Sri Lanka. Jaffna welcomes visitors warmly with their art and creative culture, and a rewarding place to learn about Sri Lankan Tamil culture.",
         "wifi":"AVERAGE",
         "col":"LOW COST",
-        "type":"RURAL"
+        "type":"RURAL",
+        "weather":"HOT"
     },
     {
         "location":"Ella",
@@ -61,7 +68,8 @@
         "description":" Ella is a small beautiful town located in the Badulla District of Uva Province. It is surrounded by tea plantations, waterfalls, viewpoints and lots of enjoyable activities.",
         "wifi":"AVERAGE",
         "col":"HIGH COST",
-        "type":"RURAL"
+        "type":"RURAL",
+        "weather":"COLD"
     },
     {
         "location":"Anuradhapura",
@@ -69,7 +77,8 @@
         "description":"Anuradhapura is a city located in north central plain of Sri Lanka. It contains a rich collection of archaeological and architectural wonders, where most of the sites are used as holy places and temples.",
         "wifi":"AVERAGE",
         "col":"LOW COST",
-        "type":"RURAL"
+        "type":"RURAL",
+        "weather":"HOT"
     },
     {
         "location":"Arugam Bay",
@@ -77,6 +86,7 @@
         "description":"Arugam Bay is located in the southeast coast of Sri Lanka. It is a popular destination for surfing, diving, beautiful sandy beaches and exploring nearby lagoons.",
         "wifi":"AVERAGE",
         "col":"HIGH COST",
-        "type":"RURAL"
+        "type":"RURAL",
+        "weather":"TROPICAL"
     }
 ]
