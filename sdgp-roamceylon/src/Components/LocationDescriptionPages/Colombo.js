@@ -83,9 +83,49 @@ const Colombo = () => {
                             if (data.location == "Colombo") {
                                 return (
                                     <div className="colombopageindicators">
-                                        <p>WEATHER: TROPICAL</p>
-                                        <p>WIFI: {data.wifi}</p>
-                                        <p>COST OF LIVING: {data.col}</p>
+                                        <p>WEATHER: Tropical</p>
+                                        <p>WIFI:</p>
+                                        <span>
+                                            <div className='weather'>
+                                                <div className='outer'>
+                                                    <div className='inner'>
+                                                        <div id='number'>
+                                                            Fast
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                                        <defs>
+                                                            <linearGradient id="GradientColor">
+                                                            <stop offset="0%" stop-color="#e91e63" />
+                                                            <stop offset="100%" stop-color="#673ab7" />
+                                                            </linearGradient>
+                                                        </defs>
+                                                        <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                </svg>
+                                            </div>
+                                        </span>
+                                        <p>COST OF LIVING:</p>
+                                        <span>
+                                            <div className='cost'>
+                                                <div className='outer'>
+                                                    <div className='inner'>
+                                                        <div id='number'>
+                                                            High
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                                        <defs>
+                                                            <linearGradient id="GradientColor">
+                                                            <stop offset="0%" stop-color="#e91e63" />
+                                                            <stop offset="100%" stop-color="#673ab7" />
+                                                            </linearGradient>
+                                                        </defs>
+                                                        <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                </svg>
+                                            </div>
+                                        </span>
                                         <p>URBAN/RURAL: {data.type}</p>
                                     </div>
                                 );

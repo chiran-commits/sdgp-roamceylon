@@ -209,7 +209,7 @@ export default function HomePage() {
           <hr className="footer-sep"></hr>
           <footer className="home-footer">
             <h3>ROAMCEYLON</h3>
-            <div className="social-panel">Hi</div>
+            <div className="social-panel">Organised by a group of students from Informatics Institute of Technology, Sri Lanka. We strive to provide a better service for all the travel market by providing up-to-date information about Sri Lanka</div>
             <div className="footer-bot">
               <p>Copyright 2024 - Roamceylon</p>
             </div>
