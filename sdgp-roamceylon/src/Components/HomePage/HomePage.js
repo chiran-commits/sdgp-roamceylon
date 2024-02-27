@@ -154,6 +154,7 @@ export default function HomePage() {
                     and diverse cuisine make it a captivating destination for
                     travelers.
                   </p>
+                  <br></br>
                   <a href="#1" className="country-btn">
                     Learn More
                   </a>
@@ -165,10 +166,10 @@ export default function HomePage() {
                 <h3><FetchWeather city="kandy"/></h3>
                 <img class="img" src={kandyImage}></img>
                 <p>
-                  Colombo, Sri Lanka's capital, boasts a dynamic mix of history
-                  and modernity. Its vibrant streets, rich culture, and diverse
-                  cuisine make it a captivating destination for travelers.
+                  Kandy is a large city located in central Sri Lanka. The city is surrounded by majestic mountains, 
+                  which are home to tea plantations and rainforests.
                 </p>
+                <br></br><br></br>
                 <a href="#1" className="country-btn">
                   Learn More
                 </a>
@@ -179,10 +180,10 @@ export default function HomePage() {
                 <h3><FetchWeather city="jaffna"/></h3>
                 <img class="img" src={mataraImage}></img>
                 <p>
-                  Colombo, Sri Lanka's capital, boasts a dynamic mix of history
-                  and modernity. Its vibrant streets, rich culture, and diverse
-                  cuisine make it a captivating destination for travelers.
-                </p>
+                  Jaffna is a city on the nothern tip of Sri Lanka. 
+                  Jaffna welcomes visitors warmly with their art and creative culture, 
+                  and a rewarding place to learn about Sri Lankan Tamil culture.
+                </p><br></br>
                 <a href="#1" className="country-btn">
                   Learn More
                 </a>
@@ -194,9 +195,9 @@ export default function HomePage() {
                   <h3><FetchWeather city="galle"/></h3>
                   <img class="img" src={galleImage}></img>
                   <p>
-                    Colombo, Sri Lanka's capital, boasts a dynamic mix of history
-                    and modernity. Its vibrant streets, rich culture, and diverse
-                    cuisine make it a captivating destination for travelers.
+                    Galle is a city on the southwest coastline of Sri Lanka. 
+                    The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings, stylish cafes, 
+                    quirky boutiques and impeccably restored beautiful hotels.
                   </p>
                   <a href="#1" className="country-btn">
                     Learn More
