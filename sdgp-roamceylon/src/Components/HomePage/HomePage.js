@@ -120,9 +120,10 @@ export default function HomePage() {
           </div>
           <div className="home-container-about" id="target-about-us">
             <section className="hidden">
-              <h2>About us</h2>
+              {/* <h2>About us</h2> */}
 
               <div className="about-content" >
+                <h2>About us</h2>
                 <p>
                   At Roamceylon, we're passionate about empowering digital
                   nomads to embrace the freedom of remote work while immersing

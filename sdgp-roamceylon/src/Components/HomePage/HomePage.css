@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    margin: 35px 30px 20px 30px;
-    border-radius: 20px;
+    /* margin: 35px 0px 10px 0px; */
+    border-radius: 15px;
     padding-bottom: 200px;
     padding-top: 28vh;
     position: relative;
@@ -27,8 +27,8 @@
 .home-container-about{
   display: flex;
   justify-content: center;
-  background-color: #176B87;
-  margin: 80px 30px 60px 30px;
+  background-color: rgba(128, 128, 128, 0.28);
+  /* margin: 20px 0px 20px 0px; */
   border-radius: 20px;
   padding-bottom: 280px;
   padding-top: 50px;
@@ -140,7 +140,7 @@
 
 .show{
   opacity: 1;
-  color: #DAFFFB;
+  color: black;
   filter: blur(0px);
   transform: translateY(0);
   justify-content: center;
@@ -153,8 +153,13 @@
 
 .about-content h2{
   display: flex;
-  justify-content: center;
-  text-align: center;
+  /* justify-content: center;  */
+  text-align: left;
+  padding-left: 100px;
+  font-size: 95px;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 35%);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
   margin: 0;
 }
 
@@ -164,6 +169,7 @@
   text-align: center;
   align-items: center;
   margin-top: 50px;
+  font-size: 19px;
   padding: 0px 60px 60px 60px;
 }
 
