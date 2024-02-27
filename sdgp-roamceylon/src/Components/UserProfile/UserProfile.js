@@ -3,6 +3,7 @@ import Navbar from '../AboutUsPage/Navbar';
 import './UserProfile.css';
 import React, { useState, useEffect } from 'react';
 import ProfileImg from '../AboutUsPage/Asset 1.png'
+import axios from 'axios';
 
 function UserProfile(){
     const [img,setImg] = useState(ProfileImg);
@@ -12,6 +13,26 @@ function UserProfile(){
     const [email, setEmail] = useState("guest123@gmail.com");
     const [password,setPassword] = useState("1234");
     const [edit,setEdit] = useState(true);
+    const [data,setData] = useState({user:{firstName:"",lastName:"",email:"",password:"",age:""}});
+
+
+  
+      useEffect(() => {
+        const getProfile = async () => {
+            const res = await axios
+              .get("http://localhost:5009/user", {
+                withCredentials: true,
+              })
+              .catch((err) => console.log(err));
+            const data = await res.data;
+            setData(data);
+            console.log(data);
+        };
+        getProfile();
+       
+      
+      }, []);
+
    
 
     function handleEdit(){
@@ -57,13 +78,13 @@ function UserProfile(){
         <button onClick={handleSave}>Save</button>
         <br></br>
         <label>First Name</label><br></br>
-        <input value={fname} disabled={edit} onChange={handleFName}></input>
+        <input value={data.user.firstName} disabled={edit} onChange={handleFName}></input>
         <br></br>
         <label>Last Name</label><br></br>
-        <input type="text" value={lname} disabled={edit}  onChange={handleLName}></input>
+        <input type="text" value={data.user.lastName} disabled={edit}  onChange={handleLName}></input>
         <br></br>
         <label>Email</label><br></br>
-        <input value={email} disabled='true' size="30" onChange={handleEmail}></input><br></br>
+        <input value={data.user.email} disabled='true' size="30" onChange={handleEmail}></input><br></br>
         <label>Age</label><br></br>
         <input value={age} disabled={edit}  onChange={handleAge}></input><br></br>
     </div>

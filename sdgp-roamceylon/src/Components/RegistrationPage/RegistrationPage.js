@@ -3,12 +3,14 @@ import "./RegistrationPage.css";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import{useNavigate} from 'react-router-dom';
 
 
 
 
 
 export const RegistrationPage = () => {
+    const navigate = useNavigate();
 
 
     const [loading, setLoading] = useState(true);
@@ -28,7 +30,7 @@ export const RegistrationPage = () => {
 
             
 
-            const {data}=await axios.post('http://localhost:8010/register',{firstName,lastName,email,password}).then(
+            const {data}=await axios.post('http://localhost:5009/register',{firstName,lastName,email,password}).then(
 
             
             setError('')
@@ -37,6 +39,7 @@ export const RegistrationPage = () => {
             })
 
             setData({ firstName:'',lastName:'',email:'',password:''})
+            navigate('/login')
 
             
             
