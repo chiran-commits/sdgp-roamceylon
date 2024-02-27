@@ -265,13 +265,16 @@
 
 .footer-bot{
   display: flex;
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 14px;
+  margin-left: 10px;  
 }
 
 .social-panel{
   justify-content: space-between;
-  text-align: right;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  text-align: left;
+  font-size: 14px;
+  margin-right: 900px;
+  margin-left: 10px;
+  opacity: .9;
 }
