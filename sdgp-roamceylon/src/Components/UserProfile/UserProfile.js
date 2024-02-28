@@ -33,13 +33,19 @@ function UserProfile(){
                     headers: {
                          Authorization: authToken
                     }
-                })
-                .catch((err) => console.log(err));
-                console.log(res);
-                const data = await res.data;
-                setData(data);
-                console.log(data);
+                }).then((res) => {
+                    console.log(res);
+                    const data =res.data;
+                    setData(data);
+                    console.log(data);
 
+                })
+                .catch((err) => {console.log(err)
+                    nav('/login');
+                }
+                );
+               
+              
             }
                
         };
