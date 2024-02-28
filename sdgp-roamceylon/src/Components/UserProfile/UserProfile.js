@@ -11,22 +11,27 @@ function UserProfile(){
     const [lname,setLName] = useState("Guest");
     const [age,setAge] = useState(19);
     const [email, setEmail] = useState("guest123@gmail.com");
-    const [password,setPassword] = useState("1234");
     const [edit,setEdit] = useState(true);
     const [data,setData] = useState({user:{firstName:"",lastName:"",email:"",password:"",age:""}});
 
 
+
   
       useEffect(() => {
+
+        const authToken = localStorage.getItem('SDGP-roamceylon2');
         const getProfile = async () => {
-            const res = await axios
-              .get("http://localhost:5009/user", {
-                withCredentials: true,
-              })
-              .catch((err) => console.log(err));
-            const data = await res.data;
-            setData(data);
-            console.log(data);
+                const res = await axios
+                    .get("http://localhost:5009/user",{
+                        headers: {
+                             Authorization: authToken
+                        }
+                    })
+                    .catch((err) => console.log(err));
+                    console.log(res);
+                const data = await res.data;
+                setData(data);
+                console.log(data);
         };
         getProfile();
        
