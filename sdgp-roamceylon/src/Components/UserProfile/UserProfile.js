@@ -81,7 +81,7 @@ function UserProfile(){
         
 
     return(<>
-    <Navbar></Navbar>
+    <Navbar isProfile={true}></Navbar>
     <div className="outer-container">
     <div className="container">
     <div className="profile-container">

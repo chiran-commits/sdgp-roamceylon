@@ -5,9 +5,48 @@ import D1 from "./Developer1.png"
 import facbook_img from "./facebook_5968764.png"
 import instagram_img from "./instagram_2111463.png"
 import whatsapp_img from "./whatsapp_5968841.png"
-
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { authorizationActions } from "../../store";
+import axios from "axios";
 
 function App(){
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+
+        
+    const getProfile = async () => {
+        
+        const authToken = localStorage.getItem('SDGP-roamceylon2');
+        if(authToken==null){
+          dispatch(authorizationActions.logout())
+
+        }else{
+            const res = await axios
+            .get("http://localhost:5009/user",{
+                headers: {
+                     Authorization: authToken
+                }
+            }).then(
+              dispatch(authorizationActions.login())
+            )
+            .catch((err) => {console.log(err)
+              dispatch(authorizationActions.logout())
+
+                
+            }
+            );
+           
+          
+        }
+           
+    };
+    getProfile();
+   
+  
+  }, []);
   return(
     <div>
       <Navbar activeOption='aboutus'/>
