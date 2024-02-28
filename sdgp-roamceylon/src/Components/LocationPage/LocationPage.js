@@ -4,6 +4,9 @@ import "./LocationPage.css";
 import { useState, useEffect } from 'react';
 import Locations from '../LocationPage/Locations.json';
 import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { authorizationActions } from "../../store";
+import { useSelector } from 'react-redux';
 
 
 
@@ -17,6 +20,45 @@ export default function LocationPage() {
     const [descriptionData, setDescriptionData] = useState('');
     const [message, setMessage] = useState('');
     const [descriptionPlaceholder, setDescriptionPlaceholder] = useState('Enter the features of your ideal location...');
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+
+  
+          
+      const getProfile = async () => {
+          
+          const authToken = localStorage.getItem('SDGP-roamceylon2');
+          if(authToken==null){
+            dispatch(authorizationActions.logout())
+  
+          }else{
+              const res = await axios
+              .get("http://localhost:5009/user",{
+                  headers: {
+                       Authorization: authToken
+                  }
+              }).then(
+                dispatch(authorizationActions.login())
+              )
+              .catch((err) => {console.log(err)
+                dispatch(authorizationActions.logout())
+  
+                  
+              }
+              );
+             
+            
+          }
+             
+      };
+      getProfile();
+      
+     
+    
+    }, []);
+    const isLoggedIn = useSelector((state) => state.isLoggedIn);
+
 
     const handleDescriptionChange = (event) => {
         setDescriptionData(event.target.value);
@@ -91,16 +133,21 @@ export default function LocationPage() {
                             )}
                         </div>
                     </div>
-
-                    <div className="rightContainer">
-                        <h2><center>Provide Recommendation</center></h2>
-                        <div className='textarea-center'>
-                            <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>
-                            </textarea>
-                        </div>
-                        <button type="submit" className="recommendation-btn" onClick={handleSubmitDescription}>Generate Locations</button>
-                        {message && <p>{message}</p>}
+                    {isLoggedIn&&
+                      <div className="rightContainer">
+                      <h2><center>Provide Recommendation</center></h2>
+                      <div className='textarea-center'>
+                          <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>
+                          </textarea>
+                      </div>
+                      <button type="submit" className="recommendation-btn" onClick={handleSubmitDescription}>Generate Locations</button>
+                      {message && <p>{message}</p>}
                     </div>
+
+
+                    }
+
+                  
                 </div>
             </div>
         </div>
