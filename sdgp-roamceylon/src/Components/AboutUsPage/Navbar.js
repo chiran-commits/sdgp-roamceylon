@@ -12,10 +12,7 @@ const Navbar = ({activeOption,isProfile}) =>{
     const isLoggedIn = useSelector((state) => state.isLoggedIn);
    const [menuOpen, setMenuOpen] = useState(false)
     const navigate = useNavigate();
-    const transfterToLogin = () => {
-        navigate('/login');
-
-    }
+  
     const logout = () => {
         localStorage.removeItem('SDGP-roamceylon2');
     }

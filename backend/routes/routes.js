@@ -21,9 +21,6 @@ router.use(cors(
 
 ))
 
-router.get('/',(req,res)=>{
-    res.send('Hello World')
-})
 
 router.post('/register',registerUser)
 router.post('/login', loginUser)
