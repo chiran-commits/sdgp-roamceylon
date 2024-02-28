@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import FetchWeather from "./GetWeather";
 
 export default function HomePage() {
+  
   function anchorTagAbout() {
     const target = document.getElementById("target-about-us");
     const position = target.getBoundingClientRect().top + window.scrollY - 33;
@@ -120,7 +121,11 @@ export default function HomePage() {
           </div>
           <div className="home-container-about" id="target-about-us">
             <section className="hidden">
-              <h2>About us</h2>
+
+              <div class="content">
+                <h2>About Us</h2>
+                <h2>About Us</h2>
+              </div>
 
               <div className="about-content" >
                 <p>
@@ -189,8 +194,8 @@ export default function HomePage() {
                 </a>
               </div>
 
-              <div className="coutnry-box">
-                <Link to={"/galle"}>
+              <Link to="/galle">
+                <div className="coutnry-box">
                   <h3>Galle</h3>
                   <h3><FetchWeather city="galle"/></h3>
                   <img class="img" src={galleImage}></img>
@@ -202,8 +207,8 @@ export default function HomePage() {
                   <a href="#1" className="country-btn">
                     Learn More
                   </a>
-                </Link>
-              </div>
+                </div>
+              </Link>  
             </div>
           </div>
           <hr className="footer-sep"></hr>
