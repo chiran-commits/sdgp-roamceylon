@@ -9,7 +9,7 @@
     padding-top: 28vh;
     position: relative;
     overflow: hidden;
-    min-height: 50vh;
+    min-height: 91vh;
 }
 
 .home-container-country{
@@ -27,7 +27,7 @@
 .home-container-about{
   display: flex;
   justify-content: center;
-  background-color: rgba(128, 128, 128, 0.28);
+  background-color: rgba(128, 128, 128, 0.1);
   /* margin: 20px 0px 20px 0px; */
   border-radius: 20px;
   padding-bottom: 280px;
@@ -53,8 +53,8 @@
     position: relative;
     color: white;
     flex-direction: column;
-    font-size: 32px;
-    opacity: 80%;
+    font-size: 55px;
+    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
 }
 
 .main-welcome-heading h3{
@@ -63,8 +63,8 @@
     margin-top: 40px;
     color: white;
     font-weight: 800;
-    font-size: 28px;
-    opacity: 80%;
+    font-size: 60px;
+    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
 }
 
 /* Button class */
@@ -155,7 +155,7 @@
   display: flex;
   /* justify-content: center;  */
   text-align: left;
-  padding-left: 100px;
+  padding-left: 80px;
   font-size: 95px;
 	background: linear-gradient(to right, #30CFD0 0%, #330867 35%);
   -webkit-background-clip: text;
