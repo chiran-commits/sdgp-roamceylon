@@ -13,6 +13,11 @@ export default function Galle(){
                     <h2>GALLE</h2>
                 </div>
             </div>
+            <div className='indicators'>
+                <section className='indicator-section'>
+                    <h1>Indicators</h1>
+                </section>
+            </div>
         </div>
         
 
