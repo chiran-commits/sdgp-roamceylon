@@ -10,6 +10,7 @@ import mataraImage from "../HomePage/Assets/matara.jpg";
 import galleImage from "../HomePage/Assets/galle.jpg";
 import { Link } from "react-router-dom";
 import FetchWeather from "./GetWeather";
+import kandy from '../LocationDescriptionPages/Kandy.js'
 
 export default function HomePage() {
   
@@ -101,18 +102,18 @@ export default function HomePage() {
                   <button class="welcome-btn" onClick={anchorTagAbout}>
                     About us
                     <div class="icon">
-                      <svg
-                        height="24"
-                        width="24"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path
-                          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                          fill="currentColor"
-                        ></path>
-                      </svg>
+                    <svg
+                      height="24"
+                      width="24"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
                     </div>
                   </button>
                 </div>
@@ -166,19 +167,21 @@ export default function HomePage() {
                 </div>
               </Link>
 
-              <div className="coutnry-box">
-                <h3>Kandy</h3>
-                <h3><FetchWeather city="kandy"/></h3>
-                <img class="img" src={kandyImage}></img>
-                <p>
-                  Kandy is a large city located in central Sri Lanka. The city is surrounded by majestic mountains, 
-                  which are home to tea plantations and rainforests.
-                </p>
-                <br></br><br></br>
-                <a href="#1" className="country-btn">
-                  Learn More
-                </a>
-              </div>
+              <Link to={kandy}> 
+                <div className="coutnry-box">
+                  <h3>Kandy</h3>
+                  <h3><FetchWeather city="kandy"/></h3>
+                  <img class="img" src={kandyImage}></img>
+                  <p>
+                    Kandy is a large city located in central Sri Lanka. The city is surrounded by majestic mountains, 
+                    which are home to tea plantations and rainforests.
+                  </p>
+                  <br></br><br></br>
+                  <a href="#3" className="country-btn">
+                    Learn More
+                  </a>
+                </div>
+              </Link>  
 
               <div className="coutnry-box">
                 <h3>Jaffna</h3>
