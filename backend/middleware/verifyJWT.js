@@ -1,22 +1,38 @@
 const jwt = require('jsonwebtoken');
-const verifyJWT = (req, res, next) => {
-    const authHeader = req.headers.authorization || req.headers.Authorization;
-    if(!authHeader){
-        return res.sendStatus(401);
+// const verifyJWT = (req, res, next) => {
+//     const authHeader = req.headers.authorization || req.headers.Authorization;
+//     if (!authHeader) {
+//         return res.sendStatus(401);
+//     }
+//     console.log(authHeader);
+//     const token = authHeader.split(' ')[1];
+
+
+//     jwt.verify(authHeader, process.env.ACCESS_TOKEN, (err, user) => {
+//         if (err) {
+//             return res.sendStatus(403);
+//         }
+//         next();
+//     });
+
+
+
+// }
+
+const verifyUser = (req, res, next) => {
+    const token = req.headers.authorization || req.headers.Authorization;
+    console.log(token);
+    if (!token) {
+        res.status(404).json({ message: "The token was not found" });
     }
-    console.log(authHeader);
-    const token = authHeader.split(' ')[1];
-
-
-    jwt.verify(authHeader, process.env.ACCESS_TOKEN, (err, user) => {
+    jwt.verify(token, process.env.REFRESH_TOKEN, (err, user) => {
         if (err) {
-            return res.sendStatus(403);
+            return res.status(400).json({ message: "User token is invalid" });
         }
-        next();
+        console.log(user.email);
+        req.email = user.email;
     });
+    next();
+};
 
-
-
-}
-
-module.exports = verifyJWT;
+module.exports = verifyUser;

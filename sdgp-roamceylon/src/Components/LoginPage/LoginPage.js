@@ -48,9 +48,12 @@ export default function Login() {
         // }
         try {
 
-            const { data } = await axios.post('http://localhost:5009/login', { email, password }).then(
+            const data = await axios.post('http://localhost:5009/login', { email, password }).then(
                 setError('')
             )
+            const token=await data.data.token;
+            console.log(token)
+            localStorage.setItem('SDGP-roamceylon2', token);
             dispatch(authorizationActions.login())
             setData({ email: '', password: '' })
             navigate('/')
