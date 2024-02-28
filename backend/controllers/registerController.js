@@ -1,5 +1,7 @@
 const userModel= require('../database/userModel');
 const {encryptPassword, comparePassword} = require('../security/encrypt');
+const jwt = require('jsonwebtoken');
+require('dotenv').config();
 
 
 
@@ -32,20 +34,19 @@ const loginUser = async(req, res) => {
         return res.status(500).json({error:'User not found!'})
 
     }
-    
-
     //checking if the passwords match
     const userPassword = await comparePassword(password, user.encyptedPassword)
     console.log(userPassword);
 
     if (userPassword) {
+    
         const accessToken = jwt.sign({ email: email }, process.env.ACCESS_TOKEN, { expiresIn: '30s' });
-        const refreshToken = jwt.sign({ email: email }, process.env.ACCESS_TOKEN,{ expiresIn: '1d' });
+
+        const refreshToken = jwt.sign({ email: email }, process.env.REFRESH_TOKEN,{ expiresIn: '1d' });
+
         res.cookie('token', refreshToken, { httpOnly: true,sameSite:'None',secure:true,maxAge: 1000*60*60*24 });
         user.refreshToken = refreshToken;
-        const result = await foundUser.save();
-        console.log(result);
-        
+        await user.save();
         res.json({accessToken});
 
         
@@ -55,6 +56,7 @@ const loginUser = async(req, res) => {
   
 }
  catch (error){
+    console.log(error)
     return res.status(400).json(error)
  }
 }

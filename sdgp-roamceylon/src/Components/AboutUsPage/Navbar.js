@@ -3,6 +3,7 @@ import user from "./Asset 1.png"
 import logo from "./Logo-roamceylon.png"
 import  React, {useState} from 'react';
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -10,6 +11,10 @@ import { useSelector } from "react-redux";
 const Navbar = ({activeOption}) =>{
     const isLoggedIn = useSelector((state) => state.isLoggedIn);
    const [menuOpen, setMenuOpen] = useState(false)
+    const navigate = useNavigate();
+    const transfterToLogin = () => {
+        navigate('/login');
+    }
 
    return(
     <nav>
@@ -28,7 +33,7 @@ const Navbar = ({activeOption}) =>{
                 <li><a href="/location" className={activeOption == 'locations' ? 'active' : ''}>LOCATIONS</a></li>
                 <li><a href="/about" className={activeOption == 'aboutus' ? 'active' : ''}>ABOUT US</a></li>
                 {isLoggedIn ? (<li><a href="profile"><img className="userimg" src={user}/></a></li>) : (
-                <li><button>Sign In</button></li>)}
+                <li><button onClick={transfterToLogin}>Sign In</button></li>)}
             </ul>
         </div>
     </nav>

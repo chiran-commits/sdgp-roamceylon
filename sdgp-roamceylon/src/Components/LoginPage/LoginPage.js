@@ -4,8 +4,12 @@ import axios from 'axios';
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import {authorizationActions} from '../../store'
 
 export default function Login() {
+    const dispatch = useDispatch();
+
     const [data, setData] = useState({
         email: '',
         password: '',
@@ -44,19 +48,17 @@ export default function Login() {
         // }
         try {
 
-            const { data } = await axios.post('http://localhost:8010/login', { email, password }).then(
-
-
+            const { data } = await axios.post('http://localhost:5009/login', { email, password }).then(
                 setError('')
             )
-
-
+            dispatch(authorizationActions.login())
             setData({ email: '', password: '' })
-            navigate('/home')
+            navigate('/')
 
         }
 
         catch (error) {
+            console.log(error)
             setError('The username and password does not match')
         }
 
