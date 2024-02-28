@@ -11,12 +11,60 @@ import galleImage from "../HomePage/Assets/galle.jpg";
 import { Link } from "react-router-dom";
 import FetchWeather from "./GetWeather";
 import kandy from '../LocationDescriptionPages/Kandy.js'
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { useDispatch } from 'react-redux';
+import { authorizationActions } from "../../store";
 
 export default function HomePage() {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+
+        
+    const getProfile = async () => {
+        
+        const authToken = localStorage.getItem('SDGP-roamceylon2');
+        if(authToken==null){
+          dispatch(authorizationActions.logout())
+
+        }else{
+            const res = await axios
+            .get("http://localhost:5009/user",{
+                headers: {
+                     Authorization: authToken
+                }
+            }).then(
+              dispatch(authorizationActions.login())
+            )
+            .catch((err) => {console.log(err)
+              dispatch(authorizationActions.logout())
+
+                
+            }
+            );
+           
+          
+        }
+           
+    };
+    getProfile();
+   
+  
+  }, []);
+ 
+
+
+
+  
   
   function anchorTagAbout() {
+
+    dispatch(authorizationActions.login())
     const target = document.getElementById("target-about-us");
     const position = target.getBoundingClientRect().top + window.scrollY - 33;
+
 
     // Scroll smoothly to the target position
     window.scrollTo({

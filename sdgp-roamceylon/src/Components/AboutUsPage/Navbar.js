@@ -8,12 +8,13 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const Navbar = ({activeOption}) =>{
+const Navbar = ({activeOption,isProfile}) =>{
     const isLoggedIn = useSelector((state) => state.isLoggedIn);
    const [menuOpen, setMenuOpen] = useState(false)
     const navigate = useNavigate();
-    const transfterToLogin = () => {
-        navigate('/login');
+  
+    const logout = () => {
+        localStorage.removeItem('SDGP-roamceylon2');
     }
 
    return(
@@ -32,8 +33,15 @@ const Navbar = ({activeOption}) =>{
                 <li><a href="/" className={activeOption == 'home' ? 'active' : ''}>HOME</a></li>
                 <li><a href="/location" className={activeOption == 'locations' ? 'active' : ''}>LOCATIONS</a></li>
                 <li><a href="/about" className={activeOption == 'aboutus' ? 'active' : ''}>ABOUT US</a></li>
-                {isLoggedIn ? (<li><a href="profile"><img className="userimg" src={user}/></a></li>) : (
-                <li><button onClick={transfterToLogin}>Sign In</button></li>)}
+
+                {isProfile ? (<li><a onClick={logout} href="/">LOGOUT</a></li>) : (
+                    isLoggedIn ? (<li><a href="profile"><img className="userimg" src={user}/></a></li>) : (
+                        <li><a href="/login">LOGIN</a></li>)
+
+                )}
+
+
+                
             </ul>
         </div>
     </nav>

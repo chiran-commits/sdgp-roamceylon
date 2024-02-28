@@ -14,7 +14,7 @@ import { useSelector } from "react-redux";
 
 
 function App() {
-  const isLoggedIn = useSelector((state) => state.isLoggedIn);
+ 
 
   return (
 
@@ -26,7 +26,7 @@ function App() {
         <Route path="/register" element={<RegistrationPage/>} />
         <Route path="/about" element={<AboutUs/>} />
 
-        {isLoggedIn&&<Route path="/location" element={<LocationPage/>}/>}
+        <Route path="/location" element={<LocationPage/>}/>
         <Route path = "*" element = {<ErrorPage/>}/>
         <Route path="/colombo" element={<Colombo/>} />
         <Route path="/galle" element={<Galle/>} />

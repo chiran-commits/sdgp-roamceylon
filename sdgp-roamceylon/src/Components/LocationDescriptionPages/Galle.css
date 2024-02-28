@@ -1,34 +1,25 @@
-.galle-page{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #176B87;
-    margin: 20px 0px 20px 10px;
+.location_image{
+    height: 750px;
+    width: 1450px;
     border-radius: 20px;
-    padding-bottom: 200px;
-    padding-top: 28vh;
-    position: relative;
-    overflow: hidden;
-    min-height: 50vh;
-    width: 1515px;
-}
-
-.galle-image{
-    background-size: cover;
-    background-position: center;
     position: absolute;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    transform: scale(2.50);
-    margin-right: 520px;
+    /* margin-left: 42px; */
+    overflow: hidden;
+    transform: scale(1.0145)
 }
 
-.galle-text{
-    position: relative;
-    color: #DAFFFB;
-    flex-direction: column;
-    font-size: 35px;
-    padding-top: 30px;
+.text_location{
+    margin-top: 100px;
+    z-index: 1;
+    margin-left: 600px;
+    font-size: 50px;
+    background: linear-gradient(to right, #d22b2b 0%, #330867 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    }
+
+.image_section{
+    display: flex;
+    overflow: hidden;
 }
 

@@ -4,6 +4,7 @@ import './UserProfile.css';
 import React, { useState, useEffect } from 'react';
 import ProfileImg from '../AboutUsPage/Asset 1.png'
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function UserProfile(){
     const [img,setImg] = useState(ProfileImg);
@@ -13,25 +14,40 @@ function UserProfile(){
     const [email, setEmail] = useState("guest123@gmail.com");
     const [edit,setEdit] = useState(true);
     const [data,setData] = useState({user:{firstName:"",lastName:"",email:"",password:"",age:""}});
+    const nav = useNavigate();
 
 
 
   
       useEffect(() => {
 
-        const authToken = localStorage.getItem('SDGP-roamceylon2');
+        
         const getProfile = async () => {
+            
+            const authToken = localStorage.getItem('SDGP-roamceylon2');
+            if(authToken==null){
+                nav('/login');
+            }else{
                 const res = await axios
-                    .get("http://localhost:5009/user",{
-                        headers: {
-                             Authorization: authToken
-                        }
-                    })
-                    .catch((err) => console.log(err));
+                .get("http://localhost:5009/user",{
+                    headers: {
+                         Authorization: authToken
+                    }
+                }).then((res) => {
                     console.log(res);
-                const data = await res.data;
-                setData(data);
-                console.log(data);
+                    const data =res.data;
+                    setData(data);
+                    console.log(data);
+
+                })
+                .catch((err) => {console.log(err)
+                    nav('/login');
+                }
+                );
+               
+              
+            }
+               
         };
         getProfile();
        
@@ -65,7 +81,7 @@ function UserProfile(){
         
 
     return(<>
-    <Navbar></Navbar>
+    <Navbar isProfile={true}></Navbar>
     <div className="outer-container">
     <div className="container">
     <div className="profile-container">

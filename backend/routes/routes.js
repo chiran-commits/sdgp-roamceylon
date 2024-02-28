@@ -3,6 +3,7 @@ const router =express.Router();
 const verifyUser = require('../middleware/verifyJWT');
 const {registerUser, loginUser} = require('../controllers/registerController');
 const {addReview,sendReview}= require('../controllers/reviewController');
+const refresh= require('../controllers/refresnController');
 
 
 
@@ -20,15 +21,14 @@ router.use(cors(
 
 ))
 
-router.get('/',(req,res)=>{
-    res.send('Hello World')
-})
 
 router.post('/register',registerUser)
 router.post('/login', loginUser)
 router.post("/review",addReview)
 router.get("/review",sendReview)
 router.get('/user',verifyUser,sendUser)
+
+router.get('/refresh',verifyUser,refresh)
 
 router.post('/keywords',(req,res)=>{
     res.send('keywords')
