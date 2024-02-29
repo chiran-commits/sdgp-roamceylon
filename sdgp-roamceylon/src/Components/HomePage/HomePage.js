@@ -10,7 +10,6 @@ import mataraImage from "../HomePage/Assets/matara.jpg";
 import galleImage from "../HomePage/Assets/galle.jpg";
 import { Link } from "react-router-dom";
 import FetchWeather from "./GetWeather";
-import kandy from '../LocationDescriptionPages/Kandy.js'
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useDispatch } from 'react-redux';
@@ -128,7 +127,10 @@ export default function HomePage() {
                 <h3>WELCOME TO ROAMCEYLON</h3>
               </div>
               <div className="button-area">
-                <div className="welcome-button-area">
+                <button className="about-btn" onClick={anchorTagCountry}>Get Started</button>
+                <button className="about-btn" onClick={anchorTagAbout}>About Us</button>
+                {/* <div className="welcome-button-area">
+                  <button className="about-btn">Get Started</button>
                   <button class="welcome-btn" onClick={anchorTagCountry}>
                     Get started
                     <div class="icon">
@@ -146,8 +148,8 @@ export default function HomePage() {
                       </svg>
                     </div>
                   </button>
-                </div>
-                <div className="welcome-button-area">
+                </div> */}
+                {/* <div className="welcome-button-area">
                   <button class="welcome-btn" onClick={anchorTagAbout}>
                     About us
                     <div class="icon">
@@ -165,7 +167,7 @@ export default function HomePage() {
                     </svg>
                     </div>
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -216,7 +218,7 @@ export default function HomePage() {
                 </div>
               </Link>
 
-              <Link to={kandy}> 
+              <Link to='/kandy'> 
                 <div className="coutnry-box">
                   <h3>Kandy</h3>
                   <h3><FetchWeather city="kandy"/></h3>
@@ -226,7 +228,7 @@ export default function HomePage() {
                     which are home to tea plantations and rainforests.
                   </p>
                   <br></br><br></br>
-                  <a href="#3" className="country-btn">
+                  <a href="#1" className="country-btn">
                     Learn More
                   </a>
                 </div>

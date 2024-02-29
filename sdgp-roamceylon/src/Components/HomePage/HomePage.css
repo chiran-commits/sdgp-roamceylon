@@ -52,7 +52,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .welcome-text h2{
@@ -76,63 +76,49 @@
 
 /* Button class */
 
-.welcome-btn {
-    background:#176B87;
-    color: white;
-    font-family: inherit;
-    padding: 0.35em;
-    padding-left: 1.3em;
-    font-size: 17px;
-    font-weight: 500;
-    border-radius: 0.9em;
-    border: none;
-    letter-spacing: 0.05em;
-    display: flex;
-    align-items: center;
-    box-shadow: inset 0 0 1.6em -0.6em #17536f;
-    overflow: hidden;
-    position: relative;
-    height: 2.8em;
-    padding-right: 7.3em;
-    cursor: pointer;
-  }
-  
-  .welcome-btn .icon {
-    background: white;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.2em;
-    width: 2.2em;
-    border-radius: 0.7em;
-    box-shadow: 0.1em 0.1em 0.6em 0.2em #135073;
-    right: 0.3em;
-    transition: all 0.3s;
-  }
-  
-  .welcome-btn:hover .icon {
-    width: calc(100% - 0.6em);
-  }
-  
-  .welcome-btn .icon svg {
-    width: 1.1em;
-    transition: transform 0.3s;
-    color:#176B87;
-  }
-  
-  .welcome-btn:hover .icon svg {
-    transform: translateX(0.1em);
-  }
+.about-btn {
+  height: 50px;
+  margin: 5px;
+  width: 120px;
+  background: #ffffff;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #d3d3d3 1px;
+  font-size: 16px;
+  color: rgb(62, 62, 62);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #ffffff, #ffffffc4);
+  -webkit-box-shadow: -1px -5px 15px #000000, 5px 5px 15px #8f8f8f,
+    inset 5px 5px 10px #9b9b9b, inset -5px -5px 10px #787878;
+  box-shadow: -1px -5px 15px #444444, 5px 5px 15px #585858,
+    inset 5px 5px 10px #909090, inset -5px -5px 10px #a3a3a3;
+  z-index: 2;  
+}
 
-  .welcome-btn:hover .icon svg {
-    transform: translateX(0.1em);
-  }
-  
-  .welcome-btn:active .icon {
-    transform: scale(0.95);
-  }
-  
+.about-btn:hover {
+  -webkit-box-shadow: 1px 1px 13px #5b5b5b, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #cecece, -1px -1px 13px #b4b4b4;
+  color: #000000;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.about-btn:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #c0c0c0, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
 
 /* Animated about us */
 .hidden{
@@ -235,8 +221,7 @@
 .img{
   position: absolute;
   border: none;
-  overflow: hidden;
-  transform: scale(3);
+  overflow: hidden; 
   opacity: 0.62;
 }
 

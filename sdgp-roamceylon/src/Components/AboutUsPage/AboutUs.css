@@ -3,10 +3,7 @@ body{
     font-family: "Lexend", sans-serif;
 }
 #subframe{
-    background-color: #176B87;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
+    background-color: #7dbdd3;
 }
 h1,h3,h4, h6{
     color: white;
@@ -18,7 +15,7 @@ h1,h3,h4, h6{
     color: white
 }
 
-img{
+.about-image{
     height:250px ;
     width: 200px;
     margin-left: 5px;
@@ -35,7 +32,7 @@ img{
 }
 
 .bottomContainer{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.516);
     height: 190px;
     position: relative;
     margin-top: 80px;
