@@ -21,9 +21,9 @@ export default function Galle(){
                 </div>
             </div>
             <div className='indicators'>
-                <section className='indicator-section'>
-                    <h1>Indicators</h1>
-                </section>
+        
+                <h1>Indicators</h1>
+  
             </div>
         </div>
         

@@ -7,7 +7,7 @@ nav{
     width: 99%;
     height: 55px;
     border-radius: 13px;
-    background-color:#176B87;
+    background-color:white;
     margin-left: 10px;
     margin-bottom: 10px;
 }
@@ -26,7 +26,7 @@ nav{
 
 #navbar li a{
     text-decoration: none;
-    color: white;
+    color: black;
     transition: 0.3s ease-in-out;
     font-size: 1.1rem;
     font-weight: 600;
