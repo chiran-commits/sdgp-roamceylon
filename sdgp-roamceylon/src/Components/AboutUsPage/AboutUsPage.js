@@ -55,23 +55,23 @@ function App(){
         <div className="imageSection">
           <div className="developer-container">
             <img className="about-image" src={D1}></img>
-            <Creator name="Chiran Gamage" email="abc" contact={123}/>
+            <Creator name="Chiran Gamage" email="abc"/>
           </div>
           <div className="developer-container">
             <img className="about-image" src={D1}></img>
-            <Creator name="Thinal Karunarathna" email="abc" contact={123}/>
+            <Creator name="Thinal Karunarathna" email="abc"/>
           </div>
           <div className="developer-container">
             <img className="about-image" src={D1}></img>
-            <Creator name="Neelesh Gamage" email="abc" contact={123}/>
+            <Creator name="Neelesh Gamage" email="abc"/>
           </div>
           <div className="developer-container">
             <img className="about-image" src={D1}></img>
-            <Creator name="Puleesha Vilhan" email="abc" contact={123}/>
+            <Creator name="Puleesha Vilhan" email="abc"/>
           </div>
           <div className="developer-container">
             <img className="about-image" src={D1}></img>
-            <Creator name="Tharuka Bandara" email="abc" contact={123}/>
+            <Creator name="Tharuka Bandara" email="abc"/>
           </div>
         </div>
         <br></br><br></br>
@@ -100,9 +100,8 @@ function App(){
 const Creator  = (props) =>{
   return(
     <div>
-      <h4><center>{props.name}</center></h4>
+      <h4><center>{props.name}</center></h4><br></br>
       <h4><center>Email: {props.email}</center></h4>
-      <h4><center>Contact No: {props.contact}</center></h4>
     </div>
   );
 }

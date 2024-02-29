@@ -2,8 +2,10 @@ body{
     background-color:#fff;
     font-family: "Lexend", sans-serif;
 }
+
 #subframe{
     background-color: #7dbdd3;
+    background: linear-gradient(-45deg, #c7bd8f, #8d92d9, #d6a85d, #c7a1e8);
 }
 h1,h3,h4, h6{
     color: white;
@@ -11,7 +13,7 @@ h1,h3,h4, h6{
 }
 
 #moveBottom{
-    padding-top: 20px;
+    padding-top: 90px;
     color: white
 }
 
@@ -19,7 +21,7 @@ h1,h3,h4, h6{
     height:250px ;
     width: 200px;
     margin-left: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .imageSection{
@@ -28,7 +30,7 @@ h1,h3,h4, h6{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .bottomContainer{
@@ -72,11 +74,12 @@ h1,h3,h4, h6{
 .developer-container{
     height:400px;
     width: 250px;
-    margin-left: 25px;
+    margin-left: 28px;
     box-shadow: 0 5px 10px 2px rgb(0,0,0);
     border-radius: 5px;
     transition: 0.2s ease-in-out;
     margin-top: 20px;
+    background-color:black;
 }
 
 .developer-container:hover{
