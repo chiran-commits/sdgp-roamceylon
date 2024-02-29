@@ -24,6 +24,7 @@ nav{
     list-style: none;
     padding: 0 20px;
     position: relative;
+    margin: 5px;
 }
 
 #navbar li a{
@@ -58,6 +59,7 @@ a{
     width: 40px;
     margin-left: 5px;
     margin-bottom: 10px;
+    margin-top: 8px;
 }
 
 nav .navMenu{
