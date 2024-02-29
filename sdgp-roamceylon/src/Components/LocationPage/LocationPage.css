@@ -2,16 +2,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #176B87;
-    min-height: 90vh;
-    width: 1475px;
-    margin: 20px 40px 0px 20px;
+    background-color: #176B87; 
+    width: 90%;
+    margin-left: 80px;
+    margin-top: 80px;
+    position: absolute;
     border-radius: 20px;
+    background: linear-gradient(-45deg, #4ca3be, #bae078, #695db4, #237cd5);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 85vh;
 }
 .leftContainer{
     border-radius: 30px;
     background-color: #b0d8f0;
-    height: 550px;
+    height: 450px;
     width: 550px;
     margin-left: 0px;
     display:flex;
@@ -33,7 +38,6 @@
 .location-container{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
 }
 
 .container h2{
@@ -175,6 +179,18 @@
     opacity: 0;
     font-size: 1px;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}   
 
 @media screen and (max-width: 1000px) {
     .mainContainer{
