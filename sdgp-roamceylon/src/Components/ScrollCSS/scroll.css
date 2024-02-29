@@ -1,9 +1,9 @@
 ::-webkit-scrollbar{
-    width: 1rem;
+    width: 0;
 }
 
 ::-webkit-scrollbar-track{
-    background: hsl(211, 98%, 82%);
+    background:transparent;
 }
 
 ::-webkit-scrollbar-thumb{

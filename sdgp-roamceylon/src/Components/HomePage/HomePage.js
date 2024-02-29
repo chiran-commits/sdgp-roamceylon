@@ -117,6 +117,7 @@ export default function HomePage() {
             <video className="video-bg" autoPlay muted loop playsInline>
               <source src={sdgpVideo} type="video/mp4" />
             </video>
+            <div className="dark-overlay"></div>
             <div className="welcome-text">
               <h2>
                 {/* Make Sri Lanka your remote work haven,{" "}
