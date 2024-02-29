@@ -51,7 +51,7 @@ function App(){
     <div>
       <Navbar activeOption='aboutus'/>
       <div id="subframe">
-        <h2 id="moveBottom"><center>THE CREATORS</center></h2><br></br><br></br>
+        <h2 id="moveBottom"><center className="textColor">THE CREATORS</center></h2><br></br><br></br>
         <div className="imageSection">
           <div className="developer-container">
             <img className="about-image" src={D1}></img>
@@ -75,8 +75,8 @@ function App(){
           </div>
         </div>
         <br></br><br></br>
-        <h3><center>CONTACT US:</center></h3>
-        <h3><center> <a href="roamceylon.sdgp@gmail.com " style={{color:"white"}}>roamceylon.sdgp@gmail.com </a></center></h3>
+        <h3><center className="textColor">CONTACT US:</center></h3>
+        <h3><center> <a href="roamceylon.sdgp@gmail.com " className="textColor">roamceylon.sdgp@gmail.com </a></center></h3>
         <div className="bottomContainer">
           <div className="middleBottom">
             <h4><center>We are a group of 2nd Year students at Informatics Institute of Technology (IIT), following a bachelors degree in Software Engineering.</center></h4>

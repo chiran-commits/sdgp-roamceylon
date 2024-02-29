@@ -4,8 +4,8 @@ body{
 }
 
 #subframe{
-    background-color: #7dbdd3;
-    background: linear-gradient(-45deg, #c7bd8f, #8d92d9, #d6a85d, #c7a1e8);
+    background-color: white;
+    /*background: linear-gradient(-45deg, #c7bd8f, #8d92d9, #d6a85d, #c7a1e8);*/
 }
 h1,h3,h4, h6{
     color: white;
@@ -84,4 +84,10 @@ h1,h3,h4, h6{
 
 .developer-container:hover{
     transform:scale(1.1)
+}
+
+.textColor{
+    background: linear-gradient(to right, #d22b2b 0%, #330867 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
