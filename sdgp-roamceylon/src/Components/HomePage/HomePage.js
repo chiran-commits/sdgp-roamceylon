@@ -121,7 +121,7 @@ export default function HomePage() {
               <h2>
                 {/* Make Sri Lanka your remote work haven,{" "}
                 <span className="explore-now">Explore now!</span> */}
-                Find your digital nomad haven in Sri Lanka's vibrant landscapes
+                Find your digital nomad haven in Sri Lanka
               </h2>
               <div className="main-welcome-heading">
                 <h3>WELCOME TO ROAMCEYLON</h3>
