@@ -28,14 +28,10 @@ const registerUser = async (req, res) => {
 const loginUser = async (req, res) => {
     try {
         const { email, password } = req.body;
-        console.log(email);
-
         const user = await userModel.findOne({ email: email })
         console.log(user);
-        if (!user) {
-            
+        if (!user) {   
             return res.status(500).json({ error: 'User not found!' })
-
         }
         //checking if the passwords match
         const userPassword = await comparePassword(password, user.encyptedPassword)
