@@ -121,7 +121,7 @@ export default function HomePage() {
               <h2>
                 {/* Make Sri Lanka your remote work haven,{" "}
                 <span className="explore-now">Explore now!</span> */}
-                Find your digital nomad haven in Sri Lanka
+                Find Your Digital Nomad Haven In Sri Lanka
               </h2>
               <div className="main-welcome-heading">
                 <h3>WELCOME TO ROAMCEYLON</h3>
@@ -129,45 +129,6 @@ export default function HomePage() {
               <div className="button-area">
                 <button className="about-btn" onClick={anchorTagCountry}>Get Started</button>
                 <button className="about-btn" onClick={anchorTagAbout}>About Us</button>
-                {/* <div className="welcome-button-area">
-                  <button className="about-btn">Get Started</button>
-                  <button class="welcome-btn" onClick={anchorTagCountry}>
-                    Get started
-                    <div class="icon">
-                      <svg
-                        height="24"
-                        width="24"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path
-                          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                          fill="currentColor"
-                        ></path>
-                      </svg>
-                    </div>
-                  </button>
-                </div> */}
-                {/* <div className="welcome-button-area">
-                  <button class="welcome-btn" onClick={anchorTagAbout}>
-                    About us
-                    <div class="icon">
-                    <svg
-                      height="24"
-                      width="24"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                    </div>
-                  </button>
-                </div> */}
               </div>
             </div>
           </div>
@@ -204,7 +165,7 @@ export default function HomePage() {
                 <div className="coutnry-box">
                   <h3>Colombo</h3>
                   <h3><FetchWeather city="colombo"/></h3>
-                  <img className="img" src={colomboImage}></img>
+                  <img className="img-pop" src={colomboImage}></img>
                   <p>
                     Colombo, Sri Lanka's capital, boasts a dynamic mix of
                     history and modernity. Its vibrant streets, rich culture,
@@ -212,9 +173,6 @@ export default function HomePage() {
                     travelers.
                   </p>
                   <br></br>
-                  <a href="#1" className="country-btn">
-                    Learn More
-                  </a>
                 </div>
               </Link>
 
@@ -222,45 +180,36 @@ export default function HomePage() {
                 <div className="coutnry-box">
                   <h3>Kandy</h3>
                   <h3><FetchWeather city="kandy"/></h3>
-                  <img class="img" src={kandyImage}></img>
+                  <img class="img-pop" src={kandyImage}></img>
                   <p>
                     Kandy is a large city located in central Sri Lanka. The city is surrounded by majestic mountains, 
                     which are home to tea plantations and rainforests.
                   </p>
                   <br></br><br></br>
-                  <a href="#1" className="country-btn">
-                    Learn More
-                  </a>
                 </div>
               </Link>  
 
               <div className="coutnry-box">
                 <h3>Jaffna</h3>
                 <h3><FetchWeather city="jaffna"/></h3>
-                <img class="img" src={mataraImage}></img>
+                <img class="img-pop" src={mataraImage}></img>
                 <p>
                   Jaffna is a city on the nothern tip of Sri Lanka. 
                   Jaffna welcomes visitors warmly with their art and creative culture, 
                   and a rewarding place to learn about Sri Lankan Tamil culture.
                 </p><br></br>
-                <a href="#1" className="country-btn">
-                  Learn More
-                </a>
               </div>
 
               <Link to="/galle">
                 <div className="coutnry-box">
                   <h3>Galle</h3>
                   <h3><FetchWeather city="galle"/></h3>
-                  <img class="img" src={galleImage}></img>
+                  <img class="img-pop" src={galleImage}></img>
                   <p>
                     Galle is a city on the southwest coastline of Sri Lanka. 
                     The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings, stylish cafes, 
                     quirky boutiques and impeccably restored beautiful hotels.
                   </p>
-                  <a href="#1" className="country-btn">
-                    Learn More
-                  </a>
                 </div>
               </Link>  
             </div>
