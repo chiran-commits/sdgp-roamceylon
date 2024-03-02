@@ -131,7 +131,7 @@ export default function HomePage() {
                 Find Your Digital Nomad Haven In Sri Lanka
               </h2>
               <div className="main-welcome-heading">
-                <h3>WELCOME TO ROAMCEYLON</h3>
+                {/* <h3>WELCOME TO ROAMCEYLON</h3> */}
               </div>
               <div className="button-area">
                 <button className="about-btn" onClick={anchorTagCountry}>Get Started</button>
@@ -143,8 +143,10 @@ export default function HomePage() {
             <section className="hidden">
 
               <div class="content">
-                <h2>About Us</h2>
-                <h2>About Us</h2>
+                {/* <h2>About Us</h2>
+                <h2>About Us</h2> */}
+                <h2>RoamCeylon</h2>
+                <h2>RoamCeylon</h2>
               </div>
 
               <div className="about-content" >
