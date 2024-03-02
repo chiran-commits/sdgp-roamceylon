@@ -126,7 +126,7 @@
   opacity: 0;
   transition: all 0.5s ;
   filter: blur(5px);
-  transform: translateY(100%);
+  transform: translateY(-100%);
 }
 
 .show{
@@ -228,8 +228,8 @@
 
 .img-pop{
   position: absolute;
-  width: 100%; /* Adjust dimensions as needed */
-  height: 100%; /* Adjust dimensions as needed */
+  width: 100%; 
+  height: 100%; 
   background-size: contain;
   border: none;
   overflow: hidden; 
