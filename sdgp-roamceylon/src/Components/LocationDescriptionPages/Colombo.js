@@ -9,15 +9,6 @@ import Review from '../ReviewSection/Review';
 const Colombo = () => {
 
    
-
-
-
-   
-
-  
-
-
-
     return (
         <div className='colombopage'>
             <Navbar></Navbar>

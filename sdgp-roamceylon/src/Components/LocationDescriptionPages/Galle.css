@@ -32,8 +32,9 @@
 
 .location_destinations{
     display:inline-flex;
-    background-color:lightblue;
-    width:1536px;
+    background-color: rgb(241, 246, 254);
+    border-radius: 20px;
+    width:1470px;
     height: 400px;
 }
 
@@ -77,5 +78,33 @@
     color:white;
     margin-top: 0%;
 
+}
+
+.indicators{
+    background-color: rgb(241, 246, 254);
+    border-radius: 20px;
+}
+
+.indicators h1{
+    color: black;
+}
+
+.indicator-container{
+    display:inline-flex;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    min-height: 120px;
+    min-width: 250px;
+    border-radius: 15px;
+    background-color: rgb(187, 211, 251, 0.85);
+}
+
+.title{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
 }
 
