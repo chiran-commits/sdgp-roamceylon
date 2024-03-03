@@ -6,113 +6,124 @@ import ProfileImg from '../AboutUsPage/Asset 1.png'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-function UserProfile(){
-    const [img,setImg] = useState(ProfileImg);
-    const [fname,setFName] = useState("Guest");
-    const [lname,setLName] = useState("Guest");
-    const [age,setAge] = useState(19);
+function UserProfile() {
+    const [img, setImg] = useState(ProfileImg);
+    const [firstName, setFName] = useState("Guest");
+    const [lastName, setLName] = useState("Guest");
+    const [age, setAge] = useState(19);
     const [email, setEmail] = useState("guest123@gmail.com");
-    const [edit,setEdit] = useState(true);
-    const [data,setData] = useState({user:{firstName:"",lastName:"",email:"",password:"",age:""}});
+    const [edit, setEdit] = useState(true);
+    const [data, setData] = useState({ user: { firstName: "", lastName: "", email: "", password: "", age: "" } });
     const nav = useNavigate();
 
 
 
-  
-      useEffect(() => {
 
-        
+    useEffect(() => {
+
+
         const getProfile = async () => {
-            
-            const authToken = localStorage.getItem('SDGP-roamceylon2');
-            if(authToken==null){
-                nav('/login');
-            }else{
-                const res = await axios
-                .get("http://localhost:5009/user",{
-                    headers: {
-                         Authorization: authToken
-                    }
-                }).then((res) => {
-                    console.log(res);
-                    const data =res.data;
-                    setData(data);
-                    console.log(data);
 
-                })
-                .catch((err) => {console.log(err)
-                    nav('/login');
-                }
-                );
-               
-              
+            const authToken = localStorage.getItem('SDGP-roamceylon2');
+            if (authToken == null) {
+                nav('/login');
+            } else {
+                const res = await axios
+                    .get("http://localhost:5009/user", {
+                        headers: {
+                            Authorization: authToken
+                        }
+                    }).then((res) => {
+                        console.log(res);
+                        const data = res.data;
+                        setData(data);
+                        console.log(data);
+
+                    })
+                    .catch((err) => {
+                        console.log(err)
+
+                    }
+                    );
+
+
             }
-               
+
         };
         getProfile();
-       
-      
-      }, []);
 
-   
 
-    function handleEdit(){
+    }, []);
+
+
+
+    function handleEdit() {
         setEdit(false);
-        
+
     }
 
-    function handleSave(){
+    const handleSave = async () => {
         setEdit(true);
+        try {
+
+            const { data } = await axios.post('http://localhost:5009/save', { firstName, lastName, age }).then(
+            ).catch((err) => {
+                console.log(err)
+            })
+
+        } catch (err) {
+            console.log(err)
+        }
     }
 
-    function handleFName(event){
+    function handleFName(event) {
         setFName(event.target.value);
     }
-    function handleLName(event){
+    function handleLName(event) {
         setLName(event.target.value);
     }
-    function handleAge(event){
+    function handleAge(event) {
         setAge(event.target.value);
     }
-    function handleEmail(event){
+    function handleEmail(event) {
         setEmail(event.target.value);
     }
-    
-        
 
-    return(<>
-    <Navbar isProfile={true}></Navbar>
-    <div className="outer-container">
-    <div className="container">
-    <div className="profile-container">
-        <img src={img}></img><br></br>
-        <p>{fname}</p>
-        <p>{lname}</p>
-        <p>{age}</p>
-    </div>
-    </div>
-    
-    <div className="container">
-    <div className="info-container">
-        <p>Details</p>
-        <button  onClick={handleEdit}>Edit</button>
-        <button onClick={handleSave}>Save</button>
-        <br></br>
-        <label>First Name</label><br></br>
-        <input value={data.user.firstName} disabled={edit} onChange={handleFName}></input>
-        <br></br>
-        <label>Last Name</label><br></br>
-        <input type="text" value={data.user.lastName} disabled={edit}  onChange={handleLName}></input>
-        <br></br>
-        <label>Email</label><br></br>
-        <input value={data.user.email} disabled='true' size="30" onChange={handleEmail}></input><br></br>
-        <label>Age</label><br></br>
-        <input value={age} disabled={edit}  onChange={handleAge}></input><br></br>
-    </div>
-    </div>
-    </div>
-    
-    
+
+
+    return (<>
+        <Navbar isProfile={true}></Navbar>
+        <div className="outer-container">
+            <div className="container">
+                <div className="profile-container">
+                    <img src={img}></img><br></br>
+                    <p>{lastName}</p>
+                    <p>{firstName}</p>
+                    <p>{age}</p>
+                </div>
+            </div>
+
+            <div className="container">
+                <div className="info-container">
+                    <p>Details</p>
+                    <button onClick={handleEdit}>Edit</button>
+                    <button onClick={handleSave}>Save</button>
+                    <br></br>
+                    <label>First Name</label><br></br>
+                    <input value={data.user.firstName} disabled={edit} onChange={handleFName}></input>
+                    <br></br>
+                    <label>Last Name</label><br></br>
+                    <input type="text" value={data.user.lastName} disabled={edit} onChange={handleLName}></input>
+                    <br></br>
+                    <label>Email</label><br></br>
+                    <input value={data.user.email} disabled='true' size="30" onChange={handleEmail}></input><br></br>
+                    <label>Age</label><br></br>
+                    <input value={age} disabled={edit} onChange={handleAge}></input><br></br>
+                </div>
+            </div>
+        </div>
+
+
     </>);
 }
 
