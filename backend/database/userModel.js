@@ -8,7 +8,8 @@ const userSchema = new Schema({
         type:String
     },
     encyptedPassword: String,
-    refreshToken: String
+    refreshToken: String,
+    Age: Number
     
 })
 

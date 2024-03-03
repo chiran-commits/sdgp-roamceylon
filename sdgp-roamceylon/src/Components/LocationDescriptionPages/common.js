@@ -15,12 +15,11 @@ export default function Galle(location){
             <div className='location_information'>
                 <img src={GalleImage} className='location_image'></img>
                 <div className='location_detail'>
-                    <h3>GALLE</h3>
+                    <h3>{location.name}</h3>
                     <div className='location_Des'>
                         <h3>
-                            Galle is a city on the southwest coastline of Sri Lanka. 
-                            The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings,
-                            stylish cafes, quirky boutiques and impeccably restored beautiful hotels.
+                            {location.description}
+                            
                         </h3>
                     </div>
                 </div>
@@ -91,6 +90,7 @@ export default function Galle(location){
     
             <h3 style={{color:"black" , marginTop:70, fontSize:35, marginLeft:40}}>Popular Destinations</h3>
             <div className='location_destinations'>
+
                 <div className='popular_destination'>
                     <img src={galleimage1} className='destination_image'/>
                     <p className='text_dest'>Galle Dutch Fort</p>
@@ -103,11 +103,15 @@ export default function Galle(location){
                     <img src={galleimage3} className='destination_image'/>
                     <p className='text_dest'>Maritime Museum</p>
                 </div>
+
             </div>
             <br></br><br></br>
             <Review location="galle"/>
 
         </div>
+        // {imagesData.map((image, index) => (
+        // <img key={index} src={require(`${image.path}`).default} alt={image.name} />
+        // ))}
         
 
     )
