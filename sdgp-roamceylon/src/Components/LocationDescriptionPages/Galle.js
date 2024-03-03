@@ -93,15 +93,15 @@ export default function Galle(location){
             <div className='location_destinations'>
                 <div className='popular_destination'>
                     <img src={galleimage1} className='destination_image'/>
-                    <p className='text_dest'>Galle Dutch Fort (4.7)</p>
+                    <p className='text_dest'>Galle Dutch Fort (4.7 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
                     <img src={galleimage2} className='destination_image'/>
-                    <p className='text_dest'>Sea Turtle Hatchery Centre (4.4)</p>
+                    <p className='text_dest'>Sea Turtle Hatchery Centre (4.4 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
                     <img src={galleimage3} className='destination_image'/>
-                    <p className='text_dest'>Maritime Museum (4.2)</p>
+                    <p className='text_dest'>Maritime Museum (4.2 <span class="fa fa-star checked"></span>)</p>
                 </div>
             </div>
             <br></br><br></br><br></br><br></br>

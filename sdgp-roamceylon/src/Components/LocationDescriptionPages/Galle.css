@@ -70,11 +70,10 @@
 .text_dest{
     z-index: 1;
     font-size: 20px;
-    margin-left: 5%;
+    margin-left: 3%;
     color: black;
     font-weight: bold;
     margin-top:210px;
-
 }
 
 .indicators{
@@ -109,4 +108,7 @@
      margin-top:80px;
      font-size:35px;
      
+}
+.checked{
+    color:orange;
 }
