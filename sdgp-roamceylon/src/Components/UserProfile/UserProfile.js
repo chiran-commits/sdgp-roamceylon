@@ -10,8 +10,7 @@ function UserProfile() {
     const [img, setImg] = useState(ProfileImg);
     const [firstName, setFName] = useState("Guest");
     const [lastName, setLName] = useState("Guest");
-    const [Age, setAge] = useState(0);
-    const [email, setEmail] = useState("guest123@gmail.com");
+    const [Age, setAge] = useState();
     const [edit, setEdit] = useState(true);
     const [data, setData] = useState({ user: { firstName: "", lastName: "", email: "", password: "", age: "" } });
     const nav = useNavigate();
@@ -85,9 +84,7 @@ function UserProfile() {
     function handleAge(event) {
         setAge(event.target.value);
     }
-    function handleEmail(event) {
-        setEmail(event.target.value);
-    }
+   
 
 
 
@@ -97,9 +94,9 @@ function UserProfile() {
             <div className="container">
                 <div className="profile-container">
                     <img src={img}></img><br></br>
-                    <p>{lastName}</p>
-                    <p>{firstName}</p>
-                    <p>{Age}</p>
+                    <p>{data.user.firstName}</p>
+                    <p>{data.user.lastName}</p>
+                    <p>{data.user.age}</p>
                 </div>
             </div>
 
@@ -116,9 +113,9 @@ function UserProfile() {
                     <input type="text" value={data.user.lastName} disabled={edit} onChange={handleLName}></input>
                     <br></br>
                     <label>Email</label><br></br>
-                    <input value={data.user.email} disabled='true' size="30" onChange={handleEmail}></input><br></br>
+                    <input value={data.user.email} disabled='true' size="30"></input><br></br>
                     <label>Age</label><br></br>
-                    <input value={Age} disabled={edit}  type="number" onChange={handleAge}></input><br></br>
+                    <input value={data.user.age} disabled={edit}  type="number" onChange={handleAge}></input><br></br>
                 </div>
             </div>
         </div>
