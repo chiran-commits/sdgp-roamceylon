@@ -105,7 +105,7 @@ const Review = (details) => {
             </div>
          )}
 
-            <h3>Write a comment</h3>
+            <h3 className='review-heading'>Share your Experience with Us!</h3>
 
             <div className="form-container">
                 <form onSubmit={handleSubmit}>
@@ -116,6 +116,7 @@ const Review = (details) => {
                                 value={review}
                                 onChange={handleReviewChange}
                                 required
+                                placeholder='Enter your Review here...'
                             />
                         </label>
                     </div>

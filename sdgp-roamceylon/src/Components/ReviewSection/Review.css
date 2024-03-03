@@ -68,21 +68,22 @@
 
     margin: 0 auto;
     padding: 20px;
-
+    width: 100%;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background: linear-gradient(-45deg, #4ca3be, #bae078, #5db4a1, #8cb4e0);
 }
 
 .form-container label {
     display: block;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .form-container textarea,
 .form-container input[type="number"],
 .form-container button {
+    margin: 5px;
     width: 100%;
-    padding: 10px;
     font-size: 16px;
     /* border: 1px solid #ccc; */
     border-radius: 5px;
@@ -90,13 +91,16 @@
     margin-bottom: 20px;
 }
 
+.form-container button{
+    width: 20%;
+}
 .form-container textarea {
     height: 100px;
 }
 
 .form-container button {
     background-color: lightblue;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
@@ -148,4 +152,11 @@
 
 h3 {
     color: black;
+}
+
+.review-heading{
+    font-size: 35px;
+    background: linear-gradient(to right, #249ad0c8 50%, #330867 80%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
