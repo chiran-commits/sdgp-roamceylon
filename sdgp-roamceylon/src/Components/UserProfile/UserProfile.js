@@ -118,7 +118,7 @@ function UserProfile() {
                     <label>Email</label><br></br>
                     <input value={data.user.email} disabled='true' size="30" onChange={handleEmail}></input><br></br>
                     <label>Age</label><br></br>
-                    <input value={Age} disabled={edit} onChange={handleAge}></input><br></br>
+                    <input value={Age} disabled={edit}  type="number" onChange={handleAge}></input><br></br>
                 </div>
             </div>
         </div>

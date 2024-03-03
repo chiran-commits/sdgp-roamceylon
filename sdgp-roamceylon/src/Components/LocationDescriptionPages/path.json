@@ -1,0 +1,14 @@
+[
+    {
+      "name": "image1",
+      "path": "./images/image1.png"
+    },
+    {
+      "name": "image2",
+      "path": "./images/image2.png"
+    },
+    {
+      "name": "image3",
+      "path": "./images/image3.png"
+    }
+  ]
