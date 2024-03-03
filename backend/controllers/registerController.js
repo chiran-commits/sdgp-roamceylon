@@ -42,7 +42,7 @@ const loginUser = async (req, res) => {
             // const accessToken = jwt.sign({ email: email }, process.env.ACCESS_TOKEN, { expiresIn: '30s' });
             const token = jwt.sign({ email: email }, process.env.REFRESH_TOKEN, { expiresIn: '1d' });
 
-            // res.cookie('token', token, { httpOnly: true, sameSite: 'None', secure: false, maxAge: 1000 * 60 * 60 * 24 });
+            res.cookie('token', token, { httpOnly: true, sameSite: 'Strict', secure: true, maxAge: 1000 * 60 * 60 * 24 });
             // user.refreshToken = token;
             // await user.save();
             res.json({ "token":token });

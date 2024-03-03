@@ -24,7 +24,7 @@
 .home-container-about{
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: rgb(241, 246, 254);
   margin: 80px 30px 60px 30px;
   border-radius: 20px;
   padding-bottom: 200px;
@@ -43,7 +43,7 @@
   position: absolute;
   border: none;
   transform: scale(0.80);
-  filter: brightness(50%);
+  filter: brightness(65%);
   color: #000;
 }
 
