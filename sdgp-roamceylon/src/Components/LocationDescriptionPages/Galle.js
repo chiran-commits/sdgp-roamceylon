@@ -5,6 +5,7 @@ import galleimage1 from '../LocationDescriptionPages/Images/Galle-Dutch-Fort.jpg
 import galleimage2 from '../LocationDescriptionPages/Images/turtle-hatchery-hikkaduwa.jpg';
 import galleimage3 from '../LocationDescriptionPages/Images/Galle_Maritime_Museum.jpg';
 import './Galle.css';
+import Review from '../ReviewSection/Review';
 
 export default function Galle(){
     return(
@@ -43,6 +44,8 @@ export default function Galle(){
                 <h1>Indicators</h1>
   
             </div>
+            <Review location="galle"/>
+
         </div>
         
 
