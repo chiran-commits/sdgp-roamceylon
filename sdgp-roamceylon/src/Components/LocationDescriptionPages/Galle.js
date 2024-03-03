@@ -89,22 +89,22 @@ export default function Galle(){
                 })
             }
     
-            <h3 style={{color:"black" , marginTop:70, fontSize:35, marginLeft:40}}>Popular Destinations</h3>
+            <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
                 <div className='popular_destination'>
                     <img src={galleimage1} className='destination_image'/>
-                    <p className='text_dest'>Galle Dutch Fort</p>
+                    <p className='text_dest'>Galle Dutch Fort (4.7)</p>
                 </div>
                 <div className='popular_destination'>
                     <img src={galleimage2} className='destination_image'/>
-                    <p className='text_dest'>Sea Turtle Hatchery Centre</p>
+                    <p className='text_dest'>Sea Turtle Hatchery Centre (4.4)</p>
                 </div>
                 <div className='popular_destination'>
                     <img src={galleimage3} className='destination_image'/>
-                    <p className='text_dest'>Maritime Museum</p>
+                    <p className='text_dest'>Maritime Museum (4.2)</p>
                 </div>
             </div>
-            <br></br><br></br>
+            <br></br><br></br><br></br><br></br>
             <Review location="galle"/>
 
         </div>
