@@ -10,7 +10,7 @@ function UserProfile() {
     const [img, setImg] = useState(ProfileImg);
     const [firstName, setFName] = useState("Guest");
     const [lastName, setLName] = useState("Guest");
-    const [age, setAge] = useState(19);
+    const [Age, setAge] = useState(0);
     const [email, setEmail] = useState("guest123@gmail.com");
     const [edit, setEdit] = useState(true);
     const [data, setData] = useState({ user: { firstName: "", lastName: "", email: "", password: "", age: "" } });
@@ -66,7 +66,7 @@ function UserProfile() {
         setEdit(true);
         try {
 
-            const { data } = await axios.post('http://localhost:5009/save', { firstName, lastName, age }).then(
+            const { data } = await axios.post('http://localhost:5009/save', { firstName, lastName, Age }).then(
             ).catch((err) => {
                 console.log(err)
             })
@@ -99,7 +99,7 @@ function UserProfile() {
                     <img src={img}></img><br></br>
                     <p>{lastName}</p>
                     <p>{firstName}</p>
-                    <p>{age}</p>
+                    <p>{Age}</p>
                 </div>
             </div>
 
@@ -118,7 +118,7 @@ function UserProfile() {
                     <label>Email</label><br></br>
                     <input value={data.user.email} disabled='true' size="30" onChange={handleEmail}></input><br></br>
                     <label>Age</label><br></br>
-                    <input value={age} disabled={edit} onChange={handleAge}></input><br></br>
+                    <input value={Age} disabled={edit} onChange={handleAge}></input><br></br>
                 </div>
             </div>
         </div>
