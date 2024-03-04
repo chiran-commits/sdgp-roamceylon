@@ -7,6 +7,7 @@ import galleimage3 from '../LocationDescriptionPages/Images/Galle_Maritime_Museu
 import LocationData from './locations.json'
 import './Galle.css';
 import Review from '../ReviewSection/Review';
+import FetchWeatherData from './GetWeatherData.js';
 
 export default function Galle(location){
     return(
@@ -32,7 +33,10 @@ export default function Galle(location){
                             <div className='indicators'>
                                 <h1>Indicators</h1>
                                 <div className='indicator-container'>
-                                    <p><span className='title'>Weather:<br></br></span> Tropical / Hot and Humid</p>
+                                    <p>
+                                        <span className='title'>Weather:<br></br></span> Tropical/ Hot and Humid
+                                        <p className='weatherdata'><FetchWeatherData city="galle" className="weatherdata"/></p>
+                                    </p>
                                 </div>
                                 <div className='indicator-container'>
                                     <p><span className='title'>Wi-Fi:<br></br></span>Fast</p>

@@ -91,8 +91,8 @@
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 40px;
-    min-height: 120px;
+    margin-bottom: 50px;
+    min-height: 150px;
     min-width: 250px;
     border-radius: 15px;
     background-color: rgb(187, 211, 251, 0.85);
@@ -102,6 +102,7 @@
     font-size: 25px;
     font-weight: 700;
     text-align: center;
+    padding: 20px;
 }
 
 .destination-heading{
@@ -111,4 +112,10 @@
 }
 .checked{
     color:orange;
+}
+
+.weatherdata{
+    margin-top: 5px;
+    font-size: 25px;
+    color: rgb(30, 158, 221);
 }
