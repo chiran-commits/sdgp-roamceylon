@@ -78,7 +78,7 @@ const Review = (details) => {
             <div className="colombopagereview">
                 
                 
-
+                <h3 className='review-heading'>Reviews</h3>
 
                 <ul className="comments-list">
                     {publisedReviews.map((comment) => (
