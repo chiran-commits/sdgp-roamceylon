@@ -1,0 +1,1 @@
+RoamCeylon is a website that allows Digital nomads to search/ get recommendations based on their entered requirements. RoamCeylon is based in Sri Lanka and contains information about locations around Sri Lanka. Our aim is to attract digital nomads/ remote workers around the world to Sri Lanka and provide accurate information about locations around Sri Lanka.
