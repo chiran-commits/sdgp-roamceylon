@@ -1,24 +1,190 @@
-.Kandy-page{
+.kandy-location_image{
+    width: 100%;
+    margin-left: 0px;
+    transform: scale(1);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #176B87;
-    padding-bottom: 200px;
-    padding-top: 28vh;
-    position: relative;
+}
+
+.main-kandy{
+    position: absolute;
+    height: 450px;
     overflow: hidden;
-    min-height: 50vh;
-    width: 100%;
 }
 
-.Kandy-image{
+.location_detail{
+    margin-top: 460px;
+    z-index: 1;
+    font-size: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background: linear-gradient(to right, #d22b2b 0%, #330867 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    }
+
+.location_information{
+    display: flex;
+    overflow: hidden;
 }
 
-.Kandy-text{
-    position: relative;
-    color: #DAFFFB;
-    flex-direction: column;
-    font-size: 35px;
-    padding-top: 30px;
+.kandy-location_Des{
+    font-size: 20px;
+    margin-bottom: 125px;
 }
 
+.kandy-location_destinations{
+    display:inline-flex;
+    background-color:darkcyan;
+    width:100%;
+    height: 400px;
+}
+
+.kandy-popular_destination{
+    justify-content: space-between;
+    background-color: white;
+    width: 350px;
+    margin: 80px;
+    height: 280px;
+    display: inline;
+    padding: 10px;
+    margin-right: 40px;
+    display: flex;
+    margin-left: 100px;
+    box-shadow: 0 5px 10px 2px rgb(0,0,0);
+    transition: 0.25s ease-in-out;
+    border-radius: 10px;
+}
+
+.destination_image{
+    height: 200px;
+    width: 300px;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.kandy-popular_destination:hover{
+    transform:scale(1.1)
+}
+
+.text_dest{
+    z-index: 1;
+    font-size: 20px;
+    margin-left: 3%;
+    color: black;
+    font-weight: bold;
+    margin-top:210px;
+}
+
+.kandy-indicators{
+    background-color: rgb(241, 246, 254);
+    border-radius: 20px;
+}
+
+.kandy-indicators h1{
+    color: black;
+}
+
+.kandy-indicator-container{
+    display:inline-flex;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    min-height: 150px;
+    min-width: 250px;
+    border-radius: 15px;
+    background-color: rgb(187, 211, 251, 0.85);
+}
+
+.kandy-title{
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+
+.kandy-subtitle{
+    margin-left: 10px;
+}
+
+.destination-heading{
+     margin-top:80px;
+     font-size:35px;
+     
+}
+.checked{
+    color:orange;
+}
+
+.weatherdata{
+    margin-top: 5px;
+    font-size: 25px;
+    color: rgb(30, 158, 221);
+    margin-left:14px;
+}
+
+.kandy-famous-img{
+    overflow: hidden;
+}
+
+/* Scale Animation */
+
+.kandy-weather, .kandy-cost{
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+
+.kandy-outer{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 9px;
+}
+
+.kandy-inner{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#kandy-number{
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.kandy-weather circle{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 10px;
+  stroke-dasharray:219;
+  stroke-dashoffset: 110;
+  animation: anim 2s linear forwards;
+}
+
+.kandy-cost circle{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 10px;
+  stroke-dasharray:219;
+  stroke-dashoffset: 100;
+  animation: anim 2s linear forwards;
+}
+
+.scale{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -45px;
+  margin-left: -45px;
+}

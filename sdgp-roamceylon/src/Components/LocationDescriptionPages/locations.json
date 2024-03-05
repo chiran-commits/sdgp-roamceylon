@@ -11,5 +11,12 @@
     "wifi":"AVERAGE",
     "col":"HIGH COST",
     "type":"RURAL"
+},
+{
+    "id":3,
+    "location":"Kandy",
+    "wifi":"AVERAGE",
+    "col":"MEDIUM",
+    "type":"URBAN"
 }
 ]

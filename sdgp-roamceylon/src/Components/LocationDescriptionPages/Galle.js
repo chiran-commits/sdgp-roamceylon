@@ -63,7 +63,7 @@ export default function Galle(location){
                                 </div>
                                 <div className='indicator-container'>
                                     <p><span className='title'>COST OF LIVING:<br></br></span>High</p>
-                                    {/* <span>
+                                    <span>
                                         <div className='cost'>
                                             <div className='outer'>
                                                 <div className='inner'>
@@ -82,7 +82,7 @@ export default function Galle(location){
                                                     <circle cx="80" cy="80" r="29" stroke-linecap="round" />
                                             </svg>
                                         </div>
-                                    </span> */}
+                                    </span>
                                 </div>
                                 <div className='indicator-container'>
                                     <p><span className='title'>URBAN/RURAL:<br></br></span>{data.type}</p>
