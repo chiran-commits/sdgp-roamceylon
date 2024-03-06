@@ -91,3 +91,33 @@ h1,h3,h4, h6{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.top-section{
+    margin-top: 105px;
+    font-size: 50px;
+}
+
+.top-section h2,.top-section h3{
+    padding-bottom: 25px;
+    font-weight: 280;
+    color: rgb(35,86,209);
+}
+
+.content-section{
+    background-color: rgb(241, 246, 254);
+    margin-top: 40px;
+    padding: 40px 40px 40px 40px;
+    text-align: left;
+    border-radius: 18px;
+}
+
+.content-section h2{
+    color: rgb(35,86,209);
+    font-size: 55px;
+    font-weight: 280;
+    padding-bottom: 16px;
+}
+
+.content-section p{
+    font-size: 20px;
+}

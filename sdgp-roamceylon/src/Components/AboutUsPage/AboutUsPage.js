@@ -8,6 +8,7 @@ import whatsapp_img from "./whatsapp_5968841.png"
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { authorizationActions } from "../../store";
+import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
 import axios from "axios";
 
 function App(){
@@ -50,6 +51,19 @@ function App(){
   return(
     <div>
       <Navbar activeOption='aboutus'/>
+      <br></br>
+      <div className="top-section">
+          <h2>About Us</h2>
+          <h3>Guiding Sri Lanka's Digital Nomads</h3>
+        </div>
+        <div className="content-section">
+          <h2>An Overview</h2>
+          <p>RoamCeylon was established in 2023 and has been helping Digital Nomads to visit Sri Lanka for their next excusrion in a tropical island. The website was created by five students for their SDGP in the Informatics Institute of Technology.</p>
+        </div>
+        <div className="content-section">
+          <h2>Our Story</h2>
+          <p>RoamCeylon was created with the intention of guiding the Digital Nomads of Sri Lanka. The team was inspired to create such an application due to the economic crisis faced by Sri Lanka in 2022, which plummeted foreign currency reserves in the nation. Digital Nomadism has a huge potential in Sri Lanka as it could bring lots of foreign currency to the country.</p>
+        </div>
       <div id="subframe">
         <h2 id="moveBottom"><center className="textColor">THE CREATORS</center></h2><br></br><br></br>
         <div className="imageSection">
