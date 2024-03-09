@@ -13,28 +13,32 @@ body{
 }
 
 .profile-container{
-    background-color: #176B87 ;
+    background-color:#dafffb;
     height: 540px;
     padding: 25px 25px;
     border-radius: 30px;
     font-size: 2em;
     text-align: center;
     margin-right: 5px;
-    color: #dafffb;
+    color: #176B87 ;
     width: 500px;
-    box-shadow: 0 15px 15px 0 rgba(0,0,0,0.4);
+}
+.profile-container:hover{
+    border-bottom: 8px solid  #04364A;
 }
 .info-container{
     margin-left: 10px;
-    background-color: #176B87 ;
+    background-color:#dafffb;
     padding: 25px 25px;
     height: 540px;
     border-radius: 30px;
     font-size: 1.5em;
     text-align: center;
-    color: #dafffb;
+    color: #176B87 ;
     width: 500px;
-    box-shadow: 0 15px 15px 0 rgba(0,0,0,0.4);
+}
+.info-container{
+    border-bottom: 8px solid  #04364A;
 }
 
 .info-container p{
@@ -86,7 +90,7 @@ button:hover{
 
 .info-container input{
     color:   #176B87;
-    border: none;
+    border-color:2px  #176B87;
     border-radius: 30px;
     text-align: center;
     padding: 10px 10px;
@@ -96,6 +100,6 @@ button:hover{
     font-size: 0.8em;
 }
 input:disabled{
-    background:#cad4d3;
+    background:#d0e1df;
 }
 

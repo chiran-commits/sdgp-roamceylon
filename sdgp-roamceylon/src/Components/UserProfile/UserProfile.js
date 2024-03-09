@@ -7,7 +7,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function UserProfile() {
-    const [img, setImg] = useState(ProfileImg);
+    const [img] = useState(ProfileImg);
     const [firstName, setFName] = useState("Guest");
     const [lastName, setLName] = useState("Guest");
     const [Age, setAge] = useState();
