@@ -10,6 +10,7 @@ import { useDispatch } from "react-redux";
 import { authorizationActions } from "../../store";
 import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
 import axios from "axios";
+import thinalimage from "./Thinal.JPG";
 
 function App(){
 
@@ -69,23 +70,23 @@ function App(){
         <div className="imageSection">
           <div className="developer-container">
             <img className="about-image" src={D1}></img>
-            <Creator name="Chiran Gamage" email="abc"/>
+            <Creator name="Chiran Gamage" email="chiran.20221029@iit.ac.lk"/>
+          </div>
+          <div className="developer-container">
+            <img className="about-image" src={thinalimage}></img>
+            <Creator name="Thinal Karunarathna" email="thinal.20221003@iit.ac.lk"/>
           </div>
           <div className="developer-container">
             <img className="about-image" src={D1}></img>
-            <Creator name="Thinal Karunarathna" email="abc"/>
+            <Creator name="Neelesh Gamage" email="neelesh.20221028@iit.ac.lk"/>
           </div>
           <div className="developer-container">
             <img className="about-image" src={D1}></img>
-            <Creator name="Neelesh Gamage" email="abc"/>
+            <Creator name="Puleesha Vilhan" email="puleesha.20221061@iit.ac.lk"/>
           </div>
           <div className="developer-container">
             <img className="about-image" src={D1}></img>
-            <Creator name="Puleesha Vilhan" email="abc"/>
-          </div>
-          <div className="developer-container">
-            <img className="about-image" src={D1}></img>
-            <Creator name="Tharuka Bandara" email="abc"/>
+            <Creator name="Tharuka Bandara" email="sathvidu.20221032@iit.ac.lk"/>
           </div>
         </div>
         <br></br><br></br>
@@ -115,7 +116,7 @@ const Creator  = (props) =>{
   return(
     <div>
       <h4><center>{props.name}</center></h4><br></br>
-      <h4><center>Email: {props.email}</center></h4>
+      <h4><center>Email: <a style={{color:"white"}} href={props.email}>{props.email}</a></center></h4>
     </div>
   );
 }
