@@ -37,7 +37,7 @@ body{
     color: #176B87 ;
     width: 500px;
 }
-.info-container{
+.info-container:hover{
     border-bottom: 8px solid  #04364A;
 }
 
