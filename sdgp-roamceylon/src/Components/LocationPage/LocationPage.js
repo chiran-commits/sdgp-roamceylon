@@ -20,6 +20,7 @@ export default function LocationPage() {
     const [descriptionData, setDescriptionData] = useState('');
     const [message, setMessage] = useState('');
     const [descriptionPlaceholder, setDescriptionPlaceholder] = useState('Enter the features of your ideal location...');
+    const [locations, setLocations] = useState([]);
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -70,7 +71,8 @@ export default function LocationPage() {
 
             const keyword = await axios.post('http://localhost:5009/keywords', { descriptionData: descriptionData });
             console.log(keyword);   
-            setMessage(keyword.data.message); 
+            setLocations(keyword.data);
+            console.log(locations);
             setDescriptionData(''); 
         }
         catch(error)
@@ -141,7 +143,6 @@ export default function LocationPage() {
                           </textarea>
                       </div>
                       <button type="submit" className="recommendation-btn" onClick={handleSubmitDescription}>Generate Locations</button>
-                      {message && <p>{message}</p>}
                     </div>
 
 
