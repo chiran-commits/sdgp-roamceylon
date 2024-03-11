@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route('/keywords', methods=['POST'])
+@app.route('/nlp', methods=['POST'])
 
 def get_description():
     data = request.get_json()
@@ -89,7 +89,7 @@ def get_description():
         locations.append("anuradhapura")
 
     
-    return jsonify(locations)
+    return locations
     
 if __name__=='__main__':
     app.run(debug=True)

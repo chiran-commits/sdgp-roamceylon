@@ -74,6 +74,7 @@ export default function LocationPage() {
             setLocations(keyword.data);
             console.log(locations);
             setDescriptionData(''); 
+            setDescriptionPlaceholder("Enter the features of your ideal location...")
         }
         catch(error)
         {
