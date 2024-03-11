@@ -25,7 +25,7 @@ router.get('/user',verifyUser,sendUser)
 router.get('/refresh',verifyUser,refresh)
 
 router.post('/keywords', async (req,res)=>{
-    res.send('keywords')
+    //res.send('keywords')
     try{
         const {descriptionData} = req.body;
         const response =await axios.post('http://localhost:5009/nlp', {descriptionData});

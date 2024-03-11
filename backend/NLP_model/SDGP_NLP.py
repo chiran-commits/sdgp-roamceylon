@@ -89,7 +89,7 @@ def get_description():
         locations.append("anuradhapura")
 
     
-    return locations
+    return jsonify({locations})
     
 if __name__=='__main__':
     app.run(debug=True)

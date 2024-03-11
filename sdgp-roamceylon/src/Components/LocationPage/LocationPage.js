@@ -72,7 +72,6 @@ export default function LocationPage() {
             const keyword = await axios.post('http://localhost:5009/keywords', { descriptionData: descriptionData });
             console.log(keyword);   
             setLocations(keyword.data);
-            console.log(locations);
             setDescriptionData(''); 
             setDescriptionPlaceholder("Enter the features of your ideal location...")
         }
