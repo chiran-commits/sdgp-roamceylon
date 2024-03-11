@@ -1,21 +1,34 @@
 const userModel= require('../database/userModel');
 
 const refresh=async(req,res)=>{
-    const email = req.email;
-    let user;
-    try {
-        user=await userModel.findOne({email:email})
-        console.log(user);
-    } catch (err) {
-        console.log(err);
-        return res.status(404).json({ messsage: "Error fetching data" });
-    }
-    if (!user) {
-        console.log("user not found");
-      return res.status(404).json({ messsage: "user not found"});
-    }
-    return res.status(200).json({ user });
 
-  
+
+    // const cookies = req.cookies;
+    // if (!cookies?.jwt) return res.sendStatus(401);
+    // const refreshToken = cookies.jwt;
+
+    if (!req.cookies.token) return res.sendStatus(401);
+    const refreshToken = req.cookies.token;
+
+
+    
+
+        jwt.verify(
+            refreshToken,
+            process.env.REFRESH_TOKEN_SECRET,
+            (err, decoded) => {
+
+                if (err) return res.sendStatus(403);
+
+                const accessToken = jwt.sign(
+                    { "username": decoded.username },
+                    process.env.ACCESS_TOKEN_SECRET,
+                    { expiresIn: '30s' }
+                );
+                res.json({ accessToken })
+            }
+        );
+
 }
+
 module.exports=refresh;
