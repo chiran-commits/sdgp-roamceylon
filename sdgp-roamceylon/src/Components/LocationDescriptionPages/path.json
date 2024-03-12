@@ -23,16 +23,33 @@
     ],
     "destinations": [
       {
-        "name": "Galle Dutch Fort",
-        "image": "Galle-Dutch-Fort.jpg"
+        "name": "cover page",
+        "image": "../LocationDescriptionPages/Images/newgalleimge1.jpg"
       },
       {
         "name": "Sea Turtle Hatchery Centre",
-        "image": "turtle-hatchery-hikkaduwa.jpg"
+        "image": "../LocationDescriptionPages/Images/Galle-Dutch-Fort.jpg"
       },
       {
         "name": "Maritime Museum",
-        "image": "Galle_Maritime_Museum.jpg"
+        "image": "./LocationDescriptionPages/Images/turtle-hatchery-hikkaduwa.jpg"
+      },
+
+      {
+        "name": "Galle Dutch Fort",
+        "image": "../LocationDescriptionPages/Images/Galle_Maritime_Museum.jpg'"
+      },
+      {
+        "name": "Sea Turtle Hatchery Centre",
+        "image": "../LocationDescriptionPages/Images/leGrand.jpg"
+      },
+      {
+        "name": "Maritime Museum",
+        "image": "../LocationDescriptionPages/Images/raddisson.jpg"
+      },
+      {
+        "name": "Galle Dutch Fort",
+        "image": "../LocationDescriptionPages/Images/lighthouse.jpg"
       }
     ],
     "link": "http://localhost:8000/common"
@@ -76,3 +93,5 @@
     "link": "http://localhost:8000/common"
   }
 ]
+
+
