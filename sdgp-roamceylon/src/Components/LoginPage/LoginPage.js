@@ -5,7 +5,8 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import {authorizationActions} from '../../store'
+import {authorizationActions} from '../../store';
+import LoginVideo from './Video/backVideoLog.mp4';
 
 export default function Login() {
     const dispatch = useDispatch();
@@ -75,6 +76,9 @@ export default function Login() {
     return (
         <>
             <div className='login-page'>
+                <video className='video-login' autoPlay muted loop playsInline>
+                    <source src={LoginVideo} type='video/mp4' />
+                </video>
                 <div className='header'>
                     <a href='/'><h2>ROAMCEYLON</h2></a>
                 </div>
