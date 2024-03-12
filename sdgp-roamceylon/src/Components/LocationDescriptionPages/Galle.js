@@ -114,15 +114,15 @@ export default function Galle(location){
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Galle</h3>
             <div className='galle-hotels'>
-                <div className='location-container'>
+                <div className='locationContainer'>
                     <img src={LeGrand} className='destination_image'/>
                     <p className='text_dest'>Le Grand Galle</p>
                 </div>
-                <div className='location-container'>
+                <div className='locationContainer'>
                     <img src={lighthouse} className='destination_image'/>
                     <p className='text_dest'>Jetwing Lighthouse</p>
                 </div>
-                <div className='location-container'>
+                <div className='locationContainer'>
                     <img src={raddisson} className='destination_image'/>
                     <p className='text_dest'>Raddisson Blu</p>
                 </div>
