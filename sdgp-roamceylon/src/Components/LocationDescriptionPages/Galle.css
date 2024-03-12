@@ -53,6 +53,27 @@
     border-radius: 10px;
 }
 
+.location-container{
+    justify-content: space-between;
+    background-color: white;
+    width: 400px;
+    margin: 80px;
+    height: 300px;
+    display: inline;
+    padding: 30px;
+    margin-right: 20px;
+    display: flex;
+    margin-left: 40px;
+    transition: 0.25s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0);
+}
+
+.location-container p{
+    font-weight: 300;
+}
+
+
 .destination_image{
     height: 200px;
     width: 300px;
@@ -63,7 +84,7 @@
     margin-left: 15px;
 }
 
-.popular_destination:hover{
+.popular_destination:hover, .location-container:hover{
     transform:scale(1.1)
 }
 
@@ -79,6 +100,14 @@
 .indicators{
     background-color: rgb(241, 246, 254);
     border-radius: 20px;
+}
+
+.galle-hotels{
+    background-color: rgb(241, 246, 254);
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    display: inline-flex;
 }
 
 .indicators h1{
@@ -106,9 +135,9 @@
 }
 
 .destination-heading{
-     margin-top:80px;
-     font-size:35px;
-     
+    margin-top:80px;
+    font-size:35px; 
+    font-weight: 400;
 }
 .checked{
     color:orange;
