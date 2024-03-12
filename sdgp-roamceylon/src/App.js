@@ -8,6 +8,7 @@ import ErrorPage from './Components/ErrorPage/ErrorPage.js';
 import Colombo from './Components/LocationDescriptionPages/Colombo.js';
 import Kandy from './Components/LocationDescriptionPages/Kandy.js';
 import Common from './Components/LocationDescriptionPages/common.js';
+import Galle from './Components/LocationDescriptionPages/Galle.js';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import { useSelector } from "react-redux";
 
@@ -30,6 +31,7 @@ function App() {
         <Route path = "*" element = {<ErrorPage/>}/>
         <Route path="/colombo" element={<Colombo/>} />
         <Route path="/common" element={<Common/>} />
+        <Route path="/galle" element={<Galle/>} />
         <Route path="/kandy" element={<Kandy/>} />
       </Routes>
   </Router> 
