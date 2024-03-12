@@ -4,6 +4,9 @@ import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
 import galleimage1 from '../LocationDescriptionPages/Images/Galle-Dutch-Fort.jpg';
 import galleimage2 from '../LocationDescriptionPages/Images/turtle-hatchery-hikkaduwa.jpg';
 import galleimage3 from '../LocationDescriptionPages/Images/Galle_Maritime_Museum.jpg';
+import LeGrand from '../LocationDescriptionPages/Images/leGrand.jpg';
+import raddisson from '../LocationDescriptionPages/Images/raddisson.jpg';
+import lighthouse from '../LocationDescriptionPages/Images/lighthouse.jpg';
 import LocationData from './locations.json'
 import './Galle.css';
 import Review from '../ReviewSection/Review';
@@ -106,6 +109,22 @@ export default function Galle(location){
                 <div className='popular_destination'>
                     <img src={galleimage3} className='destination_image'/>
                     <p className='text_dest'>Maritime Museum (4.2 <span class="fa fa-star checked"></span>)</p>
+                </div>
+            </div>
+            <br></br><br></br><br></br>
+            <h3 className='destination-heading'>Hotels in Galle</h3>
+            <div className='galle-hotels'>
+                <div className='location-container'>
+                    <img src={LeGrand} className='destination_image'/>
+                    <p className='text_dest'>Le Grand Galle</p>
+                </div>
+                <div className='location-container'>
+                    <img src={lighthouse} className='destination_image'/>
+                    <p className='text_dest'>Jetwing Lighthouse</p>
+                </div>
+                <div className='location-container'>
+                    <img src={raddisson} className='destination_image'/>
+                    <p className='text_dest'>Raddisson Blu</p>
                 </div>
             </div>
             <br></br><br></br><br></br><br></br>
