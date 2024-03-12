@@ -1,14 +1,78 @@
 [
-    {
-      "name": "image1",
-      "path": "./images/image1.png"
-    },
-    {
-      "name": "image2",
-      "path": "./images/image2.png"
-    },
-    {
-      "name": "image3",
-      "path": "./images/image3.png"
-    }
-  ]
+  {
+    "location": "Galle",
+    "name": "Galle",
+    "description": "Description for Galle",
+    "indicators": [
+      {
+        "title": "Weather",
+        "value": "Tropical / Hot and Humid"
+      },
+      {
+        "title": "Wi-Fi",
+        "value": "Fast"
+      },
+      {
+        "title": "COST OF LIVING",
+        "value": "High"
+      },
+      {
+        "title": "URBAN/RURAL",
+        "value": "Urban"
+      }
+    ],
+    "destinations": [
+      {
+        "name": "Galle Dutch Fort",
+        "image": "Galle-Dutch-Fort.jpg"
+      },
+      {
+        "name": "Sea Turtle Hatchery Centre",
+        "image": "turtle-hatchery-hikkaduwa.jpg"
+      },
+      {
+        "name": "Maritime Museum",
+        "image": "Galle_Maritime_Museum.jpg"
+      }
+    ],
+    "link": "http://localhost:8000/common"
+  },
+  {
+    "location": "Kandy",
+    "name": "Galle",
+    "description": "Description for Kandy",
+    "indicators": [
+      {
+        "title": "Weather",
+        "value": "Tropical / Hot and Humid"
+      },
+      {
+        "title": "Wi-Fi",
+        "value": "Fast"
+      },
+      {
+        "title": "COST OF LIVING",
+        "value": "High"
+      },
+      {
+        "title": "URBAN/RURAL",
+        "value": "Urban"
+      }
+    ],
+    "destinations": [
+      {
+        "name": "Galle Dutch Fort",
+        "image": "Galle-Dutch-Fort.jpg"
+      },
+      {
+        "name": "Sea Turtle Hatchery Centre",
+        "image": "turtle-hatchery-hikkaduwa.jpg"
+      },
+      {
+        "name": "Maritime Museum",
+        "image": "Galle_Maritime_Museum.jpg"
+      }
+    ],
+    "link": "http://localhost:8000/common"
+  }
+]

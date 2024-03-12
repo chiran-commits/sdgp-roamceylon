@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import {authorizationActions} from '../../store';
-import LoginVideo from './Video/backVideoLog.mp4';
+import LoginVideo from '../LoginPage/Video/backVideoLog.mp4';
 
 export default function Login() {
     const dispatch = useDispatch();

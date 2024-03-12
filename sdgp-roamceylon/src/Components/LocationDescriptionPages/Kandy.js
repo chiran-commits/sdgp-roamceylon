@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../AboutUsPage/Navbar';
 import LocationData from './locations.json';
-import KandyImage from './Images/Kandy/kandyImg.jpg';
+// import KandyImage from './Images/KandyImg.jpg';
 import KandyAttraction1 from './Images/Kandy/botanicalGarden.jpg';
 import KandyAttraction2 from './Images/Kandy/templeOfTheTooth.jpg';
 import KandyAttraction3 from './Images/Kandy/kandyjungle.jpg';
@@ -15,7 +15,7 @@ export default function Kandy(){
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
                 <div className='main-kandy'>
-                    <img src={KandyImage} className='kandy-location_image'></img>
+                    {/* <img src={KandyImage} className='kandy-location_image'></img> */}
                 </div>    
                 <div className='location_detail'>
                     <h3>Kandy</h3>

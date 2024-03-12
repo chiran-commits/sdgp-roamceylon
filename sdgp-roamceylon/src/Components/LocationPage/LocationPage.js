@@ -1,14 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import Navbar from "../AboutUsPage/Navbar";
 import "./LocationPage.css";
-import { useState, useEffect } from 'react';
-import Locations from '../LocationPage/Locations.json';
+import Locations from '../LocationDescriptionPages/path.json';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { authorizationActions } from "../../store";
 import { useSelector } from 'react-redux';
-
-
+import Common from '../LocationDescriptionPages/common.js'; 
 
 export default function LocationPage() {
     
@@ -21,45 +20,34 @@ export default function LocationPage() {
     const [message, setMessage] = useState('');
     const [descriptionPlaceholder, setDescriptionPlaceholder] = useState('Enter the features of your ideal location...');
     const [locations, setLocations] = useState([]);
+    const [selectedLocation, setSelectedLocation] = useState(null);
     const dispatch = useDispatch();
 
     useEffect(() => {
 
-  
-          
-      const getProfile = async () => {
-          
-          const authToken = localStorage.getItem('SDGP-roamceylon2');
-          if(authToken==null){
-            dispatch(authorizationActions.logout())
-  
-          }else{
-              const res = await axios
-              .get("http://localhost:5009/user",{
-                  headers: {
-                       Authorization: authToken
-                  }
-              }).then(
-                dispatch(authorizationActions.login())
-              )
-              .catch((err) => {console.log(err)
+        const getProfile = async () => {
+            const authToken = localStorage.getItem('SDGP-roamceylon2');
+            if(authToken==null){
                 dispatch(authorizationActions.logout())
-  
-                  
-              }
-              );
-             
-            
-          }
-             
-      };
-      getProfile();
-      
-     
-    
+            }else{
+                const res = await axios
+                .get("http://localhost:5009/user",{
+                    headers: {
+                        Authorization: authToken
+                    }
+                }).then(
+                    dispatch(authorizationActions.login())
+                )
+                .catch((err) => {
+                    console.log(err);
+                    dispatch(authorizationActions.logout());
+                });
+            }
+        };
+        getProfile();
     }, []);
-    const isLoggedIn = useSelector((state) => state.isLoggedIn);
 
+    const isLoggedIn = useSelector((state) => state.isLoggedIn);
 
     const handleDescriptionChange = (event) => {
         setDescriptionData(event.target.value);
@@ -67,28 +55,20 @@ export default function LocationPage() {
 
     const handleSubmitDescription = async () => {
         try {
-            
-
             const keyword = await axios.post('http://localhost:5009/keywords', { descriptionData: descriptionData });
-            console.log(keyword);   
             setLocations(keyword.data);
             setDescriptionData(''); 
-            setDescriptionPlaceholder("Enter the features of your ideal location...")
-        }
-        catch(error)
-        {
+        } catch(error) {
             console.log("Error fetching data:", error);
-            setDescriptionData('')
-            setDescriptionPlaceholder("please enter a valid description")
-            setMessage('Error processing description')
+            setDescriptionData('');
+            setDescriptionPlaceholder("please enter a valid description");
+            setMessage('Error processing description');
         }
-
-    }
+    };
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // Here we set the filtered data to the original data when the component mounts
                 setFilteredData(Locations);
             } catch (error) {
                 console.error("Error fetching data:", error);
@@ -100,17 +80,24 @@ export default function LocationPage() {
     const onChange = (e) => {
         const searchValue = e.target.value.toLowerCase();
         const filtered = Locations.filter(item =>
-            item.location.toLowerCase().startsWith(searchValue)
+            item.location && item.location.toLowerCase().includes(searchValue)
         );
         setFilteredData(filtered);
         setValue(searchValue);
     };
 
-    const redirectToLocation = (link) => {
+    const handleClickLocation = (link) => {
         window.location.href = link;
     };
-
-
+    
+    const redirectToLocation = (locationName) => {
+        const location = Locations.find(loc => loc.location.toLowerCase() === locationName.toLowerCase());
+        if (location) {
+            setSelectedLocation(location);
+            handleClickLocation(location.link);
+        }
+    };
+    
     return (
         <div>
             <Navbar activeOption="locations" />
@@ -124,7 +111,7 @@ export default function LocationPage() {
                             {value && (
                                 <div className='drop-down'>
                                     {filteredData.map(item => (
-                                        <div className='location-item' key={item.location} onClick={() => redirectToLocation(item.link)}>
+                                        <div className='location-item' key={item.location} onClick={() => redirectToLocation(item.location)}>
                                             <h4>{item.location}</h4>
                                             <div className='show-desc'>
                                                 {item.description}
@@ -135,22 +122,20 @@ export default function LocationPage() {
                             )}
                         </div>
                     </div>
-                    {isLoggedIn&&
-                      <div className="rightContainer">
-                      <h2><center>Provide Recommendation</center></h2>
-                      <div className='textarea-center'>
-                          <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>
-                          </textarea>
-                      </div>
-                      <button type="submit" className="recommendation-btn" onClick={handleSubmitDescription}>Generate Locations</button>
-                    </div>
-
-
-                    }
-
-                  
+                    {isLoggedIn && (
+                        <div className="rightContainer">
+                            <h2><center>Provide Recommendation</center></h2>
+                            <div className='textarea-center'>
+                                <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>
+                                </textarea>
+                            </div>
+                            <button type="submit" className="recommendation-btn" onClick={handleSubmitDescription}>Generate Locations</button>
+                        </div>
+                    )}
                 </div>
             </div>
+            {/* Render the Common component and pass locationName as a prop */}
+            <Common locationName={selectedLocation?.location} />
         </div>
     );
 }

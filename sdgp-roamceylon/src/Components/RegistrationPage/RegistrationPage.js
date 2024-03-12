@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import{useNavigate} from 'react-router-dom';
+import RegisterVideo from '../LoginPage/Video/backVideoLog.mp4'
 
 
 
@@ -65,8 +66,11 @@ export const RegistrationPage = () => {
     
     <>
         <div className="register-page">
+            <video className='video-reg' autoPlay muted loop playsInline>
+                <source src={RegisterVideo} type='video/mp4' />
+            </video>
             <div className='header'>
-                <h2>ROAMCEYLON</h2>
+                <a href="/"><h2>ROAMCEYLON</h2></a>
             </div>
             <div className="register-box">
                 <h2 className="sub-heading">Be a part of the community.</h2>
