@@ -12,6 +12,7 @@ import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
 import axios from "axios";
 import thinalimage from "./Thinal.JPG";
 import puleeshaimage from "./Puleesha.jpg";
+import tharukaimage from "./Tharuka.jpg";
 
 function App(){
 
@@ -86,7 +87,7 @@ function App(){
             <Creator name="Puleesha Vilhan" email="puleesha.20221061@iit.ac.lk"/>
           </div>
           <div className="developer-container">
-            <img className="about-image" src={D1}></img>
+            <img className="about-image" src={tharukaimage}></img>
             <Creator name="Tharuka Bandara" email="sathvidu.20221032@iit.ac.lk"/>
           </div>
         </div>
