@@ -55,8 +55,10 @@ export default function LocationPage() {
 
     const handleSubmitDescription = async () => {
         try {
-            const keyword = await axios.post('http://localhost:5009/keywords', { descriptionData: descriptionData });
-            setLocations(keyword.data);
+            const locations = await axios.post('http://spacynlp.pythonanywhere.com/nlp', {"desc": descriptionData});
+            console.log(locations.data);
+            
+            setLocations(locations.data);
             setDescriptionData(''); 
         } catch(error) {
             console.log("Error fetching data:", error);
