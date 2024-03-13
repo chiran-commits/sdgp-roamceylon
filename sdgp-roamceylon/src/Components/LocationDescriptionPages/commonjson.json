@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "location": "Galle",
+        "name": "Galle",
+        "description": "Galle is a city on the southwest coastline of Sri Lanka. The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings, stylish cafes, quirky boutiques and impeccably restored beautiful hotels.",
+        "indicators": [
+            {
+                "value": "Tropical / Hot and Humid"
+            },
+            {
+                "value": "Fast"
+            },
+            {
+                "value": "High"
+            },
+            {
+                "value": "Urban"
+            }
+        ],
+        "destinations": [
+            {
+                "homepage":"../LocationDescriptionPages/Images/newgalleimge1.jpg"
+            },
+            {
+                "image1": "../LocationDescriptionPages/Images/Galle-Dutch-Fort.jpg"
+            },
+            {
+                "image2": "../LocationDescriptionPages/Images/turtle-hatchery-hikkaduwa.jpg"
+            },
+            {
+                "image3": "../LocationDescriptionPages/Images/Galle_Maritime_Museum.jpg"
+            }
+        ],
+        "hotels": [
+            {
+                "name": "Le Grand Galle",
+                "image": "../LocationDescriptionPages/Images/leGrand.jpg"
+            },
+            {
+                "name": "Jetwing Lighthouse",
+                "image": "../LocationDescriptionPages/Images/lighthouse.jpg"
+            },
+            {
+                "name": "Raddisson Blu",
+                "image": "../LocationDescriptionPages/Images/raddisson.jpg"
+            }
+            
+        ]
+    }
+]

@@ -114,18 +114,24 @@ export default function Galle(location){
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Galle</h3>
             <div className='galle-hotels'>
+                <a href='https://www.legrandgalle.lk/' target="_blank">
                 <div className='locationContainer'>
                     <img src={LeGrand} className='destination_image'/>
                     <p className='text_dest'>Le Grand Galle</p>
                 </div>
+                </a>
+                <a href='https://www.jetwinghotels.com/jetwinglighthouse/#gref' target="_blank">
                 <div className='locationContainer'>
                     <img src={lighthouse} className='destination_image'/>
                     <p className='text_dest'>Jetwing Lighthouse</p>
                 </div>
+                </a>
+                <a href='https://www.radissonhotels.com/en-us/hotels/radisson-blu-galle?checkInDate=2024-03-13&checkOutDate=2024-03-14&searchType=lowest&promotionCode=&voucher=&memberOnlyRatesHotelCodes=LKCMBGAL&adults%5B%5D=2&children%5B%5D=0&aoc%5B%5D=NaN' target='_blank'>
                 <div className='locationContainer'>
                     <img src={raddisson} className='destination_image'/>
                     <p className='text_dest'>Raddisson Blu</p>
                 </div>
+                </a>
             </div>
             <br></br><br></br><br></br><br></br>
             <Review location="galle"/>
