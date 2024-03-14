@@ -173,54 +173,68 @@ export default function HomePage() {
               <div className="country-box-container">
                 <Link to="/colombo">
                   <div className="coutnry-box">
-                    <h3>Colombo</h3>
-                    <h3><FetchWeather city="colombo"/></h3>
+                    {/* <h3>Colombo</h3>
+                    <h3><FetchWeather city="colombo"/></h3> */}
                     <img className="img-pop" src={colomboImage}></img>
-                    <p>
+                    {/* <p>
                       Colombo, Sri Lanka's capital, boasts a dynamic mix of
                       history and modernity. Its vibrant streets, rich culture,
                       and diverse cuisine make it a captivating destination for
                       travelers.
-                    </p>
+                    </p> */}
                     <br></br>
                   </div>
+                  <h3>Colombo</h3>
+                  <br></br>
+                  <p>Description of Location</p>
                 </Link>
 
                 <Link to='/kandy'> 
                   <div className="coutnry-box">
-                    <h3>Kandy</h3>
-                    <h3><FetchWeather city="kandy"/></h3>
+                    {/* <h3>Kandy</h3>
+                    <h3><FetchWeather city="kandy"/></h3> */}
                     <img class="img-pop" src={kandyImage}></img>
                     <p>
                       Kandy is a large city located in central Sri Lanka. The city is surrounded by majestic mountains, 
                       which are home to tea plantations and rainforests.
                     </p>
-                    <br></br><br></br>
+                    <br></br>
                   </div>
+                  <h3>Colombo</h3>
+                  <br></br>
+                  <p>Description of Location</p>
                 </Link>  
 
+                <Link to='/'>
                 <div className="coutnry-box">
-                  <h3>Jaffna</h3>
-                  <h3><FetchWeather city="jaffna"/></h3>
+                  {/* <h3>Jaffna</h3>
+                  <h3><FetchWeather city="jaffna"/></h3> */}
                   <img class="img-pop" src={mataraImage}></img>
-                  <p>
+                  {/* <p>
                     Jaffna is a city on the nothern tip of Sri Lanka. 
                     Jaffna welcomes visitors warmly with their art and creative culture, 
                     and a rewarding place to learn about Sri Lankan Tamil culture.
-                  </p><br></br>
+                  </p><br></br> */}
                 </div>
+                <h3>Colombo</h3>
+                <br></br>
+                <p>Description of Location</p>
+                </Link>
 
                 <Link to="/galle">
                   <div className="coutnry-box">
-                    <h3>Galle</h3>
-                    <h3><FetchWeather city="galle"/></h3>
+                    {/* <h3>Galle</h3>
+                    <h3><FetchWeather city="galle"/></h3> */}
                     <img class="img-pop" src={galleImage}></img>
-                    <p>
+                    {/* <p>
                       Galle is a city on the southwest coastline of Sri Lanka. 
                       The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings, stylish cafes, 
                       quirky boutiques and impeccably restored beautiful hotels.
-                    </p>
+                    </p> */}
                   </div>
+                  <h3>Colombo</h3>
+                  <br></br>
+                  <p>Description of Location</p>
                 </Link>  
               </div>
             </section>  

@@ -12,7 +12,7 @@
 .home-container-country{
   align-items: center;
   justify-content: center;
-  background-color: #176B87;
+  background-color: rgb(241, 246, 254);
   margin: 20px 30px 40px 30px;
   border-radius: 20px;
   padding-bottom: 200px;
@@ -60,8 +60,9 @@
     position: relative;
     color: white;
     padding-top: 90px;
+    font-weight: 305;
     flex-direction: column;
-    font-size: 40px;
+    font-size: 55px;
     opacity: 80%;
 }
 
@@ -190,6 +191,7 @@
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
+  min-height: 300px;
 }
 
 .home-container-country .country-box-container .coutnry-box:hover{
@@ -211,6 +213,15 @@
   z-index: 1;
 }
 
+.country-box-container h3{
+  font-size: 28px;
+  font-weight: 350;
+}
+
+.country-box-container p{
+  color: black
+}
+
 .img-pop{
   position: absolute;
   width: 100%; 
@@ -224,7 +235,9 @@
 }
 
 .home-container-country h2{
-  color: #DAFFFB;
+  color: black;
+  font-size: 55px;
+  font-weight: 300;
   margin-top: 30px;
   margin-bottom: 50px;
 }
