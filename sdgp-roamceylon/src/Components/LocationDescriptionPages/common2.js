@@ -20,7 +20,7 @@ export default function Galle(location) {
         <div>
             <Navbar activeOption={"locations"} />
             <div className='location_information'>
-                <img src={require(`${LocationData[0].destinations[0].homepage}`)} className='location_image'></img>
+                <img src={require('../LocationDescriptionPages/Images/newgalleimge1.jpg')} className='location_image'></img>
                 <div className='location_detail'>
                     <h3>{LocationData[0].location}</h3>
                     <div className='location_Des'>
