@@ -131,6 +131,19 @@ export default function LocationPage() {
                                 <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>
                                 </textarea>
                             </div>
+                            <div className='descriptionKeywords'>
+                                <h4>*Mandatory Keywords: <br></br>
+                                        <h5> Cost of Living (in Sri Lankan Rupees)</h5> 
+                                        <h5>WIFI Connectivity (in mbps)</h5> 
+                                        <h5>Weather Type</h5> 
+                                </h4><br></br>
+                                <h5 style={{marginLeft:"10px", color:"darkred"}}>*Cost of Living: 0-50000 (LOW), 50000-200000 (AVERAGE),</h5>
+                                <h5 style={{marginLeft:"115px", color:"darkred"}}>More than 200000(HIGH).</h5>
+                                <br></br>
+                                <h5 style={{marginLeft:"10px", color:"darkred"}}>
+                                    *WIFI Connectivity : 0-25 (LOW), 25-50 (AVERAGE), More than 50 (HIGH).
+                                </h5>
+                            </div>
                             <button type="submit" className="recommendation-btn" onClick={handleSubmitDescription}>Generate Locations</button>
                         </div>
                     )}
