@@ -67,10 +67,10 @@
 .form-container {
 
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
     width: 100%;
-    border-radius: 5px;
-    background: linear-gradient(-45deg, #4ca3be, #bae078, #5db4a1, #8cb4e0);
+    border-radius: 20px;
+    background-color: rgb(241, 246, 254);
 }
 
 .form-container label {
@@ -155,8 +155,10 @@ h3 {
 }
 
 .review-heading{
-    font-size: 35px;
-    background: linear-gradient(to right, #249ad0c8 50%, #330867 80%);
+    font-size: 40px;
+    font-weight: 370;
+    /* background: linear-gradient(to right, #249ad0c8 50%, #330867 80%);
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent; */
+    color: rgb(73, 96, 198)
 }

@@ -105,7 +105,7 @@ const Review = (details) => {
             </div>
          )}
 
-            <h3 className='review-heading'>Share your Experience with Us!</h3>
+            <h3 className='review-heading'>See what other Digital Nomads have to say!</h3>
 
             <div className="form-container">
                 <form onSubmit={handleSubmit}>
