@@ -132,11 +132,11 @@ export default function LocationPage() {
                                 </textarea>
                             </div>
                             <div className='descriptionKeywords'>
-                                <h4>*Mandatory Keywords: <br></br>
+                                <h4>*Mandatory Keywords: <br></br></h4>
                                         <h5> Cost of Living (in Sri Lankan Rupees)</h5> 
                                         <h5>WIFI Connectivity (in mbps)</h5> 
                                         <h5>Weather Type</h5> 
-                                </h4><br></br>
+                                <br></br>
                                 <h5 style={{marginLeft:"10px", color:"darkred"}}>*Cost of Living: 0-50000 (LOW), 50000-200000 (AVERAGE),</h5>
                                 <h5 style={{marginLeft:"115px", color:"darkred"}}>More than 200000(HIGH).</h5>
                                 <br></br>
