@@ -30,7 +30,7 @@
     width: 550px;
     background-color: #b0d8f0;
     margin-left: 250px;
-    padding-top: 90px;
+    padding-top: 50px;
     
 }
 
@@ -109,7 +109,7 @@
     color: var(--font-color);
     cursor: pointer;
     width: 40%;
-    margin-top: 120px
+    margin-top: 40px
 
 }
 
@@ -158,6 +158,25 @@
     border: none;
     transition: 1s all;
     color: black;
+}
+
+.descriptionKeywords{
+    margin-left: 30px;
+    align-content: normal;
+    align-items: normal;
+    text-align:justify;
+}
+
+.descriptionKeywords h4{
+    color: darkred;
+    font-weight: 500;
+}
+
+.descriptionKeywords h5{
+    color: #000;
+    padding:2px;
+    margin-left: 20px;
+    font-weight: 600;
 }
 
 .location-item:hover{

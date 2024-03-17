@@ -200,7 +200,7 @@ export default function HomePage() {
                     </p>
                     <br></br>
                   </div>
-                  <h3>Colombo</h3>
+                  <h3>Kandy</h3>
                   <br></br>
                   <p>Description of Location</p>
                 </Link>  
@@ -232,7 +232,7 @@ export default function HomePage() {
                       quirky boutiques and impeccably restored beautiful hotels.
                     </p> */}
                   </div>
-                  <h3>Colombo</h3>
+                  <h3>Galle</h3>
                   <br></br>
                   <p>Description of Location</p>
                 </Link>  

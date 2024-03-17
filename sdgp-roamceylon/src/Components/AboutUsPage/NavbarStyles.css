@@ -13,6 +13,9 @@ nav{
     position: absolute;
     z-index: 1;
 }
+*{
+    font-weight: 350;
+}
 
 #navbar{
     display: flex;
@@ -32,7 +35,8 @@ nav{
     color: black;
     transition: 0.3s ease-in-out;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 21px;
+    font-weight: 320;
 }
 #navbar li a:hover,
 #navbar li a.active{
