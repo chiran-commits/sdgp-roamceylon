@@ -112,7 +112,7 @@ const Review = (details) => {
                     <div>
                         <label>
                             Review:
-                            <textarea
+                            <textarea className='review-text-area'
                                 value={review}
                                 onChange={handleReviewChange}
                                 required

@@ -161,4 +161,8 @@ h3 {
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; */
     color: rgb(73, 96, 198)
+}.review-text-area{
+    resize: none;
+    border: 1px solid blue;
+
 }
