@@ -323,3 +323,17 @@
     );
   }
 }
+
+@media (max-width: 480px) {
+  .social-panel{
+    margin-right: 150px;
+  }
+
+  .content{
+    font-size: 7px;
+  }
+
+  .video-bg{
+    transform: scale(0.90);
+  }
+}

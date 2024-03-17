@@ -176,17 +176,17 @@ export default function HomePage() {
                     {/* <h3>Colombo</h3>
                     <h3><FetchWeather city="colombo"/></h3> */}
                     <img className="img-pop" src={colomboImage}></img>
-                    {/* <p>
+                    <p>
                       Colombo, Sri Lanka's capital, boasts a dynamic mix of
                       history and modernity. Its vibrant streets, rich culture,
                       and diverse cuisine make it a captivating destination for
                       travelers.
-                    </p> */}
+                    </p>
                     <br></br>
                   </div>
                   <h3>Colombo</h3>
                   <br></br>
-                  <p>Description of Location</p>
+                  <p>Description of Colombo</p>
                 </Link>
 
                 <Link to='/kandy'> 
@@ -210,11 +210,11 @@ export default function HomePage() {
                   {/* <h3>Jaffna</h3>
                   <h3><FetchWeather city="jaffna"/></h3> */}
                   <img class="img-pop" src={mataraImage}></img>
-                  {/* <p>
+                  <p>
                     Jaffna is a city on the nothern tip of Sri Lanka. 
                     Jaffna welcomes visitors warmly with their art and creative culture, 
                     and a rewarding place to learn about Sri Lankan Tamil culture.
-                  </p><br></br> */}
+                  </p><br></br>
                 </div>
                 <h3>Colombo</h3>
                 <br></br>
@@ -226,11 +226,11 @@ export default function HomePage() {
                     {/* <h3>Galle</h3>
                     <h3><FetchWeather city="galle"/></h3> */}
                     <img class="img-pop" src={galleImage}></img>
-                    {/* <p>
+                    <p>
                       Galle is a city on the southwest coastline of Sri Lanka. 
                       The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings, stylish cafes, 
                       quirky boutiques and impeccably restored beautiful hotels.
-                    </p> */}
+                    </p>
                   </div>
                   <h3>Galle</h3>
                   <br></br>

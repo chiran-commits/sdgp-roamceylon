@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Navbar from "../AboutUsPage/Navbar";
 import "./LocationPage.css";
-import Locations from '../LocationDescriptionPages/path.json';
+import Locations from '../LocationDescriptionPages/commonjson.json';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { authorizationActions } from "../../store";
 import { useSelector } from 'react-redux';
 import Common from '../LocationDescriptionPages/common.js'; 
-import Common2 from '../LocationDescriptionPages/common2.js';
+// import Common2 from '../LocationDescriptionPages/common2.js';
 
 export default function LocationPage() {
     
@@ -97,7 +97,7 @@ export default function LocationPage() {
         const location = Locations.find(loc => loc.location.toLowerCase() === locationName.toLowerCase());
         if (location) {
             setSelectedLocation(location);
-            window.location.href= '/common2';
+            handleClickLocation(location.link);
         }
     };
     
@@ -107,7 +107,6 @@ export default function LocationPage() {
             <div className="mainContainer">
                 <div className="location-container">
                     <div className="leftContainer">
-                        <h2>Manual Search</h2>
                         <div className="input-box-search">
                             <input type="text" placeholder="Search the location for you...." onChange={onChange} value={value} />
                             <i className='bx bxs-user'></i>
@@ -150,8 +149,17 @@ export default function LocationPage() {
                     )}
                 </div>
             </div>
+            <div className="location-cards-container">
+                {locations.map((location, index) => (
+                    <div className="location-card" key={index}>
+                        <img src={location.destinations[0].image} alt={location.location} className="location-image" />
+                        <h3>{location.location}</h3>
+                        <p>{location.description}</p>
+                    </div>
+                ))}
+            </div>
             {/* Render the Common component and pass locationName as a prop */}
-            <Common2 locationName={selectedLocation?.location} />
+            {/* <Common2 locationName={selectedLocation?.location} /> */}
         </div>
     );
 }
