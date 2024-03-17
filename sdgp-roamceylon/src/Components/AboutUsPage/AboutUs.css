@@ -104,11 +104,24 @@ h1,h3,h4, h6{
 }
 
 .content-section{
-    background-color: rgb(241, 246, 254);
+    /* background-color: rgb(241, 246, 254); */
+    background-color: rgb(238, 246, 254);
     margin-top: 40px;
     padding: 40px 40px 40px 40px;
+    display: flex;
     text-align: left;
-    border-radius: 18px;
+    border-radius: 50px;
+    min-height: 350px;
+}
+
+.content-section img{
+    scale: 1.00;
+    border-radius: 50px;
+    max-width: 100%;
+}
+
+.content-section p{
+    margin-right: 100px;
 }
 
 .content-section h2{
@@ -120,4 +133,9 @@ h1,h3,h4, h6{
 
 .content-section p{
     font-size: 20px;
+}
+
+.content-item{
+    box-sizing: border-box;
+    flex: 1;
 }
