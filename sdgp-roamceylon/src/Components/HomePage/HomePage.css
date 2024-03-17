@@ -211,6 +211,16 @@
   color: #ffffff;
   padding: 10px 0;
   z-index: 1;
+  opacity: 0;
+}
+
+.home-container-country .country-box-container .coutnry-box .effect:hover{
+  opacity: 1;
+}
+
+.home-container-country .country-box-container .coutnry-box p:hover{
+  opacity: 1;
+  transition: 1s ease-in-out;
 }
 
 .country-box-container h3{

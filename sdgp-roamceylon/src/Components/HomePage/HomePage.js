@@ -186,7 +186,6 @@ export default function HomePage() {
                   </div>
                   <h3>Colombo</h3>
                   <br></br>
-                  <p>Description of Colombo</p>
                 </Link>
 
                 <Link to='/kandy'> 
@@ -202,7 +201,6 @@ export default function HomePage() {
                   </div>
                   <h3>Kandy</h3>
                   <br></br>
-                  <p>Description of Location</p>
                 </Link>  
 
                 <Link to='/'>
@@ -210,15 +208,16 @@ export default function HomePage() {
                   {/* <h3>Jaffna</h3>
                   <h3><FetchWeather city="jaffna"/></h3> */}
                   <img class="img-pop" src={mataraImage}></img>
-                  <p>
-                    Jaffna is a city on the nothern tip of Sri Lanka. 
-                    Jaffna welcomes visitors warmly with their art and creative culture, 
-                    and a rewarding place to learn about Sri Lankan Tamil culture.
-                  </p><br></br>
+                  <div className="effect">
+                    <p>
+                      Jaffna is a city on the nothern tip of Sri Lanka. 
+                      Jaffna welcomes visitors warmly with their art and creative culture, 
+                      and a rewarding place to learn about Sri Lankan Tamil culture.
+                    </p><br></br>
+                  </div>
                 </div>
-                <h3>Colombo</h3>
+                <h3>Matara</h3>
                 <br></br>
-                <p>Description of Location</p>
                 </Link>
 
                 <Link to="/galle">
@@ -234,7 +233,6 @@ export default function HomePage() {
                   </div>
                   <h3>Galle</h3>
                   <br></br>
-                  <p>Description of Location</p>
                 </Link>  
               </div>
             </section>  
