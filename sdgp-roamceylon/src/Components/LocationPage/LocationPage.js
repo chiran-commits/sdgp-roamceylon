@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux';
 import { authorizationActions } from "../../store";
 import { useSelector } from 'react-redux';
 import Common from '../LocationDescriptionPages/common.js'; 
+import Common2 from '../LocationDescriptionPages/common2.js';
 
 export default function LocationPage() {
     
@@ -96,7 +97,7 @@ export default function LocationPage() {
         const location = Locations.find(loc => loc.location.toLowerCase() === locationName.toLowerCase());
         if (location) {
             setSelectedLocation(location);
-            handleClickLocation(location.link);
+            window.location.href= '/common2';
         }
     };
     
@@ -137,7 +138,7 @@ export default function LocationPage() {
                 </div>
             </div>
             {/* Render the Common component and pass locationName as a prop */}
-            <Common locationName={selectedLocation?.location} />
+            <Common2 locationName={selectedLocation?.location} />
         </div>
     );
 }

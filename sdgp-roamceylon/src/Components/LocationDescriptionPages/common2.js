@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from '../AboutUsPage/Navbar';
-import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
-import galleimage1 from '../LocationDescriptionPages/Images/Galle-Dutch-Fort.jpg';
-import galleimage2 from '../LocationDescriptionPages/Images/turtle-hatchery-hikkaduwa.jpg';
-import galleimage3 from '../LocationDescriptionPages/Images/Galle_Maritime_Museum.jpg';
-import LeGrand from '../LocationDescriptionPages/Images/leGrand.jpg';
-import raddisson from '../LocationDescriptionPages/Images/raddisson.jpg';
-import lighthouse from '../LocationDescriptionPages/Images/lighthouse.jpg';
+// import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
+// import galleimage1 from '../LocationDescriptionPages/Images/Galle-Dutch-Fort.jpg';
+// import galleimage2 from '../LocationDescriptionPages/Images/turtle-hatchery-hikkaduwa.jpg';
+// import galleimage3 from '../LocationDescriptionPages/Images/Galle_Maritime_Museum.jpg';
+// import LeGrand from '../LocationDescriptionPages/Images/leGrand.jpg';
+// import raddisson from '../LocationDescriptionPages/Images/raddisson.jpg';
+// import lighthouse from '../LocationDescriptionPages/Images/lighthouse.jpg';
 import LocationData from './commonjson.json';
 
 import './Galle.css';
@@ -20,7 +20,7 @@ export default function Galle(location) {
         <div>
             <Navbar activeOption={"locations"} />
             <div className='location_information'>
-                <img src={require('../LocationDescriptionPages/Images/newgalleimge1.jpg')} className='location_image'></img>
+                <img src={require(`../LocationDescriptionPages/Images/${LocationData[0].destinations[0].image}`)} className='location_image' alt='Location' />
                 <div className='location_detail'>
                     <h3>{LocationData[0].location}</h3>
                     <div className='location_Des'>
@@ -43,8 +43,8 @@ export default function Galle(location) {
                                     </p>
                                 </div>
                                 <div className='indicator-container'>
-                                    <p><span className='title'>Wi-Fi:<br></br></span>{LocationData[0].indicators[1].value}</p>
-                                    {/* <span>
+                                    <p><span className='title'>Wi-Fi:<br></br></span></p>
+                                    <span>
                                         <div className='weather'>
                                             <div className='outer'>
                                                 <div className='inner'>
@@ -63,10 +63,10 @@ export default function Galle(location) {
                                                     <circle cx="80" cy="80" r="29" stroke-linecap="round" />
                                             </svg>
                                         </div>
-                                    </span> */}
+                                    </span>
                                 </div>
                                 <div className='indicator-container'>
-                                    <p><span className='title'>COST OF LIVING:<br></br></span>{LocationData[0].indicators[2].value}</p>
+                                    <p><span className='title'>COST OF LIVING:<br></br></span></p>
                                     <span>
                                         <div className='cost'>
                                             <div className='outer'>
@@ -100,15 +100,15 @@ export default function Galle(location) {
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
                 <div className='popular_destination'>
-                    <img src={galleimage1} className='destination_image' />
+                    <img src={require(`../LocationDescriptionPages/Images/${LocationData[0].destinations[1].image}`)} className='destination_image' />
                     <p className='text_dest'>Galle Dutch Fort (4.7 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={galleimage2} className='destination_image' />
+                    <img src={require(`../LocationDescriptionPages/Images/${LocationData[0].destinations[2].image}`)} className='destination_image' />
                     <p className='text_dest'>Sea Turtle Hatchery Centre (4.4 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={galleimage3} className='destination_image' />
+                    <img src={require(`../LocationDescriptionPages/Images/${LocationData[0].destinations[3].image}`)} className='destination_image' />
                     <p className='text_dest'>Maritime Museum (4.2 <span class="fa fa-star checked"></span>)</p>
                 </div>
             </div>
@@ -116,15 +116,15 @@ export default function Galle(location) {
             <h3 className='destination-heading'>Hotels in Galle</h3>
             <div className='galle-hotels'>
                 <div className='locationContainer'>
-                    <img src={LeGrand} className='destination_image' />
+                    <img src={require(`../LocationDescriptionPages/Images/${LocationData[0].hotels[0].image}`)} className='destination_image' />
                     <p className='text_dest'>Le Grand Galle</p>
                 </div>
                 <div className='locationContainer'>
-                    <img src={lighthouse} className='destination_image' />
+                    <img src={require(`../LocationDescriptionPages/Images/${LocationData[0].hotels[1].image}`)} className='destination_image' />
                     <p className='text_dest'>Jetwing Lighthouse</p>
                 </div>
                 <div className='locationContainer'>
-                    <img src={raddisson} className='destination_image' />
+                    <img src={require(`../LocationDescriptionPages/Images/${LocationData[0].hotels[2].image}`)} className='destination_image' />
                     <p className='text_dest'>Raddisson Blu</p>
                 </div>
             </div>

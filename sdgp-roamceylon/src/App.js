@@ -31,7 +31,6 @@ function App() {
         <Route path="/location" element={<LocationPage/>}/>
         <Route path = "*" element = {<ErrorPage/>}/>
         <Route path="/colombo" element={<Colombo/>} />
-        <Route path="/common" element={<Common/>} />
         <Route path="/common2" element={<Common2/>} />
         <Route path="/galle" element={<Galle/>} />
         <Route path="/kandy" element={<Kandy/>} />
