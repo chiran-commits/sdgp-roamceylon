@@ -32,7 +32,7 @@
 
 .location_destinations{
     display:inline-flex;
-    background-color:darkcyan;
+    background-color:rgba(207, 232, 242, 0.85);
     width:100%;
     height: 400px;
 }
