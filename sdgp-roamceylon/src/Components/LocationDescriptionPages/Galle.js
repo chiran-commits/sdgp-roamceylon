@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../AboutUsPage/Navbar';
 import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
 import galleimage1 from '../LocationDescriptionPages/Images/Galle-Dutch-Fort.jpg';
@@ -13,6 +13,9 @@ import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
 
 export default function Galle(location){
+    useEffect(() =>{
+        window.scrollTo(0,0);
+    },[]);
     return(
         <div>
             <Navbar activeOption={"locations"}/>
