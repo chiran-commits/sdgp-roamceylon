@@ -7,8 +7,8 @@ import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { authorizationActions } from "../../store";
 import { useSelector } from 'react-redux';
+import Galle from '../LocationDescriptionPages/common2.js';
 // import Common from '../LocationDescriptionPages/common.js'; 
-import Common2 from '../LocationDescriptionPages/common2.js';
 
 export default function LocationPage() {
     
@@ -158,7 +158,6 @@ export default function LocationPage() {
                 ))}
             </div>
             {/* Render the Common2 component for each location */}
-            <Common2 locationName={selectedLocation} />
         </div>
     );
 }

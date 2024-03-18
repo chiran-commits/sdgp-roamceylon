@@ -5,7 +5,7 @@ import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
 
-export default function Galle({ locationName }) {
+export default function Galle({locationName}) {
     const [location, setLocationData] = useState(null);
 
     useEffect(() => {

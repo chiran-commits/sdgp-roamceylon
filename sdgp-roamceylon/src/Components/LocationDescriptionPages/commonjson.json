@@ -3,7 +3,7 @@
         "id": 1,
         "location": "galle",
         "name": "Galle",
-        "link":"http://localhost:8000/common2",
+        "link":"http://localhost:8000/galle",
         "description": "Galle is a city on the southwest coastline of Sri Lanka. The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings, stylish cafes, quirky boutiques and impeccably restored beautiful hotels.",
         "indicators": [
             {
