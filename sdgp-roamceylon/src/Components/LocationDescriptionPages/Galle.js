@@ -37,58 +37,58 @@ export default function Galle(location){
                                 <h1>Indicators</h1>
                                 <div className='indicator-container'>
                                     <p>
-                                        <span className='title'>Weather:<br></br></span> Tropical/ Hot and Humid
-                                        <p className='weatherdata'><FetchWeatherData city="galle" className="weatherdata"/></p>
+                                        <span className='title' style={{marginLeft:"18px"}}>Weather<br></br></span><p style={{marginLeft:"12px"}}>Tropical/ Hot and Humid</p>
+                                        <p className='weatherdata' style={{marginLeft:"13px"}}><FetchWeatherData city="galle" className="weatherdata"/></p>
                                     </p>
                                 </div>
                                 <div className='indicator-container'>
-                                    <p><span className='title'>Wi-Fi:<br></br></span>Fast</p>
-                                    {/* <span>
-                                        <div className='weather'>
-                                            <div className='outer'>
-                                                <div className='inner'>
-                                                    <div id='number'>
-                                                        Fast
+                                    <p><span className='title' style={{left:"56px"}}>Wi-Fi<br></br></span></p>
+                                    <div className='indicator-scale'>     
+                                            <div className='weather' style={{right:"21px", marginTop:"10px"}}>
+                                                <div className='outer'>
+                                                    <div className='inner'>
+                                                        <div id='number'>
+                                                            Fast
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                                        <defs>
+                                                            <linearGradient id="GradientColor">
+                                                            <stop offset="0%" stop-color="#e91e63" />
+                                                            <stop offset="100%" stop-color="#673ab7" />
+                                                            </linearGradient>
+                                                        </defs>
+                                                        <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                </svg>
                                             </div>
-                                            <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                                    <defs>
-                                                        <linearGradient id="GradientColor">
-                                                        <stop offset="0%" stop-color="#e91e63" />
-                                                        <stop offset="100%" stop-color="#673ab7" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                    <circle cx="80" cy="80" r="29" stroke-linecap="round" />
-                                            </svg>
-                                        </div>
-                                    </span> */}
+                                    </div>    
                                 </div>
                                 <div className='indicator-container'>
-                                    <p><span className='title'>COST OF LIVING:<br></br></span>High</p>
-                                    <span>
-                                        <div className='cost'>
-                                            <div className='outer'>
-                                                <div className='inner'>
-                                                    <div id='number'>
-                                                        High
+                                    <p><span className='title' style={{left:"36px"}}>COST OF LIVING<br></br></span></p>
+                                    <div className='indicator-scale'>      
+                                            <div className='cost' style={{right:"105px", marginTop:"10px"}}>
+                                                <div className='outer'>
+                                                    <div className='inner'>
+                                                        <div id='number'>
+                                                            High
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                                        <defs>
+                                                            <linearGradient id="GradientColor">
+                                                            <stop offset="0%" stop-color="#e91e63" />
+                                                            <stop offset="100%" stop-color="#673ab7" />
+                                                            </linearGradient>
+                                                        </defs>
+                                                        <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                </svg>
                                             </div>
-                                            <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                                    <defs>
-                                                        <linearGradient id="GradientColor">
-                                                        <stop offset="0%" stop-color="#e91e63" />
-                                                        <stop offset="100%" stop-color="#673ab7" />
-                                                        </linearGradient>
-                                                    </defs>
-                                                    <circle cx="80" cy="80" r="29" stroke-linecap="round" />
-                                            </svg>
-                                        </div>
-                                    </span>
+                                    </div>    
                                 </div>
                                 <div className='indicator-container'>
-                                    <p><span className='title'>URBAN/RURAL:<br></br></span>{data.type}</p>
+                                    <p><span className='title' style={{left:"8px"}}>URBAN/RURAL<br></br></span><p style={{marginTop:"20px", marginLeft:"10px"}}>{data.type}</p></p>
                                 </div>
                             </div>
                         )
