@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Navbar from "../AboutUsPage/Navbar";
 import "./LocationPage.css";
 import Locations from '../LocationDescriptionPages/commonjson.json';
@@ -7,16 +7,16 @@ import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { authorizationActions } from "../../store";
 import { useSelector } from 'react-redux';
-import Common from '../LocationDescriptionPages/common.js'; 
-// import Common2 from '../LocationDescriptionPages/common2.js';
+// import Common from '../LocationDescriptionPages/common.js'; 
+import Common2 from '../LocationDescriptionPages/common2.js';
 
 export default function LocationPage() {
     
-    const [loading, setLoading] = useState(true);
+    // const [loading, setLoading] = useState(true);
 
     const [value, setValue] = useState("");
     const [filteredData, setFilteredData] = useState([]);
-    const [searchData, setSearchData] = useState([]);
+    // const [searchData, setSearchData] = useState([]);
     const [descriptionData, setDescriptionData] = useState('');
     const [message, setMessage] = useState('');
     const [descriptionPlaceholder, setDescriptionPlaceholder] = useState('Enter the features of your ideal location...');
@@ -25,7 +25,6 @@ export default function LocationPage() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-
         const getProfile = async () => {
             const authToken = localStorage.getItem('SDGP-roamceylon2');
             if(authToken==null){
@@ -94,10 +93,10 @@ export default function LocationPage() {
     };
     
     const redirectToLocation = (locationName) => {
-        const location = Locations.find(loc => loc.location.toLowerCase() === locationName.toLowerCase());
-        if (location) {
-            setSelectedLocation(location);
-            handleClickLocation(location.link);
+        const foundLocation = Locations.find(loc => loc.location.toLowerCase() === locationName.toLowerCase());
+        if (foundLocation) {
+            handleClickLocation(foundLocation.link);
+            setSelectedLocation(locationName);
         }
     };
     
@@ -114,7 +113,7 @@ export default function LocationPage() {
                                 <div className='drop-down'>
                                     {filteredData.map(item => (
                                         <div className='location-item' key={item.location} onClick={() => redirectToLocation(item.location)}>
-                                            <h4>{item.location}</h4>
+                                            <h4>{item.name}</h4>
                                             <div className='show-desc'>
                                                 {item.description}
                                             </div>
@@ -150,16 +149,16 @@ export default function LocationPage() {
                 </div>
             </div>
             <div className="location-cards-container">
-                {locations.map((location, index) => (
+                {locations.map((locationD, index) => (
                     <div className="location-card" key={index}>
-                        <img src={location.destinations[0].image} alt={location.location} className="location-image" />
-                        <h3>{location.location}</h3>
-                        <p>{location.description}</p>
+                        <img src={locationD.destinations[0].image} alt={locationD.location} className="location-image" />
+                        <h3>{locationD.location}</h3>
+                        <p>{locationD.description}</p>
                     </div>
                 ))}
             </div>
-            {/* Render the Common component and pass locationName as a prop */}
-            {/* <Common2 locationName={selectedLocation?.location} /> */}
+            {/* Render the Common2 component for each location */}
+            <Common2 locationName={selectedLocation} />
         </div>
     );
 }
