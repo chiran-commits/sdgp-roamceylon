@@ -8,6 +8,7 @@ import colomboImage from "../HomePage/Assets/colombo.jpg";
 import kandyImage from "../HomePage/Assets/kandy.jpg";
 import mataraImage from "../HomePage/Assets/matara.jpg";
 import galleImage from "../HomePage/Assets/galle.jpg";
+import tropicalImage from "../HomePage/Assets/tropical.jpg";
 import { Link } from "react-router-dom";
 import FetchWeather from "./GetWeather";
 import { useNavigate } from "react-router-dom";
@@ -167,6 +168,41 @@ export default function HomePage() {
               </div>
             </section>
           </div>
+          <div className="tropical-section">
+            <div className="tropical-container">
+              <div className="tropical-content">
+                <h2>Tropical Weather.<br/>All day, Everyday.</h2>
+                <p>Ever dreamt of working remotely in a place with warm weather all year round in addition to a low cost of living? Look no further than these suggested locations!</p>
+              </div>
+              <div className="tropical-content">
+                <img src = {tropicalImage}/>
+              </div>
+            </div>
+            <div className="tropical-countries">
+              {/* <tropicalCountry link = "/galle" image = "../HomePage/Assets/galle.jpg" name = "Galle"/> */}
+              <div className="tropical-country">
+                <Link to="/galle">
+                  <img src={galleImage}></img>
+                  <h3>Galle</h3>
+                  <br></br>
+                </Link>
+              </div>
+              <div className="tropical-country">
+                <Link to="/galle">
+                  <img src={galleImage}></img>
+                  <h3>Jaffna</h3>
+                  <br></br>
+                </Link>
+              </div>
+              <div className="tropical-country">
+                <Link to="/galle">
+                  <img src={galleImage}></img>
+                  <h3>Kandy</h3>
+                  <br></br>
+                </Link>
+              </div>
+            </div>
+          </div>
           <div className="home-container-country" id="target-country">
             <section className="hidden">
               <h2>Popular Locations</h2>
@@ -248,4 +284,16 @@ export default function HomePage() {
         </div>
     </>
   );
+}
+
+const tropicalCountry = (props) => { // The function used to show a location in the tropical section
+  return(
+    <div>
+        <Link to={props.link}>
+        <img class="tropical-image" src={props.image}></img>
+        <h3>{props.name}</h3>
+        <br></br>
+        </Link>
+    </div>
+  )
 }
