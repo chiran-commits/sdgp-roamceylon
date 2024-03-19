@@ -4,15 +4,14 @@ nav{
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);
-    width: 99%;
+    width: 98.5%;
     height: 55px;
     border-radius: 13px;
     background-color:rgba(255, 255, 255, 0.3);
     margin-left: 10px;
     margin-bottom: 10px;
     position: absolute;
-    z-index: 1;
-}
+    z-index: 1;}
 *{
     font-weight: 350;
 }
@@ -136,4 +135,10 @@ nav ul#navbar.open{
         color: black;
     }
 
+}
+
+@media (max-width:480px) {
+    nav{
+        width: 95%;
+    }
 }

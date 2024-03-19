@@ -17,7 +17,14 @@
         "id": 3,
         "location": "ella",
         "name": "Ella",
-        "link":"http://localhost:8000/Ella",
+        "link":"http://localhost:8000/ella",
+        "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
+    },
+    {
+        "id": 4,
+        "location": "nuwaraeliya",
+        "name": "Nuwara Eliya",
+        "link":"http://localhost:8000/nuwaraeliya",
         "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
     }
 ]

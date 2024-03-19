@@ -11,6 +11,7 @@ import Common from './Components/LocationDescriptionPages/common.js';
 import Common2 from './Components/LocationDescriptionPages/common2.js';
 import Galle from './Components/LocationDescriptionPages/Galle.js';
 import Ella from './Components/LocationDescriptionPages/Ella.js';
+import NuwaraEliya from './Components/LocationDescriptionPages/NuwaraEliya.js';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import { useSelector } from "react-redux";
 
@@ -36,6 +37,7 @@ function App() {
         <Route path="/galle" element={<Galle/>} />
         <Route path="/kandy" element={<Kandy/>} />
         <Route path="/ella" element={<Ella/>} />
+        <Route path='/nuwaraeliya' element={<NuwaraEliya/>} />
       </Routes>
   </Router> 
   );

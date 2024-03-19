@@ -1,9 +1,11 @@
+
+
 .mainContainer{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin-left: 80px;
+    width: 97.4%;
+    margin-left: 20px;
     margin-top: 80px;
     position: absolute;
     border-radius: 20px;
