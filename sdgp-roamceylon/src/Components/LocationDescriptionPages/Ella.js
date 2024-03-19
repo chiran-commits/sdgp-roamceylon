@@ -24,11 +24,11 @@ export default function Ella(location){
                 <div className='location_detail'>
                     <h3>ELLA</h3>
                     <div className='location_Des'>
-                        <h3 style={{fontSize:"20px"}}>
-                        Ella is a small town in Sri Lanka's Uva Province, 
-                        located about 120 miles east of Colombo. It's known for its natural beauty, 
-                        including waterfalls, greenery, and hills. Ella is also rich in history and culture, 
-                        with many prominent tourist attractions.
+                        <h3 className='description'>
+                            Ella is a small town in Sri Lanka's Uva Province, 
+                            located about 120 miles east of Colombo. It's known for its natural beauty, 
+                            including waterfalls, greenery, and hills. Ella is also rich in history and culture, 
+                            with many prominent tourist attractions.
                         </h3>
                     </div>
                 </div>
@@ -37,64 +37,66 @@ export default function Ella(location){
                 LocationData.map(data => {
                     if (data.location == "Ella"){
                         return(
-                            <div className='indicators'>
+                            <div className='scales'>
                                 <h1>Indicators</h1>
-                                <div className='indicator-container'>
-                                    <p>
-                                        <span className='title' style={{marginLeft:"18px", left:"20"}}>Weather<br></br></span><p style={{marginLeft:"12px"}}>Cold</p>
-                                        <p className='weatherdata' style={{marginLeft:"13px"}}><FetchWeatherData city="kandy" className="weatherdata"/></p>
-                                    </p>
-                                </div>
-                                <div className='indicator-container'>
-                                    <p><span className='title' style={{left:"56px"}}>Wi-Fi<br></br></span></p>
-                                    <div className='indicator-scale'>     
-                                            <div className='weather' style={{right:"21px", marginTop:"10px"}}>
-                                                <div className='outer'>
-                                                    <div className='inner'>
-                                                        <div id='number'>
-                                                            {data.wifi}
+                                <div className='indicators'>
+                                    <div className='indicator-container'>
+                                        <p>
+                                            <span className='title'>Weather<br></br></span><p>Cold</p>
+                                            <p className='weatherdata'><FetchWeatherData city="kandy" className="weatherdata"/></p>
+                                        </p>
+                                    </div>
+                                    <div className='indicator-container'>
+                                        <p><span className='title'>Wi-Fi<br></br></span></p>
+                                        <div className='indicator-scale'>     
+                                                <div className='weather'>
+                                                    <div className='outer'>
+                                                        <div className='inner'>
+                                                            <div id='number'>
+                                                                {data.wifi}
+                                                            </div>
                                                         </div>
                                                     </div>
+                                                    <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                                            <defs>
+                                                                <linearGradient id="GradientColor">
+                                                                <stop offset="0%" stop-color="#e91e63" />
+                                                                <stop offset="100%" stop-color="#673ab7" />
+                                                                </linearGradient>
+                                                            </defs>
+                                                            <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                    </svg>
                                                 </div>
-                                                <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                                        <defs>
-                                                            <linearGradient id="GradientColor">
-                                                            <stop offset="0%" stop-color="#e91e63" />
-                                                            <stop offset="100%" stop-color="#673ab7" />
-                                                            </linearGradient>
-                                                        </defs>
-                                                        <circle cx="80" cy="80" r="29" stroke-linecap="round" />
-                                                </svg>
-                                            </div>
-                                    </div>    
-                                </div>
-                                <div className='indicator-container'>
-                                    <p><span className='title' style={{left:"36px"}}>COST OF LIVING<br></br></span></p>
-                                    <div className='indicator-scale'>      
-                                            <div className='cost' style={{right:"105px", marginTop:"10px"}}>
-                                                <div className='outer'>
-                                                    <div className='inner'>
-                                                        <div id='number'>
-                                                            {data.col}
+                                        </div>    
+                                    </div>
+                                    <div className='indicator-container'>
+                                        <p><span className='title'>COST OF LIVING<br></br></span></p>
+                                        <div className='indicator-scale'>      
+                                                <div className='cost'>
+                                                    <div className='outer'>
+                                                        <div className='inner'>
+                                                            <div id='number'>
+                                                                {data.col}
+                                                            </div>
                                                         </div>
                                                     </div>
+                                                    <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                                            <defs>
+                                                                <linearGradient id="GradientColor">
+                                                                <stop offset="0%" stop-color="#e91e63" />
+                                                                <stop offset="100%" stop-color="#673ab7" />
+                                                                </linearGradient>
+                                                            </defs>
+                                                            <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                    </svg>
                                                 </div>
-                                                <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                                        <defs>
-                                                            <linearGradient id="GradientColor">
-                                                            <stop offset="0%" stop-color="#e91e63" />
-                                                            <stop offset="100%" stop-color="#673ab7" />
-                                                            </linearGradient>
-                                                        </defs>
-                                                        <circle cx="80" cy="80" r="29" stroke-linecap="round" />
-                                                </svg>
-                                            </div>
-                                    </div>    
+                                        </div>    
+                                    </div>
+                                    <div className='indicator-container'>
+                                        <p><span className='title'>URBAN/RURAL<br></br></span><p>{data.type}</p></p>
+                                    </div>
                                 </div>
-                                <div className='indicator-container'>
-                                    <p><span className='title' style={{left:"8px"}}>URBAN/RURAL<br></br></span><p style={{marginTop:"20px", marginLeft:"10px"}}>{data.type}</p></p>
-                                </div>
-                            </div>
+                            </div>    
                         )
                     }
                 })
@@ -117,7 +119,7 @@ export default function Ella(location){
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Kandy</h3>
-            <div className='galle-hotels'>
+            <div className='hotels'>
                 <a href='https://www.grandkandyan.com/' target="_blank">
                 <div className='locationContainer'>
                     <img src={KandyHotel1} className='destination_image'/>
