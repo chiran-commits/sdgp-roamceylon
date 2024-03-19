@@ -52,7 +52,7 @@ export default function Ella(location){
                                                 <div className='outer'>
                                                     <div className='inner'>
                                                         <div id='number'>
-                                                            Fast
+                                                            {data.wifi}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -92,7 +92,7 @@ export default function Ella(location){
                                     </div>    
                                 </div>
                                 <div className='indicator-container'>
-                                    <p><span className='title' style={{left:"8px"}}>{data.type}L<br></br></span><p style={{marginTop:"20px", marginLeft:"10px"}}>{data.type}</p></p>
+                                    <p><span className='title' style={{left:"8px"}}>URBAN/RURAL<br></br></span><p style={{marginTop:"20px", marginLeft:"10px"}}>{data.type}</p></p>
                                 </div>
                             </div>
                         )

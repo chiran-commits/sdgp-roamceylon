@@ -22,8 +22,8 @@
 {
     "id":4,
     "location":"Ella",
-    "wifi":"Average",
-    "col":"HIGH",
+    "wifi":"High",
+    "col":"High",
     "type":"RURAL"
 }
 ]
