@@ -18,5 +18,12 @@
     "wifi":"AVERAGE",
     "col":"MEDIUM",
     "type":"URBAN"
+},
+{
+    "id":4,
+    "location":"Ella",
+    "wifi":"AVERAGE",
+    "col":"MEDIUM",
+    "type":"RURAL"
 }
 ]
