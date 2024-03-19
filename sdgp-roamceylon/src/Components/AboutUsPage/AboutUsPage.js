@@ -131,8 +131,8 @@ function App(){
 const Creator  = (props) =>{
   return(
     <div>
-      <h4><center>{props.name}</center></h4><br></br>
-      <h4><center>Email: <a style={{color:"white"}} href={props.email}>{props.email}</a></center></h4>
+      <h4 style={{color:"blue"}}><center>{props.name}</center></h4><br></br>
+      <h4 style={{color:"Black"}}><center>Email: <a style={{color:"Black"}} href={props.email}>{props.email}</a></center></h4>
     </div>
   );
 }
