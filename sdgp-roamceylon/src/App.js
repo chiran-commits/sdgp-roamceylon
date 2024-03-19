@@ -10,6 +10,7 @@ import Kandy from './Components/LocationDescriptionPages/Kandy.js';
 import Common from './Components/LocationDescriptionPages/common.js';
 import Common2 from './Components/LocationDescriptionPages/common2.js';
 import Galle from './Components/LocationDescriptionPages/Galle.js';
+import Ella from './Components/LocationDescriptionPages/Ella.js';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import { useSelector } from "react-redux";
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/common2" element={<Common2/>} />
         <Route path="/galle" element={<Galle/>} />
         <Route path="/kandy" element={<Kandy/>} />
+        <Route path="/ella" element={<Ella/>} />
       </Routes>
   </Router> 
   );
