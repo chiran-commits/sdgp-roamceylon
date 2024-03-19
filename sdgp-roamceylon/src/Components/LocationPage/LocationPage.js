@@ -129,7 +129,7 @@ export default function LocationPage() {
                             )}
                         </div>
                     </div>
-                    {true /*isLoggedIn*/ && (
+                    {isLoggedIn && (
                         <div className="rightContainer">
                             <h2><center>Provide Recommendation</center></h2>
                             <div className='textarea-center'>
@@ -160,43 +160,43 @@ export default function LocationPage() {
                                         <div key={index}>
                                             {location === "colombo" ? (
                                                <p className='location-card'>Colombo
-                                               <p>{getDescription("Colombo")}</p>
+                                               <p className='locationdesc'>{getDescription("Colombo")}</p>
                                                </p>
                                             ) : location === "kandy" ? (
                                                <p className='location-card'>Kandy
-                                               <p>{getDescription("Kandy")}</p>
+                                               <p className='locationdesc'>{getDescription("Kandy")}</p>
                                                </p>
                                             ) : location === "galle" ? (
                                                 <p className='location-card'>Galle
-                                                <p>{getDescription("Galle")}</p>
+                                                <p className='locationdesc'>{getDescription("Galle")}</p>
                                                 </p>
                                             ) : location === "ella" ? (
                                                 <p className='location-card'>Ella
-                                                <p>{getDescription("Ella")}</p>
+                                                <p className='locationdesc'>{getDescription("Ella")}</p>
                                                 </p>
                                             ) : location === "anuradhapura" ? (
                                                 <p className='location-card'>Anuradhapura
-                                                <p>{getDescription("Anuradhapura")}</p>
+                                                <p className='locationdesc'>{getDescription("Anuradhapura")}</p>
                                                 </p>
                                             ) : location ==="jaffna" ? (
                                                 <p className='location-card'>Jaffna
-                                                <p>{getDescription("Jaffna")}</p>
+                                                <p className='locationdesc'>{getDescription("Jaffna")}</p>
                                                 </p>
                                             ) : location ==="arugambay" ? (
                                                 <p className='location-card'>Arugam Bay
-                                                <p>{getDescription("Arugam Bay")}</p>
+                                                <p className='locationdesc'>{getDescription("Arugam Bay")}</p>
                                                 </p>
                                             ) : location ==="nuwaraeliya" ? (
                                                 <p className='location-card'>Nuwara-Eliya
-                                                <p>{getDescription("Nuwara-Eliya")}</p>
+                                                <p className='locationdesc'>{getDescription("Nuwara-Eliya")}</p>
                                                 </p>
                                             ) : location ==="trincomalee" ? (
                                                 <p className='location-card'>Trincomalee
-                                                <p>{getDescription("Trincomalee")}</p>
+                                                <p className='locationdesc'>{getDescription("Trincomalee")}</p>
                                                 </p>
                                             ) : location ==="matara" ?(
                                                 <p className='location-card'>Matara
-                                                <p>{getDescription("Matara")}</p>
+                                                <p className='locationdesc'>{getDescription("Matara")}</p>
                                                 </p>
                                             ): (
                                                 <p className='location-card'>No Locations Found !</p>
