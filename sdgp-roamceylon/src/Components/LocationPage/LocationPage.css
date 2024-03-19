@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     margin-left: 80px;
     margin-top: 80px;
     position: absolute;
@@ -10,7 +10,7 @@
     background: linear-gradient(-45deg, #4ca3be, #bae078, #695db4, #237cd5);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: auto;
+	height: 250%;
     overflow: hidden;
 }
 
@@ -207,15 +207,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 15%;
 }
 
 .location-card{
-    width: 300px;
+    width: 500px;
+    height:120px;
     margin: 20px;
     padding: 20px;
-    background-color: #ffff;
+    background-color:white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px;
 }
 
 .location-card .location-image{

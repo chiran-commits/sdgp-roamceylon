@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from "../AboutUsPage/Navbar";
 import "./LocationPage.css";
 import Locations from '../LocationDescriptionPages/commonjson.json';
+import LocationDes from '../LocationPage/Locations.json';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { authorizationActions } from "../../store";
@@ -99,6 +100,11 @@ export default function LocationPage() {
             setSelectedLocation(locationName);
         }
     };
+
+    const getDescription = (locationName) => {
+        const des = LocationDes.find(item => item.location ===locationName);
+        return des ? des.description : "Not Found";
+    };
     
     return (
         <div>
@@ -123,7 +129,7 @@ export default function LocationPage() {
                             )}
                         </div>
                     </div>
-                    {isLoggedIn && (
+                    {true /*isLoggedIn*/ && (
                         <div className="rightContainer">
                             <h2><center>Provide Recommendation</center></h2>
                             <div className='textarea-center'>
@@ -144,18 +150,68 @@ export default function LocationPage() {
                                 </h5>
                             </div>
                             <button type="submit" className="recommendation-btn" onClick={handleSubmitDescription}>Generate Locations</button>
+                            <div className="location-cards-container">
+                                {locations.length >0 ? (
+                                <div>
+                                    <h3 style={{fontSize:"30px"}}>Generated Locations</h3>
+                                    <br></br>
+                                    <div>
+                                      {locations.map((location, index) =>(
+                                        <div key={index}>
+                                            {location === "colombo" ? (
+                                               <p className='location-card'>Colombo
+                                               <p>{getDescription("Colombo")}</p>
+                                               </p>
+                                            ) : location === "kandy" ? (
+                                               <p className='location-card'>Kandy
+                                               <p>{getDescription("Kandy")}</p>
+                                               </p>
+                                            ) : location === "galle" ? (
+                                                <p className='location-card'>Galle
+                                                <p>{getDescription("Galle")}</p>
+                                                </p>
+                                            ) : location === "ella" ? (
+                                                <p className='location-card'>Ella
+                                                <p>{getDescription("Ella")}</p>
+                                                </p>
+                                            ) : location === "anuradhapura" ? (
+                                                <p className='location-card'>Anuradhapura
+                                                <p>{getDescription("Anuradhapura")}</p>
+                                                </p>
+                                            ) : location ==="jaffna" ? (
+                                                <p className='location-card'>Jaffna
+                                                <p>{getDescription("Jaffna")}</p>
+                                                </p>
+                                            ) : location ==="arugambay" ? (
+                                                <p className='location-card'>Arugam Bay
+                                                <p>{getDescription("Arugam Bay")}</p>
+                                                </p>
+                                            ) : location ==="nuwaraeliya" ? (
+                                                <p className='location-card'>Nuwara-Eliya
+                                                <p>{getDescription("Nuwara-Eliya")}</p>
+                                                </p>
+                                            ) : location ==="trincomalee" ? (
+                                                <p className='location-card'>Trincomalee
+                                                <p>{getDescription("Trincomalee")}</p>
+                                                </p>
+                                            ) : location ==="matara" ?(
+                                                <p className='location-card'>Matara
+                                                <p>{getDescription("Matara")}</p>
+                                                </p>
+                                            ): (
+                                                <p className='location-card'>No Locations Found !</p>
+                                            )}
+                                        </div>   
+                                        ))}  
+                                    </div>
+                                </div>
+                                ) : (
+                                <p></p>
+                                )}
+                            </div>
                         </div>
                     )}
                 </div>
-            </div>
-            <div className="location-cards-container">
-                {locations.map((locationD, index) => (
-                    <div className="location-card" key={index}>
-                        <img src={locationD.destinations[0].image} alt={locationD.location} className="location-image" />
-                        <h3>{locationD.location}</h3>
-                        <p>{locationD.description}</p>
-                    </div>
-                ))}
             </div>
             {/* Render the Common2 component for each location */}
         </div>
