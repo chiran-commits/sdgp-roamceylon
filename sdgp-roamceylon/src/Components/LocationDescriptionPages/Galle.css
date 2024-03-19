@@ -115,6 +115,10 @@
 .indicators{
     background-color: rgb(241, 246, 254);
     border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minimum and maximum width as needed */
+    grid-gap: 20px;
+    justify-content: center;
 }
 
 .galle-hotels{
@@ -130,16 +134,13 @@
 }
 
 .indicator-container{
-    display:inline-flex;
-    padding: 20px 20px 20px 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
     margin-bottom: 50px;
-    min-height: 150px;
-    min-width: 250px;
     border-radius: 15px;
     background-color: rgb(187, 211, 251, 0.85);
+    border: 1px solid #ccc;
+    padding: 20px;
+    min-height: 160px;
+    margin: 20px 20px 20px 20px;
 }
 
 .indicator-container p span{
@@ -154,6 +155,9 @@
     margin-top: 30px;
 }
 
+.scales h1{
+    color: black;
+}
 
 .title{
     font-size: 20px;

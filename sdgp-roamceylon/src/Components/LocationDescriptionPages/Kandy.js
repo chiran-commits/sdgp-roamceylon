@@ -40,7 +40,7 @@ export default function Galle(location){
                                 <h1>Indicators</h1>
                                 <div className='indicator-container'>
                                     <p>
-                                        <span className='title' style={{marginLeft:"18px"}}>Weather<br></br></span><p style={{marginLeft:"12px"}}>Tropical/ Hot and Humid</p>
+                                        <span className='title' style={{marginLeft:"18px", left:"20"}}>Weather<br></br></span><p style={{marginLeft:"12px"}}>Hot and Humid</p>
                                         <p className='weatherdata' style={{marginLeft:"13px"}}><FetchWeatherData city="kandy" className="weatherdata"/></p>
                                     </p>
                                 </div>
