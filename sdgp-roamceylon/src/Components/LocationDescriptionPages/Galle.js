@@ -17,7 +17,7 @@ export default function Galle(location){
         window.scrollTo(0,0);
     },[]);
     return(
-        <div>
+        <div className='main'>
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
                 <img src={GalleImage} className='location_image'></img>

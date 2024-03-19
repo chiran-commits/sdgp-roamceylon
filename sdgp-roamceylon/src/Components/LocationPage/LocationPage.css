@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     margin-left: 80px;
     margin-top: 80px;
     position: absolute;
@@ -320,5 +320,11 @@
         width: 50%;
         height: 50px;
         margin: 40px 0;
+    }
+}
+
+@media (max-width:768px) {
+    .location-container{
+        margin-top: 10px;
     }
 }

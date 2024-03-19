@@ -46,23 +46,22 @@
 }
 
 .location_destinations{
-    display:inline-flex;
     background-color:rgba(207, 232, 242, 0.85);
-    width:100%;
-    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the minimum and maximum width as needed */
+    grid-gap: 20px;
+    justify-content: center; /* Center items horizontally */
+    height: 200vh;
 }
 
 .popular_destination{
     justify-content: space-between;
     background-color: white;
-    width: 350px;
-    margin: 80px;
+    margin-top: 80px;
     height: 280px;
     display: inline;
     padding: 10px;
-    margin-right: 40px;
     display: flex;
-    margin-left: 100px;
     box-shadow: 0 5px 10px 2px rgb(0,0,0);
     transition: 0.25s ease-in-out;
     border-radius: 10px;
@@ -98,6 +97,9 @@
     border-radius: 10px;
     margin-left: 15px;
     margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .popular_destination:hover, .locationContainer:hover{
@@ -127,6 +129,7 @@
     padding-right: 40px;
     border-radius: 20px;
     display: inline-flex;
+    overflow: hidden;
 }
 
 .indicators h1{
@@ -179,4 +182,27 @@
     margin-top: 5px;
     font-size: 25px;
     color: rgb(30, 158, 221);
+}
+
+@media (max-width:480px) {
+    .location_image{
+        object-fit: cover;
+        height: 140vh;
+        bottom: 20px;
+    }
+
+    .location_detail{
+        text-align: center;
+        padding: 20px;
+        margin: 160px 20px 250px 20px;
+    }
+
+    .destination-heading{
+        font-size: 25px;
+    }
+
+    .scales h1{
+        font-size: 25px;
+    }
+
 }

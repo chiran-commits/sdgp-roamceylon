@@ -117,7 +117,7 @@ export default function HomePage() {
 
   return (
     <>
-        <div>
+        <div className="home-page">
           <Navbar activeOption="home" />
           <div className="home-container">
             <video className="video-bg" autoPlay muted loop playsInline>

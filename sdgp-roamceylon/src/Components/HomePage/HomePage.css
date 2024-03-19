@@ -347,3 +347,9 @@
     transform: scale(0.90);
   }
 }
+
+@media (max-width: 768px) {
+  .social-panel{
+    margin-right: 50%;
+  }
+}
