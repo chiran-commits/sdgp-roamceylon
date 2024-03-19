@@ -98,7 +98,7 @@ function App(){
           </div>
           <div className="developer-container">
             <img className="about-image" src={puleeshaimage}></img>
-            <Creator name="Puleesha Vilhan" email="puleesha.20221061@iit.ac.lk"/>
+            <Creator name="Puleesha Vilhan" email="puleesha.20221061@iit.ac.lk" mobile = "+94 76 462 2597"/>
           </div>
           <div className="developer-container">
             <img className="about-image" src={tharukaimage}></img>
@@ -133,6 +133,7 @@ const Creator  = (props) =>{
     <div>
       <h4 style={{color:"blue"}}><center>{props.name}</center></h4><br></br>
       <h4 style={{color:"Black"}}><center>Email: <a style={{color:"Black"}} href={props.email}>{props.email}</a></center></h4>
+      <h4 style={{color:"Black"}}><center>Mobile: <a style={{color:"Black"}} href={props.mobile}>{props.mobile}</a></center></h4>
     </div>
   );
 }
