@@ -118,7 +118,7 @@ export default function Galle(location){
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Galle</h3>
-            <div className='galle-hotels'>
+            <div className='hotels'>
                 <a href='https://www.legrandgalle.lk/' target="_blank">
                 <div className='locationContainer'>
                     <img src={LeGrand} className='destination_image'/>

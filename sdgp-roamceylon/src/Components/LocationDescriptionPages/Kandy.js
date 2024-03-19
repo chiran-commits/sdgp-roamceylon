@@ -24,7 +24,7 @@ export default function Galle(location){
                 <div className='location_detail'>
                     <h3>KANDY</h3>
                     <div className='location_Des'>
-                        <h3 style={{fontSize:"20px"}}>
+                        <h3 className='description'>
                             Galle is a city on the southwest coastline of Sri Lanka. 
                             The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings,
                             stylish cafes, quirky boutiques and impeccably restored beautiful hotels.
@@ -36,63 +36,65 @@ export default function Galle(location){
                 LocationData.map(data => {
                     if (data.location == "Kandy"){
                         return(
-                            <div className='indicators'>
+                            <div className='scales'>
                                 <h1>Indicators</h1>
-                                <div className='indicator-container'>
-                                    <p>
-                                        <span className='title' style={{marginLeft:"18px", left:"20"}}>Weather<br></br></span><p style={{marginLeft:"12px"}}>Hot and Humid</p>
-                                        <p className='weatherdata' style={{marginLeft:"13px"}}><FetchWeatherData city="kandy" className="weatherdata"/></p>
-                                    </p>
-                                </div>
-                                <div className='indicator-container'>
-                                    <p><span className='title' style={{left:"56px"}}>Wi-Fi<br></br></span></p>
-                                    <div className='indicator-scale'>     
-                                            <div className='weather' style={{right:"21px", marginTop:"10px"}}>
-                                                <div className='outer'>
-                                                    <div className='inner'>
-                                                        <div id='number'>
-                                                            Fast
+                                <div className='indicators'>
+                                    <div className='indicator-container'>
+                                        <p>
+                                            <span className='title'>Weather<br></br></span><p>Hot and Humid</p>
+                                            <p className='weatherdata'><FetchWeatherData city="kandy" className="weatherdata"/></p>
+                                        </p>
+                                    </div>
+                                    <div className='indicator-container'>
+                                        <p><span className='title'>Wi-Fi<br></br></span></p>
+                                        <div className='indicator-scale'>     
+                                                <div className='weather'>
+                                                    <div className='outer'>
+                                                        <div className='inner'>
+                                                            <div id='number'>
+                                                                Fast
+                                                            </div>
                                                         </div>
                                                     </div>
+                                                    <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                                            <defs>
+                                                                <linearGradient id="GradientColor">
+                                                                <stop offset="0%" stop-color="#e91e63" />
+                                                                <stop offset="100%" stop-color="#673ab7" />
+                                                                </linearGradient>
+                                                            </defs>
+                                                            <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                    </svg>
                                                 </div>
-                                                <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                                        <defs>
-                                                            <linearGradient id="GradientColor">
-                                                            <stop offset="0%" stop-color="#e91e63" />
-                                                            <stop offset="100%" stop-color="#673ab7" />
-                                                            </linearGradient>
-                                                        </defs>
-                                                        <circle cx="80" cy="80" r="29" stroke-linecap="round" />
-                                                </svg>
-                                            </div>
-                                    </div>    
-                                </div>
-                                <div className='indicator-container'>
-                                    <p><span className='title' style={{left:"36px"}}>COST OF LIVING<br></br></span></p>
-                                    <div className='indicator-scale'>      
-                                            <div className='cost' style={{right:"105px", marginTop:"10px"}}>
-                                                <div className='outer'>
-                                                    <div className='inner'>
-                                                        <div id='number'>
-                                                            High
+                                        </div>    
+                                    </div>
+                                    <div className='indicator-container'>
+                                        <p><span className='title'>COST OF LIVING<br></br></span></p>
+                                        <div className='indicator-scale'>      
+                                                <div className='cost'>
+                                                    <div className='outer'>
+                                                        <div className='inner'>
+                                                            <div id='number'>
+                                                                High
+                                                            </div>
                                                         </div>
                                                     </div>
+                                                    <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                                            <defs>
+                                                                <linearGradient id="GradientColor">
+                                                                <stop offset="0%" stop-color="#e91e63" />
+                                                                <stop offset="100%" stop-color="#673ab7" />
+                                                                </linearGradient>
+                                                            </defs>
+                                                            <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                    </svg>
                                                 </div>
-                                                <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                                        <defs>
-                                                            <linearGradient id="GradientColor">
-                                                            <stop offset="0%" stop-color="#e91e63" />
-                                                            <stop offset="100%" stop-color="#673ab7" />
-                                                            </linearGradient>
-                                                        </defs>
-                                                        <circle cx="80" cy="80" r="29" stroke-linecap="round" />
-                                                </svg>
-                                            </div>
-                                    </div>    
-                                </div>
-                                <div className='indicator-container'>
-                                    <p><span className='title' style={{left:"8px"}}>URBAN/RURAL<br></br></span><p style={{marginTop:"20px", marginLeft:"10px"}}>{data.type}</p></p>
-                                </div>
+                                        </div>    
+                                    </div>
+                                    <div className='indicator-container'>
+                                        <p><span className='title'>URBAN/RURAL<br></br></span><p>{data.type}</p></p>
+                                    </div>
+                                </div>    
                             </div>
                         )
                     }

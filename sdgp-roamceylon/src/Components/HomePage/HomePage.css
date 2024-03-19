@@ -161,6 +161,80 @@
   padding: 0px 60px 60px 60px;
 }
 
+/* The CSS for the tropical countries section */
+
+.tropical-section{
+  background-color: rgba(255, 166, 0, 0.425);
+  /* display: flex;
+  margin: 20px 30px 40px 30px;
+  border-radius: 20px;
+  padding: 35px 60px 40px 60px; */
+  margin-top: 40px;
+  padding: 30px 40px 30px 40px;
+  text-align: left;
+  border-radius: 50px;
+  min-height: 350px;
+}
+
+.tropical-container{
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.tropical-container img{
+  scale: 0.8;
+  border-radius: 50px;
+  max-width: 100%;
+}
+
+.tropical-container h2{
+  font-size: 52px;
+  text-align: left;
+  padding-bottom: 45px;
+  padding-top: 60px;
+  margin-left: 25px;
+}
+
+.tropical-container p{
+  font-size: 22px;
+  margin-right: 40px;
+  margin-left: 25px;
+}
+
+.tropical-content{
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.tropical-country{
+  box-sizing: border-box;
+  flex: 3;
+}
+
+.tropical-countries{
+  display: flex;
+}
+
+.tropical-country img{
+  /* position: absolute; */
+  width: 100%; 
+  scale: 0.8;
+  border-radius: 30px;
+  /* height: 100%;  */
+  /* background-size: contain;
+  border: none;
+  overflow: hidden; 
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(50%); */
+}
+
+.tropical-country h3{
+  text-align: center;
+  font-size: 35px;
+}
+
+
 /* The containers for the countries in the homepage */
 
 .home-container-country{

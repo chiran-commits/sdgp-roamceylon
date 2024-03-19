@@ -4,113 +4,20 @@
         "location": "galle",
         "name": "Galle",
         "link":"http://localhost:8000/galle",
-        "description": "Galle is a city on the southwest coastline of Sri Lanka. The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings, stylish cafes, quirky boutiques and impeccably restored beautiful hotels.",
-        "indicators": [
-            {
-                "type": "Weather",
-                "value": "Tropical / Hot and Humid"
-            },
-            {
-                "type": "WiFi",
-                "value": "Fast"
-            },
-            {
-                "type": "Cost of Living",
-                "value": "High"
-            },
-            {
-                "type": "Urban/Rural",
-                "value": "Urban"
-            }
-        ],
-        "destinations": [
-            {
-                "name": "Galle Homepage",
-                "image": "newgalleimge1.jpg"
-            },
-            {
-                "name": "Galle Dutch Fort",
-                "image": "Galle-Dutch-Fort.jpg"
-            },
-            {
-                "name": "Turtle Hatchery, Hikkaduwa",
-                "image": "turtle-hatchery-hikkaduwa.jpg"
-            },
-            {
-                "name": "Galle Maritime Museum",
-                "image": "Galle_Maritime_Museum.jpg"
-            }
-        ],
-        "hotels": [
-            {
-                "name": "Le Grand Galle",
-                "image": "leGrand.jpg"
-            },
-            {
-                "name": "Jetwing Lighthouse",
-                "image": "lighthouse.jpg"
-            },
-            {
-                "name": "Raddisson Blu",
-                "image": "raddisson.jpg"
-            }
-        ]
+        "description": "Galle is a city on the southwest coastline of Sri Lanka. The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings, stylish cafes, quirky boutiques and impeccably restored beautiful hotels."
     },
     {
         "id": 2,
         "location": "kandy",
         "name": "Kandy",
         "link":"http://localhost:8000/kandy",
-        "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka.",
-        "indicators": [
-            {
-                "type": "Weather",
-                "value": "Tropical / Hot and Humid"
-            },
-            {
-                "type": "WiFi",
-                "value": "Fast"
-            },
-            {
-                "type": "Cost of Living",
-                "value": "High"
-            },
-            {
-                "type": "Urban/Rural",
-                "value": "Urban"
-            }
-        ],
-        "destinations": [
-            {
-                "name": "Kandy Homepage",
-                "image": "newgalleimge1.jpg"
-            },
-            {
-                "name": "Botanical Garden",
-                "image": "botanicalGarden.jpg"
-            },
-            {
-                "name": "Kandy Jungle",
-                "image": "kandyjungle.jpg"
-            },
-            {
-                "name": "Temple of the Tooth",
-                "image": "templeOfTheTooth.jpg"
-            }
-        ],
-        "hotels": [
-            {
-                "name": "Le Grand Galle",
-                "image": "botanicalGarden.jpg"
-            },
-            {
-                "name": "Jetwing Lighthouse",
-                "image": "kandyjungle.jpg"
-            },
-            {
-                "name": "Raddisson Blu",
-                "image": "templeOfTheTooth.jpg"
-            }
-        ]
+        "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
+    },
+    {
+        "id": 3,
+        "location": "ella",
+        "name": "Ella",
+        "link":"http://localhost:8000/Ella",
+        "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
     }
 ]
