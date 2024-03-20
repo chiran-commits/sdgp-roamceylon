@@ -207,7 +207,7 @@ export default function LocationPage() {
                                                   </p>  
                                                 </a>
                                             ) : location ==="trincomalee" ? (
-                                                <a>
+                                                <a href='/Trincomalee'>
                                                   <p className='location-card'>Trincomalee
                                                   <p className='locationdesc'>{getDescription("Trincomalee")}</p>
                                                   </p>  
