@@ -15,6 +15,7 @@ import NuwaraEliya from './Components/LocationDescriptionPages/NuwaraEliya.js';
 import ArugamBay from './Components/LocationDescriptionPages/ArugamBay.js';
 import Jaffna from './Components/LocationDescriptionPages/Jaffna.js';
 import Anuradhapura from './Components/LocationDescriptionPages/Anuradhapura.js';
+import Trincomalee from './Components/LocationDescriptionPages/Trincomalee.js';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import { useSelector } from "react-redux";
 
@@ -44,6 +45,7 @@ function App() {
         <Route path='/arugambay' element={<ArugamBay/>}/>
         <Route path='/jaffna' element={<Jaffna/>}/>
         <Route path='/anuradhapura' element={<Anuradhapura/>}/>
+        <Route path='/Trincomalee' element={<Trincomalee/>}/>
       </Routes>
   </Router> 
   );
