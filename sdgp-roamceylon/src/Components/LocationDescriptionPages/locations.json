@@ -25,5 +25,12 @@
     "wifi":"High",
     "col":"High",
     "type":"RURAL"
+},
+{
+    "id":5,
+    "location":"Anuradhapura",
+    "wifi":"Medium",
+    "col":"Low",
+    "type":"RURAL"
 }
 ]

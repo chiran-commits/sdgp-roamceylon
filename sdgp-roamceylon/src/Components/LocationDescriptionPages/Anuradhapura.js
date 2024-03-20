@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import Navbar from '../AboutUsPage/Navbar';
-import EllaImage1 from '../LocationDescriptionPages/Images/botanicalGarden.jpg';
-import EllaImage2 from '../LocationDescriptionPages/Images/templeOfTheTooth.jpg';
-import EllaImage3 from '../LocationDescriptionPages/Images/kandyjungle.jpg';
-import EllaImageMain from '../LocationDescriptionPages/Images/kandyImg.jpg';
-import EllaHotel1 from '../LocationDescriptionPages/Images/KHotel1.jpg';
-import EllaHotel2 from '../LocationDescriptionPages/Images/KHotel2.jpg';
-import EllaHotel3 from '../LocationDescriptionPages/Images/KHotel3.jpg';
+import AnuImage1 from '../LocationDescriptionPages/Images/botanicalGarden.jpg';
+import AnuImage2 from '../LocationDescriptionPages/Images/templeOfTheTooth.jpg';
+import AnuImage3 from '../LocationDescriptionPages/Images/kandyjungle.jpg';
+import AnuImageMain from '../LocationDescriptionPages/Images/kandyImg.jpg';
+import AnuHotel1 from '../LocationDescriptionPages/Images/KHotel1.jpg';
+import AnuHotel2 from '../LocationDescriptionPages/Images/KHotel2.jpg';
+import AnuHotel3 from '../LocationDescriptionPages/Images/KHotel3.jpg';
 import LocationData from './locations.json'
 import './Galle.css';
 import Review from '../ReviewSection/Review';
@@ -20,22 +20,22 @@ export default function Ella(location){
         <div>
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
-                <img src={EllaImageMain} className='location_image'></img>
+                <img src={AnuImageMain} className='location_image'></img>
                 <div className='location_detail'>
-                    <h3>ELLA</h3>
+                    <h3>ANURADHAPURA</h3>
                     <div className='location_Des'>
                         <h3 className='description'>
-                            Ella is a small town in Sri Lanka's Uva Province, 
-                            located about 120 miles east of Colombo. It's known for its natural beauty, 
-                            including waterfalls, greenery, and hills. Ella is also rich in history and culture, 
-                            with many prominent tourist attractions.
+                        Anuradhapura is a major city located in the north central plain of Sri Lanka. 
+                        It is the capital city of North Central Province and the capital of Anuradhapura District. T
+                        he city lies 205 kilometers north of the current capital of Colombo in the North Central Province, 
+                        on the banks of the historic Malwathu Oya
                         </h3>
                     </div>
                 </div>
             </div>
             {
                 LocationData.map(data => {
-                    if (data.location == "Ella"){
+                    if (data.location == "Anuradhapura"){
                         return(
                             <div className='scales'>
                                 <h1>Indicators</h1>
@@ -43,7 +43,7 @@ export default function Ella(location){
                                     <div className='indicator-container'>
                                         <p>
                                             <span className='title'>Weather<br></br></span><p>Cold</p>
-                                            <p className='weatherdata'><FetchWeatherData city="ella" className="weatherdata"/></p>
+                                            <p className='weatherdata'><FetchWeatherData city="anuradhapura" className="weatherdata"/></p>
                                         </p>
                                     </div>
                                     <div className='indicator-container'>
@@ -105,42 +105,42 @@ export default function Ella(location){
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
                 <div className='popular_destination'>
-                    <img src={EllaImage1} className='destination_image'/>
+                    <img src={AnuImage1} className='destination_image'/>
                     <p className='text_dest'>Botanical Garden(4.7 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={EllaImage2} className='destination_image'/>
+                    <img src={AnuImage2} className='destination_image'/>
                     <p className='text_dest'>Temple of the tooth(4.4 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={EllaImage3} className='destination_image'/>
+                    <img src={AnuImage3} className='destination_image'/>
                     <p className='text_dest'>Udawattakele Forest Reserve(4.2 <span class="fa fa-star checked"></span>)</p>
                 </div>
             </div>
             <br></br><br></br><br></br>
-            <h3 className='destination-heading'>Hotels in Ella</h3>
+            <h3 className='destination-heading'>Hotels in Anuradhapura</h3>
             <div className='hotels'>
                 <a href='https://www.grandkandyan.com/' target="_blank">
                 <div className='locationContainer'>
-                    <img src={EllaHotel1} className='destination_image'/>
-                    <p className='text_dest'>98 Acres Resort & Spa</p>
+                    <img src={AnuHotel1} className='destination_image'/>
+                    <p className='text_dest'>The Grand Kandyan Hotele</p>
                 </div>
                 </a>
                 <a href='https://www.cinnamonhotels.com/cinnamoncitadelkandy' target="_blank">
                 <div className='locationContainer'>
-                    <img src={EllaHotel2} className='destination_image'/>
-                    <p className='text_dest'>Anasa Wellness Resort</p>
+                    <img src={AnuHotel2} className='destination_image'/>
+                    <p className='text_dest'>Cinnamon Citadel Kandy</p>
                 </div>
                 </a>
                 <a href='https://www.radissonhotels.com/en-us/hotels/radisson-kandy' target='_blank'>
                 <div className='locationContainer'>
-                    <img src={EllaHotel3} className='destination_image'/>
-                    <p className='text_dest'>Dream Cliff Mountain Resort</p>
+                    <img src={AnuHotel3} className='destination_image'/>
+                    <p className='text_dest'>Radisson Hotel Kandy</p>
                 </div>
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="ella"/>
+            <Review location="anuradhapura"/>
 
         </div>
         
