@@ -53,7 +53,7 @@
     background-color:rgba(207, 232, 242, 0.85);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjust the minimum and maximum width as needed */
-    grid-gap: 100px;
+    grid-gap: 10px;
     justify-content: center; /* Center items horizontally */
     height: auto;
     padding-bottom: 50px;
@@ -67,7 +67,7 @@
     background-color: white;
     margin-top: 40px;
     height: 280px;
-    box-shadow: 0 5px 10px 2px rgb(0,0,0);
+    box-shadow: 0 5px 10px 2px rgba(0,0,0,0.4);
     transition: 0.25s ease-in-out;
     border-radius: 10px;
     overflow: hidden;
@@ -83,7 +83,7 @@
     background-color: white;
     margin-top: 40px;
     height: 280px;
-    box-shadow: 0 5px 10px 2px rgb(0,0,0);
+    box-shadow: 0 5px 10px 2px rgba(0,0,0,0.4);
     transition: 0.25s ease-in-out;
     border-radius: 10px;
     overflow: hidden;
@@ -139,6 +139,7 @@
     grid-gap: 100px;
     justify-content: center; /* Center items horizontally */
     height: auto;
+    padding-bottom: 50px;
 }
 
 .indicators h1{

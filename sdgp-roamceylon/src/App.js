@@ -12,6 +12,8 @@ import Common2 from './Components/LocationDescriptionPages/common2.js';
 import Galle from './Components/LocationDescriptionPages/Galle.js';
 import Ella from './Components/LocationDescriptionPages/Ella.js';
 import NuwaraEliya from './Components/LocationDescriptionPages/NuwaraEliya.js';
+import ArugamBay from './Components/LocationDescriptionPages/ArugamBay.js';
+import Jaffna from './Components/LocationDescriptionPages/Jaffna.js';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import { useSelector } from "react-redux";
 
@@ -38,6 +40,8 @@ function App() {
         <Route path="/kandy" element={<Kandy/>} />
         <Route path="/ella" element={<Ella/>} />
         <Route path='/nuwaraeliya' element={<NuwaraEliya/>} />
+        <Route path='/arugambay' element={<ArugamBay/>}/>
+        <Route path='/jaffna' element={<Jaffna/>}/>
       </Routes>
   </Router> 
   );

@@ -46,7 +46,7 @@ export default function NuwaraEliya(location){
                                 <div className='indicators'>    
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title' >Weather<br></br></span><p style={{marginLeft:"12px"}}>Tropical/ Hot and Humid</p>
+                                            <span className='title' >Weather<br></br></span><p>Tropical/ Hot and Humid</p>
                                             <p className='weatherdata'><FetchWeatherData city="nuwara eliya" className="weatherdata"/></p>
                                         </p>
                                     </div>
@@ -124,19 +124,19 @@ export default function NuwaraEliya(location){
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Popular Hotels in Nuwara Eliya</h3>
             <div className='hotels'>
-                <a href='https://www.legrandgalle.lk/' target="_blank">
+                <a href='https://www.araliyaresorts.com/araliya-green-hills/' target="_blank">
                 <div className='locationContainer'>
                     <img src={NuwaraHotel1} className='destination_image'/>
                     <p className='text_dest'>Araliya Green Hills Hotel</p>
                 </div>
                 </a>
-                <a href='https://www.jetwinghotels.com/jetwinglighthouse/#gref' target="_blank">
+                <a href='https://www.heritancehotels.com/teafactory/' target="_blank">
                 <div className='locationContainer'>
                     <img src={NuwaraHotel2} className='destination_image'/>
                     <p className='text_dest'>Heritance Tea Factory</p>
                 </div>
                 </a>
-                <a href='https://www.radissonhotels.com/en-us/hotels/radisson-blu-galle?checkInDate=2024-03-13&checkOutDate=2024-03-14&searchType=lowest&promotionCode=&voucher=&memberOnlyRatesHotelCodes=LKCMBGAL&adults%5B%5D=2&children%5B%5D=0&aoc%5B%5D=NaN' target='_blank'>
+                <a href='https://www.heavensevenhotels.com/' target='_blank'>
                 <div className='locationContainer'>
                     <img src={NuwaraHotel3} className='destination_image'/>
                     <p className='text_dest'>Heaven Seven Hotel</p>

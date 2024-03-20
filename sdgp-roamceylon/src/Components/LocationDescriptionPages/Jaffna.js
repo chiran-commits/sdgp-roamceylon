@@ -7,12 +7,19 @@ import galleimage3 from '../LocationDescriptionPages/Images/Galle_Maritime_Museu
 import LeGrand from '../LocationDescriptionPages/Images/leGrand.jpg';
 import raddisson from '../LocationDescriptionPages/Images/raddisson.jpg';
 import lighthouse from '../LocationDescriptionPages/Images/lighthouse.jpg';
-import LocationData from './locations.json'
+import JaffnaHome from '../LocationDescriptionPages/Images/jaffnaHome.jpg'
+import Jaffna1 from '../LocationDescriptionPages/Images/jaffna1.jpg';
+import Jaffna2 from '../LocationDescriptionPages/Images/jaffna2.jpg';
+import Jaffna3 from '../LocationDescriptionPages/Images/jaffna3.jpg';
+import JaffnaHotel1 from '../LocationDescriptionPages/Images/jaffnaHotel1.jpg';
+import JaffnaHotel2 from '../LocationDescriptionPages/Images/jaffnaHotel2.jpg';
+import JaffnaHotel3 from '../LocationDescriptionPages/Images/jaffnaHotel3.jpg';
+import LocationData from './locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
 
-export default function Galle(location){
+export default function Jaffna(location){
     useEffect(() =>{
         window.scrollTo(0,0);
     },[]);
@@ -20,14 +27,12 @@ export default function Galle(location){
         <div className='main'>
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
-                <img src={GalleImage} className='location_image'></img>
+                <img src={JaffnaHome} className='location_image'></img>
                 <div className='location_detail'>
-                    <h3>GALLE</h3>
+                    <h3>JAFFNA</h3>
                     <div className='location_Des'>
                         <h3 className='description'>
-                            Galle is a city on the southwest coastline of Sri Lanka. 
-                            The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings,
-                            stylish cafes, quirky boutiques and impeccably restored beautiful hotels.
+                            Jaffna, located in northern Sri Lanka, is a culturally vibrant city renowned for its rich Tamil heritage, including stunning Hindu temples and delicious cuisine. Despite the scars of the past, it's undergoing revitalization and welcomes visitors to explore its unique culture, pristine beaches, and warm hospitality.
                         </h3>
                     </div>
                 </div>
@@ -42,7 +47,7 @@ export default function Galle(location){
                                     <div className='indicator-container'>
                                         <p>
                                             <span className='title' >Weather<br></br></span><p>Tropical/ Hot and Humid</p>
-                                            <p className='weatherdata'><FetchWeatherData city="galle" className="weatherdata"/></p>
+                                            <p className='weatherdata'><FetchWeatherData city="jaffna" className="weatherdata"/></p>
                                         </p>
                                     </div>
                                     <div className='indicator-container'>
@@ -75,7 +80,7 @@ export default function Galle(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                High
+                                                                Low
                                                             </div>
                                                         </div>
                                                     </div>
@@ -92,7 +97,7 @@ export default function Galle(location){
                                         </div>    
                                     </div>
                                     <div className='indicator-container'>
-                                        <p><span className='title'>URBAN/RURAL<br></br></span><p style={{marginTop:"20px"}}>{data.type}</p></p>
+                                        <p><span className='title'>RURAL<br></br></span><p style={{marginTop:"20px"}}>{data.type}</p></p>
                                     </div>
                                 </div>    
                             </div>
@@ -104,37 +109,37 @@ export default function Galle(location){
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
                 <div className='popular_destination'>
-                    <img src={galleimage1} className='destination_image'/>
-                    <p className='text_dest'>Galle Dutch Fort (4.7 <span class="fa fa-star checked"></span>)</p>
+                    <img src={Jaffna1} className='destination_image'/>
+                    <p className='text_dest'>Nallur Kovil (4.5 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={galleimage2} className='destination_image'/>
-                    <p className='text_dest'>Sea Turtle Hatchery Centre (4.4 <span class="fa fa-star checked"></span>)</p>
+                    <img src={Jaffna2} className='destination_image'/>
+                    <p className='text_dest'>Jaffna Fort (4.0 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={galleimage3} className='destination_image'/>
-                    <p className='text_dest'>Maritime Museum (4.2 <span class="fa fa-star checked"></span>)</p>
+                    <img src={Jaffna3} className='destination_image'/>
+                    <p className='text_dest'>Delft Island (4.0 <span class="fa fa-star checked"></span>)</p>
                 </div>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Galle</h3>
             <div className='hotels'>
-                <a href='https://www.legrandgalle.lk/' target="_blank">
+                <a href='https://www.jetwinghotels.com/jetwingjaffna/' target="_blank">
                 <div className='locationContainer'>
-                    <img src={LeGrand} className='destination_image'/>
-                    <p className='text_dest'>Le Grand Galle</p>
+                    <img src={JaffnaHotel1} className='destination_image'/>
+                    <p className='text_dest'>Jetwing Jaffna</p>
                 </div>
                 </a>
-                <a href='https://www.jetwinghotels.com/jetwinglighthouse/#gref' target="_blank">
+                <a href='https://www.tripadvisor.com/Hotel_Review-g304135-d3791995-Reviews-Jaffna_Heritage_Hotel-Jaffna_Northern_Province.html' target="_blank">
                 <div className='locationContainer'>
-                    <img src={lighthouse} className='destination_image'/>
-                    <p className='text_dest'>Jetwing Lighthouse</p>
+                    <img src={JaffnaHotel2} className='destination_image'/>
+                    <p className='text_dest'>Jaffna Heritage Hotel</p>
                 </div>
                 </a>
-                <a href='https://www.radissonhotels.com/en-us/hotels/radisson-blu-galle?checkInDate=2024-03-13&checkOutDate=2024-03-14&searchType=lowest&promotionCode=&voucher=&memberOnlyRatesHotelCodes=LKCMBGAL&adults%5B%5D=2&children%5B%5D=0&aoc%5B%5D=NaN' target='_blank'>
+                <a href='https://www.tripadvisor.com/Restaurant_Review-g304135-d10593768-Reviews-Peninsula-Jaffna_Northern_Province.html' target='_blank'>
                 <div className='locationContainer'>
-                    <img src={raddisson} className='destination_image'/>
-                    <p className='text_dest'>Raddisson Blu</p>
+                    <img src={JaffnaHotel3} className='destination_image'/>
+                    <p className='text_dest'>Peninsula</p>
                 </div>
                 </a>
             </div>
