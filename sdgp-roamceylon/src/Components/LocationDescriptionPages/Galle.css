@@ -22,7 +22,7 @@
     height: 40vh;
 }
 
-.location_detail h3{
+.location_detail {
     color: white;
     margin-top: 20px;
 }
@@ -266,5 +266,10 @@ svg{
 
     #number{
         margin-left: 137px;
+    }
+
+    .location_detail h3{
+        font-size: 25px;
+        color: white;
     }
 }
