@@ -183,19 +183,19 @@ export default function LocationPage() {
                                                   </p>  
                                                 </a>
                                             ) : location === "anuradhapura" ? (
-                                                <a>
+                                                <a href='/anuradhapura'>
                                                   <p className='location-card'>Anuradhapura
                                                   <p className='locationdesc'>{getDescription("Anuradhapura")}</p>
                                                   </p>  
                                                 </a>
                                             ) : location ==="jaffna" ? (
-                                                <a>
+                                                <a href='/jaffna'>
                                                   <p className='location-card'>Jaffna
                                                   <p className='locationdesc'>{getDescription("Jaffna")}</p>
                                                   </p>  
                                                 </a>
                                             ) : location ==="arugambay" ? (
-                                                <a>
+                                                <a href='/arugambay'>
                                                   <p className='location-card'>Arugam Bay
                                                   <p className='locationdesc'>{getDescription("Arugam Bay")}</p>
                                                   </p>  
