@@ -1,21 +1,21 @@
 [{
     "id":1,
     "location":"Colombo",
-    "wifi":"AVERAGE",
+    "wifi":"Med",
     "col":"LOW COST",
     "type":"URBAN"
 },
 {
     "id":2,
     "location":"Galle",
-    "wifi":"AVERAGE",
+    "wifi":"Med",
     "col":"HIGH COST",
     "type":"RURAL"
 },
 {
     "id":3,
     "location":"Kandy",
-    "wifi":"AVERAGE",
+    "wifi":"Med",
     "col":"MEDIUM",
     "type":"URBAN"
 },
@@ -24,6 +24,13 @@
     "location":"Ella",
     "wifi":"High",
     "col":"High",
+    "type":"RURAL"
+},
+{
+    "id":5,
+    "location":"Anuradhapura",
+    "wifi":"Med",
+    "col":"Low",
     "type":"RURAL"
 }
 ]

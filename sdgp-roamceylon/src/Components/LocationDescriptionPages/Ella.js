@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import Navbar from '../AboutUsPage/Navbar';
-import KandyImage1 from '../LocationDescriptionPages/Images/botanicalGarden.jpg';
-import KandyImage2 from '../LocationDescriptionPages/Images/templeOfTheTooth.jpg';
-import KandyImage3 from '../LocationDescriptionPages/Images/kandyjungle.jpg';
-import KandyImageMain from '../LocationDescriptionPages/Images/kandyImg.jpg';
-import KandyHotel1 from '../LocationDescriptionPages/Images/KHotel1.jpg';
-import KandyHotel2 from '../LocationDescriptionPages/Images/KHotel2.jpg';
-import KandyHotel3 from '../LocationDescriptionPages/Images/KHotel3.jpg';
+import EllaImage1 from '../LocationDescriptionPages/Images/nine-arch-2-5.jpg';
+import EllaImage2 from '../LocationDescriptionPages/Images/ravana-falls-6.jpg';
+import EllaImage3 from '../LocationDescriptionPages/Images/ellarock.jpg';
+import EllaImageMain from '../LocationDescriptionPages/Images/ellawallpaper.jpg';
+import EllaHotel1 from '../LocationDescriptionPages/Images/98acres.jpg';
+import EllaHotel2 from '../LocationDescriptionPages/Images/annasa.jpg';
+import EllaHotel3 from '../LocationDescriptionPages/Images/dreamcliffjpg.jpg';
 import LocationData from './locations.json'
 import './Galle.css';
 import Review from '../ReviewSection/Review';
@@ -20,7 +20,7 @@ export default function Ella(location){
         <div>
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
-                <img src={KandyImageMain} className='location_image'></img>
+                <img src={EllaImageMain} className='location_image'></img>
                 <div className='location_detail'>
                     <h3>ELLA</h3>
                     <div className='location_Des'>
@@ -43,7 +43,7 @@ export default function Ella(location){
                                     <div className='indicator-container'>
                                         <p>
                                             <span className='title'>Weather<br></br></span><p>Cold</p>
-                                            <p className='weatherdata'><FetchWeatherData city="kandy" className="weatherdata"/></p>
+                                            <p className='weatherdata'><FetchWeatherData city="ella" className="weatherdata"/></p>
                                         </p>
                                     </div>
                                     <div className='indicator-container'>
@@ -64,7 +64,7 @@ export default function Ella(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    
@@ -87,7 +87,7 @@ export default function Ella(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    
@@ -105,42 +105,42 @@ export default function Ella(location){
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
                 <div className='popular_destination'>
-                    <img src={KandyImage1} className='destination_image'/>
-                    <p className='text_dest'>Botanical Garden(4.7 <span class="fa fa-star checked"></span>)</p>
+                    <img src={EllaImage1} className='destination_image'/>
+                    <p className='text_dest'>Nine Arches Bridge(4.7 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={KandyImage2} className='destination_image'/>
-                    <p className='text_dest'>Temple of the tooth(4.4 <span class="fa fa-star checked"></span>)</p>
+                    <img src={EllaImage2} className='destination_image'/>
+                    <p className='text_dest'>Ravana falls(4.4 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={KandyImage3} className='destination_image'/>
-                    <p className='text_dest'>Udawattakele Forest Reserve(4.2 <span class="fa fa-star checked"></span>)</p>
+                    <img src={EllaImage3} className='destination_image'/>
+                    <p className='text_dest'>Ella Rock(4.2 <span class="fa fa-star checked"></span>)</p>
                 </div>
             </div>
             <br></br><br></br><br></br>
-            <h3 className='destination-heading'>Hotels in Kandy</h3>
+            <h3 className='destination-heading'>Hotels in Ella</h3>
             <div className='hotels'>
                 <a href='https://www.grandkandyan.com/' target="_blank">
                 <div className='locationContainer'>
-                    <img src={KandyHotel1} className='destination_image'/>
-                    <p className='text_dest'>The Grand Kandyan Hotele</p>
+                    <img src={EllaHotel1} className='destination_image'/>
+                    <p className='text_dest'>98 Acres Resort & Spa</p>
                 </div>
                 </a>
                 <a href='https://www.cinnamonhotels.com/cinnamoncitadelkandy' target="_blank">
                 <div className='locationContainer'>
-                    <img src={KandyHotel2} className='destination_image'/>
-                    <p className='text_dest'>Cinnamon Citadel Kandy</p>
+                    <img src={EllaHotel2} className='destination_image'/>
+                    <p className='text_dest'>Anasa Wellness Resort</p>
                 </div>
                 </a>
                 <a href='https://www.radissonhotels.com/en-us/hotels/radisson-kandy' target='_blank'>
                 <div className='locationContainer'>
-                    <img src={KandyHotel3} className='destination_image'/>
-                    <p className='text_dest'>Radisson Hotel Kandy</p>
+                    <img src={EllaHotel3} className='destination_image'/>
+                    <p className='text_dest'>Dream Cliff Mountain Resort</p>
                 </div>
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="kandy"/>
+            <Review location="ella"/>
 
         </div>
         

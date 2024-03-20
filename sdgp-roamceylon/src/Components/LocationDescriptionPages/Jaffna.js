@@ -1,48 +1,53 @@
 import React, { useEffect } from 'react'
 import Navbar from '../AboutUsPage/Navbar';
-import KandyImage1 from '../LocationDescriptionPages/Images/botanicalGarden.jpg';
-import KandyImage2 from '../LocationDescriptionPages/Images/templeOfTheTooth.jpg';
-import KandyImage3 from '../LocationDescriptionPages/Images/kandyjungle.jpg';
-import KandyImageMain from '../LocationDescriptionPages/Images/kandyImg.jpg';
-import KandyHotel1 from '../LocationDescriptionPages/Images/KHotel1.jpg';
-import KandyHotel2 from '../LocationDescriptionPages/Images/KHotel2.jpg';
-import KandyHotel3 from '../LocationDescriptionPages/Images/KHotel3.jpg';
-import LocationData from './locations.json'
+import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
+import galleimage1 from '../LocationDescriptionPages/Images/Galle-Dutch-Fort.jpg';
+import galleimage2 from '../LocationDescriptionPages/Images/turtle-hatchery-hikkaduwa.jpg';
+import galleimage3 from '../LocationDescriptionPages/Images/Galle_Maritime_Museum.jpg';
+import LeGrand from '../LocationDescriptionPages/Images/leGrand.jpg';
+import raddisson from '../LocationDescriptionPages/Images/raddisson.jpg';
+import lighthouse from '../LocationDescriptionPages/Images/lighthouse.jpg';
+import JaffnaHome from '../LocationDescriptionPages/Images/jaffnaHome.jpg'
+import Jaffna1 from '../LocationDescriptionPages/Images/jaffna1.jpg';
+import Jaffna2 from '../LocationDescriptionPages/Images/jaffna2.jpg';
+import Jaffna3 from '../LocationDescriptionPages/Images/jaffna3.jpg';
+import JaffnaHotel1 from '../LocationDescriptionPages/Images/jaffnaHotel1.jpg';
+import JaffnaHotel2 from '../LocationDescriptionPages/Images/jaffnaHotel2.jpg';
+import JaffnaHotel3 from '../LocationDescriptionPages/Images/jaffnaHotel3.jpg';
+import LocationData from './locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
 
-export default function Galle(location){
+export default function Jaffna(location){
     useEffect(() =>{
         window.scrollTo(0,0);
     },[]);
     return(
-        <div>
+        <div className='main'>
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
-                <img src={KandyImageMain} className='location_image'></img>
+                <img src={JaffnaHome} className='location_image'></img>
                 <div className='location_detail'>
-                    <h3>KANDY</h3>
+                    <h3>JAFFNA</h3>
                     <div className='location_Des'>
                         <h3 className='description'>
-                            Galle is a city on the southwest coastline of Sri Lanka. 
-                            The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings,
-                            stylish cafes, quirky boutiques and impeccably restored beautiful hotels.
+                            Jaffna, located in northern Sri Lanka, is a culturally vibrant city renowned for its rich Tamil heritage, including stunning Hindu temples and delicious cuisine. Despite the scars of the past, it's undergoing revitalization and welcomes visitors to explore its unique culture, pristine beaches, and warm hospitality.
                         </h3>
                     </div>
                 </div>
             </div>
             {
                 LocationData.map(data => {
-                    if (data.location == "Kandy"){
+                    if (data.location == "Galle"){
                         return(
                             <div className='scales'>
                                 <h1>Indicators</h1>
-                                <div className='indicators'>
+                                <div className='indicators'>    
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title'>Weather<br></br></span><p>Hot and Humid</p>
-                                            <p className='weatherdata'><FetchWeatherData city="kandy" className="weatherdata"/></p>
+                                            <span className='title' >Weather<br></br></span><p>Tropical/ Hot and Humid</p>
+                                            <p className='weatherdata'><FetchWeatherData city="jaffna" className="weatherdata"/></p>
                                         </p>
                                     </div>
                                     <div className='indicator-container'>
@@ -75,7 +80,7 @@ export default function Galle(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                High
+                                                                Low
                                                             </div>
                                                         </div>
                                                     </div>
@@ -92,7 +97,7 @@ export default function Galle(location){
                                         </div>    
                                     </div>
                                     <div className='indicator-container'>
-                                        <p><span className='title'>URBAN/RURAL<br></br></span><p>{data.type}</p></p>
+                                        <p><span className='title'>RURAL<br></br></span><p style={{marginTop:"20px"}}>{data.type}</p></p>
                                     </div>
                                 </div>    
                             </div>
@@ -104,42 +109,42 @@ export default function Galle(location){
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
                 <div className='popular_destination'>
-                    <img src={KandyImage1} className='destination_image'/>
-                    <p className='text_dest'>Botanical Garden(4.7 <span class="fa fa-star checked"></span>)</p>
+                    <img src={Jaffna1} className='destination_image'/>
+                    <p className='text_dest'>Nallur Kovil (4.5 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={KandyImage2} className='destination_image'/>
-                    <p className='text_dest'>Temple of the tooth(4.4 <span class="fa fa-star checked"></span>)</p>
+                    <img src={Jaffna2} className='destination_image'/>
+                    <p className='text_dest'>Jaffna Fort (4.0 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={KandyImage3} className='destination_image'/>
-                    <p className='text_dest'>Udawattakele Forest Reserve(4.2 <span class="fa fa-star checked"></span>)</p>
+                    <img src={Jaffna3} className='destination_image'/>
+                    <p className='text_dest'>Delft Island (4.0 <span class="fa fa-star checked"></span>)</p>
                 </div>
             </div>
             <br></br><br></br><br></br>
-            <h3 className='destination-heading'>Hotels in Kandy</h3>
+            <h3 className='destination-heading'>Hotels in Galle</h3>
             <div className='hotels'>
-                <a href='https://www.grandkandyan.com/' target="_blank">
+                <a href='https://www.jetwinghotels.com/jetwingjaffna/' target="_blank">
                 <div className='locationContainer'>
-                    <img src={KandyHotel1} className='destination_image'/>
-                    <p className='text_dest'>The Grand Kandyan Hotele</p>
+                    <img src={JaffnaHotel1} className='destination_image'/>
+                    <p className='text_dest'>Jetwing Jaffna</p>
                 </div>
                 </a>
-                <a href='https://www.cinnamonhotels.com/cinnamoncitadelkandy' target="_blank">
+                <a href='https://www.tripadvisor.com/Hotel_Review-g304135-d3791995-Reviews-Jaffna_Heritage_Hotel-Jaffna_Northern_Province.html' target="_blank">
                 <div className='locationContainer'>
-                    <img src={KandyHotel2} className='destination_image'/>
-                    <p className='text_dest'>Cinnamon Citadel Kandy</p>
+                    <img src={JaffnaHotel2} className='destination_image'/>
+                    <p className='text_dest'>Jaffna Heritage Hotel</p>
                 </div>
                 </a>
-                <a href='https://www.radissonhotels.com/en-us/hotels/radisson-kandy' target='_blank'>
+                <a href='https://www.tripadvisor.com/Restaurant_Review-g304135-d10593768-Reviews-Peninsula-Jaffna_Northern_Province.html' target='_blank'>
                 <div className='locationContainer'>
-                    <img src={KandyHotel3} className='destination_image'/>
-                    <p className='text_dest'>Radisson Hotel Kandy</p>
+                    <img src={JaffnaHotel3} className='destination_image'/>
+                    <p className='text_dest'>Peninsula</p>
                 </div>
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="kandy"/>
+            <Review location="galle"/>
 
         </div>
         
