@@ -129,7 +129,7 @@ export default function LocationPage() {
                             )}
                         </div>
                     </div>
-                    {isLoggedIn && (
+                    { true/*isLoggedIn */ && (
                         <div className="rightContainer">
                             <h2><center>Provide Recommendation</center></h2>
                             <div className='textarea-center'>
