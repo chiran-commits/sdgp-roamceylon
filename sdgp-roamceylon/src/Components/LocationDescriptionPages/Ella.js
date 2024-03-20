@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import Navbar from '../AboutUsPage/Navbar';
-import EllaImage1 from '../LocationDescriptionPages/Images/botanicalGarden.jpg';
-import EllaImage2 from '../LocationDescriptionPages/Images/templeOfTheTooth.jpg';
-import EllaImage3 from '../LocationDescriptionPages/Images/kandyjungle.jpg';
-import EllaImageMain from '../LocationDescriptionPages/Images/kandyImg.jpg';
-import EllaHotel1 from '../LocationDescriptionPages/Images/KHotel1.jpg';
-import EllaHotel2 from '../LocationDescriptionPages/Images/KHotel2.jpg';
-import EllaHotel3 from '../LocationDescriptionPages/Images/KHotel3.jpg';
+import EllaImage1 from '../LocationDescriptionPages/Images/nine-arch-2-5.jpg';
+import EllaImage2 from '../LocationDescriptionPages/Images/ravana-falls-6.jpg';
+import EllaImage3 from '../LocationDescriptionPages/Images/ellarock.jpg';
+import EllaImageMain from '../LocationDescriptionPages/Images/ellawallpaper.jpg';
+import EllaHotel1 from '../LocationDescriptionPages/Images/98acres.jpg';
+import EllaHotel2 from '../LocationDescriptionPages/Images/annasa.jpg';
+import EllaHotel3 from '../LocationDescriptionPages/Images/dreamcliffjpg.jpg';
 import LocationData from './locations.json'
 import './Galle.css';
 import Review from '../ReviewSection/Review';
@@ -106,15 +106,15 @@ export default function Ella(location){
             <div className='location_destinations'>
                 <div className='popular_destination'>
                     <img src={EllaImage1} className='destination_image'/>
-                    <p className='text_dest'>Botanical Garden(4.7 <span class="fa fa-star checked"></span>)</p>
+                    <p className='text_dest'>Nine Arches Bridge(4.7 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
                     <img src={EllaImage2} className='destination_image'/>
-                    <p className='text_dest'>Temple of the tooth(4.4 <span class="fa fa-star checked"></span>)</p>
+                    <p className='text_dest'>Ravana falls(4.4 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
                     <img src={EllaImage3} className='destination_image'/>
-                    <p className='text_dest'>Udawattakele Forest Reserve(4.2 <span class="fa fa-star checked"></span>)</p>
+                    <p className='text_dest'>Ella Rock(4.2 <span class="fa fa-star checked"></span>)</p>
                 </div>
             </div>
             <br></br><br></br><br></br>
