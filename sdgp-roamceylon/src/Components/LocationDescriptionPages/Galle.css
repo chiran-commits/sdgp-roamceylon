@@ -162,10 +162,9 @@
 
 
 .indicator-scale{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+    width: 160px;
+    height: 160px;
+    position: relative;
 }
 
 .scales h1{
@@ -193,6 +192,43 @@
     font-size: 25px;
     color: rgb(30, 158, 221);
 }
+
+
+
+#number{
+    position: absolute;
+    font-weight: 600;
+    color: #555;
+    margin-left: 130px;
+    margin-top: 70px;
+}
+
+.cost circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 15px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 0;
+}
+
+
+.weather circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 15px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 0;
+    animation: anim 2s linear forwards;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 42%;
+    width: 100%;
+}
+
+
 
 @media (max-width:480px) {
     .location_image{
@@ -222,5 +258,13 @@
 
     .location_information{
         height: 100vh;
+    }
+
+    svg{
+        left: 47%;
+    }
+
+    #number{
+        margin-left: 137px;
     }
 }
