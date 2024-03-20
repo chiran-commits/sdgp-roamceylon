@@ -1,84 +1,149 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../AboutUsPage/Navbar';
-import './colombo.css';
-import { useState, useEffect } from 'react'
-import axios from 'axios';
+import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
+import galleimage1 from '../LocationDescriptionPages/Images/Galle-Dutch-Fort.jpg';
+import galleimage2 from '../LocationDescriptionPages/Images/turtle-hatchery-hikkaduwa.jpg';
+import galleimage3 from '../LocationDescriptionPages/Images/Galle_Maritime_Museum.jpg';
+import LeGrand from '../LocationDescriptionPages/Images/leGrand.jpg';
+import raddisson from '../LocationDescriptionPages/Images/raddisson.jpg';
+import lighthouse from '../LocationDescriptionPages/Images/lighthouse.jpg';
+import ColomboHome from '../LocationDescriptionPages/Images/colomboHome.jpg';
 import LocationData from './locations.json'
+import './Galle.css';
 import Review from '../ReviewSection/Review';
+import FetchWeatherData from './GetWeatherData.js';
 
-const Colombo = () => {
-
-   
-    return (
-        <div className='colombopage'>
-            <Navbar></Navbar>
-
-            <section className="colombopagehero">
-                <div className="colombopagetext-container">
-                    <h2>Colombo</h2>
-                    {
-                        LocationData.map(data => {
-                            if (data.location == "Colombo") {
-                                return (
-                                    <div className="colombopageindicators">
-                                        <p>WEATHER: Tropical</p>
-                                        <p>WIFI:</p>
-                                        <span>
-                                            <div className='weather'>
-                                                <div className='outer'>
-                                                    <div className='inner'>
-                                                        <div id='number'>
-                                                            Fast
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                                        <defs>
-                                                            <linearGradient id="GradientColor">
-                                                            <stop offset="0%" stop-color="#e91e63" />
-                                                            <stop offset="100%" stop-color="#673ab7" />
-                                                            </linearGradient>
-                                                        </defs>
-                                                        <circle cx="80" cy="80" r="29" stroke-linecap="round" />
-                                                </svg>
-                                            </div>
-                                        </span>
-                                        <p>COST OF LIVING:</p>
-                                        <span>
-                                            <div className='cost'>
-                                                <div className='outer'>
-                                                    <div className='inner'>
-                                                        <div id='number'>
-                                                            High
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                                                        <defs>
-                                                            <linearGradient id="GradientColor">
-                                                            <stop offset="0%" stop-color="#e91e63" />
-                                                            <stop offset="100%" stop-color="#673ab7" />
-                                                            </linearGradient>
-                                                        </defs>
-                                                        <circle cx="80" cy="80" r="29" stroke-linecap="round" />
-                                                </svg>
-                                            </div>
-                                        </span>
-                                        <p>URBAN/RURAL: {data.type}</p>
-                                    </div>
-                                );
-                            }
-                        })
-                    }
+export default function Colombo(location){
+    useEffect(() =>{
+        window.scrollTo(0,0);
+    },[]);
+    return(
+        <div className='main'>
+            <Navbar activeOption={"locations"}/>
+            <div className='location_information'>
+                <img src={ColomboHome} className='location_image'></img>
+                <div className='location_detail'>
+                    <h3>COLOMBO</h3>
+                    <div className='location_Des'>
+                        <h3 className='description'>
+                            Galle is a city on the southwest coastline of Sri Lanka. 
+                            The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings,
+                            stylish cafes, quirky boutiques and impeccably restored beautiful hotels.
+                        </h3>
+                    </div>
                 </div>
-            </section>
-            <Review/>
-            
+            </div>
+            {
+                LocationData.map(data => {
+                    if (data.location == "Colombo"){
+                        return(
+                            <div className='scales'>
+                                <h1>Indicators</h1>
+                                <div className='indicators'>    
+                                    <div className='indicator-container'>
+                                        <p>
+                                            <span className='title' >Weather<br></br></span><p>Hot and Humid</p>
+                                            <p className='weatherdata'><FetchWeatherData city="colombo" className="weatherdata"/></p>
+                                        </p>
+                                    </div>
+                                    <div className='indicator-container'>
+                                        <p><span className='title'>Wi-Fi<br></br></span></p>
+                                        <div className='indicator-scale'>     
+                                                <div className='weather'>
+                                                    <div className='outer'>
+                                                        <div className='inner'>
+                                                            <div id='number'>
+                                                                Fast
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                                            <defs>
+                                                                <linearGradient id="GradientColor">
+                                                                <stop offset="0%" stop-color="#e91e63" />
+                                                                <stop offset="100%" stop-color="#673ab7" />
+                                                                </linearGradient>
+                                                            </defs>
+                                                            <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                    </svg>
+                                                </div>
+                                        </div>    
+                                    </div>
+                                    <div className='indicator-container'>
+                                        <p><span className='title'>COST OF LIVING<br></br></span></p>
+                                        <div className='indicator-scale'>      
+                                                <div className='cost'>
+                                                    <div className='outer'>
+                                                        <div className='inner'>
+                                                            <div id='number'>
+                                                                High
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <svg className='scale' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                                            <defs>
+                                                                <linearGradient id="GradientColor">
+                                                                <stop offset="0%" stop-color="#e91e63" />
+                                                                <stop offset="100%" stop-color="#673ab7" />
+                                                                </linearGradient>
+                                                            </defs>
+                                                            <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                    </svg>
+                                                </div>
+                                        </div>    
+                                    </div>
+                                    <div className='indicator-container'>
+                                        <p><span className='title'>URBAN/RURAL<br></br></span><p>{data.type}</p></p>
+                                    </div>
+                                </div>    
+                            </div>
+                        )
+                    }
+                })
+            }
+    
+            <h3 className='destination-heading'>Popular Destinations</h3>
+            <div className='location_destinations'>
+                <div className='popular_destination'>
+                    <img src={galleimage1} className='destination_image'/>
+                    <p className='text_dest'>Galle Dutch Fort (4.7 <span class="fa fa-star checked"></span>)</p>
+                </div>
+                <div className='popular_destination'>
+                    <img src={galleimage2} className='destination_image'/>
+                    <p className='text_dest'>Sea Turtle Hatchery Centre (4.4 <span class="fa fa-star checked"></span>)</p>
+                </div>
+                <div className='popular_destination'>
+                    <img src={galleimage3} className='destination_image'/>
+                    <p className='text_dest'>Maritime Museum (4.2 <span class="fa fa-star checked"></span>)</p>
+                </div>
+            </div>
+            <br></br><br></br><br></br>
+            <h3 className='destination-heading'>Hotels in Galle</h3>
+            <div className='hotels'>
+                <a href='https://www.legrandgalle.lk/' target="_blank">
+                <div className='locationContainer'>
+                    <img src={LeGrand} className='destination_image'/>
+                    <p className='text_dest'>Le Grand Galle</p>
+                </div>
+                </a>
+                <a href='https://www.jetwinghotels.com/jetwinglighthouse/#gref' target="_blank">
+                <div className='locationContainer'>
+                    <img src={lighthouse} className='destination_image'/>
+                    <p className='text_dest'>Jetwing Lighthouse</p>
+                </div>
+                </a>
+                <a href='https://www.radissonhotels.com/en-us/hotels/radisson-blu-galle?checkInDate=2024-03-13&checkOutDate=2024-03-14&searchType=lowest&promotionCode=&voucher=&memberOnlyRatesHotelCodes=LKCMBGAL&adults%5B%5D=2&children%5B%5D=0&aoc%5B%5D=NaN' target='_blank'>
+                <div className='locationContainer'>
+                    <img src={raddisson} className='destination_image'/>
+                    <p className='text_dest'>Raddisson Blu</p>
+                </div>
+                </a>
+            </div>
+            <br></br><br></br><br></br><br></br>
+            <Review location="galle"/>
 
         </div>
+        
+
     )
 }
-
-export default Colombo
-
-
