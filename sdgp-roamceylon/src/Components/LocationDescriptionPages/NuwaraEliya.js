@@ -4,6 +4,9 @@ import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
 import galleimage1 from '../LocationDescriptionPages/Images/Galle-Dutch-Fort.jpg';
 import galleimage2 from '../LocationDescriptionPages/Images/turtle-hatchery-hikkaduwa.jpg';
 import galleimage3 from '../LocationDescriptionPages/Images/Galle_Maritime_Museum.jpg';
+import NuwaraHotel1 from '../LocationDescriptionPages/Images/nuwaraHotel1.jpg';
+import NuwaraHotel2 from '../LocationDescriptionPages/Images/nuwaraHotel2.jpg';
+import NuwaraHotel3 from '../LocationDescriptionPages/Images/nuwaraHotel3.jpg';
 import LeGrand from '../LocationDescriptionPages/Images/leGrand.jpg';
 import raddisson from '../LocationDescriptionPages/Images/raddisson.jpg';
 import lighthouse from '../LocationDescriptionPages/Images/lighthouse.jpg';
@@ -119,24 +122,24 @@ export default function NuwaraEliya(location){
                 </div>
             </div>
             <br></br><br></br><br></br>
-            <h3 className='destination-heading'>Hotels in Galle</h3>
+            <h3 className='destination-heading'>Popular Hotels in Nuwara Eliya</h3>
             <div className='hotels'>
                 <a href='https://www.legrandgalle.lk/' target="_blank">
                 <div className='locationContainer'>
-                    <img src={LeGrand} className='destination_image'/>
-                    <p className='text_dest'>Le Grand Galle</p>
+                    <img src={NuwaraHotel1} className='destination_image'/>
+                    <p className='text_dest'>Araliya Green Hills Hotel</p>
                 </div>
                 </a>
                 <a href='https://www.jetwinghotels.com/jetwinglighthouse/#gref' target="_blank">
                 <div className='locationContainer'>
-                    <img src={lighthouse} className='destination_image'/>
-                    <p className='text_dest'>Jetwing Lighthouse</p>
+                    <img src={NuwaraHotel2} className='destination_image'/>
+                    <p className='text_dest'>Heritance Tea Factory</p>
                 </div>
                 </a>
                 <a href='https://www.radissonhotels.com/en-us/hotels/radisson-blu-galle?checkInDate=2024-03-13&checkOutDate=2024-03-14&searchType=lowest&promotionCode=&voucher=&memberOnlyRatesHotelCodes=LKCMBGAL&adults%5B%5D=2&children%5B%5D=0&aoc%5B%5D=NaN' target='_blank'>
                 <div className='locationContainer'>
-                    <img src={raddisson} className='destination_image'/>
-                    <p className='text_dest'>Raddisson Blu</p>
+                    <img src={NuwaraHotel3} className='destination_image'/>
+                    <p className='text_dest'>Heaven Seven Hotel</p>
                 </div>
                 </a>
             </div>
