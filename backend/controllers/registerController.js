@@ -37,16 +37,23 @@ const loginUser = async (req, res) => {
             const refreshToken = jwt.sign({ email: email }, process.env.REFRESH_TOKEN, { expiresIn: '1d' });
             const acessToken = jwt.sign({ email: email }, process.env.ACCESS_TOKEN, { expiresIn: '30s' });
 
-            res.cookie('token',refreshToken, { 
-                httpOnly: true,
-                maxAge: 1000 * 60 * 60 * 24,
-                //  secure : true,
-                //  sameSite: 'None',
-                //  path: '/'
-            });
+            // res.cookie('token',refreshToken, { 
+            //     httpOnly: true,
+            //     maxAge: 1000 * 60 * 60 * 24,
+            //      secure : true,
+            //      sameSite: 'None'
+
+            // });
+
+    
+    res.writeHead(200, {
+      "Set-Cookie": `token=${refreshToken}; HttpOnly1`,
+      "Access-Control-Allow-Credentials": "true"
+    }).send();
+    
             // user.refreshToken = token;
             // await user.save();
-            res.json({ "token": acessToken});
+    // res.json({ "token": acessToken});
 
 
         } else {
