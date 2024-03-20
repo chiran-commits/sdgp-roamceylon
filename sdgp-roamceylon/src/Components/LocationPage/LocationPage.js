@@ -159,45 +159,65 @@ export default function LocationPage() {
                                       {locations.map((location, index) =>(
                                         <div key={index}>
                                             {location === "colombo" ? (
-                                               <p className='location-card'>Colombo
-                                               <p className='locationdesc'>{getDescription("Colombo")}</p>
-                                               </p>
+                                                <a href='/colombo'>
+                                                  <p className='location-card'>Colombo
+                                                  <p className='locationdesc'>{getDescription("Colombo")}</p>
+                                                  </p>  
+                                                </a>
                                             ) : location === "kandy" ? (
-                                               <p className='location-card'>Kandy
-                                               <p className='locationdesc'>{getDescription("Kandy")}</p>
-                                               </p>
+                                                <a href='/kandy'>
+                                                  <p className='location-card'>Kandy
+                                                  <p className='locationdesc'>{getDescription("Kandy")}</p>
+                                                  </p>  
+                                                </a>
                                             ) : location === "galle" ? (
-                                                <p className='location-card'>Galle
-                                                <p className='locationdesc'>{getDescription("Galle")}</p>
-                                                </p>
+                                                <a href='/galle'>
+                                                   <p className='location-card'>Galle
+                                                   <p className='locationdesc'>{getDescription("Galle")}</p>
+                                                   </p> 
+                                                </a>
                                             ) : location === "ella" ? (
-                                                <p className='location-card'>Ella
-                                                <p className='locationdesc'>{getDescription("Ella")}</p>
-                                                </p>
+                                                <a href='/ella'>
+                                                  <p className='location-card'>Ella
+                                                  <p className='locationdesc'>{getDescription("Ella")}</p>
+                                                  </p>  
+                                                </a>
                                             ) : location === "anuradhapura" ? (
-                                                <p className='location-card'>Anuradhapura
-                                                <p className='locationdesc'>{getDescription("Anuradhapura")}</p>
-                                                </p>
+                                                <a>
+                                                  <p className='location-card'>Anuradhapura
+                                                  <p className='locationdesc'>{getDescription("Anuradhapura")}</p>
+                                                  </p>  
+                                                </a>
                                             ) : location ==="jaffna" ? (
-                                                <p className='location-card'>Jaffna
-                                                <p className='locationdesc'>{getDescription("Jaffna")}</p>
-                                                </p>
+                                                <a>
+                                                  <p className='location-card'>Jaffna
+                                                  <p className='locationdesc'>{getDescription("Jaffna")}</p>
+                                                  </p>  
+                                                </a>
                                             ) : location ==="arugambay" ? (
-                                                <p className='location-card'>Arugam Bay
-                                                <p className='locationdesc'>{getDescription("Arugam Bay")}</p>
-                                                </p>
+                                                <a>
+                                                  <p className='location-card'>Arugam Bay
+                                                  <p className='locationdesc'>{getDescription("Arugam Bay")}</p>
+                                                  </p>  
+                                                </a>
                                             ) : location ==="nuwaraeliya" ? (
-                                                <p className='location-card'>Nuwara-Eliya
-                                                <p className='locationdesc'>{getDescription("Nuwara-Eliya")}</p>
-                                                </p>
+                                                <a href='/nuwaraeliya'>
+                                                  <p className='location-card'>Nuwara-Eliya
+                                                  <p className='locationdesc'>{getDescription("Nuwara-Eliya")}</p>
+                                                  </p>  
+                                                </a>
                                             ) : location ==="trincomalee" ? (
-                                                <p className='location-card'>Trincomalee
-                                                <p className='locationdesc'>{getDescription("Trincomalee")}</p>
-                                                </p>
+                                                <a>
+                                                  <p className='location-card'>Trincomalee
+                                                  <p className='locationdesc'>{getDescription("Trincomalee")}</p>
+                                                  </p>  
+                                                </a>
                                             ) : location ==="matara" ?(
-                                                <p className='location-card'>Matara
-                                                <p className='locationdesc'>{getDescription("Matara")}</p>
-                                                </p>
+                                                <a>
+                                                  <p className='location-card'>Matara
+                                                  <p className='locationdesc'>{getDescription("Matara")}</p>
+                                                  </p>  
+                                                </a>
                                             ): (
                                                 <p className='location-card'>No Locations Found !</p>
                                             )}
