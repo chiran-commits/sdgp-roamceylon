@@ -170,6 +170,7 @@
     width: 160px;
     height: 160px;
     position: relative;
+    margin: 0 auto; /* Center the indicator container */
 }
 
 .scales h1{
@@ -204,8 +205,9 @@
     position: absolute;
     font-weight: 600;
     color: #555;
-    margin-left: 115px;
-    margin-top: 70px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .cost circle{
@@ -223,14 +225,13 @@
     stroke-width: 15px;
     stroke-dasharray: 472;
     stroke-dashoffset: 0;
-    animation: anim 2s linear forwards;
 }
 
 svg{
-    position: absolute;
+    position: relative;
     top: 0;
-    left: 42%;
     width: 100%;
+    margin: 0 auto; /* Center the SVG */
 }
 
 

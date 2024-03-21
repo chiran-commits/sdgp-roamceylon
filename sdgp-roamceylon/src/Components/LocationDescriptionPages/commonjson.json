@@ -26,5 +26,40 @@
         "name": "Nuwara Eliya",
         "link":"http://localhost:8000/nuwaraeliya",
         "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
+    },
+    {
+        "id": 5,
+        "location": "colombo",
+        "name": "Colombo",
+        "link":"http://localhost:8000/colombo",
+        "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
+    },
+    {
+        "id": 6,
+        "location": "matara",
+        "name": "Matara",
+        "link":"http://localhost:8000/matara",
+        "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
+    },
+    {
+        "id": 7,
+        "location": "trincomalee",
+        "name": "Trincomalee",
+        "link":"http://localhost:8000/trincomalee",
+        "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
+    },
+    {
+        "id": 8,
+        "location": "jaffna",
+        "name": "Jaffna",
+        "link":"http://localhost:8000/jaffna",
+        "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
+    },
+    {
+        "id": 9,
+        "location": "anuradhapura",
+        "name": "Anuradhapura",
+        "link":"http://localhost:8000/anuradhapura",
+        "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
     }
 ]
