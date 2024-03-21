@@ -49,10 +49,13 @@ export default function Login() {
         // }
         try {
 
-            const data = await axios.post('https://implementation-lac.vercel.app/login', { email, password }).then(
+            const data = await axios.post('http://localhost:5009/login', { email, password }).then(
                 setError('')
             )
+            console.log(data.data)
             const { accessToken, refreshToken } = data.data;
+            console.log(accessToken, refreshToken)
+            
             localStorage.setItem('roamceylon-accessToken', accessToken);
             localStorage.setItem('roamceylon-refreshToken', refreshToken);
             dispatch(authorizationActions.login())

@@ -34,8 +34,8 @@ const loginUser = async (req, res) => {
         console.log(userPassword);
 
         if (userPassword) {
-            const refreshToken = jwt.sign({ email: email }, process.env.REFRESH_TOKEN, { expiresIn: '1d' });
-            const acessToken = jwt.sign({ email: email }, process.env.ACCESS_TOKEN, { expiresIn: '1d' });
+            const refreshToken = jwt.sign({ email: email }, process.env.REFRESH_TOKEN, { expiresIn: '30s' });
+            const acessToken = jwt.sign({ email: email }, process.env.ACCESS_TOKEN, { expiresIn: '30s' });
 
             // res.cookie('token',refreshToken, { 
             //     httpOnly: true,
@@ -47,6 +47,7 @@ const loginUser = async (req, res) => {
         user.refreshToken = refreshToken;
         await user.save();
         res.json({ "accessToken":acessToken, "refreshToken":refreshToken});
+
 
         } else {
             return res.status(400).json({ error: 'Password not Matched!' });

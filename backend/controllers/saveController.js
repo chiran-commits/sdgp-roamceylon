@@ -1,7 +1,9 @@
 const userModel= require('../database/userModel');
 
 const saveUser=async(req,res)=>{
-    const {Age,email,firstName,lastName}=req.body;
+    console.log("hi")
+    const {firstName, lastName, Age,email }=req.body;
+    console.log(firstName, lastName, Age,email);
     let user;
     try {
         user=await userModel.findOne({email:email})
