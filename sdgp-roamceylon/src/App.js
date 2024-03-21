@@ -47,6 +47,7 @@ function App() {
         <Route path='/jaffna' element={<Jaffna/>}/>
         <Route path='/anuradhapura' element={<Anuradhapura/>}/>
         <Route path='/Trincomalee' element={<Trincomalee/>}/>
+        <Route path='/matara' element={<Matara/>}/>
       </Routes>
   </Router> 
   );
