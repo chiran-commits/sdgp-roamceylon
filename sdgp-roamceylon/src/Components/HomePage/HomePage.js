@@ -9,6 +9,7 @@ import kandyImage from "../HomePage/Assets/kandy.jpg";
 import mataraImage from "../HomePage/Assets/matara.jpg";
 import galleImage from "../HomePage/Assets/galle.jpg";
 import tropicalImage from "../HomePage/Assets/tropical.jpg";
+import mountainImage from "../HomePage/Assets/mountains.webp"
 import { Link } from "react-router-dom";
 import FetchWeather from "./GetWeather";
 import { useNavigate } from "react-router-dom";
@@ -25,23 +26,25 @@ export default function HomePage() {
         
     const getProfile = async () => {
         
-        const authToken = localStorage.getItem('SDGP-roamceylon2');
-        if(authToken==null){
+        const accessToken = localStorage.getItem('roamceylon-accessToken');
+        if(accessToken==null){
           dispatch(authorizationActions.logout())
 
         }else{
             const res = await axios
-            .get("http://localhost:5009/user",{
+            .get("http://localhost:5009/user",
+              {
                 headers: {
-                     Authorization: authToken
+                  Authorization: `Bearer ${accessToken}`
                 }
-            }).then(
+                  
+              }
+            ).then(
               dispatch(authorizationActions.login())
             )
             .catch((err) => {console.log(err)
               dispatch(authorizationActions.logout())
 
-                
             }
             );
            
@@ -203,6 +206,45 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+
+
+          <div className="mountians-section">
+            <div className="tropical-container">
+              <div className="tropical-content">
+                <h2>From beautiful Beaches<br/>To Misty Mountains.</h2>
+                <p>Embark on a captivating journey through Sri Lanka's enchanting tapestry of lush tea plantations, golden beaches, misty mountains, and ancient ruins—a paradise for every adventurous soul and curious digital nomads seeking a mosaic of inspiring landscapes.</p>
+              </div>
+              <div className="tropical-content">
+                <img src = {mountainImage}/>
+              </div>
+            </div>
+            <div className="tropical-countries">
+              {/* <tropicalCountry link = "/galle" image = "../HomePage/Assets/galle.jpg" name = "Galle"/> */}
+              <div className="tropical-country">
+                <Link to="/galle">
+                  <img src={galleImage}></img>
+                  <h3>Galle</h3>
+                  <br></br>
+                </Link>
+              </div>
+              <div className="tropical-country">
+                <Link to="/galle">
+                  <img src={galleImage}></img>
+                  <h3>Jaffna</h3>
+                  <br></br>
+                </Link>
+              </div>
+              <div className="tropical-country">
+                <Link to="/galle">
+                  <img src={galleImage}></img>
+                  <h3>Kandy</h3>
+                  <br></br>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+
           <div className="home-container-country" id="target-country">
             <section className="hidden">
               <h2>Popular Locations</h2>

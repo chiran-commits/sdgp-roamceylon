@@ -14,7 +14,8 @@ const Navbar = ({activeOption,isProfile}) =>{
     const navigate = useNavigate();
   
     const logout = () => {
-        localStorage.removeItem('SDGP-roamceylon2');
+        localStorage.removeItem('roamceylon-refreshToken');
+        localStorage.removeItem('roamceylon-accessToken');
     }
 
    return(
