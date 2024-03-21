@@ -99,7 +99,7 @@ export default function Galle(location){
                                         </div>    
                                     </div>
                                     <div className='indicator-container'>
-                                        <p><span className='title'>URBAN/RURAL<br></br></span><p style={{marginTop:"20px"}}>{data.type}</p></p>
+                                        <p><span className='title'>URBAN/RURAL<br></br></span><p className='city-type'>{data.type}</p></p>
                                     </div>
                                 </div>    
                             </div>
