@@ -11,7 +11,7 @@ nav{
     margin-left: 10px;
     margin-bottom: 10px;
     position: absolute;
-    z-index: 1;}
+    z-index: 999;}
 *{
     font-weight: 350;
 }
@@ -74,7 +74,7 @@ nav .navMenu{
     justify-content: space-between;
     width: 2.25rem;
     height: 2rem;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
 nav .navMenu span{
@@ -82,6 +82,7 @@ nav .navMenu span{
     width: 100%;
     background-color: black;
     border-radius: 0.2rem;
+    margin-bottom: 5px;
 }
 
 nav ul#navbar.open{
@@ -115,7 +116,6 @@ nav ul#navbar.open{
         position:absolute;
         margin-top: 5px;
         padding: 200px;
-        z-index: 3;
         padding-top: 40px;
     }
 

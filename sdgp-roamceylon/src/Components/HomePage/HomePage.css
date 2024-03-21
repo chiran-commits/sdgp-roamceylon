@@ -37,6 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 .video-bg{
@@ -236,7 +237,7 @@
 
 .tropical-country :hover{
   transform:scale(1.15) ;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 /* CSS for the mountains section */
@@ -248,6 +249,7 @@
   text-align: left;
   border-radius: 50px;
   min-height: 350px;
+  overflow: hidden;
 }
 
 
@@ -435,7 +437,7 @@
   }
 
   .video-bg{
-    transform: scale(0.90);
+    transform: scale(1.0);
   }
 }
 

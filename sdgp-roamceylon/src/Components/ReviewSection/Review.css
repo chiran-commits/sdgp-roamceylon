@@ -96,6 +96,7 @@
 }
 .form-container textarea {
     height: 100px;
+    padding: 10px;
 }
 
 .form-container button {
