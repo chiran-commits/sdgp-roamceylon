@@ -16,6 +16,7 @@ import ArugamBay from './Components/LocationDescriptionPages/ArugamBay.js';
 import Jaffna from './Components/LocationDescriptionPages/Jaffna.js';
 import Anuradhapura from './Components/LocationDescriptionPages/Anuradhapura.js';
 import Trincomalee from './Components/LocationDescriptionPages/Trincomalee.js';
+import Matara from './Components/LocationDescriptionPages/Matara.js';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import { useSelector } from "react-redux";
 
