@@ -8,11 +8,12 @@ import { useNavigate } from 'react-router-dom';
 
 function UserProfile() {
     const [img] = useState(ProfileImg);
-    const [firstName, setFName] = useState("Guest");
-    const [lastName, setLName] = useState("Guest");
+    const [firstName, setFName] = useState("");
+    const [lastName, setLName] = useState("");
+    const [email, setEmail] = useState("");
     const [Age, setAge] = useState();
     const [edit, setEdit] = useState(true);
-    const [data, setData] = useState({ user: { firstName: "", lastName: "", email: "", password: "", age: "" } });
+
     const nav = useNavigate();
 
 
@@ -23,7 +24,7 @@ function UserProfile() {
 
         const getProfile = async () => {
 
-            const accessToken = localStorage.getItem('roamceylon-refreshToken');
+            const accessToken = localStorage.getItem('roamceylon-accessToken');
             if (accessToken == null) {
                 nav('/login');
             } else {
@@ -35,9 +36,12 @@ function UserProfile() {
                           
                       }).then((res) => {
                         console.log(res);
-                        const data = res.data;
-                        setData(data);
-                        console.log(data);
+                        
+                        setFName(res.data.user.firstName);
+                        setLName(res.data.user.lastName);
+                        setEmail(res.data.user.email);
+                        setAge(res.data.user.Age);
+        
 
                     })
                     .catch((err) => {
@@ -64,9 +68,10 @@ function UserProfile() {
 
     const handleSave = async () => {
         setEdit(true);
+        
         try {
 
-            const { data } = await axios.post('http://localhost:5009/save', { firstName, lastName, Age }).then(
+            const { data } = await axios.post('http://localhost:5009/save', { firstName, lastName, Age,email }).then(
             ).catch((err) => {
                 console.log(err)
             })
@@ -74,6 +79,7 @@ function UserProfile() {
         } catch (err) {
             console.log(err)
         }
+        
     }
 
     function handleFName(event) {
@@ -95,9 +101,9 @@ function UserProfile() {
             <div className="container">
                 <div className="profile-container">
                     <img src={img}></img><br></br>
-                    <p>{data.user.firstName}</p>
-                    <p>{data.user.lastName}</p>
-                    <p>{data.user.age}</p>
+                    <p>{firstName}</p>
+                    <p>{lastName}</p>
+                    <p>{Age}</p>
                 </div>
             </div>
 
@@ -108,15 +114,15 @@ function UserProfile() {
                     <button onClick={handleSave}>Save</button>
                     <br></br>
                     <label>First Name</label><br></br>
-                    <input value={data.user.firstName} disabled={edit} onChange={handleFName}></input>
+                    <input value={firstName} disabled={edit} onChange={handleFName}></input>
                     <br></br>
                     <label>Last Name</label><br></br>
-                    <input type="text" value={data.user.lastName} disabled={edit} onChange={handleLName}></input>
+                    <input type="text" value={lastName} disabled={edit} onChange={handleLName}></input>
                     <br></br>
                     <label>Email</label><br></br>
-                    <input type='email' value={data.user.email} disabled='true' size="30"></input><br></br>
+                    <input type='email' value={email} disabled='true' size="30"></input><br></br>
                     <label>Age</label><br></br>
-                    <input value={data.user.age} disabled={edit}  type="number" onChange={handleAge}></input><br></br>
+                    <input value={Age} disabled={edit}  type="number" onChange={handleAge}></input><br></br>
                 </div>
             </div>
         </div>

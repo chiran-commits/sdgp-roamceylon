@@ -21,41 +21,7 @@ export default function HomePage() {
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
-
-        
-    const getProfile = async () => {
-        
-        const accessToken = localStorage.getItem('roamceylon-accessToken');
-        if(accessToken==null){
-          dispatch(authorizationActions.logout())
-
-        }else{
-            const res = await axios
-            .get("http://localhost:5009/user",
-              {
-                headers: {
-                  Authorization: `Bearer ${accessToken}`
-                }
-                  
-              }
-            ).then(
-              dispatch(authorizationActions.login())
-            )
-            .catch((err) => {console.log(err)
-              dispatch(authorizationActions.logout())
-
-            }
-            );
-           
-          
-        }
-           
-    };
-    getProfile();
-   
   
-  }, []);
  
 
 
@@ -198,8 +164,8 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="tropical-country">
-                <Link to="/galle">
-                  <img src={galleImage}></img>
+                <Link to="/kandy">
+                  <img src={kandyImage}></img>
                   <h3>Kandy</h3>
                   <br></br>
                 </Link>
@@ -235,8 +201,8 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="tropical-country">
-                <Link to="/galle">
-                  <img src={galleImage}></img>
+                <Link to="/kandy">
+                  <img src={kandyImage}></img>
                   <h3>Kandy</h3>
                   <br></br>
                 </Link>

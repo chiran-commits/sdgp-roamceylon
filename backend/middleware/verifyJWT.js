@@ -20,7 +20,8 @@ require('dotenv').config();
 
 const verifyUser = (req, res, next) => {
 
-    const header = req.headers.authorization || req.headers.Authorization;
+    const header = req.headers.authorization;
+    console.log(header);
     const token =header.split(' ')[1]
 
 

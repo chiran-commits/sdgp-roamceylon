@@ -4,7 +4,10 @@ import logo from "./Logo-roamceylon.png"
 import  React, {useState} from 'react';
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-
+import { useDispatch } from "react-redux";
+import { authorizationActions } from "../../store";
+import axios from "axios";
+import { useEffect } from "react";
 
 
 
@@ -17,6 +20,47 @@ const Navbar = ({activeOption,isProfile}) =>{
         localStorage.removeItem('roamceylon-refreshToken');
         localStorage.removeItem('roamceylon-accessToken');
     }
+
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+  
+          
+      const getProfile = async () => {
+          
+          const accessToken = localStorage.getItem('roamceylon-accessToken');
+          if(accessToken==null){
+            dispatch(authorizationActions.logout())
+          }else{
+              const res = await axios
+              .get("http://localhost:5009/user",
+                {
+                  headers: {
+                    Authorization: `Bearer ${accessToken}`
+                  }
+                }
+              ).then(
+                dispatch(authorizationActions.login())
+              )
+              .catch((err) => {console.log(err)
+                dispatch(authorizationActions.logout())
+  
+              }
+              );
+             
+            
+          }
+             
+      };
+      getProfile();
+     
+    
+    }, []);
+
+
+
+
 
    return(
     <nav>

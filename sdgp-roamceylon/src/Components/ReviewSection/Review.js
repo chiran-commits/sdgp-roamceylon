@@ -3,12 +3,14 @@ import { useState, useEffect } from 'react'
 import axios from 'axios';
 import './Review.css';
 import Loader from "../Helper/loader"
+import { useNavigate } from 'react-router-dom';
 
 const Review = (details) => {
+    const nav = useNavigate();
     const [review, setReview] = useState('');
     const [rating, setRating] = useState(0);
     const location = details.location;
-    const name = "tharuka"
+    const [name, setName] = useState('Anonymous')
     const [publisedReviews, setPublisedReviews] = useState([]);
 
     const [pressedSubmit, setPressedSubmit] = useState(false);
@@ -21,8 +23,46 @@ const Review = (details) => {
         setRating(parseInt(e.target.value));
     };
 
+    useEffect(() => {
+
+
+        const getProfile = async () => {
+
+            const accessToken = localStorage.getItem('roamceylon-accessToken');
+            if (accessToken == null) {
+                nav('/login');
+            } else {
+                const res = await axios
+                    .get("http://localhost:5009/user", {
+                        headers: {
+                          Authorization: `Bearer ${accessToken}`
+                        }
+                          
+                      }).then((res) => {
+                        console.log(res);
+                        
+                        setName(res.data.user.firstName);
+                       
+                    })
+                    .catch((err) => {
+                        console.log(err)
+
+                    }
+                    );
+
+
+            }
+
+        };
+        getProfile();
+
+
+    }, []);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+
 
 
 
