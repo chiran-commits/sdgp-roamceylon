@@ -34,8 +34,8 @@ const loginUser = async (req, res) => {
         console.log(userPassword);
 
         if (userPassword) {
-            const refreshToken = jwt.sign({ email: email }, process.env.REFRESH_TOKEN, { expiresIn: '30s' });
-            const acessToken = jwt.sign({ email: email }, process.env.ACCESS_TOKEN, { expiresIn: '30s' });
+            const refreshToken = jwt.sign({ email: email }, process.env.REFRESH_TOKEN, { expiresIn: '1d' });
+            const acessToken = jwt.sign({ email: email }, process.env.ACCESS_TOKEN, { expiresIn: '1d' });
 
             // res.cookie('token',refreshToken, { 
             //     httpOnly: true,
