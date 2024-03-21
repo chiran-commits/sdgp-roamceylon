@@ -141,7 +141,7 @@
     border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjust the minimum and maximum width as needed */
-    grid-gap: 100px;
+    grid-gap: 10px;
     justify-content: center; /* Center items horizontally */
     height: auto;
     padding-bottom: 50px;

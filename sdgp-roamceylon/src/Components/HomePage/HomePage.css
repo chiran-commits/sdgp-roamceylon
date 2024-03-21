@@ -1,3 +1,5 @@
+
+
 .home-container{
     display: flex;
     align-items: center;
@@ -439,10 +441,22 @@
   .video-bg{
     transform: scale(1.0);
   }
+
+  .mountians-section{
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 768px) {
   .social-panel{
     margin-right: 50%;
+  }
+}
+
+@media (max-width:530px) {
+  .tropical-countries{
+    display: grid;
+    grid-template-columns: repeat('auto-fill', minmax(300px, 1rf));
+    grid-gap: 10px;
   }
 }

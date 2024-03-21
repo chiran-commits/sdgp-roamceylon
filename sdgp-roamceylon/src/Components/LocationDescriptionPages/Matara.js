@@ -42,7 +42,7 @@ export default function Matara(location){
                                 <div className='indicators'>
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title'>Weather<br></br></span><p>Cold</p>
+                                            <span className='title'>Weather<br></br></span><p className='weather-type'>Cold</p>
                                             <p className='weatherdata'><FetchWeatherData city="matara" className="weatherdata"/></p>
                                         </p>
                                     </div>
@@ -64,7 +64,7 @@ export default function Matara(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    
@@ -87,13 +87,13 @@ export default function Matara(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="29" stroke-linecap="round" />
+                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    
                                     </div>
                                     <div className='indicator-container'>
-                                        <p><span className='title'>URBAN/RURAL<br></br></span><p>{data.type}</p></p>
+                                        <p><span className='title'>URBAN/RURAL<br></br></span><p className='city-type'>{data.type}</p></p>
                                     </div>
                                 </div>
                             </div>    
