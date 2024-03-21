@@ -5,11 +5,9 @@ import D1 from "./Developer1.png"
 import facbook_img from "./facebook_5968764.png"
 import instagram_img from "./instagram_2111463.png"
 import whatsapp_img from "./whatsapp_5968841.png"
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { authorizationActions } from "../../store";
+
 import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
-import axios from "axios";
+
 import thinalimage from "./Thinal.JPG";
 import puleeshaimage from "./Puleesha.jpg";
 import tharukaimage from "./Tharuka.jpg";
@@ -18,43 +16,7 @@ import colombo from "./aboutUsColombo.jpg";
 
 function App(){
 
-  const dispatch = useDispatch();
 
-  useEffect(() => {
-
-        
-    const getProfile = async () => {
-        
-        const  accessToken= localStorage.getItem('roamceylon-accessToken');
-        //check this code
-        if(accessToken==null){
-          dispatch(authorizationActions.logout())
-
-        }else{
-            const res = await axios
-            .get("http://localhost:5009/user",{
-              headers: {
-                Authorization: `Bearer ${accessToken}`
-              }
-                
-            }).then(
-              dispatch(authorizationActions.login())
-            )
-            .catch((err) => {console.log(err)
-              dispatch(authorizationActions.logout())
-
-                
-            }
-            );
-           
-          
-        }
-           
-    };
-    getProfile();
-   
-  
-  }, []);
   return(
     <div>
       <Navbar activeOption='aboutus'/>
