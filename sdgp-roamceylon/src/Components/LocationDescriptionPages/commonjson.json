@@ -18,7 +18,7 @@
         "location": "ella",
         "name": "Ella",
         "link":"http://localhost:8000/ella",
-        "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
+        "description": "Ella is a small town in Sri Lanka's Uva Province, located about 120 miles east of Colombo. It's known for its natural beauty, including waterfalls, greenery, and hills. Ella is also rich in history and culture, with many prominent tourist attractions."
     },
     {
         "id": 4,
@@ -26,5 +26,19 @@
         "name": "Nuwara Eliya",
         "link":"http://localhost:8000/nuwaraeliya",
         "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
+    },
+    {
+        "id": 5,
+        "location": "anuradhapura",
+        "name": "Anuradhapura",
+        "link":"http://localhost:8000/anuradhapura",
+        "description":"Anuradhapura is a major city located in the north central plain of Sri Lanka. It is the capital city of North Central Province and the capital of Anuradhapura District. The city lies 205 kilometers north of the current capital of Colombo in the North Central Province, on the banks of the historic Malwathu Oya"
+    },
+    {
+        "id": 5,
+        "location": "matara",
+        "name": "Matara",
+        "link":"http://localhost:8000/matara",
+        "description":"Matara is a coastal town in southern Sri Lanka that's a major commercial hub and a good place to experience tropical Sri Lanka without the crowds.  It's known for its Dutch architecture, ramparts, well-preserved fort, and street life. "
     }
 ]

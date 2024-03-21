@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import Navbar from '../AboutUsPage/Navbar';
-import AnuImage1 from '../LocationDescriptionPages/Images/smb.jpg';
-import AnuImage2 from '../LocationDescriptionPages/Images/ruwanwelisaya.jpg';
-import AnuImage3 from '../LocationDescriptionPages/Images/thuparamaya.jpg';
-import AnuImageMain from '../LocationDescriptionPages/Images/anuradhapura.jpg';
-import AnuHotel1 from '../LocationDescriptionPages/Images/heritage.jpg';
-import AnuHotel2 from '../LocationDescriptionPages/Images/tlfh.jpg';
-import AnuHotel3 from '../LocationDescriptionPages/Images/rajarata.jpg';
+import MataraImage1 from '../LocationDescriptionPages/Images/smb.jpg';
+import MataraImage2 from '../LocationDescriptionPages/Images/ruwanwelisaya.jpg';
+import MataraImage3 from '../LocationDescriptionPages/Images/thuparamaya.jpg';
+import MataraImageMain from '../LocationDescriptionPages/Images/matara.jpg';
+import MataraHotel1 from '../LocationDescriptionPages/Images/capeweli.jpg';
+import MataraHotel2 from '../LocationDescriptionPages/Images/baymarriott.jpg';
+import MataraHotel3 from '../LocationDescriptionPages/Images/w15.jpg';
 import LocationData from './locations.json'
 import './Galle.css';
 import Review from '../ReviewSection/Review';
@@ -20,7 +20,7 @@ export default function Matara(location){
         <div>
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
-                <img src={AnuImageMain} className='location_image'></img>
+                <img src={MataraImageMain} className='location_image'></img>
                 <div className='location_detail'>
                     <h3>MATARA</h3>
                     <div className='location_Des'>
@@ -105,15 +105,15 @@ export default function Matara(location){
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
                 <div className='popular_destination'>
-                    <img src={AnuImage1} className='destination_image'/>
+                    <img src={MataraImage1} className='destination_image'/>
                     <p className='text_dest'>Jaya Sri Maha Bodhi(4.9 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={AnuImage2} className='destination_image'/>
+                    <img src={MataraImage2} className='destination_image'/>
                     <p className='text_dest'>Ruwanweli Maha Seya(4.9 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={AnuImage3} className='destination_image'/>
+                    <img src={MataraImage3} className='destination_image'/>
                     <p className='text_dest'>Thuparama vihara(4.8 <span class="fa fa-star checked"></span>)</p>
                 </div>
             </div>
@@ -122,20 +122,20 @@ export default function Matara(location){
             <div className='hotels'>
                 <a href='https://www.grandkandyan.com/' target="_blank">
                 <div className='locationContainer'>
-                    <img src={AnuHotel1} className='destination_image'/>
-                    <p className='text_dest'>Heritage Hotel</p>
+                    <img src={MataraHotel1} className='destination_image'/>
+                    <p className='text_dest'>Cape Weligama</p>
                 </div>
                 </a>
                 <a href='https://www.cinnamonhotels.com/cinnamoncitadelkandy' target="_blank">
                 <div className='locationContainer'>
-                    <img src={AnuHotel2} className='destination_image'/>
-                    <p className='text_dest'>The Lake Forest Hotel</p>
+                    <img src={MataraHotel2} className='destination_image'/>
+                    <p className='text_dest'>Weligama Bay Marriott Resort & Spa</p>
                 </div>
                 </a>
                 <a href='https://www.radissonhotels.com/en-us/hotels/radisson-kandy' target='_blank'>
                 <div className='locationContainer'>
-                    <img src={AnuHotel3} className='destination_image'/>
-                    <p className='text_dest'>Rajarata Hotel Anuradhapura</p>
+                    <img src={MataraHotel3} className='destination_image'/>
+                    <p className='text_dest'>W15 Weligama</p>
                 </div>
                 </a>
             </div>
