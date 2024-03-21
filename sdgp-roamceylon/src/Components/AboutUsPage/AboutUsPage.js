@@ -25,16 +25,18 @@ function App(){
         
     const getProfile = async () => {
         
-        const authToken = localStorage.getItem('SDGP-roamceylon2');
-        if(authToken==null){
+        const  accessToken= localStorage.getItem('roamceylon-accessToken');
+        //check this code
+        if(accessToken==null){
           dispatch(authorizationActions.logout())
 
         }else{
             const res = await axios
             .get("http://localhost:5009/user",{
-                headers: {
-                     Authorization: authToken
-                }
+              headers: {
+                Authorization: `Bearer ${accessToken}`
+              }
+                
             }).then(
               dispatch(authorizationActions.login())
             )
@@ -86,15 +88,15 @@ function App(){
         <div className="imageSection">
           <div className="developer-container">
             <img className="about-image" src={D1}></img>
-            <Creator name="Chiran Gamage" email="chiran.20221029@iit.ac.lk"/>
+            <Creator name="Chiran Gamage" email="chiran.20221029@iit.ac.lk" mobile="+94 71 616 2924"/>
           </div>
           <div className="developer-container">
             <img className="about-image" src={thinalimage}></img>
-            <Creator name="Thinal Karunarathna" email="thinal.20221003@iit.ac.lk"/>
+            <Creator name="Thinal Karunarathna" email="thinal.20221003@iit.ac.lk" mobile="+94 76 794 0226"/>
           </div>
           <div className="developer-container">
             <img className="about-image" src={D1}></img>
-            <Creator name="Neelesh Gamage" email="neelesh.20221028@iit.ac.lk"/>
+            <Creator name="Neelesh Gamage" email="neelesh.20221028@iit.ac.lk" mobile="+94 71 432 8912"/>
           </div>
           <div className="developer-container">
             <img className="about-image" src={puleeshaimage}></img>
@@ -102,7 +104,7 @@ function App(){
           </div>
           <div className="developer-container">
             <img className="about-image" src={tharukaimage}></img>
-            <Creator name="Tharuka Bandara" email="sathvidu.20221032@iit.ac.lk"/>
+            <Creator name="Tharuka Bandara" email="sathvidu.20221032@iit.ac.lk" mobile="+94 76 878 8989"/>
           </div>
         </div>
         <br></br><br></br>

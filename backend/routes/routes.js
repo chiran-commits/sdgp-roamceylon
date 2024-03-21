@@ -24,7 +24,7 @@ router.put('/save',saveUser)
 router.get("/review",sendReview)
 router.get('/user',verifyUser,sendUser)
 
-router.get('/refresh',verifyUser,refresh)
+router.get('/refresh',refresh)
 
 
 router.post('/keywords', async (req,res)=>{

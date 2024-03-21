@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import {authorizationActions} from '../../store';
+import { authorizationActions } from '../../store';
 import LoginVideo from '../LoginPage/Video/backVideoLog.mp4';
 
 export default function Login() {
@@ -49,12 +49,12 @@ export default function Login() {
         // }
         try {
 
-            const data = await axios.post('http://localhost:5009/login', { email, password }).then(
+            const data = await axios.post('https://implementation-lac.vercel.app/login', { email, password }).then(
                 setError('')
             )
-            const token=await data.data.token;
-            console.log(token)
-            localStorage.setItem('SDGP-roamceylon2', token);
+            const { accessToken, refreshToken } = data.data;
+            localStorage.setItem('roamceylon-accessToken', accessToken);
+            localStorage.setItem('roamceylon-refreshToken', refreshToken);
             dispatch(authorizationActions.login())
             setData({ email: '', password: '' })
             navigate('/')

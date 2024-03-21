@@ -26,7 +26,7 @@ const Review = (details) => {
 
 
 
-        await axios.post('http://localhost:5009/review', { name, location, review, rating }).catch((err) => {
+        await axios.post('https://implementation-lac.vercel.app/review', { name, location, review, rating }).catch((err) => {
             console.log(err)
             setReview('');
             setRating(0);
@@ -40,7 +40,7 @@ const Review = (details) => {
     useEffect(() => {
         const getReviwes = async () => {
             try {
-                let publisedReviews = await axios.get(`http://localhost:5009/review?location=${location}`, { location }).catch(
+                let publisedReviews = await axios.get(`https://implementation-lac.vercel.app/review?location=${location}`, { location }).catch(
                     console.log("error fetching data")
                 )
                

@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import Navbar from '../AboutUsPage/Navbar';
-import KandyImage1 from '../LocationDescriptionPages/Images/botanicalGarden.jpg';
-import KandyImage2 from '../LocationDescriptionPages/Images/templeOfTheTooth.jpg';
-import KandyImage3 from '../LocationDescriptionPages/Images/kandyjungle.jpg';
-import KandyImageMain from '../LocationDescriptionPages/Images/kandyImg.jpg';
-import KandyHotel1 from '../LocationDescriptionPages/Images/KHotel1.jpg';
-import KandyHotel2 from '../LocationDescriptionPages/Images/KHotel2.jpg';
-import KandyHotel3 from '../LocationDescriptionPages/Images/KHotel3.jpg';
+import TrincomaleeImage from '../LocationDescriptionPages/Images/trincomalee1.jpg';
+import TrincoPlace1 from '../LocationDescriptionPages/Images/trincomalee_place1.jpg';
+import TrincoPlace2 from '../LocationDescriptionPages/Images/trincomalee_place2.jpg';
+import TrincoPlace3 from '../LocationDescriptionPages/Images/trincomalee_place3.jpg';
+import TrincoHotel1 from '../LocationDescriptionPages/Images/trincomalee_hotel1.jpg';
+import TrincoHotel2 from '../LocationDescriptionPages/Images/trincomalee_hotel2.jpg';
+import TrincoHotel3 from '../LocationDescriptionPages/Images/trincomalee_hotel3.jpg';
 import LocationData from './locations.json'
 import './Galle.css';
 import Review from '../ReviewSection/Review';
@@ -17,32 +17,31 @@ export default function Galle(location){
         window.scrollTo(0,0);
     },[]);
     return(
-        <div>
+        <div className='main'>
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
-                <img src={KandyImageMain} className='location_image'></img>
+                <img src={TrincomaleeImage} className='location_image'></img>
                 <div className='location_detail'>
-                    <h3>KANDY</h3>
+                    <h3>TRINCOMALEE</h3>
                     <div className='location_Des'>
                         <h3 className='description'>
-                            Galle is a city on the southwest coastline of Sri Lanka. 
-                            The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings,
-                            stylish cafes, quirky boutiques and impeccably restored beautiful hotels.
+                            Trincomalee is a port city on the northeast coast of Sri Lanka. 
+                            It has one of the world's finest natural harbors, historical sites and beautiful beaches.
                         </h3>
                     </div>
                 </div>
             </div>
             {
                 LocationData.map(data => {
-                    if (data.location == "Kandy"){
+                    if (data.location == "Galle"){
                         return(
                             <div className='scales'>
                                 <h1>Indicators</h1>
-                                <div className='indicators'>
+                                <div className='indicators'>    
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title'>Weather<br></br></span><p>Hot and Humid</p>
-                                            <p className='weatherdata'><FetchWeatherData city="kandy" className="weatherdata"/></p>
+                                            <span className='title' >Weather<br></br></span><p>Tropical and Hot</p>
+                                            <p className='weatherdata'><FetchWeatherData city="trincomalee" className="weatherdata"/></p>
                                         </p>
                                     </div>
                                     <div className='indicator-container'>
@@ -52,7 +51,7 @@ export default function Galle(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                Fast
+                                                                Average
                                                             </div>
                                                         </div>
                                                     </div>
@@ -75,7 +74,7 @@ export default function Galle(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                High
+                                                                Average
                                                             </div>
                                                         </div>
                                                     </div>
@@ -92,7 +91,7 @@ export default function Galle(location){
                                         </div>    
                                     </div>
                                     <div className='indicator-container'>
-                                        <p><span className='title'>URBAN/RURAL<br></br></span><p>{data.type}</p></p>
+                                        <p><span className='title'>URBAN/RURAL<br></br></span><p style={{marginTop:"20px"}}>{data.type}</p></p>
                                     </div>
                                 </div>    
                             </div>
@@ -104,42 +103,42 @@ export default function Galle(location){
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
                 <div className='popular_destination'>
-                    <img src={KandyImage1} className='destination_image'/>
-                    <p className='text_dest'>Botanical Garden(4.7 <span class="fa fa-star checked"></span>)</p>
+                    <img src={TrincoPlace1} className='destination_image'/>
+                    <p className='text_dest'>Koneswaram Temple  (4.6 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={KandyImage2} className='destination_image'/>
-                    <p className='text_dest'>Temple of the tooth(4.4 <span class="fa fa-star checked"></span>)</p>
+                    <img src={TrincoPlace2} className='destination_image'/>
+                    <p className='text_dest'>Marble Beach (4.4 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={KandyImage3} className='destination_image'/>
-                    <p className='text_dest'>Udawattakele Forest Reserve(4.2 <span class="fa fa-star checked"></span>)</p>
+                    <img src={TrincoPlace3} className='destination_image'/>
+                    <p className='text_dest'>Pigeon Island National Park (4.5 <span class="fa fa-star checked"></span>)</p>
                 </div>
             </div>
             <br></br><br></br><br></br>
-            <h3 className='destination-heading'>Hotels in Kandy</h3>
+            <h3 className='destination-heading'>Hotels in Trincomalee</h3>
             <div className='hotels'>
-                <a href='https://www.grandkandyan.com/' target="_blank">
+                <a href='https://www.cinnamonhotels.com/trincoblucinnamon' target="_blank">
                 <div className='locationContainer'>
-                    <img src={KandyHotel1} className='destination_image'/>
-                    <p className='text_dest'>The Grand Kandyan Hotele</p>
+                    <img src={TrincoHotel1} className='destination_image'/>
+                    <p className='text_dest'>Trinco Blu By Cinnamon</p>
                 </div>
                 </a>
-                <a href='https://www.cinnamonhotels.com/cinnamoncitadelkandy' target="_blank">
+                <a href='https://amaranthebay.com/' target="_blank">
                 <div className='locationContainer'>
-                    <img src={KandyHotel2} className='destination_image'/>
-                    <p className='text_dest'>Cinnamon Citadel Kandy</p>
+                    <img src={TrincoHotel2} className='destination_image'/>
+                    <p className='text_dest'>Amaranthe Bay Resort</p>
                 </div>
                 </a>
-                <a href='https://www.radissonhotels.com/en-us/hotels/radisson-kandy' target='_blank'>
+                <a href='https://trincomaleebeachresortandspa.com/' target='_blank'>
                 <div className='locationContainer'>
-                    <img src={KandyHotel3} className='destination_image'/>
-                    <p className='text_dest'>Radisson Hotel Kandy</p>
+                    <img src={TrincoHotel3} className='destination_image'/>
+                    <p className='text_dest'>Trincomalee Beach Resort & Spa</p>
                 </div>
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="kandy"/>
+            <Review location="galle"/>
 
         </div>
         
