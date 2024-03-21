@@ -8,7 +8,7 @@ import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { authorizationActions } from "../../store";
 import { useSelector } from 'react-redux';
-import Galle from '../LocationDescriptionPages/common2.js';
+
 // import Common from '../LocationDescriptionPages/common.js'; 
 
 export default function LocationPage() {
@@ -50,6 +50,7 @@ export default function LocationPage() {
     }, []);
 
     const isLoggedIn = useSelector((state) => state.isLoggedIn);
+    console.log(isLoggedIn);
 
     const handleDescriptionChange = (event) => {
         setDescriptionData(event.target.value);
@@ -131,7 +132,7 @@ export default function LocationPage() {
                         </div>
                     </div>
                     { isLoggedIn && (
-                        <div className="rightContainer" style={{ display: showRightContainer ? 'block' : 'none' }}>
+                        <div className="rightContainer" >
                             <h2><center>Provide Recommendation</center></h2>
                             <div className='textarea-center'>
                                 <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>
