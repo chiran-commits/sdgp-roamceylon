@@ -34,6 +34,7 @@
     width: 550px;
     background-color: #b0d8f0;
     padding-top: 50px;
+    margin-bottom: 500px;
 }
 
 .location-container{
@@ -339,8 +340,75 @@
     }
 }
 
+.location-card h4{
+    color: black;
+    font-weight: 500;
+}
+
 @media (max-width:768px) {
     .location-container{
         margin-top: 10px;
     }
+    .leftContainer{
+        margin-top: 500px;
+        height: 300px;
+    }
+    .mainContainer{
+        margin-top: 90px;
+    }
+    .rightContainer .recommendation-btn{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 800px ) {
+    .mainContainer{
+        height: 1800px;
+    }
+
+    .leftContainer{
+        margin-top: 100px;
+    }
+
+    .location-card{
+        width: 90%;
+    }
+}
+
+@media (max-width:480px){
+    .leftContainer{
+        margin-top:700px;
+        width: 92%;
+        margin-right: 220px;
+    }
+    .input-box-search input{
+        width:250px;
+    }
+    .mainContainer{
+        width: 95%;
+        margin-left: 10px;
+        height: 1900px;
+    }
+    .input-box-search{
+        margin-right: 50px;
+    }
+
+    .rightContainer{
+        padding-top: 20px;
+        width: 95%;
+        margin-right: 220px;
+        margin-bottom: 1200px;
+    }
+
+    .rightContainer .recommendation-btn{
+        margin-top: 30px;
+        height: 60px;
+    }
+
+    .location-card{
+        width: 98%;
+        margin-left:5px;
+        height: 150px;
+    }
+    
 }
