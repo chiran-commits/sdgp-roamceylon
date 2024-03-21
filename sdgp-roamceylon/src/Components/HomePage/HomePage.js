@@ -164,8 +164,8 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="tropical-country">
-                <Link to="/galle">
-                  <img src={galleImage}></img>
+                <Link to="/kandy">
+                  <img src={kandyImage}></img>
                   <h3>Kandy</h3>
                   <br></br>
                 </Link>
@@ -201,8 +201,8 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="tropical-country">
-                <Link to="/galle">
-                  <img src={galleImage}></img>
+                <Link to="/kandy">
+                  <img src={kandyImage}></img>
                   <h3>Kandy</h3>
                   <br></br>
                 </Link>
