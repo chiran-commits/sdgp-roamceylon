@@ -11,14 +11,6 @@ import LoginVideo from '../LoginPage/Video/backVideoLog.mp4';
 export default function Login() {
     const dispatch = useDispatch();
 
-    const config = {
-        headers: {
-            "Content-Type": "application/json"
-        },
-        withCredentials: true
-    };
-
-
     const [data, setData] = useState({
         email: '',
         password: '',
@@ -60,9 +52,9 @@ export default function Login() {
             const data = await axios.post('https://implementation-lac.vercel.app/login', { email, password }).then(
                 setError('')
             )
-            const token = await data.data.token;
-            console.log(token)
-            localStorage.setItem('SDGP-roamceylon2', token);
+            const { accessToken, refreshToken } = data.data;
+            localStorage.setItem('roamceylon-accessToken', accessToken);
+            localStorage.setItem('roamceylon-refreshToken', refreshToken);
             dispatch(authorizationActions.login())
             setData({ email: '', password: '' })
             navigate('/')
