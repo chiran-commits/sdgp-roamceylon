@@ -50,16 +50,12 @@ h1,h3,h4, h6{
 .leftBottom{
     position: absolute;
     margin-top: 100px;
-    margin-left: 10px;
 }
 
 .rightBottom{
     margin-top: 65px;
-    padding-top: 30px;
     justify-content: right;
     display: flex;
-    margin-right: 10px;
-
 }
 
 .rightBottom img{
@@ -142,3 +138,61 @@ h1,h3,h4, h6{
     box-sizing: border-box;
     flex: 1;
 }
+
+@media (max-width: 480px) {
+    .top-section h2,
+    .top-section h3 {
+      font-size: 30px;
+      font-weight: 500;
+    }
+    
+    .content-section {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .content-item {
+      width: 100%; 
+      margin-top: 30px;
+      object-fit: cover;
+    }
+  
+    .content-section img {
+      max-width: 80%; 
+      margin-bottom: 20px; 
+    }
+  
+    .bottomContainer {
+      height: auto; 
+      padding: 20px; 
+    }
+  
+    .middleBottom {
+      width: 100%; 
+      margin-top: 20px; 
+    }
+  
+    .leftBottom {
+      position: static;
+      margin-top: 150px; 
+      margin-bottom: 20px; 
+      text-align: center; 
+    }
+  
+    .rightBottom {
+      margin-top: 20px; 
+      margin-bottom: 20px; 
+      justify-content: center; 
+      text-align: center; 
+    }
+  
+    .rightBottom img {
+      margin-top: 10px;
+    }
+  
+    .developer-container {
+      width: 90%; 
+      margin: 0 auto;
+      margin-bottom: 20px; 
+    }
+  }
