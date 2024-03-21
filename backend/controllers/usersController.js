@@ -2,6 +2,7 @@ const userModel= require('../database/userModel');
 
 const sendUser=async(req,res)=>{
     const email = req.email;
+    console.log(email)
     let user;
     try {
         user=await userModel.findOne({email:email})

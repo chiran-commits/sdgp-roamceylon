@@ -23,16 +23,17 @@ function UserProfile() {
 
         const getProfile = async () => {
 
-            const authToken = localStorage.getItem('SDGP-roamceylon2');
-            if (authToken == null) {
+            const accessToken = localStorage.getItem('roamceylon-refreshToken');
+            if (accessToken == null) {
                 nav('/login');
             } else {
                 const res = await axios
                     .get("http://localhost:5009/user", {
                         headers: {
-                            Authorization: authToken
+                          Authorization: `Bearer ${accessToken}`
                         }
-                    }).then((res) => {
+                          
+                      }).then((res) => {
                         console.log(res);
                         const data = res.data;
                         setData(data);

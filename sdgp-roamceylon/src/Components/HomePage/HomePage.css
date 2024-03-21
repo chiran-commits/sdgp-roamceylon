@@ -234,6 +234,23 @@
   font-size: 35px;
 }
 
+.tropical-country :hover{
+  transform:scale(1.15) ;
+  transition: 0.3s ease-in-out;
+}
+
+/* CSS for the mountains section */
+
+.mountians-section{
+  background-color: rgba(135, 207, 235, 0.600);
+  margin-top: 40px;
+  padding: 30px 40px 30px 40px;
+  text-align: left;
+  border-radius: 50px;
+  min-height: 350px;
+}
+
+
 
 /* The containers for the countries in the homepage */
 

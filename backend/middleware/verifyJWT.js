@@ -20,7 +20,9 @@ require('dotenv').config();
 
 const verifyUser = (req, res, next) => {
 
-    const token = req.headers.authorization || req.headers.Authorization;
+    const header = req.headers.authorization || req.headers.Authorization;
+    const token =header.split(' ')[1]
+
 
     console.log(token);
     if (!token) {
@@ -28,6 +30,7 @@ const verifyUser = (req, res, next) => {
         res.status(404).json({ message: "The token was not found" });
 
     }
+
     jwt.verify(token, process.env.ACCESS_TOKEN, (err, user) => {
         if (err) {
             return res.status(400).json({ message: "User token is invalid" });

@@ -25,16 +25,18 @@ function App(){
         
     const getProfile = async () => {
         
-        const authToken = localStorage.getItem('SDGP-roamceylon2');
-        if(authToken==null){
+        const  accessToken= localStorage.getItem('roamceylon-accessToken');
+        //check this code
+        if(accessToken==null){
           dispatch(authorizationActions.logout())
 
         }else{
             const res = await axios
             .get("http://localhost:5009/user",{
-                headers: {
-                     Authorization: authToken
-                }
+              headers: {
+                Authorization: `Bearer ${accessToken}`
+              }
+                
             }).then(
               dispatch(authorizationActions.login())
             )
