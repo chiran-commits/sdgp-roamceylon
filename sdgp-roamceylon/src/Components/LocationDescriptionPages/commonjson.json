@@ -18,48 +18,27 @@
         "location": "ella",
         "name": "Ella",
         "link":"http://localhost:8000/ella",
-        "description": "Ella, Sri Lanka, nestled in the lush hill country, captivates visitors with its stunning scenery and tranquil ambiance. Famous for its iconic Nine Arch Bridge and sweeping vistas from Ella Rock, this charming town offers a perfect blend of relaxation and adventure. Explore scenic trails, indulge in local cuisine, and soak in the serene beauty of Ella's tea plantations."
+        "description": "Ella is a small town in Sri Lanka's Uva Province, located about 120 miles east of Colombo. It's known for its natural beauty, including waterfalls, greenery, and hills. Ella is also rich in history and culture, with many prominent tourist attractions."
     },
     {
         "id": 4,
         "location": "nuwaraeliya",
         "name": "Nuwara Eliya",
         "link":"http://localhost:8000/nuwaraeliya",
-        "description": "Nuwara Eliya, often dubbed 'Little England,' is a serene hill town nestled amidst lush tea plantations and misty mountains in Sri Lanka. With its cool climate and colonial architecture, it offers a charming retreat for travelers. Explore tea estates, stroll through botanical gardens, and soak in the scenic beauty of this picturesque destination. Nuwara Eliya promises a tranquil escape into the heart of Sri Lanka's hill country."
+        "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
     },
     {
         "id": 5,
-        "location": "colombo",
-        "name": "Colombo",
-        "link":"http://localhost:8000/colombo",
-        "description": "Colombo, Sri Lanka's dynamic capital, blends modernity with rich heritage. Explore vibrant markets, indulge in diverse cuisine, and visit iconic landmarks. With its lively energy and coastal allure, Colombo offers an unforgettable taste of Sri Lankan urban life."
-    },
-    {
-        "id": 6,
-        "location": "matara",
-        "name": "Matara",
-        "link":"http://localhost:8000/matara",
-        "description": "Matara, a coastal gem in southern Sri Lanka, boasts pristine beaches and a laid-back atmosphere. Explore historic sites, stroll along palm-fringed shores, and immerse yourself in the local culture. With its relaxed vibe and scenic beauty, Matara offers a tranquil escape by the sea."
-    },
-    {
-        "id": 7,
-        "location": "trincomalee",
-        "name": "Trincomalee",
-        "link":"http://localhost:8000/trincomalee",
-        "description": "Trincomalee, nestled on the northeastern coast of Sri Lanka, is renowned for its stunning beaches and rich cultural heritage. Discover pristine sands, dive into azure waters, and explore ancient temples and forts. With its tranquil ambiance and natural beauty, Trincomalee beckons travelers to unwind and rejuvenate in a tropical paradise."
-    },
-    {
-        "id": 8,
-        "location": "jaffna",
-        "name": "Jaffna",
-        "link":"http://localhost:8000/jaffna",
-        "description": "Jaffna, located in the northern tip of Sri Lanka, is a vibrant city steeped in history and culture. Explore ancient temples, taste authentic Jaffna cuisine, and wander through bustling markets. With its unique blend of tradition and modernity, Jaffna offers a captivating glimpse into the island's northern heritage."
-    },
-    {
-        "id": 9,
         "location": "anuradhapura",
         "name": "Anuradhapura",
         "link":"http://localhost:8000/anuradhapura",
-        "description": "Anuradhapura, an ancient city in Sri Lanka's Cultural Triangle, is a UNESCO World Heritage Site renowned for its rich history and archaeological wonders. Explore majestic ruins, sacred stupas, and tranquil reservoirs that date back thousands of years. With its spiritual significance and cultural treasures, Anuradhapura offers a mesmerizing journey into Sri Lanka's past."
+        "description":"Anuradhapura is a major city located in the north central plain of Sri Lanka. It is the capital city of North Central Province and the capital of Anuradhapura District. The city lies 205 kilometers north of the current capital of Colombo in the North Central Province, on the banks of the historic Malwathu Oya"
+    },
+    {
+        "id": 5,
+        "location": "matara",
+        "name": "Matara",
+        "link":"http://localhost:8000/matara",
+        "description":"Matara is a coastal town in southern Sri Lanka that's a major commercial hub and a good place to experience tropical Sri Lanka without the crowds.  It's known for its Dutch architecture, ramparts, well-preserved fort, and street life. "
     }
 ]

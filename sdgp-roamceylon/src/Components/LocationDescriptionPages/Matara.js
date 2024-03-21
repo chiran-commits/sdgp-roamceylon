@@ -1,48 +1,49 @@
 import React, { useEffect } from 'react'
 import Navbar from '../AboutUsPage/Navbar';
-import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
-import galleimage1 from '../LocationDescriptionPages/Images/Galle-Dutch-Fort.jpg';
-import galleimage2 from '../LocationDescriptionPages/Images/turtle-hatchery-hikkaduwa.jpg';
-import galleimage3 from '../LocationDescriptionPages/Images/Galle_Maritime_Museum.jpg';
-import LeGrand from '../LocationDescriptionPages/Images/leGrand.jpg';
-import raddisson from '../LocationDescriptionPages/Images/raddisson.jpg';
-import lighthouse from '../LocationDescriptionPages/Images/lighthouse.jpg';
+import MataraImage1 from '../LocationDescriptionPages/Images/smb.jpg';
+import MataraImage2 from '../LocationDescriptionPages/Images/ruwanwelisaya.jpg';
+import MataraImage3 from '../LocationDescriptionPages/Images/thuparamaya.jpg';
+import MataraImageMain from '../LocationDescriptionPages/Images/matara.jpg';
+import MataraHotel1 from '../LocationDescriptionPages/Images/capeweli.jpg';
+import MataraHotel2 from '../LocationDescriptionPages/Images/baymarriott.jpg';
+import MataraHotel3 from '../LocationDescriptionPages/Images/w15.jpg';
 import LocationData from './locations.json'
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
 
-export default function Galle(location){
+export default function Matara(location){
     useEffect(() =>{
         window.scrollTo(0,0);
     },[]);
     return(
-        <div className='main'>
+        <div>
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
-                <img src={GalleImage} className='location_image'></img>
+                <img src={MataraImageMain} className='location_image'></img>
                 <div className='location_detail'>
-                    <h3>GALLE</h3>
+                    <h3>MATARA</h3>
                     <div className='location_Des'>
                         <h3 className='description'>
-                            Galle is a city on the southwest coastline of Sri Lanka. 
-                            The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings,
-                            stylish cafes, quirky boutiques and impeccably restored beautiful hotels.
+                        Matara is a coastal town in southern Sri Lanka that's a major commercial hub and a good place 
+                        to experience tropical Sri Lanka without the crowds. 
+                        It's known for its Dutch architecture, ramparts, well-preserved fort, and street life. 
+
                         </h3>
                     </div>
                 </div>
             </div>
             {
                 LocationData.map(data => {
-                    if (data.location == "Galle"){
+                    if (data.location == "Matara"){
                         return(
                             <div className='scales'>
                                 <h1>Indicators</h1>
-                                <div className='indicators'>    
+                                <div className='indicators'>
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title' >Weather<br></br></span ><p className='weather-type'>Tropical/Hot and Humid</p>
-                                            <p className='weatherdata'><FetchWeatherData city="galle" className="weatherdata"/></p>
+                                            <span className='title'>Weather<br></br></span><p>Cold</p>
+                                            <p className='weatherdata'><FetchWeatherData city="matara" className="weatherdata"/></p>
                                         </p>
                                     </div>
                                     <div className='indicator-container'>
@@ -52,7 +53,7 @@ export default function Galle(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                Fast
+                                                                {data.wifi}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -63,7 +64,7 @@ export default function Galle(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
+                                                            <circle cx="80" cy="80" r="29" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    
@@ -75,7 +76,7 @@ export default function Galle(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                High
+                                                                {data.col}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -86,16 +87,16 @@ export default function Galle(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
+                                                            <circle cx="80" cy="80" r="29" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    
                                     </div>
                                     <div className='indicator-container'>
-                                        <p><span className='title'>URBAN/RURAL<br></br></span><p className='city-type'>{data.type}</p></p>
+                                        <p><span className='title'>URBAN/RURAL<br></br></span><p>{data.type}</p></p>
                                     </div>
-                                </div>    
-                            </div>
+                                </div>
+                            </div>    
                         )
                     }
                 })
@@ -104,42 +105,42 @@ export default function Galle(location){
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
                 <div className='popular_destination'>
-                    <img src={galleimage1} className='destination_image'/>
-                    <p className='text_dest'>Galle Dutch Fort (4.7 <span class="fa fa-star checked"></span>)</p>
+                    <img src={MataraImage1} className='destination_image'/>
+                    <p className='text_dest'>Jaya Sri Maha Bodhi(4.9 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={galleimage2} className='destination_image'/>
-                    <p className='text_dest'>Sea Turtle Hatchery Centre (4.4 <span class="fa fa-star checked"></span>)</p>
+                    <img src={MataraImage2} className='destination_image'/>
+                    <p className='text_dest'>Ruwanweli Maha Seya(4.9 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={galleimage3} className='destination_image'/>
-                    <p className='text_dest'>Maritime Museum (4.2 <span class="fa fa-star checked"></span>)</p>
+                    <img src={MataraImage3} className='destination_image'/>
+                    <p className='text_dest'>Thuparama vihara(4.8 <span class="fa fa-star checked"></span>)</p>
                 </div>
             </div>
             <br></br><br></br><br></br>
-            <h3 className='destination-heading'>Hotels in Galle</h3>
+            <h3 className='destination-heading'>Hotels in Anuradhapura</h3>
             <div className='hotels'>
-                <a href='https://www.legrandgalle.lk/' target="_blank">
+                <a href='https://www.grandkandyan.com/' target="_blank">
                 <div className='locationContainer'>
-                    <img src={LeGrand} className='destination_image'/>
-                    <p className='text_dest'>Le Grand Galle</p>
+                    <img src={MataraHotel1} className='destination_image'/>
+                    <p className='text_dest'>Cape Weligama</p>
                 </div>
                 </a>
-                <a href='https://www.jetwinghotels.com/jetwinglighthouse/#gref' target="_blank">
+                <a href='https://www.cinnamonhotels.com/cinnamoncitadelkandy' target="_blank">
                 <div className='locationContainer'>
-                    <img src={lighthouse} className='destination_image'/>
-                    <p className='text_dest'>Jetwing Lighthouse</p>
+                    <img src={MataraHotel2} className='destination_image'/>
+                    <p className='text_dest'>Weligama Bay Marriott Resort & Spa</p>
                 </div>
                 </a>
-                <a href='https://www.radissonhotels.com/en-us/hotels/radisson-blu-galle?checkInDate=2024-03-13&checkOutDate=2024-03-14&searchType=lowest&promotionCode=&voucher=&memberOnlyRatesHotelCodes=LKCMBGAL&adults%5B%5D=2&children%5B%5D=0&aoc%5B%5D=NaN' target='_blank'>
+                <a href='https://www.radissonhotels.com/en-us/hotels/radisson-kandy' target='_blank'>
                 <div className='locationContainer'>
-                    <img src={raddisson} className='destination_image'/>
-                    <p className='text_dest'>Raddisson Blu</p>
+                    <img src={MataraHotel3} className='destination_image'/>
+                    <p className='text_dest'>W15 Weligama</p>
                 </div>
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="galle"/>
+            <Review location="matara"/>
 
         </div>
         

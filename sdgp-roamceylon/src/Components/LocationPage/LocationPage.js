@@ -23,6 +23,7 @@ export default function LocationPage() {
     const [descriptionPlaceholder, setDescriptionPlaceholder] = useState('Enter the features of your ideal location...');
     const [locations, setLocations] = useState([]);
     const [selectedLocation, setSelectedLocation] = useState(null);
+    const [showRightContainer, setShowRightContainer] = useState(false); // State for rightContainer visibility
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -130,7 +131,7 @@ export default function LocationPage() {
                         </div>
                     </div>
                     { isLoggedIn && (
-                        <div className="rightContainer">
+                        <div className="rightContainer" style={{ display: showRightContainer ? 'block' : 'none' }}>
                             <h2><center>Provide Recommendation</center></h2>
                             <div className='textarea-center'>
                                 <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>

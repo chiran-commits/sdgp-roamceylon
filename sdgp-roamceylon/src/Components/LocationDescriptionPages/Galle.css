@@ -193,8 +193,12 @@
     color:orange;
 }
 
+.weather-type{
+    margin-top: 30px;
+    font-weight: 600;
+}
+
 .weatherdata{
-    margin-top: 5px;
     font-size: 25px;
     color: rgb(30, 158, 221);
 }
@@ -234,6 +238,9 @@ svg{
     margin: 0 auto; /* Center the SVG */
 }
 
+.city-type{
+    margin-top: 30px;
+}
 
 
 @media (max-width:480px) {
@@ -265,15 +272,6 @@ svg{
     .location_information{
         height: 100vh;
     }
-
-    svg{
-        left: 47%;
-    }
-
-    #number{
-        margin-left: 137px;
-    }
-
     .location_detail h3{
         font-size: 25px;
         color: white;

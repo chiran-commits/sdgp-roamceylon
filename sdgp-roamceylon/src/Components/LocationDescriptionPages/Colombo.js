@@ -42,7 +42,7 @@ export default function Colombo(location){
                                 <div className='indicators'>    
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title' >Weather<br></br></span><p>Hot and Humid</p>
+                                            <span className='title' >Weather<br></br></span><p>Tropical/Hot and Humid</p>
                                             <p className='weatherdata'><FetchWeatherData city="colombo" className="weatherdata"/></p>
                                         </p>
                                     </div>
