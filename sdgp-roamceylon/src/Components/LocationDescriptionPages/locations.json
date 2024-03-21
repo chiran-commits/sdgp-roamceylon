@@ -32,5 +32,12 @@
     "wifi":"Medium",
     "col":"Low",
     "type":"RURAL"
+},
+{
+    "id":6,
+    "location":"Matara",
+    "wifi":"High",
+    "col":"High",
+    "type":"URBAN"
 }
 ]
