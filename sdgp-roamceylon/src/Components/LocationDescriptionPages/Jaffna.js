@@ -46,7 +46,7 @@ export default function Jaffna(location){
                                 <div className='indicators'>    
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title' >Weather<br></br></span><p>Tropical/ Hot and Humid</p>
+                                            <span className='title' >Weather<br></br></span><p className='weather-type'>Tropical/ Hot and Humid</p>
                                             <p className='weatherdata'><FetchWeatherData city="jaffna" className="weatherdata"/></p>
                                         </p>
                                     </div>
