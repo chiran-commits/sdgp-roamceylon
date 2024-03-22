@@ -87,6 +87,12 @@ nav .navMenu span{
 
 nav ul#navbar.open{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul#navbar{
+    width: 200%;
 }
 
 @media (max-width:850px) {
@@ -137,10 +143,79 @@ nav ul#navbar.open{
 
 }
 
-@media (max-width:480px) {
-    nav{
-        width: 95%;
+/* This is the responsive CSS for the Navbar centering */
+
+@media (max-width: 480px) {
+        nav ul#navbar {
+          margin: 0; 
+          padding: 0; 
+          width: 260%;
+          margin: 0 auto; /* Center the navbar */
+          position: static; 
+          border-radius: 0; 
+          box-shadow: none; 
+          background-color: rgba(255, 255, 255, 0.9); 
+        }
+      
+        nav ul#navbar li {
+          margin: 0; 
+          text-align: center; 
+          width: 100%; 
+          border-bottom: 1px solid #ccc; 
+          overflow: hidden;
+        }
+      
+        nav ul#navbar li:last-child {
+          border-bottom: none; 
+        }
+      
+        nav ul#navbar a {
+          display: block;
+          padding: 10px 0; /* Adjust padding to fit width */
+          color: black; 
+          font-size: 18px; 
+          text-decoration: none; 
+          overflow: hidden;
+        }
+  
+    nav {
+      width: 96%;
+    }
+  }
+  
+  @media (max-width: 391px) {
+    nav {
+      width: 95%;
+    }
+  
+    nav ul#navbar a {
+      display: block;
+      padding: 10px 0; /* Adjust padding to fit width */
+      color: black; 
+      width: 100%;
+      font-size: 18px; 
+      text-decoration: none; 
     }
 
+    nav ul#navbar {
+        width: 250%;
+    }    
+  }
 
-}
+  @media (max-width:431px) {
+    nav ul#navbar {
+        width: 284%;
+    } 
+  }  
+
+  @media (max-width:415px) {
+    nav ul#navbar {
+        width: 274%;
+    } 
+  }
+
+  @media (max-width:376px) {
+    nav ul#navbar {
+        width: 250%;
+    } 
+  }
