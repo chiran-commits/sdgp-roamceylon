@@ -129,7 +129,7 @@ export default function Jaffna(location){
                 </a>
             </div>
             <br></br><br></br><br></br>
-            <h3 className='destination-heading'>Hotels in Galle</h3>
+            <h3 className='destination-heading'>Hotels in Jaffna</h3>
             <div className='hotels'>
                 <a href='https://www.jetwinghotels.com/jetwingjaffna/' target="_blank">
                 <div className='locationContainer'>

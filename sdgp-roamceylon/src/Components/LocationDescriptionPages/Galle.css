@@ -242,6 +242,15 @@ svg{
     margin-top: 30px;
 }
 
+@media (max-width:800px){
+    .location_detail{
+        text-align: center;
+        padding: 20px;
+        margin: 90px 20px 250px 20px;
+        height: 55vh;
+    }
+}
+
 
 @media (max-width:480px) {
     .location_image{
@@ -258,7 +267,7 @@ svg{
         text-align: center;
         padding: 20px;
         margin: 160px 20px 250px 20px;
-        height: 90vh;
+        height: 80vh;
     }
 
     .destination-heading{
@@ -278,14 +287,7 @@ svg{
     }
 }
 
-@media (max-width:800px){
-    .location_detail{
-        text-align: center;
-        padding: 20px;
-        margin: 90px 20px 250px 20px;
-        height: 55vh;
-    }
-}
+
 
 @media (max-width:376px) {
     .location_detail .description{

@@ -44,7 +44,7 @@
     {
         "id": 7,
         "location": "colombo",
-        "name": "Matara",
+        "name": "Colombo",
         "link":"http://localhost:8000/colombo",
         "description":  "Colombo, Sri Lanka's dynamic capital, blends modernity with rich heritage. Explore vibrant markets, indulge in diverse cuisine, and visit iconic landmarks. With its lively energy and coastal allure, Colombo offers an unforgettable taste of Sri Lankan urban life."
     },
