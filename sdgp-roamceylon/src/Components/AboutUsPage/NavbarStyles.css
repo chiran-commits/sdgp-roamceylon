@@ -179,11 +179,11 @@ nav ul#navbar{
         }
   
     nav {
-      width: 96%;
+      width: 95%;
     }
   }
   
-  @media (max-width: 391px) {
+  @media (max-width: 390px) {
     nav {
       width: 95%;
     }
@@ -198,7 +198,7 @@ nav ul#navbar{
     }
 
     nav ul#navbar {
-        width: 250%;
+        width: 20%;
     }    
   }
 
@@ -210,12 +210,12 @@ nav ul#navbar{
 
   @media (max-width:415px) {
     nav ul#navbar {
-        width: 274%;
+        width: 273%;
     } 
   }
 
   @media (max-width:376px) {
     nav ul#navbar {
-        width: 250%;
+        width: 246%;
     } 
   }
