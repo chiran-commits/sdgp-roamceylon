@@ -108,18 +108,25 @@ export default function Jaffna(location){
     
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g304135-d10020546-Reviews-Nallur_Kandaswamy_Kovil_Festival-Jaffna_Northern_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={Jaffna1} className='destination_image'/>
                     <p className='text_dest'>Nallur Kovil (4.5 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g304135-d3628732-Reviews-Jaffna_Fort-Jaffna_Northern_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={Jaffna2} className='destination_image'/>
                     <p className='text_dest'>Jaffna Fort (4.0 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
+
+                <a href='https://www.tripadvisor.com/Attraction_Review-g304135-d25372640-Reviews-Delft_Arckaa-Jaffna_Northern_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={Jaffna3} className='destination_image'/>
                     <p className='text_dest'>Delft Island (4.0 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Galle</h3>
@@ -144,7 +151,7 @@ export default function Jaffna(location){
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="galle"/>
+            <Review location="Jaffna"/>
 
         </div>
         
