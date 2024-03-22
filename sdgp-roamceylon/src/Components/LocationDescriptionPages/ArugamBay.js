@@ -48,7 +48,7 @@ export default function Galle(location){
                                 <div className='indicators'>    
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title' >Weather<br></br></span><p>Hot and Humid</p>
+                                            <span className='title' >Weather<br></br></span><p>Tropical</p>
                                             <p className='weatherdata'><FetchWeatherData city="arugam bay" className="weatherdata"/></p>
                                         </p>
                                     </div>
@@ -59,7 +59,7 @@ export default function Galle(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                Med
+                                                                Medium
                                                             </div>
                                                         </div>
                                                     </div>

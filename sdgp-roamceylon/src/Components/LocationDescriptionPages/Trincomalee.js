@@ -102,24 +102,30 @@ export default function Galle(location){
     
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
+            <a href='https://www.tripadvisor.com/Attraction_Review-g424963-d3477576-Reviews-Koneswaram_Temple-Trincomalee_Eastern_Province.html' target='_blank'>
                 <div className='popular_destination'>
-                    <a href='https://www.tripadvisor.com/Attraction_Review-g424963-d3477576-Reviews-Koneswaram_Temple-Trincomalee_Eastern_Province.html' target='_blank'>
+
                         <img src={TrincoPlace1} className='destination_image'/>
                         <p className='text_dest'>Koneswaram Temple  (4.6 <span class="fa fa-star checked"></span>)</p>
-                    </a>
+                 
                 </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g424963-d3420218-Reviews-Marble_Beach-Trincomalee_Eastern_Province.html' target='_blank'>
                 <div className='popular_destination'>
-                    <a href='https://www.tripadvisor.com/Attraction_Review-g424963-d3420218-Reviews-Marble_Beach-Trincomalee_Eastern_Province.html' target='_blank'>
+
                     <img src={TrincoPlace2} className='destination_image'/>
                     <p className='text_dest'>Marble Beach (4.4 <span class="fa fa-star checked"></span>)</p>
-                    </a>
+               
                 </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g2424710-d3393891-Reviews-Pigeon_Island_National_Park-Nilaveli_Eastern_Province.html' target='_blank'>
                 <div className='popular_destination'>
-                    <a href='https://www.tripadvisor.com/Attraction_Review-g2424710-d3393891-Reviews-Pigeon_Island_National_Park-Nilaveli_Eastern_Province.html' target='_blank'>
+
                     <img src={TrincoPlace3} className='destination_image'/>
                     <p className='text_dest'>Pigeon Island National Park (4.5 <span class="fa fa-star checked"></span>)</p>
-                    </a>
+                    
                 </div>
+                </a>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Trincomalee</h3>

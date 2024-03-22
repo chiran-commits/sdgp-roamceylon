@@ -42,7 +42,7 @@ export default function Anuradhapura(location){
                                 <div className='indicators'>
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title'>Weather<br></br></span><p className='weather-type'>Cold</p>
+                                            <span className='title'>Weather<br></br></span><p className='weather-type'>Hot and Sunny</p>
                                             <p className='weatherdata'><FetchWeatherData city="anuradhapura" className="weatherdata"/></p>
                                         </p>
                                     </div>

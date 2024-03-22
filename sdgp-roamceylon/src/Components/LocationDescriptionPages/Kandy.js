@@ -41,7 +41,7 @@ export default function Galle(location){
                                 <div className='indicators'>
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title'>Weather<br></br></span><p className='weather-type'>Tropical/Hot and Humid</p>
+                                            <span className='title'>Weather<br></br></span><p className='weather-type'>Hot and Humid</p>
                                             <p className='weatherdata'><FetchWeatherData city="kandy" className="weatherdata"/></p>
                                         </p>
                                     </div>
@@ -103,24 +103,28 @@ export default function Galle(location){
     
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
+            <a href='https://www.tripadvisor.com/Attraction_Review-g1194819-d523519-Reviews-Royal_Botanical_Gardens-Peradeniya_Kandy_District_Central_Province.html' target='_blank'>
                 <div className='popular_destination'>
-                    <a href='https://www.tripadvisor.com/Attraction_Review-g1194819-d523519-Reviews-Royal_Botanical_Gardens-Peradeniya_Kandy_District_Central_Province.html' target='_blank'>
                         <img src={KandyImage1} className='destination_image'/>
                         <p className='text_dest'>Botanical Garden(4.7 <span class="fa fa-star checked"></span>)</p>
-                    </a>
                 </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g304138-d317476-Reviews-Temple_of_the_Sacred_Tooth_Relic-Kandy_Kandy_District_Central_Province.html' target='_blank'>
                 <div className='popular_destination'>
-                    <a href='https://www.tripadvisor.com/Attraction_Review-g304138-d317476-Reviews-Temple_of_the_Sacred_Tooth_Relic-Kandy_Kandy_District_Central_Province.html' target='_blank'>
+
                         <img src={KandyImage2} className='destination_image'/>
                         <p className='text_dest'>Temple of the tooth(4.4 <span class="fa fa-star checked"></span>)</p>
-                    </a>
+                    
                 </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g304138-d2534649-Reviews-Udawattekele_Sanctuary-Kandy_Kandy_District_Central_Province.html' target='_blank'>
                 <div className='popular_destination'>
-                    <a href='https://www.tripadvisor.com/Attraction_Review-g304138-d2534649-Reviews-Udawattekele_Sanctuary-Kandy_Kandy_District_Central_Province.html' target='_blank'>
+
                         <img src={KandyImage3} className='destination_image'/>
                         <p className='text_dest'>Udawattakele Forest Reserve(4.2 <span class="fa fa-star checked"></span>)</p>
-                    </a>
+                  
                 </div>
+                </a>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Kandy</h3>

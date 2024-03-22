@@ -30,7 +30,7 @@ const Review = (details) => {
 
             const accessToken = localStorage.getItem('roamceylon-accessToken');
                 const res = await axios
-                    .get("https://implementation-lac.vercel.app/user", {
+                    .get("https://sdgp-restapi.vercel.app/user", {
                         headers: {
                           Authorization: `Bearer ${accessToken}`
                         }

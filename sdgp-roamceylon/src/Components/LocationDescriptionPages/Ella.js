@@ -104,24 +104,30 @@ export default function Ella(location){
     
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
+            <a href='https://www.tripadvisor.com/Attraction_Review-g616035-d4137010-Reviews-Nine_Arches_Bridge-Ella_Uva_Province.html' target='_blank'>
                 <div className='popular_destination'>
-                    <a href='https://www.tripadvisor.com/Attraction_Review-g616035-d4137010-Reviews-Nine_Arches_Bridge-Ella_Uva_Province.html' target='_blank'>
+
                         <img src={EllaImage1} className='destination_image'/>
                         <p className='text_dest'>Nine Arches Bridge(4.7 <span class="fa fa-star checked"></span>)</p>
-                    </a>
+                    
                 </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g616035-d2255787-Reviews-Ravana_Ella_Falls-Ella_Uva_Province.html' target='_blank'>
                 <div className='popular_destination'>
-                    <a href='https://www.tripadvisor.com/Attraction_Review-g616035-d2255787-Reviews-Ravana_Ella_Falls-Ella_Uva_Province.html' target='_blank'>
+
                         <img src={EllaImage2} className='destination_image'/>
                         <p className='text_dest'>Ravana falls(4.4 <span class="fa fa-star checked"></span>)</p>
-                    </a>
+                   
                 </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g616035-d2703056-Reviews-Ella_Rock-Ella_Uva_Province.html' target='_blank'>
                 <div className='popular_destination'>
-                    <a href='https://www.tripadvisor.com/Attraction_Review-g616035-d2703056-Reviews-Ella_Rock-Ella_Uva_Province.html' target='_blank'>
+
                         <img src={EllaImage3} className='destination_image'/>
                         <p className='text_dest'>Ella Rock(4.2 <span class="fa fa-star checked"></span>)</p>
-                    </a>
+                    
                 </div>
+                </a>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Ella</h3>
