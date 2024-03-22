@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import Navbar from '../AboutUsPage/Navbar';
-import MataraImage1 from '../LocationDescriptionPages/Images/smb.jpg';
-import MataraImage2 from '../LocationDescriptionPages/Images/ruwanwelisaya.jpg';
-import MataraImage3 from '../LocationDescriptionPages/Images/thuparamaya.jpg';
+import MataraImage1 from '../LocationDescriptionPages/Images/the-shrine-of-our-lady.jpg';
+import MataraImage2 from '../LocationDescriptionPages/Images/paravi.jpg';
+import MataraImage3 from '../LocationDescriptionPages/Images/dondra.jpg';
 import MataraImageMain from '../LocationDescriptionPages/Images/matara.jpg';
 import MataraHotel1 from '../LocationDescriptionPages/Images/capeweli.jpg';
 import MataraHotel2 from '../LocationDescriptionPages/Images/baymarriott.jpg';
@@ -106,15 +106,15 @@ export default function Matara(location){
             <div className='location_destinations'>
                 <div className='popular_destination'>
                     <img src={MataraImage1} className='destination_image'/>
-                    <p className='text_dest'>Jaya Sri Maha Bodhi(4.9 <span class="fa fa-star checked"></span>)</p>
+                    <p className='text_dest'>The Shrine of Our Lady of Matara(4.9 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
                     <img src={MataraImage2} className='destination_image'/>
-                    <p className='text_dest'>Ruwanweli Maha Seya(4.9 <span class="fa fa-star checked"></span>)</p>
+                    <p className='text_dest'>Matara Paravi Duwa Beach(4.4 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
                     <img src={MataraImage3} className='destination_image'/>
-                    <p className='text_dest'>Thuparama vihara(4.8 <span class="fa fa-star checked"></span>)</p>
+                    <p className='text_dest'>Dondra Head(4.4 <span class="fa fa-star checked"></span>)</p>
                 </div>
             </div>
             <br></br><br></br><br></br>
