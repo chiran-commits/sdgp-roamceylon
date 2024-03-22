@@ -59,7 +59,7 @@ export default function LocationPage() {
     const handleSubmitDescription = async () => {
         window.scrollTo(0,800);
         try {
-            const locations = await axios.post('http://spacynlp.pythonanywhere.com/nlp', {"desc": descriptionData});
+            const locations = await axios.post('https://spacynlp.pythonanywhere.com/nlp', {"desc": descriptionData});
             console.log(locations.data.locations);
             
             setLocations(locations.data.locations);
