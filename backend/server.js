@@ -8,12 +8,12 @@ const path = require('path')
 const credentials = require('./configuration/credentials');
 const whiteList = require('./configuration/whiteList');
 
-app.use(express.static(path.join(__dirname, '../sdgp-roamceylon/build')));
+// app.use(express.static(path.join(__dirname, '../sdgp-roamceylon/build')));
 
 
 const PORT=5009;
 connectDB();
-app.use(credentials);
+// app.use(credentials);
 app.use(cors(whiteList))
 
 app.use(cookieParser());
