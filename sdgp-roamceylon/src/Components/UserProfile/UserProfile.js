@@ -71,7 +71,7 @@ function UserProfile() {
         
         try {
 
-            const { data } = await axios.post('http://localhost:5009/save', { firstName, lastName, Age,email }).then(
+            const { data } = await axios.patch('http://localhost:5009/save', { firstName, lastName, Age,email }).then(
             ).catch((err) => {
                 console.log(err)
             })

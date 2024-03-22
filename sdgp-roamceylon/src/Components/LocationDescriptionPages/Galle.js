@@ -24,11 +24,11 @@ export default function Galle(location){
                 <div className='location_detail'>
                     <h3>GALLE</h3>
                     <div className='location_Des'>
-                        <h3 className='description'>
+                        <p className='description'>
                             Galle is a city on the southwest coastline of Sri Lanka. 
                             The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings,
                             stylish cafes, quirky boutiques and impeccably restored beautiful hotels.
-                        </h3>
+                        </p>
                     </div>
                 </div>
             </div>

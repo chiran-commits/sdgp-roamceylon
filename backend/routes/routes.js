@@ -20,7 +20,7 @@ router.post('/register',registerUser)
 router.post('/login', loginUser)
 router.post("/review",addReview)
 
-router.post('/save',saveUser)
+router.patch('/save',saveUser)
 
 router.get("/review",sendReview)
 router.get('/user',verifyUser,sendUser)

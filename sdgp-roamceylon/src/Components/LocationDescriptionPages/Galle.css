@@ -249,6 +249,10 @@ svg{
         height: 140vh;
         bottom: 20px;
     }
+    .description{
+        font-size: 1px;
+    }
+
 
     .location_detail{
         text-align: center;
