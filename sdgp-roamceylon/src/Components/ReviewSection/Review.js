@@ -29,9 +29,6 @@ const Review = (details) => {
         const getProfile = async () => {
 
             const accessToken = localStorage.getItem('roamceylon-accessToken');
-            if (accessToken == null) {
-                nav('/login');
-            } else {
                 const res = await axios
                     .get("http://localhost:5009/user", {
                         headers: {
@@ -51,7 +48,7 @@ const Review = (details) => {
                     );
 
 
-            }
+            
 
         };
         getProfile();
