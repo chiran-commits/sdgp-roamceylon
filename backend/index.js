@@ -17,6 +17,7 @@ app.use(credentials);
 app.use(cors(whiteList))
 
 app.use(cookieParser());
+app.use(express.urlencoded({extended:false}));
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
