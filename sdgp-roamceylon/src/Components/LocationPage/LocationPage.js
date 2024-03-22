@@ -123,9 +123,6 @@ export default function LocationPage() {
                                     {filteredData.map(item => (
                                         <div className='location-item' key={item.location} onClick={() => redirectToLocation(item.location)}>
                                             <h4>{item.name}</h4>
-                                            <div className='show-desc'>
-                                                {item.description}
-                                            </div>
                                         </div>
                                     ))}
                                 </div>
