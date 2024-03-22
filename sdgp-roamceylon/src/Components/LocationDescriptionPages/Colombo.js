@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react'
 import Navbar from '../AboutUsPage/Navbar';
-import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
-import galleimage1 from '../LocationDescriptionPages/Images/Galle-Dutch-Fort.jpg';
-import galleimage2 from '../LocationDescriptionPages/Images/turtle-hatchery-hikkaduwa.jpg';
-import galleimage3 from '../LocationDescriptionPages/Images/Galle_Maritime_Museum.jpg';
-import LeGrand from '../LocationDescriptionPages/Images/leGrand.jpg';
-import raddisson from '../LocationDescriptionPages/Images/raddisson.jpg';
-import lighthouse from '../LocationDescriptionPages/Images/lighthouse.jpg';
-import ColomboHome from '../LocationDescriptionPages/Images/colomboHome.jpg';
+import ColImage1 from '../LocationDescriptionPages/Images/lotus-tower.jpg';
+import ColImage2 from '../LocationDescriptionPages/Images/museum.jpg';
+import ColImage3 from '../LocationDescriptionPages/Images/gallefacegreen.jpg';
+import ColImageMain from '../LocationDescriptionPages/Images/matara.jpg';
+import ColHotel1 from '../LocationDescriptionPages/Images/kingsbury.jpg';
+import ColHotel2 from '../LocationDescriptionPages/Images/hilton.jpg';
+import ColHotel3 from '../LocationDescriptionPages/Images/cinnamonlakeside.jpg';
 import LocationData from './locations.json'
 import './Galle.css';
 import Review from '../ReviewSection/Review';
@@ -105,37 +104,37 @@ export default function Colombo(location){
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
                 <div className='popular_destination'>
-                    <img src={galleimage1} className='destination_image'/>
-                    <p className='text_dest'>Galle Dutch Fort (4.7 <span class="fa fa-star checked"></span>)</p>
+                    <img src={ColImage1} className='destination_image'/>
+                    <p className='text_dest'>Colombo Lotus Tower (4.7 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={galleimage2} className='destination_image'/>
-                    <p className='text_dest'>Sea Turtle Hatchery Centre (4.4 <span class="fa fa-star checked"></span>)</p>
+                    <img src={ColImage2} className='destination_image'/>
+                    <p className='text_dest'>Colombo National Museum (4.4 <span class="fa fa-star checked"></span>)</p>
                 </div>
                 <div className='popular_destination'>
-                    <img src={galleimage3} className='destination_image'/>
-                    <p className='text_dest'>Maritime Museum (4.2 <span class="fa fa-star checked"></span>)</p>
+                    <img src={ColImage3} className='destination_image'/>
+                    <p className='text_dest'>Galle Face Green (4.2 <span class="fa fa-star checked"></span>)</p>
                 </div>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Colombo</h3>
             <div className='hotels'>
-                <a href='https://www.legrandgalle.lk/' target="_blank">
+                <a href='https://www.thekingsburyhotel.com/' target="_blank">
                 <div className='locationContainer'>
-                    <img src={LeGrand} className='destination_image'/>
-                    <p className='text_dest'>Le Grand Galle</p>
+                    <img src={ColHotel1} className='destination_image'/>
+                    <p className='text_dest'>Kingsbury</p>
                 </div>
                 </a>
-                <a href='https://www.jetwinghotels.com/jetwinglighthouse/#gref' target="_blank">
+                <a href='https://www.hilton.com/en/hotels/colhitw-hilton-colombo/' target="_blank">
                 <div className='locationContainer'>
-                    <img src={lighthouse} className='destination_image'/>
-                    <p className='text_dest'>Jetwing Lighthouse</p>
+                    <img src={ColHotel2} className='destination_image'/>
+                    <p className='text_dest'>Hilton Colombo</p>
                 </div>
                 </a>
-                <a href='https://www.radissonhotels.com/en-us/hotels/radisson-blu-galle?checkInDate=2024-03-13&checkOutDate=2024-03-14&searchType=lowest&promotionCode=&voucher=&memberOnlyRatesHotelCodes=LKCMBGAL&adults%5B%5D=2&children%5B%5D=0&aoc%5B%5D=NaN' target='_blank'>
+                <a href='https://www.cinnamonhotels.com/cinnamonlakesidecolombo' target='_blank'>
                 <div className='locationContainer'>
-                    <img src={raddisson} className='destination_image'/>
-                    <p className='text_dest'>Raddisson Blu</p>
+                    <img src={ColHotel3} className='destination_image'/>
+                    <p className='text_dest'>Cinnamon Lakeside Colombo</p>
                 </div>
                 </a>
             </div>
