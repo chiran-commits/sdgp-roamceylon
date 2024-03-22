@@ -14,7 +14,7 @@ const whiteList = require('./configuration/whiteList');
 const PORT=5009;
 connectDB();
 // app.use(credentials);
-app.use(cors(whiteList))
+app.use(cors())
 
 app.use(cookieParser());
 
