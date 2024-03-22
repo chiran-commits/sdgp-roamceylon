@@ -108,24 +108,30 @@ export default function NuwaraEliya(location){
     
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g608524-d2486502-Reviews-Horton_Plains_National_Park-Nuwara_Eliya_Central_Province.html' target='_blank'>
+                    <div className='popular_destination'>
+
+                        <img src={Nuwara1} className='destination_image'/>
+                        <p className='text_dest'>Horton Plains National Park (4.5 <span class="fa fa-star checked"></span>)</p>
+                        
+                    </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Hotel_Review-g608524-d16904340-Reviews-Little_England_By_Celeste-Nuwara_Eliya_Central_Province.html' target='_blank'>
                 <div className='popular_destination'>
-                    <a href='https://www.tripadvisor.com/Attraction_Review-g608524-d2486502-Reviews-Horton_Plains_National_Park-Nuwara_Eliya_Central_Province.html' target='_blank'>
-                    <img src={Nuwara1} className='destination_image'/>
-                    <p className='text_dest'>Horton Plains National Park (4.5 <span class="fa fa-star checked"></span>)</p>
-                    </a>
-                </div>
-                <div className='popular_destination'>
-                    <a href='https://www.tripadvisor.com/Hotel_Review-g608524-d16904340-Reviews-Little_England_By_Celeste-Nuwara_Eliya_Central_Province.html' target='_blank'>
+
                     <img src={Nuwara2} className='destination_image'/>
                     <p className='text_dest'>Little England(4.0 <span class="fa fa-star checked"></span>)</p>
-                    </a>
+                  
                 </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g608524-d2255790-Reviews-Gregory_Lake-Nuwara_Eliya_Central_Province.html' target='_blank'>
                 <div className='popular_destination'>
-                    <a href='https://www.tripadvisor.com/Attraction_Review-g608524-d2255790-Reviews-Gregory_Lake-Nuwara_Eliya_Central_Province.html' target='_blank'>
+      
                     <img src={Nuwara3} className='destination_image'/>
                     <p className='text_dest'>Gregory Lake (4.0 <span class="fa fa-star checked"></span>)</p>
-                    </a>
+                    
                 </div>
+                </a>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Popular Hotels in Nuwara Eliya</h3>
