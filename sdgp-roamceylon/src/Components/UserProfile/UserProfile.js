@@ -29,7 +29,7 @@ function UserProfile() {
                 nav('/login');
             } else {
                 const res = await axios
-                    .get("http://localhost:5009/user", {
+                    .get("https://sdgp-restapi.vercel.app/user", {
                         headers: {
                           Authorization: `Bearer ${accessToken}`
                         }
