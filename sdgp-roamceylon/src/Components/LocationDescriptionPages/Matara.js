@@ -42,7 +42,7 @@ export default function Matara(location){
                                 <div className='indicators'>
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title'>Weather<br></br></span><p className='weather-type'>Cold</p>
+                                            <span className='title'>Weather<br></br></span><p className='weather-type'>Hot and Sunny</p>
                                             <p className='weatherdata'><FetchWeatherData city="matara" className="weatherdata"/></p>
                                         </p>
                                     </div>
@@ -104,18 +104,27 @@ export default function Matara(location){
     
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
-                <div className='popular_destination'>
-                    <img src={MataraImage1} className='destination_image'/>
-                    <p className='text_dest'>The Shrine of Our Lady of Matara(4.9 <span class="fa fa-star checked"></span>)</p>
-                </div>
-                <div className='popular_destination'>
-                    <img src={MataraImage2} className='destination_image'/>
-                    <p className='text_dest'>Matara Paravi Duwa Beach(4.4 <span class="fa fa-star checked"></span>)</p>
-                </div>
-                <div className='popular_destination'>
-                    <img src={MataraImage3} className='destination_image'/>
-                    <p className='text_dest'>Dondra Head(4.4 <span class="fa fa-star checked"></span>)</p>
-                </div>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g946553-d6553169-Reviews-The_Shrine_of_Our_Lady_of_Matara-Matara_Southern_Province.html' target='_blank'>
+                    <div className='popular_destination'>
+                        <img src={MataraImage1} className='destination_image'/>
+                        <p className='text_dest'>The Shrine of Our Lady of Matara(4.9 <span class="fa fa-star checked"></span>)</p>
+                    </div> 
+                </a>
+                
+                <a href='https://www.tripadvisor.com/Attraction_Review-g946553-d8400337-Reviews-Matara_Paravi_Duwa_Temple-Matara_Southern_Province.html'>
+                    <div className='popular_destination'>
+                        <img src={MataraImage2} className='destination_image'/>
+                        <p className='text_dest'>Matara Paravi Duwa Beach(4.4 <span class="fa fa-star checked"></span>)</p>
+                    </div>  
+                </a>
+                
+                <a href='https://www.tripadvisor.com/Attraction_Review-g5888882-d5887931-Reviews-Dondra_Head_Lighthouse-Dondra_Southern_Province.html'>
+                    <div className='popular_destination'>
+                        <img src={MataraImage3} className='destination_image'/>
+                        <p className='text_dest'>Dondra Head(4.4 <span class="fa fa-star checked"></span>)</p>
+                    </div>  
+                </a>
+                
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Anuradhapura</h3>

@@ -41,7 +41,7 @@ export default function Galle(location){
                                 <div className='indicators'>
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title'>Weather<br></br></span><p className='weather-type'>Tropical/Hot and Humid</p>
+                                            <span className='title'>Weather<br></br></span><p className='weather-type'>Hot and Humid</p>
                                             <p className='weatherdata'><FetchWeatherData city="kandy" className="weatherdata"/></p>
                                         </p>
                                     </div>

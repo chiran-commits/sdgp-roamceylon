@@ -46,7 +46,7 @@ export default function NuwaraEliya(location){
                                 <div className='indicators'>    
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title' >Weather<br></br></span><p>Tropical/ Hot and Humid</p>
+                                            <span className='title' >Weather<br></br></span><p>Cold</p>
                                             <p className='weatherdata'><FetchWeatherData city="nuwara eliya" className="weatherdata"/></p>
                                         </p>
                                     </div>
