@@ -429,6 +429,10 @@
         margin-left: 10px;
         height: 150vh;
     }
+
+    .leftContainer{
+        bottom: 700px;
+    }
 } 
 
 @media (max-width: 415px) {
