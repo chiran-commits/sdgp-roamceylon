@@ -82,7 +82,7 @@ export default function Galle(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                Med
+                                                                Medium
                                                             </div>
                                                         </div>
                                                     </div>

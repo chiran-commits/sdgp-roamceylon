@@ -258,7 +258,7 @@ svg{
         text-align: center;
         padding: 20px;
         margin: 160px 20px 250px 20px;
-        height: 70vh;
+        height: 90vh;
     }
 
     .destination-heading{
@@ -269,15 +269,33 @@ svg{
         font-size: 25px;
     }
 
-    .location_destinations{
-        height: 200vh;
-    }
-
     .location_information{
         height: 100vh;
     }
     .location_detail h3{
         font-size: 25px;
         color: white;
+    }
+}
+
+@media (max-width:800px){
+    .location_detail{
+        text-align: center;
+        padding: 20px;
+        margin: 90px 20px 250px 20px;
+        height: 55vh;
+    }
+}
+
+@media (max-width:376px) {
+    .location_detail .description{
+        font-size: 20px;
+    }
+
+    .location_detail{
+        text-align: center;
+        padding: 20px;
+        margin: 140px 20px 250px 20px;
+        height: 75vh;
     }
 }

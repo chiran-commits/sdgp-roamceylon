@@ -32,7 +32,7 @@ export default function NuwaraEliya(location){
                     <h3>NUWARA ELIYA</h3>
                     <div className='location_Des'>
                         <h3 className='description'>
-                        Nuwara Eliya, nicknamed "Little England," is a charming town in Sri Lanka's hill country. Known for its cool climate, colonial architecture, and lush tea plantations, it offers serene lakes, picturesque waterfalls, and renowned botanical gardens. With its refreshing atmosphere and scenic beauty, Nuwara Eliya is a popular destination for nature lovers and those seeking a peaceful retreat.
+                        Nuwara Eliya, nicknamed "Little England," is a charming town in Sri Lanka's hill country. Known for its cool climate, colonial architecture, and lush tea plantations, it offers serene lakes, picturesque waterfalls, and renowned botanical gardens.
                         </h3>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ export default function NuwaraEliya(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                Mod
+                                                                Medium
                                                             </div>
                                                         </div>
                                                     </div>

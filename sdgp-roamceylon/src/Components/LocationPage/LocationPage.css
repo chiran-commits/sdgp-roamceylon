@@ -19,7 +19,7 @@
 .leftContainer{
     border-radius: 30px;
     background-color: #ffffff00;
-    width: 800px;
+    width: 100%;
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -54,9 +54,8 @@
 
 .leftContainer .input-box-search{
     position: relative;
-    width: 70%;
+    width: 100%;
     height: 50px;
-    margin: 40px 0;
 }
 
 .input-box-search input{
@@ -104,7 +103,6 @@
     --font-color: #176B87;
     --bg-color: #b0d8f0;
     --main-color: #04364A;
-    width: 120px;
     height: 40px;
     border-radius: 5px;
     border: 2px solid var(--main-color);
@@ -114,9 +112,8 @@
     font-weight: 600;
     color: var(--font-color);
     cursor: pointer;
-    width: 40%;
-    margin-top: 40px
-
+    width: 50%;
+    margin-top: 50px
 }
 
 .rightContainer .recommendation-btn:hover{
@@ -301,7 +298,6 @@
     }
     .leftContainer{
         border-radius: 30px;
-        background-color: #b0d8f0;
         height: 550px;
         width: 550px;
         margin-left: 0px;
@@ -309,40 +305,20 @@
         align-items: center;
         flex-direction: column;
     }
-
-
-
 }
 
-@media (max-width: 480px) {
-    .mainContainer {
-        flex-direction: column; /* Stack items vertically */
-        height: 180vh;
-        width: 85%;
+@media (max-width: 800px ) {
+    .mainContainer{
+        height: 1800px;
     }
 
-    .location-container{
-        width: 100%;
+    .leftContainer{
+        margin-top: 100px;
     }
 
-    .leftContainer,
-    .rightContainer {
-        border-radius: 20px; /* Adjust border radius */
-        margin-left: 220px;
-        padding: 0px;
-    }   
-
-    .leftContainer .input-box-search{
-        position: relative;
-        width: 50%;
-        height: 50px;
-        margin: 40px 0;
+    .location-card{
+        width: 90%;
     }
-}
-
-.location-card h4{
-    color: black;
-    font-weight: 500;
 }
 
 @media (max-width:768px) {
@@ -361,54 +337,79 @@
     }
 }
 
-@media (max-width: 800px ) {
-    .mainContainer{
-        height: 1800px;
+
+@media (max-width: 480px) {
+    .location-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+      }
+    
+    .leftContainer {
+        margin-bottom: 10px; /* Add some space between the search bar and recommendation */
+    }
+    
+    .rightContainer {
+        margin-top: 10px; /* Add some space between the recommendation and location cards */
     }
 
     .leftContainer{
-        margin-top: 100px;
-    }
-
-    .location-card{
-        width: 90%;
-    }
-}
-
-@media (max-width:480px){
-    .leftContainer{
-        margin-top:700px;
-        width: 92%;
-        margin-right: 220px;
-    }
-    .input-box-search input{
-        width:250px;
-    }
-    .mainContainer{
-        width: 95%;
-        margin-left: 10px;
-        height: 1900px;
-    }
-    .input-box-search{
-        margin-right: 50px;
+        border-radius: 30px;
+        background-color: #ffffff00;
+        width: 80%;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .rightContainer{
-        padding-top: 20px;
+        border-radius: 30px;
+        height: 550px;
         width: 95%;
-        margin-right: 220px;
-        margin-bottom: 1200px;
+        background-color: #b0d8f0;
+        padding-top: 50px;
     }
 
-    .rightContainer .recommendation-btn{
-        margin-top: 30px;
-        height: 60px;
+    .textarea-center textarea{ 
+        border: none;
+        width: 100%;
     }
 
-    .location-card{
-        width: 98%;
-        margin-left:5px;
-        height: 150px;
+    .descriptionKeywords{
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    
+
+    .input-box-search input{
+        width: 100%;
+    }
+}    
+
+@media (max-width: 431px) {
+    .mainContainer{
+        width: 95%;
+        margin-left: 10px;
+        height: 150vh;
+    }
+} 
+
+@media (max-width: 415px) {
+    .mainContainer{
+        width: 95%;
+        margin-left: 10px;
+        height: 150vh;
+    }
+}  
+
+@media (max-width: 391px) {
+    .mainContainer{
+        width: 95%;
+        margin-left: 10px;
+        height: 150vh;
+    }
+}    
+
+.location-card h4{
+    color: black;
+    font-weight: 500;
 }
+
