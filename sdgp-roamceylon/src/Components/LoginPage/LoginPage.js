@@ -49,7 +49,7 @@ export default function Login() {
         // }
         try {
 
-            const data = await axios.post('http://localhost:5009/login', { email, password }).then(
+            const data = await axios.post('https://sdgp-restapi-8i5dg1o4o-chiran-commits-projects.vercel.app/login', { email, password }).then(
                 setError('')
             )
             console.log(data.data)
