@@ -87,6 +87,12 @@ nav .navMenu span{
 
 nav ul#navbar.open{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul#navbar{
+    width: 100%;
 }
 
 @media (max-width:850px) {
@@ -115,7 +121,6 @@ nav ul#navbar.open{
         border-radius: 10px;
         position:absolute;
         margin-top: 5px;
-        padding: 200px;
         padding-top: 40px;
     }
 
@@ -137,8 +142,119 @@ nav ul#navbar.open{
 
 }
 
-@media (max-width:480px) {
-    nav{
-        width: 95%;
+/* This is the responsive CSS for the Navbar centering */
+
+@media (max-width: 480px) {
+        nav ul#navbar {
+          margin: 0; 
+          padding: 0; 
+          width: 260%;
+          margin: 0 auto; /* Center the navbar */
+          position: static; 
+          border-radius: 0; 
+          box-shadow: none; 
+          background-color: rgba(255, 255, 255, 0.9); 
+        }
+      
+        nav ul#navbar li {
+          margin: 0; 
+          text-align: center; 
+          width: 100%; 
+          border-bottom: 1px solid #ccc; 
+        }
+      
+        nav ul#navbar li:last-child {
+          border-bottom: none; 
+        }
+      
+        nav ul#navbar a {
+          display: block;
+          padding: 10px 0; /* Adjust padding to fit width */
+          color: black; 
+          font-size: 18px; 
+          text-decoration: none; 
+        }
+  
+    nav {
+      width: 95%;
     }
+  }
+  
+  @media (max-width: 390px) {
+    nav {
+      width: 95%;
+    }
+  
+    nav ul#navbar a {
+      display: block;
+      padding: 10px 0; /* Adjust padding to fit width */
+      color: black; 
+      width: 100%;
+      font-size: 18px; 
+      text-decoration: none; 
+    }
+
+    nav ul#navbar {
+        width: 20%;
+    }    
+  }
+
+  @media (max-width:431px) {
+    nav ul#navbar {
+        width: 207%;
+    } 
+  } 
+
+  @media (max-width:415px) {
+    nav ul#navbar {
+        width: 199%;
+    } 
+  }  
+
+  @media (max-width:391px) {
+    nav ul#navbar {
+        width: 188%;
+    } 
+  }  
+
+  @media (max-width:376px) {
+    nav ul#navbar {
+        width: 180%;
+    } 
+  }
+  
+
+@media (max-width:800px){
+    nav ul#navbar {
+        margin: 0; 
+        padding: 0; 
+        margin: 0 auto; /* Center the navbar */
+        position: static; 
+        border-radius: 0; 
+        box-shadow: none; 
+        background-color: rgba(255, 255, 255, 0.9); 
+    }
+    
+    nav ul#navbar li {
+        margin: 0; 
+        text-align: center; 
+        width: 100%; 
+        border-bottom: 1px solid #ccc; 
+    }
+    
+    nav ul#navbar li:last-child {
+        border-bottom: none; 
+    }
+    
+    nav ul#navbar a {
+        display: block;
+        padding: 10px 27px; /* Adjust padding to fit width */
+        color: black; 
+        font-size: 18px; 
+        text-decoration: none; 
+    }
+
+    nav {
+        width: 96%;
+    }  
 }

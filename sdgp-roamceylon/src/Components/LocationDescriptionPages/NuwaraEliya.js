@@ -32,7 +32,7 @@ export default function NuwaraEliya(location){
                     <h3>NUWARA ELIYA</h3>
                     <div className='location_Des'>
                         <h3 className='description'>
-                        Nuwara Eliya, nicknamed "Little England," is a charming town in Sri Lanka's hill country. Known for its cool climate, colonial architecture, and lush tea plantations, it offers serene lakes, picturesque waterfalls, and renowned botanical gardens. With its refreshing atmosphere and scenic beauty, Nuwara Eliya is a popular destination for nature lovers and those seeking a peaceful retreat.
+                        Nuwara Eliya, nicknamed "Little England," is a charming town in Sri Lanka's hill country. Known for its cool climate, colonial architecture, and lush tea plantations, it offers serene lakes, picturesque waterfalls, and renowned botanical gardens.
                         </h3>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ export default function NuwaraEliya(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                Mod
+                                                                Medium
                                                             </div>
                                                         </div>
                                                     </div>
@@ -97,7 +97,7 @@ export default function NuwaraEliya(location){
                                         </div>    
                                     </div>
                                     <div className='indicator-container'>
-                                        <p><span className='title'>URBAN/RURAL<br></br></span><p style={{marginTop:"20px"}}>{data.type}</p></p>
+                                        <p><span className='title'>URBAN/RURAL<br></br></span><p className='city-type'>{data.type}</p></p>
                                     </div>
                                 </div>    
                             </div>
@@ -109,16 +109,22 @@ export default function NuwaraEliya(location){
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
                 <div className='popular_destination'>
+                    <a href='https://www.tripadvisor.com/Attraction_Review-g608524-d2486502-Reviews-Horton_Plains_National_Park-Nuwara_Eliya_Central_Province.html' target='_blank'>
                     <img src={Nuwara1} className='destination_image'/>
                     <p className='text_dest'>Horton Plains National Park (4.5 <span class="fa fa-star checked"></span>)</p>
+                    </a>
                 </div>
                 <div className='popular_destination'>
+                    <a href='https://www.tripadvisor.com/Hotel_Review-g608524-d16904340-Reviews-Little_England_By_Celeste-Nuwara_Eliya_Central_Province.html' target='_blank'>
                     <img src={Nuwara2} className='destination_image'/>
                     <p className='text_dest'>Little England(4.0 <span class="fa fa-star checked"></span>)</p>
+                    </a>
                 </div>
                 <div className='popular_destination'>
+                    <a href='https://www.tripadvisor.com/Attraction_Review-g608524-d2255790-Reviews-Gregory_Lake-Nuwara_Eliya_Central_Province.html' target='_blank'>
                     <img src={Nuwara3} className='destination_image'/>
                     <p className='text_dest'>Gregory Lake (4.0 <span class="fa fa-star checked"></span>)</p>
+                    </a>
                 </div>
             </div>
             <br></br><br></br><br></br>
@@ -144,7 +150,7 @@ export default function NuwaraEliya(location){
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="galle"/>
+            <Review location="NuwaraEliya"/>
 
         </div>
         

@@ -23,8 +23,10 @@ body{
     color: #176B87 ;
     width: 500px;
 }
-.profile-container:hover{
+.profile-container:hover, .info-container:hover{
     border-bottom: 8px solid  #04364A;
+    translate: 0px -15px;
+    transition: 0.3s ease-in-out;
 }
 .info-container{
     margin-left: 10px;
@@ -37,9 +39,9 @@ body{
     color: #176B87 ;
     width: 500px;
 }
-.info-container:hover{
+/* .info-container:hover{
     border-bottom: 8px solid  #04364A;
-}
+} */
 
 .info-container p{
     margin-top: 5px;

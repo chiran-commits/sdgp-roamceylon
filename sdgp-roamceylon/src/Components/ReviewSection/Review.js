@@ -29,11 +29,8 @@ const Review = (details) => {
         const getProfile = async () => {
 
             const accessToken = localStorage.getItem('roamceylon-accessToken');
-            if (accessToken == null) {
-                nav('/login');
-            } else {
                 const res = await axios
-                    .get("http://localhost:5009/user", {
+                    .get("https://sdgp-restapi-8i5dg1o4o-chiran-commits-projects.vercel.app/user", {
                         headers: {
                           Authorization: `Bearer ${accessToken}`
                         }
@@ -51,7 +48,7 @@ const Review = (details) => {
                     );
 
 
-            }
+            
 
         };
         getProfile();
@@ -109,7 +106,7 @@ const Review = (details) => {
 
         <section className="colombopagereviews">
 
-        {!publisedReviews.length ? <Loader/> : (
+
 
 
        
@@ -143,7 +140,7 @@ const Review = (details) => {
                 </ul>
 
             </div>
-         )}
+
 
             <h3 className='review-heading'>See what other Digital Nomads have to say!</h3>
 

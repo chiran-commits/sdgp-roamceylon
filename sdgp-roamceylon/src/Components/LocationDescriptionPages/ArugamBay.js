@@ -82,7 +82,7 @@ export default function Galle(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                Med
+                                                                Medium
                                                             </div>
                                                         </div>
                                                     </div>
@@ -99,7 +99,7 @@ export default function Galle(location){
                                         </div>    
                                     </div>
                                     <div className='indicator-container'>
-                                        <p><span className='title'>URBAN/RURAL<br></br></span><p style={{marginTop:"20px"}}>{data.type}</p></p>
+                                        <p><span className='title'>URBAN/RURAL<br></br></span><p className='city-type'>{data.type}</p></p>
                                     </div>
                                 </div>    
                             </div>
@@ -110,18 +110,26 @@ export default function Galle(location){
     
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g3348959-d577794-Reviews-Arugam_Bay-Arugam_Bay_Eastern_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={Aru1} className='destination_image'/>
                     <p className='text_dest'>Arugam Bay Beach (4.0 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
+
+                <a href='https://www.tripadvisor.com/Attraction_Review-g608525-d7225212-Reviews-Whisky_Point_Sri_Lanka-Pottuvil_Arugam_Bay_Eastern_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={Aru2} className='destination_image'/>
                     <p className='text_dest'>Whiskey Point (4.5 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
+
+                <a href='https://www.kumananationalpark.com/' target="_blank">
                 <div className='popular_destination'>
                     <img src={Aru3} className='destination_image'/>
                     <p className='text_dest'>Kumana National Park (4.9 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Arugam Bay</h3>
@@ -146,7 +154,7 @@ export default function Galle(location){
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="galle"/>
+            <Review location="ArugamBay"/>
 
         </div>
         

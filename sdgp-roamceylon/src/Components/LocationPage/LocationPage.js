@@ -8,7 +8,7 @@ import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { authorizationActions } from "../../store";
 import { useSelector } from 'react-redux';
-import Galle from '../LocationDescriptionPages/common2.js';
+
 // import Common from '../LocationDescriptionPages/common.js'; 
 
 export default function LocationPage() {
@@ -33,7 +33,7 @@ export default function LocationPage() {
                 dispatch(authorizationActions.logout())
             }else{
                 const res = await axios
-                .get("http://localhost:5009/user",{
+                .get("https://sdgp-restapi-8i5dg1o4o-chiran-commits-projects.vercel.app/user",{
                     headers: {
                         Authorization: `Bearer ${accessToken}`
                     }
@@ -50,12 +50,14 @@ export default function LocationPage() {
     }, []);
 
     const isLoggedIn = useSelector((state) => state.isLoggedIn);
+    console.log(isLoggedIn);
 
     const handleDescriptionChange = (event) => {
         setDescriptionData(event.target.value);
     };
 
     const handleSubmitDescription = async () => {
+        window.scrollTo(0,800);
         try {
             const locations = await axios.post('http://spacynlp.pythonanywhere.com/nlp', {"desc": descriptionData});
             console.log(locations.data.locations);
@@ -114,7 +116,7 @@ export default function LocationPage() {
                 <div className="location-container">
                     <div className="leftContainer">
                         <div className="input-box-search">
-                            <input type="text" placeholder="Search the location for you...." onChange={onChange} value={value} />
+                            <input className='search-bar' type="text" placeholder="Search the location for you...." onChange={onChange} value={value} />
                             <i className='bx bxs-user'></i>
                             {value && (
                                 <div className='drop-down'>
@@ -131,7 +133,7 @@ export default function LocationPage() {
                         </div>
                     </div>
                     { isLoggedIn && (
-                        <div className="rightContainer" style={{ display: showRightContainer ? 'block' : 'none' }}>
+                        <div className="rightContainer" >
                             <h2><center>Provide Recommendation</center></h2>
                             <div className='textarea-center'>
                                 <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>
@@ -161,68 +163,78 @@ export default function LocationPage() {
                                         <div key={index}>
                                             {location === "colombo" ? (
                                                 <a href='/colombo'>
-                                                  <p className='location-card'>Colombo
-                                                  <p className='locationdesc'>{getDescription("Colombo")}</p>
-                                                  </p>  
+                                                  <div className='location-card'>
+                                                    <h4>Colombo</h4>
+                                                    <p className='locationdesc'>{getDescription("Colombo")}</p>
+                                                  </div>  
                                                 </a>
                                             ) : location === "kandy" ? (
                                                 <a href='/kandy'>
-                                                  <p className='location-card'>Kandy
-                                                  <p className='locationdesc'>{getDescription("Kandy")}</p>
-                                                  </p>  
+                                                  <div className='location-card'>
+                                                    <h4>Kandy</h4>
+                                                    <p className='locationdesc'>{getDescription("Kandy")}</p>
+                                                  </div>  
                                                 </a>
                                             ) : location === "galle" ? (
                                                 <a href='/galle'>
-                                                   <p className='location-card'>Galle
-                                                   <p className='locationdesc'>{getDescription("Galle")}</p>
-                                                   </p> 
+                                                   <div className='location-card'>
+                                                    <h4>Galle</h4>
+                                                    <p className='locationdesc'>{getDescription("Galle")}</p>
+                                                   </div> 
                                                 </a>
                                             ) : location === "ella" ? (
                                                 <a href='/ella'>
-                                                  <p className='location-card'>Ella
-                                                  <p className='locationdesc'>{getDescription("Ella")}</p>
-                                                  </p>  
+                                                  <div className='location-card'>
+                                                    <h4>Ella</h4>
+                                                    <p className='locationdesc'>{getDescription("Ella")}</p>
+                                                  </div>  
                                                 </a>
                                             ) : location === "anuradhapura" ? (
                                                 <a href='/anuradhapura'>
-                                                  <p className='location-card'>Anuradhapura
-                                                  <p className='locationdesc'>{getDescription("Anuradhapura")}</p>
-                                                  </p>  
+                                                  <div className='location-card'>
+                                                    <h4>Anuradhapura</h4>
+                                                    <p className='locationdesc'>{getDescription("Anuradhapura")}</p>
+                                                  </div>  
                                                 </a>
                                             ) : location ==="jaffna" ? (
                                                 <a href='/jaffna'>
-                                                  <p className='location-card'>Jaffna
-                                                  <p className='locationdesc'>{getDescription("Jaffna")}</p>
-                                                  </p>  
+                                                  <div className='location-card'>
+                                                    <h4>Jaffna</h4>
+                                                    <p className='locationdesc'>{getDescription("Jaffna")}</p>
+                                                  </div>  
                                                 </a>
                                             ) : location ==="arugambay" ? (
                                                 <a href='/arugambay'>
-                                                  <p className='location-card'>Arugam Bay
-                                                  <p className='locationdesc'>{getDescription("Arugam Bay")}</p>
-                                                  </p>  
+                                                  <div className='location-card'>
+                                                    <h4>Arugam Bay</h4>
+                                                    <p className='locationdesc'>{getDescription("Arugam Bay")}</p>
+                                                  </div>  
                                                 </a>
                                             ) : location ==="nuwaraeliya" ? (
                                                 <a href='/nuwaraeliya'>
-                                                  <p className='location-card'>Nuwara-Eliya
-                                                  <p className='locationdesc'>{getDescription("Nuwara-Eliya")}</p>
-                                                  </p>  
+                                                  <div className='location-card'>
+                                                    <h4>Nuwara-Eliya</h4>
+                                                    <p className='locationdesc'>{getDescription("Nuwara-Eliya")}</p>
+                                                  </div>  
                                                 </a>
                                             ) : location ==="trincomalee" ? (
                                                 <a href='/Trincomalee'>
-                                                  <p className='location-card'>Trincomalee
-                                                  <p className='locationdesc'>{getDescription("Trincomalee")}</p>
-                                                  </p>  
+                                                  <div className='location-card'>
+                                                    <h4>Trincomalee</h4>
+                                                    <p className='locationdesc'>{getDescription("Trincomalee")}</p>
+                                                  </div>  
                                                 </a>
                                             ) : location ==="matara" ?(
                                                 <a>
-                                                  <p className='location-card'>Matara
-                                                  <p className='locationdesc'>{getDescription("Matara")}</p>
-                                                  </p>  
+                                                  <div className='location-card'>
+                                                    <h4>Matara</h4>
+                                                    <p className='locationdesc'>{getDescription("Matara")}</p>
+                                                  </div>  
                                                 </a>
                                             ): (
                                                 <p className='location-card'>No Locations Found !</p>
                                             )}
-                                        </div>   
+                                        </div>
                                         ))}  
                                     </div>
                                 </div>

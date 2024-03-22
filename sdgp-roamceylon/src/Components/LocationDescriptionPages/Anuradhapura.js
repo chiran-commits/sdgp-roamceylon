@@ -7,7 +7,7 @@ import AnuImageMain from '../LocationDescriptionPages/Images/anuradhapura.jpg';
 import AnuHotel1 from '../LocationDescriptionPages/Images/heritage.jpg';
 import AnuHotel2 from '../LocationDescriptionPages/Images/tlfh.jpg';
 import AnuHotel3 from '../LocationDescriptionPages/Images/rajarata.jpg';
-import LocationData from './locations.json'
+import LocationData from './locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
@@ -42,7 +42,7 @@ export default function Anuradhapura(location){
                                 <div className='indicators'>
                                     <div className='indicator-container'>
                                         <p>
-                                            <span className='title'>Weather<br></br></span><p>Cold</p>
+                                            <span className='title'>Weather<br></br></span><p className='weather-type'>Cold</p>
                                             <p className='weatherdata'><FetchWeatherData city="anuradhapura" className="weatherdata"/></p>
                                         </p>
                                     </div>
@@ -93,7 +93,7 @@ export default function Anuradhapura(location){
                                         </div>    
                                     </div>
                                     <div className='indicator-container'>
-                                        <p><span className='title'>URBAN/RURAL<br></br></span><p>{data.type}</p></p>
+                                        <p><span className='title'>URBAN/RURAL<br></br></span><p className='city-type'>{data.type}</p></p>
                                     </div>
                                 </div>
                             </div>    
@@ -104,18 +104,26 @@ export default function Anuradhapura(location){
     
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g304132-d447402-Reviews-or20-Jaya_Sri_Maha_Bodhi-Anuradhapura_North_Central_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={AnuImage1} className='destination_image'/>
                     <p className='text_dest'>Jaya Sri Maha Bodhi(4.9 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
+
+                <a href='https://www.tripadvisor.com/ShowUserReviews-g304132-d600739-r704657130-Ruwanwelisaya-Anuradhapura_North_Central_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={AnuImage2} className='destination_image'/>
                     <p className='text_dest'>Ruwanweli Maha Seya(4.9 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
+
+                <a href='https://www.tripadvisor.com/Attraction_Review-g304132-d447400-Reviews-Dagoba_of_Thuparama-Anuradhapura_North_Central_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={AnuImage3} className='destination_image'/>
                     <p className='text_dest'>Thuparama vihara(4.8 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Anuradhapura</h3>
@@ -140,7 +148,7 @@ export default function Anuradhapura(location){
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="anuradhapura"/>
+            <Review location="Anuradhapura"/>
 
         </div>
         

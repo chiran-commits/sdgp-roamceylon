@@ -27,7 +27,7 @@ export default function Jaffna(location){
         <div className='main'>
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
-                <img src={JaffnaHome} className='location_image'></img>
+                <img src={JaffnaHome} className='location_image' style={{bottom:"-50px"}}></img>
                 <div className='location_detail'>
                     <h3>JAFFNA</h3>
                     <div className='location_Des'>
@@ -97,7 +97,7 @@ export default function Jaffna(location){
                                         </div>    
                                     </div>
                                     <div className='indicator-container'>
-                                        <p><span className='title'>URBAN/RURAL<br></br></span><p style={{marginTop:"20px"}}>{data.type}</p></p>
+                                        <p><span className='title'>URBAN/RURAL<br></br></span><p className='city-type'>{data.type}</p></p>
                                     </div>
                                 </div>    
                             </div>
@@ -108,18 +108,25 @@ export default function Jaffna(location){
     
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g304135-d10020546-Reviews-Nallur_Kandaswamy_Kovil_Festival-Jaffna_Northern_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={Jaffna1} className='destination_image'/>
                     <p className='text_dest'>Nallur Kovil (4.5 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g304135-d3628732-Reviews-Jaffna_Fort-Jaffna_Northern_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={Jaffna2} className='destination_image'/>
                     <p className='text_dest'>Jaffna Fort (4.0 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
+
+                <a href='https://www.tripadvisor.com/Attraction_Review-g304135-d25372640-Reviews-Delft_Arckaa-Jaffna_Northern_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={Jaffna3} className='destination_image'/>
                     <p className='text_dest'>Delft Island (4.0 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Galle</h3>
@@ -144,7 +151,7 @@ export default function Jaffna(location){
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="galle"/>
+            <Review location="Jaffna"/>
 
         </div>
         
