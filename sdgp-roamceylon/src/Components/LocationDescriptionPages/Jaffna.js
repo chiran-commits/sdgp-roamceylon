@@ -144,7 +144,7 @@ export default function Jaffna(location){
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="galle"/>
+            <Review location="Jaffna"/>
 
         </div>
         

@@ -146,7 +146,7 @@ export default function Galle(location){
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="galle"/>
+            <Review location="ArugamBay"/>
 
         </div>
         

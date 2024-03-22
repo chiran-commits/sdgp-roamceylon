@@ -140,7 +140,7 @@ export default function Anuradhapura(location){
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="anuradhapura"/>
+            <Review location="Anuradhapura"/>
 
         </div>
         

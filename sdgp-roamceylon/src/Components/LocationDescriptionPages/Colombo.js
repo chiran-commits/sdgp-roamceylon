@@ -140,7 +140,7 @@ export default function Colombo(location){
                 </a>
             </div>
             <br></br><br></br><br></br><br></br>
-            <Review location="galle"/>
+            <Review location="colombo"/>
 
         </div>
         
