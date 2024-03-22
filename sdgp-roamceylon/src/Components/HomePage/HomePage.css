@@ -379,6 +379,38 @@
   opacity: .9;
 }
 
+/*CSS for the Discord section */
+
+.discord{
+  background-color: rgba(118, 135, 212, 0.800);
+  padding: 20px;
+  min-height: 350px;
+  border-radius: 30px;
+}
+
+.discord h3{
+  font-size: 52px;
+  padding-bottom: 70px;
+}
+
+.discord p{
+  font-size: 25px;
+}
+
+.discord a{
+  font-size: 25px;
+  padding: 25px;
+  background-color: rgba(118, 135, 212, 1);
+  border-radius: 10px;
+  color: black;
+}
+
+.discord a:hover{
+  transform: scale(1.5);
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
 /* This is the wave animation for about us */
 
 .content h2 {

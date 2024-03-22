@@ -16,11 +16,14 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useDispatch } from 'react-redux';
 import { authorizationActions } from "../../store";
+import { useSelector } from 'react-redux';
 
 export default function HomePage() {
 
   const dispatch = useDispatch();
 
+  const isLoggedIn = useSelector((state) => state.isLoggedIn);
+  console.log(isLoggedIn);
   
  
 
@@ -280,6 +283,10 @@ export default function HomePage() {
                 </Link>  
               </div>
             </section>  
+          </div>
+          <div className="discord">
+              <h3>Be a Part of the Community</h3>
+              {isLoggedIn ? (<a href="https://discord.gg/5kNm49ejz5">Join the discord server</a>) : (<p>Login to an account to join the RoamCeylon Discord Server!</p>)}
           </div>
           <hr className="footer-sep"></hr>
           <footer className="home-footer">
