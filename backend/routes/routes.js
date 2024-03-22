@@ -14,7 +14,9 @@ const {sendUser}=require('../controllers/usersController');
 const cors = require('cors');
 
 
-
+router.get('/',(req,res)=>{
+    res.send('welcome to roamceylon')
+})
 
 router.post('/register',registerUser)
 router.post('/login', loginUser)
