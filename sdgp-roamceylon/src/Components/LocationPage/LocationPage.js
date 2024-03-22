@@ -116,7 +116,7 @@ export default function LocationPage() {
                 <div className="location-container">
                     <div className="leftContainer">
                         <div className="input-box-search">
-                            <input type="text" placeholder="Search the location for you...." onChange={onChange} value={value} />
+                            <input className='search-bar' type="text" placeholder="Search the location for you...." onChange={onChange} value={value} />
                             <i className='bx bxs-user'></i>
                             {value && (
                                 <div className='drop-down'>

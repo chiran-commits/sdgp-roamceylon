@@ -121,7 +121,6 @@ nav ul#navbar{
         border-radius: 10px;
         position:absolute;
         margin-top: 5px;
-        padding: 200px;
         padding-top: 40px;
     }
 
@@ -162,7 +161,6 @@ nav ul#navbar{
           text-align: center; 
           width: 100%; 
           border-bottom: 1px solid #ccc; 
-          overflow: hidden;
         }
       
         nav ul#navbar li:last-child {
@@ -175,7 +173,6 @@ nav ul#navbar{
           color: black; 
           font-size: 18px; 
           text-decoration: none; 
-          overflow: hidden;
         }
   
     nav {
@@ -204,18 +201,60 @@ nav ul#navbar{
 
   @media (max-width:431px) {
     nav ul#navbar {
-        width: 284%;
+        width: 207%;
     } 
-  }  
+  } 
 
   @media (max-width:415px) {
     nav ul#navbar {
-        width: 273%;
+        width: 199%;
     } 
-  }
+  }  
+
+  @media (max-width:391px) {
+    nav ul#navbar {
+        width: 188%;
+    } 
+  }  
 
   @media (max-width:376px) {
     nav ul#navbar {
-        width: 246%;
+        width: 180%;
     } 
   }
+  
+
+@media (max-width:800px){
+    nav ul#navbar {
+        margin: 0; 
+        padding: 0; 
+        margin: 0 auto; /* Center the navbar */
+        position: static; 
+        border-radius: 0; 
+        box-shadow: none; 
+        background-color: rgba(255, 255, 255, 0.9); 
+    }
+    
+    nav ul#navbar li {
+        margin: 0; 
+        text-align: center; 
+        width: 100%; 
+        border-bottom: 1px solid #ccc; 
+    }
+    
+    nav ul#navbar li:last-child {
+        border-bottom: none; 
+    }
+    
+    nav ul#navbar a {
+        display: block;
+        padding: 10px 27px; /* Adjust padding to fit width */
+        color: black; 
+        font-size: 18px; 
+        text-decoration: none; 
+    }
+
+    nav {
+        width: 96%;
+    }  
+}

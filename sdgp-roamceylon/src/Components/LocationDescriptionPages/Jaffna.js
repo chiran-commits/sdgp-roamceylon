@@ -27,7 +27,7 @@ export default function Jaffna(location){
         <div className='main'>
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
-                <img src={JaffnaHome} className='location_image'></img>
+                <img src={JaffnaHome} className='location_image' style={{bottom:"-50px"}}></img>
                 <div className='location_detail'>
                     <h3>JAFFNA</h3>
                     <div className='location_Des'>
