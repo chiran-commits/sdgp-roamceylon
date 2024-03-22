@@ -103,18 +103,26 @@ export default function Galle(location){
     
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g297896-d3617497-Reviews-Galle_Fort-Galle_Galle_District_Southern_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={galleimage1} className='destination_image'/>
                     <p className='text_dest'>Galle Dutch Fort (4.7 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
+
+
+                <a href='https://www.tripadvisor.com/Attraction_Review-g297896-d11592370-Reviews-Sea_Turtle_Farm_Galle_Mahamodara-Galle_Galle_District_Southern_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={galleimage2} className='destination_image'/>
                     <p className='text_dest'>Sea Turtle Hatchery Centre (4.4 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g297896-d3404467-Reviews-Maritime_Archeology_Museum-Galle_Galle_District_Southern_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={galleimage3} className='destination_image'/>
                     <p className='text_dest'>Maritime Museum (4.2 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Galle</h3>

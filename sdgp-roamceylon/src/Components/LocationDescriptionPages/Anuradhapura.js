@@ -104,18 +104,26 @@ export default function Anuradhapura(location){
     
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g304132-d447402-Reviews-or20-Jaya_Sri_Maha_Bodhi-Anuradhapura_North_Central_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={AnuImage1} className='destination_image'/>
                     <p className='text_dest'>Jaya Sri Maha Bodhi(4.9 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
+
+                <a href='https://www.tripadvisor.com/ShowUserReviews-g304132-d600739-r704657130-Ruwanwelisaya-Anuradhapura_North_Central_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={AnuImage2} className='destination_image'/>
                     <p className='text_dest'>Ruwanweli Maha Seya(4.9 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
+
+                <a href='https://www.tripadvisor.com/Attraction_Review-g304132-d447400-Reviews-Dagoba_of_Thuparama-Anuradhapura_North_Central_Province.html' target="_blank">
                 <div className='popular_destination'>
                     <img src={AnuImage3} className='destination_image'/>
                     <p className='text_dest'>Thuparama vihara(4.8 <span class="fa fa-star checked"></span>)</p>
                 </div>
+                </a>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Anuradhapura</h3>
