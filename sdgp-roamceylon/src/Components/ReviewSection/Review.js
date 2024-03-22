@@ -63,7 +63,7 @@ const Review = (details) => {
 
 
 
-        await axios.post('https://implementation-lac.vercel.app/review', { name, location, review, rating }).catch((err) => {
+        await axios.post('https://sdgp-restapi.vercel.app/review', { name, location, review, rating }).catch((err) => {
             console.log(err)
             setReview('');
             setRating(0);
