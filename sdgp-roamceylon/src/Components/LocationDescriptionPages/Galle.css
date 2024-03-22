@@ -227,8 +227,8 @@
     fill: none;
     stroke: url(#GradientColor);
     stroke-width: 15px;
-    stroke-dasharray: 315;
-    stroke-dashoffset: 0;
+    stroke-dasharray: 372;
+    /* stroke-dashoffset: 100; */
 }
 
 svg{
