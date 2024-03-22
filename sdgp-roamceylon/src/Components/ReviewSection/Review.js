@@ -106,7 +106,7 @@ const Review = (details) => {
 
         <section className="colombopagereviews">
 
-        {!publisedReviews.length ? <Loader/> : (
+
 
 
        
@@ -140,7 +140,7 @@ const Review = (details) => {
                 </ul>
 
             </div>
-         )}
+
 
             <h3 className='review-heading'>See what other Digital Nomads have to say!</h3>
 
