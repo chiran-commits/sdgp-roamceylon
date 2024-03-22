@@ -221,12 +221,13 @@
     height:130px;
     margin: 20px;
     padding: 20px;
-    background-color:white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin: 40px;
     font-weight: 500;
     transition: 0.3s ease-in-out;
+    position: relative;
+    background-color: beige;
 }
 
 .location-card:hover{
@@ -238,22 +239,25 @@
 }
 
 .location-card .location-image{
-    width: 100%;
-    height: 200px;
+    width: 600px;
+    height: 150px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-.location-card h3 {
-    font-size: 1.5rem;
-    color: #333333;
-    margin-bottom: 10px;
+.location-card h4 {
+    font-size:1rem;
+    color:black;
+    margin-bottom: 5px;
 }
 
 .location-card p {
     font-size: 1rem;
-    color: #666666;
+    background: linear-gradient(to right, #d22b2b 0%, #330867 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 @keyframes gradient {
@@ -428,6 +432,10 @@
         width: 95%;
         margin-left: 10px;
         height: 150vh;
+    }
+
+    .leftContainer{
+        bottom: 700px;
     }
 } 
 

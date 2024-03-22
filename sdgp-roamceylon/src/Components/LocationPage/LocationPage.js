@@ -8,13 +8,11 @@ import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { authorizationActions } from "../../store";
 import { useSelector } from 'react-redux';
-
 // import Common from '../LocationDescriptionPages/common.js'; 
 
 export default function LocationPage() {
     
     // const [loading, setLoading] = useState(true);
-
     const [value, setValue] = useState("");
     const [filteredData, setFilteredData] = useState([]);
     // const [searchData, setSearchData] = useState([]);
