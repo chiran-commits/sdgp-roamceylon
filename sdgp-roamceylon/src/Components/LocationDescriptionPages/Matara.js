@@ -118,7 +118,7 @@ export default function Matara(location){
                 </div>
             </div>
             <br></br><br></br><br></br>
-            <h3 className='destination-heading'>Hotels in Anuradhapura</h3>
+            <h3 className='destination-heading'>Hotels in Matara</h3>
             <div className='hotels'>
                 <a href='https://www.grandkandyan.com/' target="_blank">
                 <div className='locationContainer'>
