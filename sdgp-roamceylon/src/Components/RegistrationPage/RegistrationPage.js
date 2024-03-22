@@ -31,7 +31,7 @@ export const RegistrationPage = () => {
 
             
 
-            const {data}=await axios.post('https://sdgp-restapi-8i5dg1o4o-chiran-commits-projects.vercel.app/register',{firstName,lastName,email,password}).then(
+            const {data}=await axios.post('https://sdgp-restapi.vercel.app/register',{firstName,lastName,email,password}).then(
 
             
             setError('')

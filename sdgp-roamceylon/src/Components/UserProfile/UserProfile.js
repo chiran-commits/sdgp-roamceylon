@@ -71,7 +71,7 @@ function UserProfile() {
         
         try {
 
-            const { data } = await axios.patch('https://sdgp-restapi-8i5dg1o4o-chiran-commits-projects.vercel.app/save', { firstName, lastName, Age,email }).then(
+            const { data } = await axios.patch('https://sdgp-restapi.vercel.app/save', { firstName, lastName, Age,email }).then(
             ).catch((err) => {
                 console.log(err)
             })

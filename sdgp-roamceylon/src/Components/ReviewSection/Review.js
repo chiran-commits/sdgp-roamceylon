@@ -77,7 +77,7 @@ const Review = (details) => {
     useEffect(() => {
         const getReviwes = async () => {
             try {
-                let publisedReviews = await axios.get(`https://implementation-lac.vercel.app/review?location=${location}`, { location }).catch(
+                let publisedReviews = await axios.get(`https://sdgp-restapi.vercel.app/review?location=${location}`, { location }).catch(
                     console.log("error fetching data")
                 )
                

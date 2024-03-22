@@ -33,7 +33,7 @@ export default function LocationPage() {
                 dispatch(authorizationActions.logout())
             }else{
                 const res = await axios
-                .get("https://sdgp-restapi-8i5dg1o4o-chiran-commits-projects.vercel.app/user",{
+                .get("https://sdgp-restapi.vercel.app/user",{
                     headers: {
                         Authorization: `Bearer ${accessToken}`
                     }
