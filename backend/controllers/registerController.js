@@ -37,22 +37,13 @@ const loginUser = async (req, res) => {
             const refreshToken = jwt.sign({ email: email }, process.env.REFRESH_TOKEN, { expiresIn: '1d' });
             const acessToken = jwt.sign({ email: email }, process.env.ACCESS_TOKEN, { expiresIn: '1d' });
 
-            // res.cookie('token',refreshToken, { 
-            //     httpOnly: true,
-            //     maxAge: 1000 * 60 * 60 * 24,
-            //      secure : true,
-            //      sameSite: 'None'
-
-            // });
         user.refreshToken = refreshToken;
         await user.save();
         res.json({ "accessToken":acessToken, "refreshToken":refreshToken});
 
-
         } else {
             return res.status(400).json({ error: 'Password not Matched!' });
         }
-
     }
     catch (error) {
         console.log(error)
@@ -61,3 +52,13 @@ const loginUser = async (req, res) => {
 }
 
 module.exports = { registerUser, loginUser }
+
+
+
+            // res.cookie('token',refreshToken, { 
+            //     httpOnly: true,
+            //     maxAge: 1000 * 60 * 60 * 24,
+            //      secure : true,
+            //      sameSite: 'None'
+
+            // });
