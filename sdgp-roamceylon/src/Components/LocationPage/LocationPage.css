@@ -405,12 +405,12 @@
         display:flex;
         align-items: center;
         flex-direction: column;
-        padding-top: 450px;
+        padding-top: 950px;
         margin-bottom: 290px;
     }
 
     .input-box-search{
-        width: 150%;
+        width: 90%;
     }
 
     .rightContainer{
@@ -463,6 +463,8 @@
         width: 95%;
         margin-left: 10px;
     }
+
+    
 }    
 
 .location-card h4{
