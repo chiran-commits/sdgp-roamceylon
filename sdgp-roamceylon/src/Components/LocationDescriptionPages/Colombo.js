@@ -20,7 +20,7 @@ export default function Colombo(location){
         <div className='main'>
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
-                <img src={ColomboHome} className='location_image'></img>
+                <img src={ColImageMain} className='location_image'></img>
                 <div className='location_detail'>
                     <h3>COLOMBO</h3>
                     <div className='location_Des'>
