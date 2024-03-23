@@ -10,6 +10,10 @@ import mataraImage from "../HomePage/Assets/matara.jpg";
 import galleImage from "../HomePage/Assets/galle.jpg";
 import tropicalImage from "../HomePage/Assets/tropical.jpg";
 import mountainImage from "../HomePage/Assets/mountains.webp"
+import ArugamBay from '../LocationDescriptionPages/Images/aruHome.jpg'
+import Trincomalee from '../LocationDescriptionPages/Images/trincomalee1.jpg';
+import NuwaraEliya from '../LocationDescriptionPages/Images/nuwaraMain.jpeg';
+import Ella from '../LocationDescriptionPages/Images/ellawallpaper.jpg';
 import { Link } from "react-router-dom";
 import FetchWeather from "./GetWeather";
 import { useNavigate } from "react-router-dom";
@@ -160,16 +164,16 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="tropical-country">
-                <Link to="/galle">
-                  <img src={galleImage}></img>
+                <Link to="/arugambay">
+                  <img src={ArugamBay}></img>
                   <h3>Arugam Bay</h3>
                   <br></br>
                 </Link>
               </div>
               <div className="tropical-country">
-                <Link to="/kandy">
-                  <img src={kandyImage}></img>
-                  <h3>Trincomallee</h3>
+                <Link to="/trincomalee">
+                  <img src={Trincomalee}></img>
+                  <h3>Trincomalee</h3>
                   <br></br>
                 </Link>
               </div>
@@ -190,15 +194,15 @@ export default function HomePage() {
             <div className="tropical-countries">
               {/* <tropicalCountry link = "/galle" image = "../HomePage/Assets/galle.jpg" name = "Galle"/> */}
               <div className="tropical-country">
-                <Link to="/galle">
-                  <img src={galleImage}></img>
+                <Link to="/nuwaraeliya">
+                  <img src={NuwaraEliya}></img>
                   <h3>Nuwara Eliya</h3>
                   <br></br>
                 </Link>
               </div>
               <div className="tropical-country">
-                <Link to="/galle">
-                  <img src={galleImage}></img>
+                <Link to="/ella">
+                  <img src={Ella}></img>
                   <h3>Ella</h3>
                   <br></br>
                 </Link>
