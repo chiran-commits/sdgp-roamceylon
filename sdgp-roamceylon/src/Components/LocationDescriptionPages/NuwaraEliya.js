@@ -14,7 +14,7 @@ import Nuwara1 from '../LocationDescriptionPages/Images/nuwara1.jpg';
 import NuwaraMain from '../LocationDescriptionPages/Images/nuwaraMain.jpeg';
 import Nuwara2 from '../LocationDescriptionPages/Images/nuwara2.jpg';
 import Nuwara3 from '../LocationDescriptionPages/Images/nuwara3.jpg';
-import LocationData from './locations.json'
+import LocationData from '../LocationPage/Locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
@@ -39,7 +39,7 @@ export default function NuwaraEliya(location){
             </div>
             {
                 LocationData.map(data => {
-                    if (data.location == "Galle"){
+                    if (data.location == "Nuwara-Eliya"){
                         return(
                             <div className='scales'>
                                 <h1>Indicators</h1>

@@ -7,7 +7,7 @@ import TrincoPlace3 from '../LocationDescriptionPages/Images/trincomalee_place3.
 import TrincoHotel1 from '../LocationDescriptionPages/Images/trincomalee_hotel1.jpg';
 import TrincoHotel2 from '../LocationDescriptionPages/Images/trincomalee_hotel2.jpg';
 import TrincoHotel3 from '../LocationDescriptionPages/Images/trincomalee_hotel3.jpg';
-import LocationData from './locations.json'
+import LocationData from '../LocationPage/Locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
@@ -33,7 +33,7 @@ export default function Galle(location){
             </div>
             {
                 LocationData.map(data => {
-                    if (data.location == "Galle"){
+                    if (data.location == "Trincomalee"){
                         return(
                             <div className='scales'>
                                 <h1>Indicators</h1>

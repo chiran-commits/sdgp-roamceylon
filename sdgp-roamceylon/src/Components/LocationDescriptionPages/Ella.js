@@ -7,7 +7,7 @@ import EllaImageMain from '../LocationDescriptionPages/Images/ellawallpaper.jpg'
 import EllaHotel1 from '../LocationDescriptionPages/Images/98acres.jpg';
 import EllaHotel2 from '../LocationDescriptionPages/Images/annasa.jpg';
 import EllaHotel3 from '../LocationDescriptionPages/Images/dreamcliffjpg.jpg';
-import LocationData from './locations.json'
+import LocationData from '../LocationPage/Locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
@@ -64,7 +64,7 @@ export default function Ella(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
+                                                            <circle style={{strokeDashoffset:"160"}} cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    
@@ -87,7 +87,7 @@ export default function Ella(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
+                                                            <circle style={{strokeDashoffset:"290"}} cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    

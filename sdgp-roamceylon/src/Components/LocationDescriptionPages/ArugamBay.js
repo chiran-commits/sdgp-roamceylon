@@ -14,7 +14,7 @@ import AruHotel3 from '../LocationDescriptionPages/Images/aruHotel3.jpg'
 import Aru1 from '../LocationDescriptionPages/Images/aru1.jpg';
 import Aru2 from '../LocationDescriptionPages/Images/aru2.jpg';
 import Aru3 from '../LocationDescriptionPages/Images/aru3.jpg';
-import LocationData from './locations.json'
+import LocationData from '../LocationPage/Locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
@@ -41,7 +41,7 @@ export default function Galle(location){
             </div>
             {
                 LocationData.map(data => {
-                    if (data.location == "Galle"){
+                    if (data.location == "Arugam-Bay"){
                         return(
                             <div className='scales'>
                                 <h1>Indicators</h1>

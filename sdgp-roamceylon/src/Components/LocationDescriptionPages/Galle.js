@@ -7,7 +7,7 @@ import galleimage3 from '../LocationDescriptionPages/Images/Galle_Maritime_Museu
 import LeGrand from '../LocationDescriptionPages/Images/leGrand.jpg';
 import raddisson from '../LocationDescriptionPages/Images/raddisson.jpg';
 import lighthouse from '../LocationDescriptionPages/Images/lighthouse.jpg';
-import LocationData from './locations.json'
+import LocationData from '../LocationPage/Locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';

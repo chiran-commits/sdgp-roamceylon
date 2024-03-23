@@ -7,7 +7,7 @@ import KandyImageMain from '../LocationDescriptionPages/Images/kandyImg.jpg';
 import KandyHotel1 from '../LocationDescriptionPages/Images/KHotel1.jpg';
 import KandyHotel2 from '../LocationDescriptionPages/Images/KHotel2.jpg';
 import KandyHotel3 from '../LocationDescriptionPages/Images/KHotel3.jpg';
-import LocationData from './locations.json'
+import LocationData from '../LocationPage/Locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
@@ -52,7 +52,7 @@ export default function Galle(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                Fast
+                                                                {data.wifi}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -63,7 +63,7 @@ export default function Galle(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
+                                                            <circle style={{strokeDashoffset:"200"}} cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    
@@ -75,7 +75,7 @@ export default function Galle(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                High
+                                                                {data.col}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -86,7 +86,7 @@ export default function Galle(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
+                                                            <circle style={{strokeDashoffset:"280"}} cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    

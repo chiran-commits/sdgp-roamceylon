@@ -7,7 +7,7 @@ import ColImageMain from '../LocationDescriptionPages/Images/matara.jpg';
 import ColHotel1 from '../LocationDescriptionPages/Images/kingsbury.jpg';
 import ColHotel2 from '../LocationDescriptionPages/Images/hilton.jpg';
 import ColHotel3 from '../LocationDescriptionPages/Images/cinnamonlakeside.jpg';
-import LocationData from './locations.json'
+import LocationData from '../LocationPage/Locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
@@ -52,7 +52,7 @@ export default function Colombo(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                Fast
+                                                                {data.wifi}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -63,7 +63,7 @@ export default function Colombo(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
+                                                            <circle style={{strokeDashoffset:"90"}} cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    
@@ -75,7 +75,7 @@ export default function Colombo(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                High
+                                                                {data.col}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -86,7 +86,7 @@ export default function Colombo(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
+                                                            <circle style={{strokeDashoffset:"180"}} cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    
