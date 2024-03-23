@@ -13,7 +13,8 @@ body{
 }
 
 .profile-container{
-    background-color:#dafffb;
+    /* background-color:#dafffb; */
+    background-color: rgb(238, 246, 254);
     height: 540px;
     padding: 25px 25px;
     border-radius: 30px;
@@ -22,15 +23,17 @@ body{
     margin-right: 5px;
     color: #176B87 ;
     width: 500px;
+    transition: 0.3s ease-in-out;
 }
 .profile-container:hover, .info-container:hover{
     border-bottom: 8px solid  #04364A;
     translate: 0px -15px;
-    transition: 0.3s ease-in-out;
+    /* transition: 0.3s ease-in-out; */
 }
 .info-container{
     margin-left: 10px;
-    background-color:#dafffb;
+    /* background-color:#dafffb; */
+    background-color: rgb(238, 246, 254);
     padding: 25px 25px;
     height: 540px;
     border-radius: 30px;
@@ -38,6 +41,7 @@ body{
     text-align: center;
     color: #176B87 ;
     width: 500px;
+    transition: 0.3s ease-in-out;
 }
 /* .info-container:hover{
     border-bottom: 8px solid  #04364A;

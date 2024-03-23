@@ -214,6 +214,11 @@
   flex: 3;
 }
 
+.tropical-country :hover{
+  transform:scale(1.15) ;
+  transition: 0.4s ease-in-out;
+}
+
 .tropical-countries{
   display: flex;
 }
@@ -237,10 +242,6 @@
   font-size: 35px;
 }
 
-.tropical-country :hover{
-  transform:scale(1.15) ;
-  transition: 0.4s ease-in-out;
-}
 
 /* CSS for the mountains section */
 
@@ -403,12 +404,12 @@
   background-color: rgba(118, 135, 212, 1);
   border-radius: 10px;
   color: black;
+  transition: 0.3s ease-in-out;
 }
 
 .discord a:hover{
   transform: scale(1.5);
   background-color: white;
-  transition: 0.3s ease-in-out;
 }
 
 /* This is the wave animation for about us */
@@ -490,5 +491,16 @@
     display: grid;
     grid-template-columns: repeat('auto-fill', minmax(300px, 1rf));
     grid-gap: 10px;
+  }
+
+  .tropical-container{
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .tropical-content{
+    width: 100%; 
+    margin-top: 30px;
+    object-fit: cover;
   }
 }

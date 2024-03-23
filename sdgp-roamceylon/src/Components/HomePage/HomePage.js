@@ -162,14 +162,14 @@ export default function HomePage() {
               <div className="tropical-country">
                 <Link to="/galle">
                   <img src={galleImage}></img>
-                  <h3>Jaffna</h3>
+                  <h3>Arugam Bay</h3>
                   <br></br>
                 </Link>
               </div>
               <div className="tropical-country">
                 <Link to="/kandy">
                   <img src={kandyImage}></img>
-                  <h3>Kandy</h3>
+                  <h3>Trincomallee</h3>
                   <br></br>
                 </Link>
               </div>
@@ -180,7 +180,7 @@ export default function HomePage() {
           <div className="mountians-section">
             <div className="tropical-container">
               <div className="tropical-content">
-                <h2>From beautiful Beaches<br/>To Misty Mountains.</h2>
+                <h2>From Beautiful Beaches<br/>To Misty Mountains.</h2>
                 <p>Embark on a captivating journey through Sri Lanka's enchanting tapestry of lush tea plantations, golden beaches, misty mountains, and ancient ruins—a paradise for every adventurous soul and curious digital nomads seeking a mosaic of inspiring landscapes.</p>
               </div>
               <div className="tropical-content">
@@ -192,14 +192,14 @@ export default function HomePage() {
               <div className="tropical-country">
                 <Link to="/galle">
                   <img src={galleImage}></img>
-                  <h3>Galle</h3>
+                  <h3>Nuwara Eliya</h3>
                   <br></br>
                 </Link>
               </div>
               <div className="tropical-country">
                 <Link to="/galle">
                   <img src={galleImage}></img>
-                  <h3>Jaffna</h3>
+                  <h3>Ella</h3>
                   <br></br>
                 </Link>
               </div>
