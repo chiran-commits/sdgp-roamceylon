@@ -116,6 +116,7 @@ function UserProfile() {
 
     return (<>
         <Navbar isProfile={true}></Navbar>
+        <div className='title'><h1>User Profile</h1></div>
         <div className="outer-container">
             <div className="container">
                 <div className="profile-container">
