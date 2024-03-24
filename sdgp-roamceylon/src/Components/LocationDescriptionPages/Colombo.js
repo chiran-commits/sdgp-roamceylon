@@ -3,7 +3,7 @@ import Navbar from '../AboutUsPage/Navbar';
 import ColImage1 from '../LocationDescriptionPages/Images/lotus-tower.jpg';
 import ColImage2 from '../LocationDescriptionPages/Images/museum.jpg';
 import ColImage3 from '../LocationDescriptionPages/Images/gallefacegreen.jpg';
-import ColImageMain from '../LocationDescriptionPages/Images/matara.jpg';
+import ColImageMain from '../LocationDescriptionPages/Images/colombomain.jpg';
 import ColHotel1 from '../LocationDescriptionPages/Images/kingsbury.jpg';
 import ColHotel2 from '../LocationDescriptionPages/Images/hilton.jpg';
 import ColHotel3 from '../LocationDescriptionPages/Images/cinnamonlakeside.jpg';
@@ -20,7 +20,7 @@ export default function Colombo(location){
         <div className='main'>
             <Navbar activeOption={"locations"}/>
             <div className='location_information'>
-                <img src={ColomboHome} className='location_image'></img>
+                <img src={ColImageMain} className='location_image'></img>
                 <div className='location_detail'>
                     <h3>COLOMBO</h3>
                     <div className='location_Des'>
