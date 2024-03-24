@@ -1,5 +1,5 @@
 const whiteList = [
-    'https://sdgp-roamceylon.vercel.app/'
+    'https://roamceylon.vercel.app/'
 ];
 
 module.exports = whiteList;
