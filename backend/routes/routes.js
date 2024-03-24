@@ -7,6 +7,7 @@ const {addReview,sendReview}= require('../controllers/reviewController');
 
 const saveUser=require('../controllers/saveController');
 const {sendUser}=require('../controllers/usersController');
+const deleteUser = require('../controllers/deleteController');
 const cors = require('cors');
 
 
@@ -22,6 +23,7 @@ router.patch('/save',saveUser)
 
 router.get("/review",sendReview)
 router.get('/user',verifyUser,sendUser)
+router.delete('/delete', deleteUser)
 
 
 

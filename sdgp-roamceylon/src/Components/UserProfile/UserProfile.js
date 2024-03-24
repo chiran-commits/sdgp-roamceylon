@@ -4,7 +4,7 @@ import './UserProfile.css';
 import React, { useState, useEffect } from 'react';
 import ProfileImg from '../AboutUsPage/Asset 1.png'
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function UserProfile() {
     const [img] = useState(ProfileImg);
@@ -82,6 +82,25 @@ function UserProfile() {
         
     }
 
+
+    // const deleteUser = async () => {
+        
+    //     try {
+
+    //         const { data } = await axios.delete('https://sdgp-restapi.vercel.app/delete', { firstName, lastName, Age,email }).then(
+    //         ).catch((err) => {
+    //             console.log(err)
+    //         })
+
+    //     } catch (err) {
+    //         console.log(err)
+    //     }
+    //     localStorage.removeItem('roamceylon-refreshToken');  // Logout automatically
+    //     localStorage.removeItem('roamceylon-accessToken');
+    //     nav('/');   // Go to Home Page
+        
+    // }
+
     function handleFName(event) {
         setFName(event.target.value);
     }
@@ -123,6 +142,7 @@ function UserProfile() {
                     <input type='email' value={email} disabled='true' size="30"></input><br></br>
                     <label>Age</label><br></br>
                     <input value={Age} disabled={edit}  type="number" onChange={handleAge}></input><br></br>
+                    {/* <button className='delete-btn' onClick={deleteUser}>Delete Account</button> */}
                 </div>
             </div>
         </div>
