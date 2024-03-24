@@ -1,5 +1,6 @@
 const userModel= require('../database/userModel');
 
+//the function finds the user based on the email and sends the user information to the frontend
 const sendUser=async(req,res)=>{
     const email = req.email;
     console.log(email)

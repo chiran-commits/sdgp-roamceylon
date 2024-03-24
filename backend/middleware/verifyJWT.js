@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
+//the function is a middleware function that is used to verify the user's token token when acessing protected routes
 
 const verifyUser = (req, res, next) => {
 
@@ -13,6 +14,7 @@ const verifyUser = (req, res, next) => {
         res.status(404).json({ message: "The token was not found" });
 
     }
+    //verify the token using the secret code if the jwt is valid
 
     jwt.verify(token, process.env.ACCESS_TOKEN, (err, user) => {
         if (err) {
