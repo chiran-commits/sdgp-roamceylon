@@ -27,6 +27,7 @@ function App(){
           <h2>About Us</h2>
           <h3>Guiding Sri Lanka's Digital Nomads</h3>
         </div>
+        {/* Multiple div tags used to acheive the required layout */}
         <div className="content-section">
           <div className="content-item">
             <h2>An Overview</h2><br></br><br></br>
@@ -52,6 +53,7 @@ function App(){
         <div className="imageSection">
           <div className="developer-container">
             <img className="about-image" src={chiranimage}></img>
+            {/* The creator funcion uses to props to display the detials of each developer */}
             <Creator name="Chiran Gamage" email="chiran.20221029@iit.ac.lk" mobile="+94 71 616 2924"/>
           </div>
           <div className="developer-container">
@@ -94,7 +96,7 @@ function App(){
 
 }
 
-const Creator  = (props) =>{
+const Creator  = (props) =>{  // The function to display information about the devlopers
   return(
     <div>
       <h4 style={{color:"blue"}}><center>{props.name}</center></h4><br></br>

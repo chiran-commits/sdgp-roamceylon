@@ -48,17 +48,17 @@ export default function Login() {
 
         // }
         try {
-            
 
             const data = await axios.post('https://sdgp-restapi.vercel.app/login', { email, password }).then(
+                // The request goes to the backend to check if the username and email are valid.
                 setError('')
             )
             console.log(data.data)
             const { accessToken, refreshToken } = data.data;
             console.log(accessToken, refreshToken)
             
-            localStorage.setItem('roamceylon-accessToken', accessToken);
-            localStorage.setItem('roamceylon-refreshToken', refreshToken);
+            localStorage.setItem('roamceylon-accessToken', accessToken);    // Creating the tokens to enable the user to stay
+            localStorage.setItem('roamceylon-refreshToken', refreshToken);  // signed in across many web pages
             dispatch(authorizationActions.login())
             setData({ email: '', password: '' })
             navigate('/')

@@ -26,14 +26,10 @@ export const RegistrationPage = () => {
         e.preventDefault()
         const {firstName,lastName,email,password}=data
 
-   
         try{
-
-            
 
             const {data}=await axios.post('https://sdgp-restapi.vercel.app/register',{firstName,lastName,email,password}).then(
 
-            
             setError('')
             ).catch((err)=>{
                 setError(err.response.data.error)
@@ -42,17 +38,9 @@ export const RegistrationPage = () => {
             setData({ firstName:'',lastName:'',email:'',password:''})
             navigate('/login')
 
-            
-            
-
-            
-
         }catch (err) {
             setError("The username already exists")
         }
-            
-       
-
     }
 
     useEffect(() => {
@@ -98,8 +86,8 @@ export const RegistrationPage = () => {
                     <button type="submit" className="register-btn">Create account</button>
                 </form>
                 <div className="register-account">
-                        <p>If you already have a account, Click here to <Link to='/login'><a>Login</a></Link></p>
-                        
+                    <p>If you already have a account, Click here to <Link to='/login'><a>Login</a></Link></p>
+                    {/* Redirecting to the login page if the user already has an account */}  
                 </div> 
             </div>
         </div>    

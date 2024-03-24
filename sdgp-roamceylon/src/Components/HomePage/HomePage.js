@@ -30,10 +30,6 @@ export default function HomePage() {
   console.log(isLoggedIn);
   
  
-
-
-
-  
   
   function anchorTagAbout() {
 
@@ -95,7 +91,7 @@ export default function HomePage() {
   return (
     <>
         <div className="home-page">
-          <Navbar activeOption="home" />
+          <Navbar activeOption="home" />  {/* Navbar created in a seperate file and imported for each web page */}
           <div className="home-container">
             <video className="video-bg" autoPlay muted loop playsInline>
               <source src={sdgpVideo} type="video/mp4" />
@@ -120,9 +116,7 @@ export default function HomePage() {
             <section className="hidden">
 
               <div class="content">
-                {/* <h2>About Us</h2>
-                <h2>About Us</h2> */}
-                <h2>RoamCeylon</h2>
+                <h2>RoamCeylon</h2>  {/* "Roamceylon" input twice to acheive the wave animation */}
                 <h2>RoamCeylon</h2>
               </div>
 
@@ -144,6 +138,9 @@ export default function HomePage() {
               </div>
             </section>
           </div>
+
+
+          {/* This code displays the trpoical locations section */}
           <div className="tropical-section">
             <div className="tropical-container">
               <div className="tropical-content">
@@ -181,6 +178,7 @@ export default function HomePage() {
           </div>
 
 
+          {/* This code displays the mountains section */}
           <div className="mountians-section">
             <div className="tropical-container">
               <div className="tropical-content">
@@ -224,8 +222,6 @@ export default function HomePage() {
               <div className="country-box-container">
                 <Link to="/colombo">
                   <div className="coutnry-box">
-                    {/* <h3>Colombo</h3>
-                    <h3><FetchWeather city="colombo"/></h3> */}
                     <img className="img-pop" src={colomboImage}></img>
                     <p>
                       Colombo, Sri Lanka's capital, boasts a dynamic mix of
@@ -241,8 +237,6 @@ export default function HomePage() {
 
                 <Link to='/kandy'> 
                   <div className="coutnry-box">
-                    {/* <h3>Kandy</h3>
-                    <h3><FetchWeather city="kandy"/></h3> */}
                     <img class="img-pop" src={kandyImage}></img>
                     <p>
                       Kandy is a large city located in central Sri Lanka. The city is surrounded by majestic mountains, 
@@ -256,8 +250,6 @@ export default function HomePage() {
 
                 <Link to='/matara'>
                 <div className="coutnry-box">
-                  {/* <h3>Jaffna</h3>
-                  <h3><FetchWeather city="jaffna"/></h3> */}
                   <img class="img-pop" src={mataraImage}></img>
                   <div className="effect">
                     <p>
@@ -271,8 +263,6 @@ export default function HomePage() {
 
                 <Link to="/galle">
                   <div className="coutnry-box">
-                    {/* <h3>Galle</h3>
-                    <h3><FetchWeather city="galle"/></h3> */}
                     <img class="img-pop" src={galleImage}></img>
                     <p>
                       Galle is a city on the southwest coastline of Sri Lanka. 
@@ -286,10 +276,17 @@ export default function HomePage() {
               </div>
             </section>  
           </div>
+
+
+          {/* This code displays the discord section */}
           <div className="discord">
               <h3>Be a Part of the Community</h3>
               {isLoggedIn ? (<a href="https://discord.gg/5kNm49ejz5">Join the discord server</a>) : (<p>Login to an account to join the RoamCeylon Discord Server!</p>)}
+              {/* The isLogged indicates whether the user is logged in to an acocunt and changes the code accordingly */}
           </div>
+
+
+          {/* This code displays the footer section */}
           <hr className="footer-sep"></hr>
           <footer className="home-footer">
             <h3>ROAMCEYLON</h3>
@@ -301,16 +298,4 @@ export default function HomePage() {
         </div>
     </>
   );
-}
-
-const tropicalCountry = (props) => { // The function used to show a location in the tropical section
-  return(
-    <div>
-        <Link to={props.link}>
-        <img class="tropical-image" src={props.image}></img>
-        <h3>{props.name}</h3>
-        <br></br>
-        </Link>
-    </div>
-  )
 }
