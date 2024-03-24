@@ -10,6 +10,10 @@ import mataraImage from "../HomePage/Assets/matara.jpg";
 import galleImage from "../HomePage/Assets/galle.jpg";
 import tropicalImage from "../HomePage/Assets/tropical.jpg";
 import mountainImage from "../HomePage/Assets/mountains.webp"
+import ArugamBay from '../LocationDescriptionPages/Images/aruHome.jpg'
+import Trincomalee from '../LocationDescriptionPages/Images/trincomalee1.jpg';
+import NuwaraEliya from '../LocationDescriptionPages/Images/nuwaraMain.jpeg';
+import Ella from '../LocationDescriptionPages/Images/ellawallpaper.jpg';
 import { Link } from "react-router-dom";
 import FetchWeather from "./GetWeather";
 import { useNavigate } from "react-router-dom";
@@ -160,16 +164,16 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="tropical-country">
-                <Link to="/galle">
-                  <img src={galleImage}></img>
-                  <h3>Jaffna</h3>
+                <Link to="/arugambay">
+                  <img src={ArugamBay}></img>
+                  <h3>Arugam Bay</h3>
                   <br></br>
                 </Link>
               </div>
               <div className="tropical-country">
-                <Link to="/kandy">
-                  <img src={kandyImage}></img>
-                  <h3>Kandy</h3>
+                <Link to="/trincomalee">
+                  <img src={Trincomalee}></img>
+                  <h3>Trincomalee</h3>
                   <br></br>
                 </Link>
               </div>
@@ -180,7 +184,7 @@ export default function HomePage() {
           <div className="mountians-section">
             <div className="tropical-container">
               <div className="tropical-content">
-                <h2>From beautiful Beaches<br/>To Misty Mountains.</h2>
+                <h2>From Beautiful Beaches<br/>To Misty Mountains.</h2>
                 <p>Embark on a captivating journey through Sri Lanka's enchanting tapestry of lush tea plantations, golden beaches, misty mountains, and ancient ruins—a paradise for every adventurous soul and curious digital nomads seeking a mosaic of inspiring landscapes.</p>
               </div>
               <div className="tropical-content">
@@ -190,16 +194,16 @@ export default function HomePage() {
             <div className="tropical-countries">
               {/* <tropicalCountry link = "/galle" image = "../HomePage/Assets/galle.jpg" name = "Galle"/> */}
               <div className="tropical-country">
-                <Link to="/galle">
-                  <img src={galleImage}></img>
-                  <h3>Galle</h3>
+                <Link to="/nuwaraeliya">
+                  <img src={NuwaraEliya}></img>
+                  <h3>Nuwara Eliya</h3>
                   <br></br>
                 </Link>
               </div>
               <div className="tropical-country">
-                <Link to="/galle">
-                  <img src={galleImage}></img>
-                  <h3>Jaffna</h3>
+                <Link to="/ella">
+                  <img src={Ella}></img>
+                  <h3>Ella</h3>
                   <br></br>
                 </Link>
               </div>
@@ -250,16 +254,14 @@ export default function HomePage() {
                   <br></br>
                 </Link>  
 
-                <Link to='/'>
+                <Link to='/matara'>
                 <div className="coutnry-box">
                   {/* <h3>Jaffna</h3>
                   <h3><FetchWeather city="jaffna"/></h3> */}
                   <img class="img-pop" src={mataraImage}></img>
                   <div className="effect">
                     <p>
-                      Jaffna is a city on the nothern tip of Sri Lanka. 
-                      Jaffna welcomes visitors warmly with their art and creative culture, 
-                      and a rewarding place to learn about Sri Lankan Tamil culture.
+                    Matara is a coastal town in southern Sri Lanka that's a major commercial hub and a good place to experience tropical Sri Lanka without the crowds. It's known for its Dutch architecture, ramparts, well-preserved fort, and street life.
                     </p><br></br>
                   </div>
                 </div>

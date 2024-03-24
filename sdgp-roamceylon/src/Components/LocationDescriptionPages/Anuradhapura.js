@@ -7,7 +7,7 @@ import AnuImageMain from '../LocationDescriptionPages/Images/anuradhapura.jpg';
 import AnuHotel1 from '../LocationDescriptionPages/Images/heritage.jpg';
 import AnuHotel2 from '../LocationDescriptionPages/Images/tlfh.jpg';
 import AnuHotel3 from '../LocationDescriptionPages/Images/rajarata.jpg';
-import LocationData from './locations.json';
+import LocationData from '../LocationPage/Locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';

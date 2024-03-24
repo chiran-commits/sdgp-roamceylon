@@ -7,7 +7,7 @@ import MataraImageMain from '../LocationDescriptionPages/Images/matara.jpg';
 import MataraHotel1 from '../LocationDescriptionPages/Images/capeweli.jpg';
 import MataraHotel2 from '../LocationDescriptionPages/Images/baymarriott.jpg';
 import MataraHotel3 from '../LocationDescriptionPages/Images/w15.jpg';
-import LocationData from './locations.json'
+import LocationData from '../LocationPage/Locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';

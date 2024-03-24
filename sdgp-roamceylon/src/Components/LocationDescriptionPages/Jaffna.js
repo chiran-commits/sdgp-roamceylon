@@ -14,7 +14,7 @@ import Jaffna3 from '../LocationDescriptionPages/Images/jaffna3.jpg';
 import JaffnaHotel1 from '../LocationDescriptionPages/Images/jaffnaHotel1.jpg';
 import JaffnaHotel2 from '../LocationDescriptionPages/Images/jaffnaHotel2.jpg';
 import JaffnaHotel3 from '../LocationDescriptionPages/Images/jaffnaHotel3.jpg';
-import LocationData from './locations.json';
+import LocationData from '../LocationPage/Locations.json';
 import './Galle.css';
 import Review from '../ReviewSection/Review';
 import FetchWeatherData from './GetWeatherData.js';
@@ -39,7 +39,7 @@ export default function Jaffna(location){
             </div>
             {
                 LocationData.map(data => {
-                    if (data.location == "Galle"){
+                    if (data.location == "Jaffna"){
                         return(
                             <div className='scales'>
                                 <h1>Indicators</h1>
@@ -57,7 +57,7 @@ export default function Jaffna(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                Average
+                                                                {data.wifi}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -68,7 +68,7 @@ export default function Jaffna(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
+                                                            <circle style={{strokeDashoffset:"190"}} cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    
@@ -80,7 +80,7 @@ export default function Jaffna(location){
                                                     <div className='outer'>
                                                         <div className='inner'>
                                                             <div id='number'>
-                                                                Low
+                                                                {data.col}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -91,7 +91,7 @@ export default function Jaffna(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
+                                                            <circle style={{strokeDashoffset:"320"}}  cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    

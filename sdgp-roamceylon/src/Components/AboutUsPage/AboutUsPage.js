@@ -11,6 +11,8 @@ import GalleImage from '../LocationDescriptionPages/Images/newgalleimge1.jpg';
 import thinalimage from "./Thinal.JPG";
 import puleeshaimage from "./Puleesha.jpg";
 import tharukaimage from "./Tharuka.jpg";
+import chiranimage from "./Chiran.jpg";
+import neeleshimage from "./Neelesh.jpg";
 import sigiriya from "./aboutUsSigiriya.jpg";
 import colombo from "./aboutUsColombo.jpg";
 
@@ -49,7 +51,7 @@ function App(){
         <h2 id="moveBottom"><center className="textColor">THE CREATORS</center></h2><br></br><br></br>
         <div className="imageSection">
           <div className="developer-container">
-            <img className="about-image" src={D1}></img>
+            <img className="about-image" src={chiranimage}></img>
             <Creator name="Chiran Gamage" email="chiran.20221029@iit.ac.lk" mobile="+94 71 616 2924"/>
           </div>
           <div className="developer-container">
@@ -57,7 +59,7 @@ function App(){
             <Creator name="Thinal Karunarathna" email="thinal.20221003@iit.ac.lk" mobile="+94 76 794 0226"/>
           </div>
           <div className="developer-container">
-            <img className="about-image" src={D1}></img>
+            <img className="about-image" src={neeleshimage}></img>
             <Creator name="Neelesh Gamage" email="neelesh.20221028@iit.ac.lk" mobile="+94 71 432 8912"/>
           </div>
           <div className="developer-container">
