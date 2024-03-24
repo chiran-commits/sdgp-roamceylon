@@ -254,16 +254,14 @@ export default function HomePage() {
                   <br></br>
                 </Link>  
 
-                <Link to='/'>
+                <Link to='/matara'>
                 <div className="coutnry-box">
                   {/* <h3>Jaffna</h3>
                   <h3><FetchWeather city="jaffna"/></h3> */}
                   <img class="img-pop" src={mataraImage}></img>
                   <div className="effect">
                     <p>
-                      Jaffna is a city on the nothern tip of Sri Lanka. 
-                      Jaffna welcomes visitors warmly with their art and creative culture, 
-                      and a rewarding place to learn about Sri Lankan Tamil culture.
+                    Matara is a coastal town in southern Sri Lanka that's a major commercial hub and a good place to experience tropical Sri Lanka without the crowds. It's known for its Dutch architecture, ramparts, well-preserved fort, and street life.
                     </p><br></br>
                   </div>
                 </div>

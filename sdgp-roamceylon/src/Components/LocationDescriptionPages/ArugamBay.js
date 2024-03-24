@@ -32,9 +32,7 @@ export default function Galle(location){
                     <h3>ARUGAM BAY</h3>
                     <div className='location_Des'>
                         <h3 className='description'>
-                            Galle is a city on the southwest coastline of Sri Lanka. 
-                            The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings,
-                            stylish cafes, quirky boutiques and impeccably restored beautiful hotels.
+                            Arugam Bay is located on the southeast coast of Sri Lanka. This place is all about sandy beaches that stretch for days, drawing in surfers from every corner of the world. If you're into surfing, this is your spot. The waves here are legendary, making it a magnet for pros and beginners itching to catch the perfect break.
                         </h3>
                     </div>
                 </div>

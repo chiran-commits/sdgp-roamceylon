@@ -25,9 +25,10 @@ export default function Colombo(location){
                     <h3>COLOMBO</h3>
                     <div className='location_Des'>
                         <h3 className='description'>
-                            Galle is a city on the southwest coastline of Sri Lanka. 
-                            The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings,
-                            stylish cafes, quirky boutiques and impeccably restored beautiful hotels.
+                            Colombo, Sri Lanka's capital, boasts a dynamic mix of
+                            history and modernity. Its vibrant streets, rich culture,
+                            and diverse cuisine make it a captivating destination for
+                            travelers.
                         </h3>
                     </div>
                 </div>
@@ -103,18 +104,24 @@ export default function Colombo(location){
     
             <h3 className='destination-heading'>Popular Destinations</h3>
             <div className='location_destinations'>
-                <div className='popular_destination'>
-                    <img src={ColImage1} className='destination_image'/>
-                    <p className='text_dest'>Colombo Lotus Tower (4.7 <span class="fa fa-star checked"></span>)</p>
-                </div>
-                <div className='popular_destination'>
-                    <img src={ColImage2} className='destination_image'/>
-                    <p className='text_dest'>Colombo National Museum (4.4 <span class="fa fa-star checked"></span>)</p>
-                </div>
-                <div className='popular_destination'>
-                    <img src={ColImage3} className='destination_image'/>
-                    <p className='text_dest'>Galle Face Green (4.2 <span class="fa fa-star checked"></span>)</p>
-                </div>
+                <a href='https://colombolotustower.lk/' target='_blank'>
+                    <div className='popular_destination'>
+                        <img src={ColImage1} className='destination_image'/>
+                        <p className='text_dest'>Colombo Lotus Tower (4.7 <span class="fa fa-star checked"></span>)</p>
+                    </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g293962-d447450-Reviews-Colombo_National_Museum-Colombo_Western_Province.html' target='_blank'>
+                    <div className='popular_destination'>
+                        <img src={ColImage2} className='destination_image'/>
+                        <p className='text_dest'>Colombo National Museum (4.4 <span class="fa fa-star checked"></span>)</p>
+                    </div>
+                </a>
+                <a href='https://www.tripadvisor.com/Attraction_Review-g293962-d3195710-Reviews-Galle_Face_Green-Colombo_Western_Province.html' target='_blank'>
+                    <div className='popular_destination'>
+                        <img src={ColImage3} className='destination_image'/>
+                        <p className='text_dest'>Galle Face Green (4.2 <span class="fa fa-star checked"></span>)</p>
+                    </div>
+                </a>
             </div>
             <br></br><br></br><br></br>
             <h3 className='destination-heading'>Hotels in Colombo</h3>
