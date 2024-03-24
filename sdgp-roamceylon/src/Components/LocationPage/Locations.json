@@ -4,7 +4,7 @@
         "link":"http://localhost:8000/colombo",
         "description":"Sri Lanka's capital, boasts a dynamic mix of history and modernity. Its vibrant streets, rich culture, and diverse cuisine make it a captivating destination for travelers.",
         "wifi":"VERY FAST",
-        "col":"HIGH",
+        "col":"VERY HIGH",
         "type":"URBAN",
         "weather":"HOT"
     },
@@ -31,7 +31,7 @@
         "link":"http://localhost:8000/galle",
         "description":"Galle is a city on the southwest coastline of Sri Lanka. The city consists of exotic old trading port blessed with imposing Dutch-colonial buildings, stylish cafes, quirky boutiques and impeccably restored beautiful hotels.",
         "wifi":"AVERAGE",
-        "col":"HIGH",
+        "col":"AVERAGE",
         "type":"RURAL",
         "weather":"TROPICAL"
     },
@@ -49,7 +49,7 @@
         "link": "http://localhost:8000/nuwaraeliya",
         "description":"Nuwara-Eliya is a city in the tea country hills of central Sri Lanka. The city is surrounded by colonial-era bungalows, Tudor-style hotels, pretty gardens and beautiful estates.",
         "wifi":"AVERAGE",
-        "col":"LOW",
+        "col":"HIGH",
         "type":"URBAN",
         "weather":"COLD"
     },
@@ -75,8 +75,8 @@
         "location":"Anuradhapura",
         "link": "http://localhost:8000/anuradhapura",
         "description":"Anuradhapura is a city located in north central plain of Sri Lanka. It contains a rich collection of archaeological and architectural wonders, where most of the sites are used as holy places and temples.",
-        "wifi":"AVERAGE",
-        "col":"LOW",
+        "wifi":"LOW",
+        "col":"MEDIUM",
         "type":"RURAL",
         "weather":"HOT"
     },
