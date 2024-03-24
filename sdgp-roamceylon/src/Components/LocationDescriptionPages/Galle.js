@@ -86,7 +86,7 @@ export default function Galle(location){
                                                                 <stop offset="100%" stop-color="#673ab7" />
                                                                 </linearGradient>
                                                             </defs>
-                                                            <circle cx="80" cy="80" r="50" stroke-linecap="round" />
+                                                            <circle style={{strokeDashoffset:"230"}} cx="80" cy="80" r="50" stroke-linecap="round" />
                                                     </svg>
                                                 </div>
                                         </div>    
