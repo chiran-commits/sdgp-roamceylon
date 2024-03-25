@@ -259,7 +259,7 @@ svg{
         bottom: 20px;
     }
     .description{
-        font-size: 1px;
+        font-size: 25px;
     }
 
 
@@ -284,6 +284,15 @@ svg{
     .location_detail h3{
         font-size: 25px;
         color: white;
+    }
+}
+
+@media (max-width:415px) {
+    .location_detail{
+        text-align: center;
+        padding: 20px;
+        height: 75vh;
+        width: 100%;
     }
 }
 
