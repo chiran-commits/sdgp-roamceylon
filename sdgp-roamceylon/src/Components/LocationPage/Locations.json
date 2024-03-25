@@ -81,7 +81,7 @@
         "weather":"HOT"
     },
     {
-        "location":"ArugamBay",
+        "location":"Arugam Bay",
         "link": "http://localhost:8000/arugambay",
         "description":"Arugam Bay is located in the southeast coast of Sri Lanka. It is a popular destination for surfing, diving, beautiful sandy beaches and exploring nearby lagoons.",
         "wifi":"AVERAGE",
