@@ -202,7 +202,7 @@ export default function LocationPage() {
                                                 <a href='/arugambay'>
                                                   <div className='location-card'>
                                                     <h4>Arugam Bay</h4>
-                                                    <p className='locationdesc'>{getDescription("Arugam Bay")}</p>
+                                                    <p className='locationdesc'>{getDescription("ArugamBay")}</p>
                                                   </div>  
                                                 </a>
                                             ) : location ==="nuwaraeliya" ? (
