@@ -61,5 +61,12 @@
         "name": "Jaffna",
         "link":"/jaffna",
         "description": "Kandy offers a blend of cultural richness, natural beauty, and affordability. With its moderate WiFi speeds, reasonable cost of living, and pleasant weather, it's an attractive destination for tourists as well as expatriates seeking a tranquil yet vibrant lifestyle amidst the hills of Sri Lanka."
-    }        
+    },
+    {
+        "id": 10,
+        "location": "arugambay",
+        "name": "Arugam Bay",
+        "link":"/arugambay",
+        "description": "Arugam Bay is located in the southeast coast of Sri Lanka. It is a popular destination for surfing, diving, beautiful sandy beaches and exploring nearby lagoons."
+    } 
 ]
