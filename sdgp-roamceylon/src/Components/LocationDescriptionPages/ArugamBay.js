@@ -39,7 +39,7 @@ export default function Galle(location){
             </div>
             {
                 LocationData.map(data => {
-                    if (data.location == "Arugam Bay"){
+                    if (data.location == "ArugamBay"){
                         return(
                             <div className='scales'>
                                 <h1>Indicators</h1>
