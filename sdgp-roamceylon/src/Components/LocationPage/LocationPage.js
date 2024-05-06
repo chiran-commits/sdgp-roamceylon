@@ -114,6 +114,7 @@ export default function LocationPage() {
                 <div className="location-container">
                     <div className="leftContainer">
                         <div className="input-box-search">
+                        <h1>Search Locations</h1>
                             <input className='search-bar' type="text" placeholder="Search the location for you...." onChange={onChange} value={value} />
                             <i className='bx bxs-user'></i>
                             {value && (

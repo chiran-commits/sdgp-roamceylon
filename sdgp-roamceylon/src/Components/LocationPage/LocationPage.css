@@ -1,5 +1,3 @@
-
-
 .mainContainer{
     display: flex;
     align-items: center;
@@ -9,9 +7,6 @@
     margin-top: 80px;
     position: absolute;
     border-radius: 20px;
-    background: linear-gradient(-45deg, #4ca3be, #bae078, #695db4, #237cd5);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
 	height: auto;
 }
 
@@ -41,6 +36,11 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    background: linear-gradient(-45deg, #4ca3be, #bae078, #695db4, #237cd5);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    width: 500px;
+    border-radius: 20px;
 }
 
 .container h2{
@@ -229,6 +229,7 @@
     position: relative;
     background-color: beige;
 }
+
 
 .location-card:hover{
     transform:scale(1.1)
