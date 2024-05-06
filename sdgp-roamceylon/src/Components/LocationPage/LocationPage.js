@@ -115,6 +115,8 @@ export default function LocationPage() {
                     <div className="leftContainer">
                         <div className="input-box-search">
                         <h1>Search Locations</h1>
+                        <h3>Manually search the name of your desired location.</h3>
+                        <br></br>
                             <input className='search-bar' type="text" placeholder="Search the location for you...." onChange={onChange} value={value} />
                             <i className='bx bxs-user'></i>
                             {value && (
@@ -128,6 +130,15 @@ export default function LocationPage() {
                             )}
                         </div>
                     </div>
+                    <h1><center>Provide Recommendation</center></h1>
+                            <div className='textarea-center'>
+                                {isLoggedIn ? (
+                                    <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>
+                                    </textarea>
+                                    
+                                ):
+                                (<h2>Login to receive personalised recommendations!</h2>)}
+                            </div>
                     { isLoggedIn && (
                         <div className="rightContainer" >
                             <h2><center>Provide Recommendation</center></h2>

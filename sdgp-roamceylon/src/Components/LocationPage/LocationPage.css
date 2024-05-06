@@ -8,6 +8,11 @@
     position: absolute;
     border-radius: 20px;
 	height: auto;
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh
 }
 
 .leftContainer{
@@ -35,11 +40,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 300px;
     background: linear-gradient(-45deg, #4ca3be, #bae078, #695db4, #237cd5);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-    width: 500px;
+    width: 800px;
     border-radius: 20px;
 }
 
@@ -58,7 +63,7 @@
 
 .input-box-search{
     position: relative;
-    width: 200%;
+    width: 600px;
     height: 50px;
 }
 
