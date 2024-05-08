@@ -130,7 +130,7 @@ export default function LocationPage() {
                             )}
                         </div>
                     </div>
-                    <h1><center>Provide Recommendation</center></h1>
+                    {/* <h1><center>Provide Recommendation</center></h1>
                             <div className='textarea-center'>
                                 {isLoggedIn ? (
                                     <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>
@@ -138,7 +138,7 @@ export default function LocationPage() {
                                     
                                 ):
                                 (<h2>Login to receive personalised recommendations!</h2>)}
-                            </div>
+                            </div> */}
                     { isLoggedIn && (
                         <div className="rightContainer" >
                             <h2><center>Provide Recommendation</center></h2>
@@ -146,7 +146,7 @@ export default function LocationPage() {
                                 <textarea placeholder={descriptionPlaceholder} value={descriptionData}  className="input-box-recommendation" onChange={handleDescriptionChange}>
                                 </textarea>
                             </div>
-                            <div className='descriptionKeywords'>
+                            {/* <div className='descriptionKeywords'>
                                 <h4>*Mandatory Keywords: <br></br></h4>
                                         <h5> Cost of Living (in Sri Lankan Rupees)</h5> 
                                         <h5>WIFI Connectivity (in mbps)</h5> 
@@ -158,7 +158,7 @@ export default function LocationPage() {
                                 <h5 style={{marginLeft:"10px", color:"darkred"}}>
                                     *WIFI Connectivity : 0-25 (LOW), 25-50 (AVERAGE), More than 50 (HIGH).
                                 </h5>
-                            </div>
+                            </div> */}
                             <button type="submit" className="recommendation-btn" onClick={handleSubmitDescription}>Generate Locations</button>
                             <div className="location-cards-container">
                                 {locations.length >0 ? (
